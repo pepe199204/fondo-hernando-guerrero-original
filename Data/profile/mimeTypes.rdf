@@ -1,0 +1,176 @@
+<?xml version="1.0"?>
+<RDF:RDF xmlns:NC="http://home.netscape.com/NC-rdf#"
+         xmlns:RDF="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+  <RDF:Description RDF:about="urn:mimetype:application/x-zip-compressed"
+                   NC:value="application/x-zip-compressed"
+                   NC:editable="true"
+                   NC:fileExtensions="zip"
+                   NC:description="WinRAR ZIP archive">
+    <NC:handlerProp RDF:resource="urn:mimetype:handler:application/x-zip-compressed"/>
+  </RDF:Description>
+  <RDF:Description RDF:about="urn:mimetype:externalApplication:text/rtf"
+                   NC:prettyName=""
+                   NC:path="" />
+  <RDF:Description RDF:about="urn:mimetype:application/x-shockwave-flash"
+                   NC:value="application/x-shockwave-flash"
+                   NC:editable="true"
+                   NC:fileExtensions="swf"
+                   NC:description="Shockwave Flash Object">
+    <NC:handlerProp RDF:resource="urn:mimetype:handler:application/x-shockwave-flash"/>
+  </RDF:Description>
+  <RDF:Description RDF:about="urn:mimetype:externalApplication:application/vnd.ms-excel"
+                   NC:prettyName=""
+                   NC:path="" />
+  <RDF:Description RDF:about="urn:mimetype:handler:application/x-zip-compressed"
+                   NC:alwaysAsk="true"
+                   NC:saveToDisk="true">
+    <NC:externalApplication RDF:resource="urn:mimetype:externalApplication:application/x-zip-compressed"/>
+  </RDF:Description>
+  <RDF:Description RDF:about="urn:scheme:handler:mailto"
+                   NC:useSystemDefault="true"
+                   NC:alwaysAsk="false">
+    <NC:possibleApplication RDF:resource="urn:handler:web:http://compose.mail.yahoo.com/?To=%s"/>
+  </RDF:Description>
+  <RDF:Description RDF:about="urn:mimetype:externalApplication:application/pdf"
+                   NC:prettyName=""
+                   NC:path="" />
+  <RDF:Description RDF:about="urn:mimetype:handler:text/rtf"
+                   NC:alwaysAsk="true"
+                   NC:useSystemDefault="true">
+    <NC:externalApplication RDF:resource="urn:mimetype:externalApplication:text/rtf"/>
+  </RDF:Description>
+  <RDF:Description RDF:about="urn:schemes">
+    <NC:Protocol-Schemes RDF:resource="urn:schemes:root"/>
+  </RDF:Description>
+  <RDF:Description RDF:about="urn:mimetype:application/pdf"
+                   NC:fileExtensions="pdf"
+                   NC:description="Adobe Acrobat 7.0 Document"
+                   NC:value="application/pdf"
+                   NC:editable="true">
+    <NC:handlerProp RDF:resource="urn:mimetype:handler:application/pdf"/>
+  </RDF:Description>
+  <RDF:Description RDF:about="urn:handler:web:http://compose.mail.yahoo.com/?To=%s"
+                   NC:prettyName="Correo Yahoo!"
+                   NC:uriTemplate="http://compose.mail.yahoo.com/?To=%s" />
+  <RDF:Description RDF:about="urn:mimetype:handler:application/vnd.ms-powerpoint"
+                   NC:alwaysAsk="true"
+                   NC:saveToDisk="true">
+    <NC:externalApplication RDF:resource="urn:mimetype:externalApplication:application/vnd.ms-powerpoint"/>
+  </RDF:Description>
+  <RDF:Description RDF:about="urn:handler:web:http://30boxes.com/external/widget?refer=ff&amp;url=%s"
+                   NC:prettyName="30 Boxes"
+                   NC:uriTemplate="http://30boxes.com/external/widget?refer=ff&amp;url=%s" />
+  <RDF:Seq RDF:about="urn:mimetypes:root">
+    <RDF:li RDF:resource="urn:mimetype:application/pdf"/>
+    <RDF:li RDF:resource="urn:mimetype:application/rtf"/>
+    <RDF:li RDF:resource="urn:mimetype:text/rtf"/>
+    <RDF:li RDF:resource="urn:mimetype:application/vnd.ms-powerpoint"/>
+    <RDF:li RDF:resource="urn:mimetype:image/jpeg"/>
+    <RDF:li RDF:resource="urn:mimetype:application/vnd.ms-excel"/>
+    <RDF:li RDF:resource="urn:mimetype:application/x-zip-compressed"/>
+    <RDF:li RDF:resource="urn:mimetype:application/x-shockwave-flash"/>
+  </RDF:Seq>
+  <RDF:Description RDF:about="urn:scheme:webcal"
+                   NC:value="webcal">
+    <NC:handlerProp RDF:resource="urn:scheme:handler:webcal"/>
+  </RDF:Description>
+  <RDF:Description RDF:about="urn:mimetype:application/rtf"
+                   NC:value="application/rtf"
+                   NC:editable="true"
+                   NC:fileExtensions="rtf"
+                   NC:description="Formato RTF">
+    <NC:handlerProp RDF:resource="urn:mimetype:handler:application/rtf"/>
+  </RDF:Description>
+  <RDF:Description RDF:about="urn:mimetype:text/rtf"
+                   NC:value="text/rtf"
+                   NC:editable="true"
+                   NC:fileExtensions="rtf"
+                   NC:description="Formato RTF">
+    <NC:handlerProp RDF:resource="urn:mimetype:handler:text/rtf"/>
+  </RDF:Description>
+  <RDF:Description RDF:about="urn:mimetypes">
+    <NC:MIME-types RDF:resource="urn:mimetypes:root"/>
+  </RDF:Description>
+  <RDF:Description RDF:about="urn:scheme:handler:webcal"
+                   NC:alwaysAsk="true">
+    <NC:possibleApplication RDF:resource="urn:handler:web:http://30boxes.com/external/widget?refer=ff&amp;url=%s"/>
+  </RDF:Description>
+  <RDF:Description RDF:about="urn:mimetype:image/jpeg"
+                   NC:value="image/jpeg"
+                   NC:editable="true"
+                   NC:description="JPEG Image">
+    <NC:fileExtensions>jpg</NC:fileExtensions>
+    <NC:fileExtensions>jpeg</NC:fileExtensions>
+    <NC:fileExtensions>jfif</NC:fileExtensions>
+    <NC:fileExtensions>pjpeg</NC:fileExtensions>
+    <NC:fileExtensions>pjp</NC:fileExtensions>
+    <NC:handlerProp RDF:resource="urn:mimetype:handler:image/jpeg"/>
+  </RDF:Description>
+  <RDF:Description RDF:about="urn:scheme:mailto"
+                   NC:value="mailto">
+    <NC:handlerProp RDF:resource="urn:scheme:handler:mailto"/>
+  </RDF:Description>
+  <RDF:Description RDF:about="urn:mimetype:handler:application/vnd.ms-excel"
+                   NC:alwaysAsk="true"
+                   NC:useSystemDefault="true"
+                   NC:saveToDisk="false">
+    <NC:externalApplication RDF:resource="urn:mimetype:externalApplication:application/vnd.ms-excel"/>
+  </RDF:Description>
+  <RDF:Description RDF:about="urn:mimetype:externalApplication:application/vnd.ms-powerpoint"
+                   NC:prettyName=""
+                   NC:path="" />
+  <RDF:Description RDF:about="urn:mimetype:externalApplication:image/jpeg"
+                   NC:prettyName=""
+                   NC:path="" />
+  <RDF:Description RDF:about="urn:mimetype:handler:application/x-shockwave-flash"
+                   NC:alwaysAsk="true"
+                   NC:saveToDisk="true">
+    <NC:externalApplication RDF:resource="urn:mimetype:externalApplication:application/x-shockwave-flash"/>
+  </RDF:Description>
+  <RDF:Description RDF:about="urn:mimetype:application/vnd.ms-powerpoint"
+                   NC:value="application/vnd.ms-powerpoint"
+                   NC:editable="true"
+                   NC:fileExtensions="ppt"
+                   NC:description="Presentación de Microsoft PowerPoint">
+    <NC:handlerProp RDF:resource="urn:mimetype:handler:application/vnd.ms-powerpoint"/>
+  </RDF:Description>
+  <RDF:Description RDF:about="urn:mimetype:application/vnd.ms-excel"
+                   NC:fileExtensions="xls"
+                   NC:description="Hoja de cálculo de Microsoft Excel"
+                   NC:value="application/vnd.ms-excel"
+                   NC:editable="true">
+    <NC:handlerProp RDF:resource="urn:mimetype:handler:application/vnd.ms-excel"/>
+  </RDF:Description>
+  <RDF:Description RDF:about="urn:mimetype:handler:application/rtf"
+                   NC:alwaysAsk="true"
+                   NC:saveToDisk="true">
+    <NC:externalApplication RDF:resource="urn:mimetype:externalApplication:application/rtf"/>
+  </RDF:Description>
+  <RDF:Description RDF:about="urn:mimetype:handler:application/pdf"
+                   NC:alwaysAsk="true"
+                   NC:useSystemDefault="true"
+                   NC:saveToDisk="false">
+    <NC:externalApplication RDF:resource="urn:mimetype:externalApplication:application/pdf"/>
+  </RDF:Description>
+  <RDF:Description RDF:about="urn:mimetype:handler:image/jpeg"
+                   NC:alwaysAsk="true"
+                   NC:useSystemDefault="true">
+    <NC:externalApplication RDF:resource="urn:mimetype:externalApplication:image/jpeg"/>
+  </RDF:Description>
+  <RDF:Seq RDF:about="urn:schemes:root">
+    <RDF:li RDF:resource="urn:scheme:mailto"/>
+    <RDF:li RDF:resource="urn:scheme:webcal"/>
+  </RDF:Seq>
+  <RDF:Description RDF:about="urn:mimetype:externalApplication:application/x-zip-compressed"
+                   NC:prettyName=""
+                   NC:path="" />
+  <RDF:Description RDF:about="urn:mimetype:externalApplication:application/rtf"
+                   NC:prettyName=""
+                   NC:path="" />
+  <RDF:Description RDF:about="urn:root"
+                   NC:es-ES_defaultHandlersVersion="1"
+                   NC:en-US_defaultHandlersVersion="1" />
+  <RDF:Description RDF:about="urn:mimetype:externalApplication:application/x-shockwave-flash"
+                   NC:prettyName=""
+                   NC:path="" />
+</RDF:RDF>

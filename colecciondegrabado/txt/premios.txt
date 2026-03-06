@@ -1,0 +1,1 @@
+﻿textField= Aqui debe estar el texto de los premios de la colección

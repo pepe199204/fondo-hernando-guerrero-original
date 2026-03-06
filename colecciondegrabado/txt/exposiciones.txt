@@ -1,0 +1,1 @@
+﻿textField= Aqui debe estar el texto d elas exposiciones de la colección
