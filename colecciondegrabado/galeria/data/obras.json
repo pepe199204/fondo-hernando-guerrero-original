@@ -1,0 +1,62 @@
+{
+  "meta": {
+    "schema": "ficha-larga-v1",
+    "descripcion": "Datos para la ficha larga. Las rutas de imagen por defecto siguen la convención previa: ../imagenes/previa/{id}prev.jpg"
+  },
+  "obras": [
+    {
+      "id": "00-0740",
+      "titulo": "ficha de prueba",
+      "autor": "Ana María Castrillón",
+      "tecnica": "Policromia en linoleo (Taco perdido)",
+      "edicion": "4/6",
+      "medidas": "18x27/35x50",
+      "unidadMedida": "cms.",
+      "material": "Opalina",
+      "gramaje": "180",
+      "anioObra": "2000",
+      "anioRegistro": "2000",
+      "descripcionIconografica": "Formato recto vertical. En primer plano y en vista frontal, se percibe la figura de una mujer, de piel amarilla, de rostro alargado y delgado, y de cabello negro;  viste de manga sisa y cuello en v; tiene sus ojos cerrados, y está acomodando su cabello ondulante con su mano derecha.  Dicha figura femenina se encuentra sentada en una silla de espaldar grande, de color negro. El fondo del lugar es de color azul con líneas  negras, y en estos mismos colores está el vestido de la mujer. La estructura de esta imagen ocupa la mayor parte del formato de la obra.",
+      "tematica": "No disponible",
+      "catalogacion": "No Disponible",
+      "estadoConservacionFila": ["Bueno", "No", "Si"],
+      "ubicacionFisica": "Facultad de Artes - Museo Universitario",
+      "inventarioTomo": "2",
+      "inventarioFolio": "16",
+      "permiteReproduccion": "SI",
+      "permitePublicacion": "SI",
+      "observaciones": "Estudiante de la Facultad de Artes",
+      "urls": {
+        "previsualizacion": "../imagenes/previa/00-0740prev.jpg",
+        "ampliacion": "amp_00-0740.html"
+      }
+    },
+    {
+      "id": "98-0577",
+      "titulo": "Sin título",
+      "autor": "Yolanda Zapata",
+      "tecnica": "Impresión de texturas",
+      "edicion": "P/A",
+      "medidas": "25X35/48x32",
+      "unidadMedida": "cms.",
+      "material": "Fabriano - Ingres",
+      "gramaje": "90",
+      "anioObra": "1998",
+      "anioRegistro": "1998",
+      "descripcionIconografica": "Formato recto-vertical. En la totalidad de la composición aparece la impresión de un papel arrugado entintado en negro. La imagen es rica en texturas y en líneas ramificadas de diversa densidad que cubren toda la superficie del impreso a lo largo y ancho del papel.",
+      "tematica": "No disponible",
+      "catalogacion": "No Disponible",
+      "estadoConservacionFila": ["Bueno", "No", "Si"],
+      "ubicacionFisica": "Facultad de Artes - Museo Universitario",
+      "inventarioTomo": "2",
+      "inventarioFolio": "13",
+      "permiteReproduccion": "SI",
+      "permitePublicacion": "SI",
+      "observaciones": "Estudiante de la Facultad de Artes",
+      "urls": {
+        "previsualizacion": "../imagenes/previa/98-0577prev.jpg",
+        "ampliacion": "amp_98-0577.html"
+      }
+    }
+  ]
+}
