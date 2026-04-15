@@ -1,0 +1,19 @@
+{
+  "meta": {
+    "schema": "prev-v1",
+    "descripcion": "Demo de previews (primeras 10). Completar con el catálogo completo después."
+  },
+  "obras": [
+    { "id": "02-1018", "titulo": "Sin título", "autor": "(Josabad) Robert López", "medidas": "39x61/50x70" },
+    { "id": "95-0342", "titulo": "Sin título", "autor": "Adriana del Pilar Torres", "medidas": "30x44/50x70" },
+    { "id": "92-0030", "titulo": "Sin título", "autor": "Adriana María Roldán", "medidas": "24x26/25x35" },
+    { "id": "93-0109", "titulo": "Sin título", "autor": "Adriana María Roldán", "medidas": "18x30/50x70" },
+    { "id": "93-0065", "titulo": "Sin título", "autor": "Adriana María Roldán", "medidas": "22x30/35x50" },
+    { "id": "92-0046", "titulo": "Sin título", "autor": "Adriana María Roldán", "medidas": "30x46/50x70" },
+    { "id": "98-0616", "titulo": "\"Rotonda\" Portafolio de Gráfica \"Seis Serigrafías, Seis artistas\"", "autor": "Adriana María Roldán", "medidas": "24x32/35x50" },
+    { "id": "02-1015", "titulo": "Sin título", "autor": "Adriana Mesa", "medidas": "36x38/50x70" },
+    { "id": "01-0998", "titulo": "Sin título", "autor": "Adriana Montes", "medidas": "43x63/50x70" },
+    { "id": "02-1012", "titulo": "Sin título", "autor": "Adriana Ortiz", "medidas": "23x45/50x70" }
+  ]
+}
+
