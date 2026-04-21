@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Análisis · Colección de Grabado</title>
+    <link rel="stylesheet" href="css/herm.css" />
+    <!--
+      Componente reusable (solo HERM).
+      URL: herm.html?id=AA-NNNN
+      Datos:
+        - metadata: data/obras.json (opcional; si no existe el id, igual se muestra el análisis)
+        - análisis: data/herm.json (lista de { id, texto })
+    -->
+  </head>
+  <body class="herm-body">
+    <div id="herm-root" data-obras-json="data/obras.json" data-herm-json="data/herm.json"></div>
+    <script src="js/herm.js"></script>
+  </body>
+</html>

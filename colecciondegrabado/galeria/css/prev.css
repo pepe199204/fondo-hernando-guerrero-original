@@ -1,0 +1,45 @@
+/* PREV — estilos compatibles con el `prev_todas` legacy */
+
+body.prev-body {
+  background-color: #003366;
+  margin: 0;
+}
+
+/* Contenedor donde se inyecta la galería */
+.prev-shell {
+  width: 100%;
+  padding: 0;
+  margin: 0;
+}
+
+/* Se replica el look de la tabla Dreamweaver */
+.estiloTabla {
+  font-family: Verdana, Arial, Helvetica, sans-serif;
+  font-size: 10px;
+  font-weight: normal;
+  color: #ffffff;
+}
+
+.prev-galeria {
+  width: 100%;
+}
+
+/* Cada “tarjeta” se comporta como en el HTML original */
+.prev-item {
+  display: inline-table;
+  width: 32%;
+  vertical-align: top;
+}
+
+.prev-item table {
+  margin: 0 auto;
+}
+
+.prev-error,
+.prev-loading {
+  font-family: Verdana, Arial, Helvetica, sans-serif;
+  font-size: 12px;
+  color: #ffffff;
+  padding: 12px;
+}
+

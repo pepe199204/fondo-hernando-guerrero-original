@@ -1,0 +1,17 @@
+{
+  "meta": {
+    "schema": "herm-v1",
+    "descripcion": "Análisis hermenéutico por obra. Completar con { id, texto }."
+  },
+  "analisis": [
+    {
+      "id": "99-0623",
+      "texto": "Formato recto-vertical. Hacia el lado derecho del papel blanco, se representa una rama cargada de hojas negras y gruesas. La rama asciende desde la parte central inferior, hasta casi llegar a la margen superior del papel. La parte inferior de la rama tiende hacia la izquierda, y solamente es delineada, conservando en su interior el color blanco del soporte."
+    },
+    {
+      "id": "04-1158",
+      "texto": "Formato recto-vertical. En este grabado se aprecian varias figuras de peces y fragmentos de seres marinos no reconocibles, impresos en tinta negra sobre un papel de seda de color verde, adherido al fondo a modo de collage. Dichos elementos parecen flotar sobre este papel, y sirven como integradores de las figuras ya descritas."
+    }
+  ]
+}
+
