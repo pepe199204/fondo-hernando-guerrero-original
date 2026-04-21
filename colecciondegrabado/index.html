@@ -1,47 +1,118 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="es" lang="es">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
 <title>COLECCI&Oacute;N DE GRABADO :: Facultad de Artes, Universidad de Antioquia. 2007</title>
 <style type="text/css">
-<!--
-body {
-	background-color: #F0F3F6;
-	margin-left: 0px;
-	margin-top: 0px;
-	margin-right: 0px;
-	margin-bottom: 0px;
+html, body {
+	height: 100%;
+	margin: 0;
 }
--->
+body {
+	background-color: #cfd3d8;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	min-height: 100%;
+	min-height: 100vh;
+	min-height: 100dvh;
+}
+.frame {
+	display: flex;
+	flex-direction: column;
+	min-height: 100%;
+	min-height: 100vh;
+	min-height: 100dvh;
+	width: 100%;
+	box-sizing: border-box;
+	position: relative;
+	background: #0d3760 url("galeria/images/bg_2.gif") repeat-x top;
+}
+.topBand {
+	flex: 0 0 auto;
+	height: 36px;
+	background-color: #03376b;
+}
+.hero {
+	flex: 1 1 auto;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	min-height: 0;
+	background: radial-gradient(circle at center, #d3dbe6 0%, #7f9ab6 42%, #2f5882 100%);
+	text-align: center;
+	color: #eaf4ff;
+	padding: 24px 16px;
+	box-sizing: border-box;
+}
+.logoWrap {
+	padding-top: 0;
+}
+.logoWrap img {
+	width: min(300px, 42vw);
+	max-width: 100%;
+	height: auto;
+}
+.brand {
+	margin-top: 22px;
+	font-size: clamp(1.25rem, 4vw, 1.95rem);
+	letter-spacing: 1px;
+	color: #0c5f95;
+	text-shadow: 0 1px 1px #a8bfd7;
+	font-weight: bold;
+}
+.access {
+	margin-top: clamp(2rem, 8vh, 5rem);
+	color: #f3f5f8;
+	font-size: clamp(1.1rem, 3.5vw, 2.1rem);
+	letter-spacing: 1px;
+}
+.access a {
+	color: #ffffff;
+	text-decoration: none;
+	font-weight: bold;
+}
+.access a:hover {
+	text-decoration: underline;
+}
+.line1 {
+	flex: 0 0 auto;
+	height: 8px;
+	background-color: #57b4d7;
+}
+.line2 {
+	flex: 0 0 auto;
+	height: 10px;
+	background-color: #0f709a;
+}
+.footer {
+	flex: 0 0 auto;
+	min-height: 66px;
+	background-color: #00356a;
+	color: #ffffff;
+	font-size: 12px;
+	text-align: center;
+	letter-spacing: 0.5px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	padding: 12px 16px;
+	box-sizing: border-box;
+}
 </style>
-<script src="Scripts/AC_RunActiveContent.js" type="text/javascript"></script>
 </head>
 <body>
-<!--URL utilizadas en la película-->
-
-<!--Texto utilizado en la película-->
-<!-- saved from url=(0013)about:internet -->
-<table width="100%" height="100%" border="0" cellpadding="0" cellspacing="0">
-  <tr>
-    <td>&nbsp;</td>
-    <td rowspan="3" align="center" valign="middle"><script type="text/javascript">
-AC_FL_RunContent( 'codebase','http://fpdownload.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=6,0,65,0','width','800','height','600','align','middle','src','index','quality','high','bgcolor','#F0F3F6','allowscriptaccess','sameDomain','pluginspage','http://www.macromedia.com/go/getflashplayer','movie','index' ); //end AC code
-    </script>      <noscript>
-      <object classid="clsid:d27cdb6e-ae6d-11cf-96b8-444553540000" codebase="http://fpdownload.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=6,0,65,0" width="800" height="600" align="middle">
-      <param name="allowScriptAccess" value="sameDomain" />
-      <param name="movie" value="index.swf" />
-      <param name="quality" value="high" /><param name="BGCOLOR" value="#F0F3F6" />
-      
-      <embed src="index.swf" width="800" height="600" align="middle" quality="high" bgcolor="#F0F3F6" allowscriptaccess="sameDomain" type="application/x-shockwave-flash" pluginspage="http://www.macromedia.com/go/getflashplayer" />    
-</object>
-    </noscript></td>
-    <td rowspan="3">&nbsp;</td>
-  </tr>
-  <tr>
-    <td>&nbsp;</td>
-  </tr>
-  <tr>
-    <td>&nbsp;</td>
-  </tr>
-</table>
+<div class="frame">
+  <div class="topBand"></div>
+  <div class="hero">
+    <div class="logoWrap">
+      <img src="galeria/images/log_2.gif" alt="Colecci&oacute;n de Grabado" />
+    </div>
+    <div class="brand">COLECCI&Oacute;N DE GRABADO</div>
+    <div class="access">Ingresar a:&nbsp;&nbsp;<a href="coleccion.html">Sitio</a> | <a href="galeria/index.html">Galer&iacute;a</a></div>
+  </div>
+  <div class="line1"></div>
+  <div class="line2"></div>
+  <div class="footer">Facultad de Artes, Vicerrector&iacute;a de Docencia, Universidad de Antioquia. Todos los derechos reservados. 2007</div>
+</div>
 </body>
 </html>
