@@ -1,0 +1,12 @@
+{
+  "totalObrasDesdeIndice": 1200,
+  "conArchivoAmp": 1200,
+  "conArchivoHerm": 1200,
+  "conTematica": 1200,
+  "conTextoHermeneutico": 1200,
+  "generadoDesde": [
+    "galeria/js/indice.js",
+    "galeria/amp_*.html",
+    "galeria/herm_*.html"
+  ]
+}
