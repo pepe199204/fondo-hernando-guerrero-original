@@ -1,23 +1,9 @@
 /**
- * HERM — componente reutilizable (análisis).
+ * HERM — componente reutilizable (análisis) con layout legacy.
  * URL: herm.html?id=AA-NNNN
- *
- * Nota: `data/herm.json` se irá completando gradualmente con los análisis.
  */
 (function () {
   "use strict";
-
-  function el(tag, cls, attrs) {
-    var node = document.createElement(tag);
-    if (cls) node.className = cls;
-    if (attrs) {
-      Object.keys(attrs).forEach(function (k) {
-        if (k === "text") node.textContent = attrs[k];
-        else node.setAttribute(k, attrs[k]);
-      });
-    }
-    return node;
-  }
 
   function getQueryId() {
     var params = new URLSearchParams(window.location.search);
@@ -38,9 +24,17 @@
 
   function mergeMedia(id, obra) {
     var m = defaultMedia(id);
-    if (!obra || !obra.urls) return m;
-    if (obra.urls.baja) m.low = obra.urls.baja;
-    if (obra.urls.alta) m.high = obra.urls.alta;
+    if (!obra) return m;
+
+    // catálogo chico (galeria/data/obras.json)
+    if (obra.urls) {
+      if (obra.urls.baja) m.low = obra.urls.baja;
+      if (obra.urls.alta) m.high = obra.urls.alta;
+    }
+
+    // catálogo grande (colecciondegrabado/data/gallery/obras.json)
+    if (obra.imagenBaja) m.low = obra.imagenBaja;
+    if (obra.imagenAlta) m.high = obra.imagenAlta;
     return m;
   }
 
@@ -58,76 +52,91 @@
     });
   }
 
-  function render(root, ctx) {
-    root.innerHTML = "";
-    var shell = el("div", "herm-shell");
+  function esc(s) {
+    return String(s == null ? "" : s)
+      .replace(/&/g, "&amp;")
+      .replace(/</g, "&lt;")
+      .replace(/>/g, "&gt;")
+      .replace(/"/g, "&quot;");
+  }
 
+  function render(root, ctx) {
     if (ctx.error) {
-      shell.appendChild(el("div", "herm-error", { text: ctx.error }));
-      root.appendChild(shell);
+      root.innerHTML =
+        '<div style="width:800px;margin:20px auto;color:#fff;font-family:Verdana, Arial, Helvetica, sans-serif;font-size:12px;">' +
+        esc(ctx.error) +
+        "</div>";
       return;
     }
 
-    var card = el("div", "herm-card");
-    var header = el("div", "herm-header");
-    header.appendChild(
-      el("div", "herm-header__title", { text: "Análisis (HERM)" })
-    );
-    header.appendChild(el("div", "herm-header__code", { text: ctx.id }));
-    card.appendChild(header);
+    root.innerHTML =
+      '<table class="herm-outer" width="800" height="600" border="0" align="center" cellpadding="0" cellspacing="0" bgcolor="#FFFFFF">' +
+      '<tr>' +
+      '<td align="center" valign="middle" bgcolor="#F4F5FD" class="Estilo3 herm-media-cell">' +
+      '<table class="herm-media" width="640" height="480" border="0" cellpadding="0" cellspacing="0" bgcolor="#FFFFFF">' +
+      "<tr>" +
+      '<td align="center" valign="middle" bgcolor="#F4F5FD">' +
+      '<img class="herm-img" src="' +
+      esc(ctx.media.low) +
+      '" name="imgA" border="0" id="imgA" />' +
+      "</td>" +
+      "</tr>" +
+      "</table>" +
+      "</td>" +
+      "</tr>" +
+      '<tr>' +
+      '<td height="100" align="center" valign="top" bgcolor="#000033" class="herm-footer-cell"><div class="herm-footer-inner">' +
+      '<table width="90%" border="0" cellpadding="0" cellspacing="0">' +
+      "<tr>" +
+      '<td height="7" colspan="5" align="center" valign="middle"><div align="justify"><span class="Estilo2"><br />' +
+      esc(ctx.texto) +
+      "<br /></span></div></td>" +
+      "</tr>" +
+      '<tr><td height="8" colspan="5" align="center" valign="middle"><hr /></td></tr>' +
+      "<tr>" +
+      '<td width="67%" height="15">&nbsp;</td>' +
+      '<td width="8%" align="center" valign="middle"><span class="Estilo3"><a href="' +
+      esc(ctx.media.high) +
+      '" target="_blank"><img src="images/obra_amp.gif" alt="Ampliar imagen" width="22" height="16" border="0" /></a></span></td>' +
+      '<td width="8%" height="15" align="center" valign="middle"><span class="Estilo2">' +
+      '<a href="' +
+      esc(ctx.media.backToAmp) +
+      '" target="_self"><img src="images/analisis.gif" alt="Regresar" width="22" height="16" border="0" /></a>' +
+      "</span></td>" +
+      "</tr>" +
+      "</table>" +
+      "</div></td>" +
+      "</tr>" +
+      "</table>" +
+      '<map name="Map" id="Map">' +
+      '  <area shape="rect" coords="0,1,21,15" href="javascript:close();" />' +
+      "</map>";
 
-    if (ctx.subtitle || (ctx.metaRows && ctx.metaRows.length)) {
-      var metaBox = el("div", "herm-bodytext");
-      if (ctx.subtitle) {
-        var strong = document.createElement("strong");
-        strong.textContent = ctx.subtitle;
-        metaBox.appendChild(strong);
-        metaBox.appendChild(document.createElement("br"));
-      }
-      if (ctx.metaRows && ctx.metaRows.length) {
-        for (var i = 0; i < ctx.metaRows.length; i++) {
-          metaBox.appendChild(document.createTextNode(ctx.metaRows[i]));
-          metaBox.appendChild(document.createElement("br"));
-        }
-      }
-      card.appendChild(metaBox);
+    // Ajuste de tamaño de imagen dentro del marco.
+    // Regla: puede agrandar un poco (upscale controlado), pero nunca más de 1.35x.
+    var img = document.getElementById("imgA");
+    if (img) {
+      var fitOnce = function () {
+        var box = img.parentNode;
+        if (!box || !img.naturalWidth || !img.naturalHeight) return;
+        var bw = box.clientWidth || 0;
+        var bh = box.clientHeight || 0;
+        if (!bw || !bh) return;
+
+        var maxUpscale = 1.35;
+        var scale = Math.min(bw / img.naturalWidth, bh / img.naturalHeight, maxUpscale);
+        img.style.width = Math.round(img.naturalWidth * scale) + "px";
+        img.style.height = Math.round(img.naturalHeight * scale) + "px";
+      };
+
+      img.addEventListener("load", function () {
+        window.requestAnimationFrame(fitOnce);
+      });
+      window.addEventListener("resize", function () {
+        window.requestAnimationFrame(fitOnce);
+      });
+      if (img.complete) window.requestAnimationFrame(fitOnce);
     }
-
-    var media = el("div", "herm-media");
-    var aHigh = el("a", null, {
-      href: ctx.media.high,
-      target: "_blank",
-      title: "Abrir imagen en alta",
-    });
-    aHigh.appendChild(
-      el("img", null, {
-        src: ctx.media.low,
-        alt: "Imagen de la obra (baja)",
-      })
-    );
-    media.appendChild(aHigh);
-    card.appendChild(media);
-
-    var body = el("div", "herm-bodytext");
-    body.textContent = ctx.texto;
-    card.appendChild(body);
-
-    var actions = el("div", "herm-actions");
-    actions.appendChild(
-      el("a", null, { href: ctx.media.high, target: "_blank", text: "Alta" })
-    );
-    actions.appendChild(
-      el("a", null, { href: ctx.media.backToAmp, text: "Volver a ampliación" })
-    );
-    actions.appendChild(
-      el("a", null, { href: "ficha.html?id=" + encodeURIComponent(ctx.id), text: "Ver ficha" })
-    );
-    card.appendChild(actions);
-
-    if (ctx.note) card.appendChild(el("div", "herm-note", { text: ctx.note }));
-
-    shell.appendChild(card);
-    root.appendChild(shell);
   }
 
   function main() {
@@ -150,7 +159,8 @@
     }
 
     root.innerHTML = "";
-    root.appendChild(el("div", "herm-loading", { text: "Cargando análisis…" }));
+    root.innerHTML =
+      '<div style="width:800px;margin:20px auto;color:#fff;font-family:Verdana, Arial, Helvetica, sans-serif;font-size:12px;">Cargando...</div>';
 
     Promise.all([
       fetchJson(hermUrl).catch(function () {
@@ -164,39 +174,18 @@
         var hermData = arr[0] || {};
         var obrasData = arr[1] || {};
         var item = findById(hermData.analisis || [], id);
-        var obra = findById(obrasData.obras || [], id);
-
-        var subtitle = "";
-        var metaRows = [];
-        if (obra) {
-          subtitle = (obra.titulo || "Sin título") + (obra.autor ? " · " + obra.autor : "");
-          if (obra.tecnica) metaRows.push(obra.tecnica);
-          if (obra.medidas) {
-            metaRows.push(
-              obra.medidas + (obra.unidadMedida ? " " + obra.unidadMedida : "")
-            );
-          }
-          if (obra.edicion) metaRows.push("Edición: " + obra.edicion);
-          if (obra.anioObra) metaRows.push("Año: " + obra.anioObra);
-          if (obra.tematica) metaRows.push("Temática: " + obra.tematica);
-        }
+        var obraList = Array.isArray(obrasData) ? obrasData : obrasData.obras || [];
+        var obra = findById(obraList, id);
 
         var texto =
           (item && item.texto) ||
-          (obra && obra.descripcionIconografica) ||
+          (obra && (obra.textoHermeneutico || obra.descripcionIconografica)) ||
           "Análisis no disponible todavía para este código.";
-
-        var note = !item
-          ? "Nota: completa data/herm.json para añadir el análisis de esta obra."
-          : "";
 
         render(root, {
           id: id,
           texto: texto,
           media: mergeMedia(id, obra),
-          subtitle: subtitle,
-          metaRows: metaRows,
-          note: note,
         });
       })
       .catch(function (e) {

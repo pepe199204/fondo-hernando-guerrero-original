@@ -126,7 +126,8 @@
       "</tr>" +
       "</table>";
 
-    // Evita que imágenes pequeñas se "estiren" demasiado: no upscale, solo downscale si no caben.
+    // Ajuste de tamaño de imagen dentro del marco.
+    // Regla: puede agrandar un poco (upscale controlado), pero nunca más de 1.35x.
     var img = document.getElementById("imgA");
     if (img) {
       var fitOnce = function () {
@@ -136,7 +137,8 @@
         var bh = box.clientHeight || 0;
         if (!bw || !bh) return;
 
-        var scale = Math.min(bw / img.naturalWidth, bh / img.naturalHeight, 1);
+        var maxUpscale = 1.35;
+        var scale = Math.min(bw / img.naturalWidth, bh / img.naturalHeight, maxUpscale);
         img.style.width = Math.round(img.naturalWidth * scale) + "px";
         img.style.height = Math.round(img.naturalHeight * scale) + "px";
       };
