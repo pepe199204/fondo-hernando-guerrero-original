@@ -29,17 +29,56 @@
   function defaultUrls(id) {
     return {
       previsualizacion: "../imagenes/previa/" + id + "prev.jpg",
-      ampliacion: "amp_" + id + ".html",
+      ampliacion: "amp.html?id=" + encodeURIComponent(id),
     };
   }
 
   function mergeUrls(obra) {
     var base = defaultUrls(obra.id);
-    if (!obra.urls) return base;
-    return {
-      previsualizacion: obra.urls.previsualizacion || base.previsualizacion,
-      ampliacion: obra.urls.ampliacion || base.ampliacion,
-    };
+
+    // catálogo chico (galeria/data/obras.json)
+    if (obra.urls) {
+      return {
+        previsualizacion: obra.urls.previsualizacion || base.previsualizacion,
+        ampliacion: obra.urls.ampliacion || base.ampliacion,
+      };
+    }
+
+    // catálogo grande (colecciondegrabado/data/gallery/obras.json)
+    // no existe "previa"; usamos la imagen baja como thumbnail.
+    if (obra.imagenBaja) base.previsualizacion = obra.imagenBaja;
+    return base;
+  }
+
+  function mergeObra(primary, extra) {
+    if (!extra) return primary;
+    var out = {};
+    Object.keys(extra).forEach(function (k) {
+      out[k] = extra[k];
+    });
+    Object.keys(primary).forEach(function (k2) {
+      if (primary[k2] != null && primary[k2] !== "") out[k2] = primary[k2];
+    });
+    if (extra.urls || primary.urls) {
+      out.urls = {};
+      if (extra.urls) {
+        Object.keys(extra.urls).forEach(function (k3) {
+          out.urls[k3] = extra.urls[k3];
+        });
+      }
+      if (primary.urls) {
+        Object.keys(primary.urls).forEach(function (k4) {
+          if (primary.urls[k4] != null && primary.urls[k4] !== "")
+            out.urls[k4] = primary.urls[k4];
+        });
+      }
+    }
+    return out;
+  }
+
+  function safeArray(data) {
+    if (!data) return [];
+    return Array.isArray(data) ? data : data.obras || [];
   }
 
   function el(tag, cls, attrs) {
@@ -67,6 +106,10 @@
     container.appendChild(dl);
   }
 
+  function valOrNA(v) {
+    return v == null || v === "" ? "No disponible" : v;
+  }
+
   /**
    * @param {HTMLElement} mount
    * @param {object} obra — registro desde obras.json
@@ -74,6 +117,8 @@
   function renderFichaLarga(mount, obra) {
     mount.innerHTML = "";
     var urls = mergeUrls(obra);
+    var medidas = obra.medidas || obra.dimensiones || "";
+    var anioObra = obra.anioObra || obra.ano || "";
 
     var shell = el("div", "ficha-larga-shell");
     shell.appendChild(el("div", "ficha-larga-shell__rail"));
@@ -88,9 +133,8 @@
     main.appendChild(hdr);
 
     var card = el("article", "ficha-larga-card");
-    card.appendChild(
-      el("div", "ficha-larga-card__codigo", { text: obra.id })
-    );
+    card.appendChild(el("div", "ficha-larga-section-title", { text: "FICHA DE LA OBRA" }));
+    card.appendChild(el("div", "ficha-larga-card__codigo", { text: obra.id }));
 
     var thumbWrap = el("div", "ficha-larga-card__thumb");
     var link = el("a", null, {
@@ -106,6 +150,21 @@
     thumbWrap.appendChild(link);
     card.appendChild(thumbWrap);
 
+    // Escala el thumbnail para que se vea más grande (upscale controlado).
+    img.className = "ficha-larga-thumb-img";
+    img.addEventListener("load", function () {
+      var box = thumbWrap;
+      if (!box || !img.naturalWidth || !img.naturalHeight) return;
+      var bw = box.clientWidth || 0;
+      var bh = box.clientHeight || 0;
+      if (!bw || !bh) return;
+      var maxUpscale = 1.35;
+      var scale = Math.min(bw / img.naturalWidth, bh / img.naturalHeight, maxUpscale);
+      img.style.width = Math.round(img.naturalWidth * scale) + "px";
+      img.style.height = Math.round(img.naturalHeight * scale) + "px";
+    });
+
+    card.appendChild(el("div", "ficha-larga-section-title", { text: "FICHA TÉCNICA" }));
     appendDl(card, [
       ["Título", obra.titulo],
       ["Autor", obra.autor],
@@ -113,7 +172,7 @@
       ["Edición", obra.edicion],
       [
         "Medidas",
-        text(obra.medidas) +
+        text(medidas) +
           (obra.unidadMedida ? "\u00a0" + obra.unidadMedida : ""),
       ],
       [
@@ -121,42 +180,60 @@
         text(obra.material) +
           (obra.gramaje ? "\u00a0—\u00a0" + obra.gramaje + "\u00a0gr." : ""),
       ],
-      ["Año obra", obra.anioObra],
+      ["Año obra", anioObra],
       ["Año registro", obra.anioRegistro],
     ]);
 
-    if (obra.descripcionIconografica) {
+    var descText = obra.descripcionIconografica || obra.textoHermeneutico || "";
+    if (descText) {
+      card.appendChild(el("div", "ficha-larga-section-title", { text: "ANÁLISIS DE OBRA" }));
+      card.appendChild(
+        el("div", "ficha-larga-subtitle", { text: "Análisis pre-iconográfico:" })
+      );
       var desc = el("div", "ficha-larga-bloque-texto");
-      desc.textContent = obra.descripcionIconografica;
+      desc.textContent = descText;
       card.appendChild(desc);
+
+      // Temática y enlace a análisis estético viven aquí (como en el original)
+      var tema = obra.tematica || "No disponible";
+      var hermHref = "herm.html?id=" + encodeURIComponent(obra.id);
+      var row2 = el("div", "ficha-larga-analysis-row");
+      row2.innerHTML =
+        '<span class="ficha-larga-analysis-row__left"><strong>Temática:</strong> ' +
+        text(tema) +
+        '</span><span class="ficha-larga-analysis-row__right"><strong>Ver análisis estético:</strong> <a href="' +
+        hermHref +
+        '" target="_blank" title="Ver análisis estético"><img src="images/analisis.gif" width="22" height="16" border="0" alt="Ver análisis estético" /></a></span>';
+      card.appendChild(row2);
     }
 
+    card.appendChild(el("div", "ficha-larga-section-title", { text: "DATOS ADICIONALES DE LA OBRA" }));
     appendDl(card, [
-      ["Temática", obra.tematica],
-      ["Catalogación", obra.catalogacion],
-    ]);
-
-    if (
-      Array.isArray(obra.estadoConservacionFila) &&
-      obra.estadoConservacionFila.length
-    ) {
-      var row = el("div", "ficha-larga-meta-grid");
-      obra.estadoConservacionFila.forEach(function (v) {
-        row.appendChild(el("span", null, { text: v }));
-      });
-      card.appendChild(row);
-    }
-
-    appendDl(card, [
-      ["Ubicación física", obra.ubicacionFisica],
       [
-        "Inventario (tomo / folio)",
-        text(obra.inventarioTomo) + " / " + text(obra.inventarioFolio),
+        "Estado de la obra",
+        valOrNA(
+          Array.isArray(obra.estadoConservacionFila) ? obra.estadoConservacionFila[0] : ""
+        ),
       ],
-      ["Reproducción", obra.permiteReproduccion],
-      ["Publicación", obra.permitePublicacion],
-      ["Observaciones", obra.observaciones],
+      [
+        "Para restauración",
+        valOrNA(
+          Array.isArray(obra.estadoConservacionFila) ? obra.estadoConservacionFila[1] : ""
+        ),
+      ],
+      ["Ubicación", valOrNA(obra.ubicacionFisica)],
+      ["Planoteca", valOrNA(obra.inventarioTomo)],
+      ["Carpeta", valOrNA(obra.inventarioFolio)],
+      ["Registro Análogo", valOrNA(obra.permiteReproduccion)],
+      ["Registro Digital", valOrNA(obra.permitePublicacion)],
     ]);
+
+    card.appendChild(
+      el("div", "ficha-larga-section-title", { text: "DATOS ADICIONALES DEL ARTISTA" })
+    );
+    // En el catálogo grande no siempre existe esta información.
+    // Usamos `observaciones` si viene del catálogo chico; si no, mostramos "No disponible".
+    appendDl(card, [["Tipo de vinculación", obra.observaciones || "No disponible"]]);
 
     main.appendChild(card);
     shell.appendChild(main);
@@ -195,6 +272,7 @@
     var id = getQueryId();
     var jsonUrl =
       mount.getAttribute("data-ficha-json") || "data/obras.json";
+    var extraUrl = mount.getAttribute("data-ficha-extra-json") || "";
 
     if (!id) {
       mount.appendChild(
@@ -218,14 +296,28 @@
       el("div", "ficha-larga-cargando", { text: "Cargando ficha…" })
     );
 
-    fetch(jsonUrl, { credentials: "same-origin" })
-      .then(function (r) {
+    Promise.all([
+      fetch(jsonUrl, { credentials: "same-origin" }).then(function (r) {
         if (!r.ok) throw new Error("HTTP " + r.status);
         return r.json();
-      })
-      .then(function (data) {
+      }),
+      extraUrl
+        ? fetch(extraUrl, { credentials: "same-origin" })
+            .then(function (r2) {
+              if (!r2.ok) throw new Error("HTTP " + r2.status);
+              return r2.json();
+            })
+            .catch(function () {
+              return null;
+            })
+        : Promise.resolve(null),
+    ])
+      .then(function (arr) {
         mount.innerHTML = "";
-        var list = data.obras || [];
+        var data = arr[0];
+        var extraData = arr[1];
+
+        var list = safeArray(data);
         if (!list.length) {
           mount.appendChild(
             el("div", "ficha-larga-error", {
@@ -234,23 +326,24 @@
           );
           return;
         }
+
         var obra = findObra(list, id);
+        var extraObra = extraData ? findObra(safeArray(extraData), id) : null;
+        if (obra) obra = mergeObra(obra, extraObra);
+
         if (!obra) {
           mount.appendChild(
             el("div", "ficha-larga-error", {
               text:
                 "No hay datos en el catálogo para el código " +
                 id +
-                ". Comprueba que exista en data/obras.json.",
+                ". Comprueba que exista en el catálogo JSON.",
             })
           );
-          /* Migración híbrida: si esta obra aún no está en el JSON pero sí como página estática:
-          redirectToLegacyFicha(id);
-          */
           return;
         }
-        document.title =
-          obra.id + " · Colección de Grabado - Galería";
+
+        document.title = obra.id + " · Colección de Grabado - Galería";
         renderFichaLarga(mount, obra);
       })
       .catch(function (e) {
