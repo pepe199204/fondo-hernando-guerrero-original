@@ -32,8 +32,16 @@
     return {
       low: "../imagenes/baja/" + id + "lo.jpg",
       high: "../imagenes/alta/" + id + "hi.jpg",
-      backToAmp: "amp_" + id + ".html",
+      backToAmp: "amp.html?id=" + encodeURIComponent(id),
     };
+  }
+
+  function mergeMedia(id, obra) {
+    var m = defaultMedia(id);
+    if (!obra || !obra.urls) return m;
+    if (obra.urls.baja) m.low = obra.urls.baja;
+    if (obra.urls.alta) m.high = obra.urls.alta;
+    return m;
   }
 
   function findById(list, id) {
@@ -67,6 +75,23 @@
     );
     header.appendChild(el("div", "herm-header__code", { text: ctx.id }));
     card.appendChild(header);
+
+    if (ctx.subtitle || (ctx.metaRows && ctx.metaRows.length)) {
+      var metaBox = el("div", "herm-bodytext");
+      if (ctx.subtitle) {
+        var strong = document.createElement("strong");
+        strong.textContent = ctx.subtitle;
+        metaBox.appendChild(strong);
+        metaBox.appendChild(document.createElement("br"));
+      }
+      if (ctx.metaRows && ctx.metaRows.length) {
+        for (var i = 0; i < ctx.metaRows.length; i++) {
+          metaBox.appendChild(document.createTextNode(ctx.metaRows[i]));
+          metaBox.appendChild(document.createElement("br"));
+        }
+      }
+      card.appendChild(metaBox);
+    }
 
     var media = el("div", "herm-media");
     var aHigh = el("a", null, {
@@ -141,6 +166,21 @@
         var item = findById(hermData.analisis || [], id);
         var obra = findById(obrasData.obras || [], id);
 
+        var subtitle = "";
+        var metaRows = [];
+        if (obra) {
+          subtitle = (obra.titulo || "Sin título") + (obra.autor ? " · " + obra.autor : "");
+          if (obra.tecnica) metaRows.push(obra.tecnica);
+          if (obra.medidas) {
+            metaRows.push(
+              obra.medidas + (obra.unidadMedida ? " " + obra.unidadMedida : "")
+            );
+          }
+          if (obra.edicion) metaRows.push("Edición: " + obra.edicion);
+          if (obra.anioObra) metaRows.push("Año: " + obra.anioObra);
+          if (obra.tematica) metaRows.push("Temática: " + obra.tematica);
+        }
+
         var texto =
           (item && item.texto) ||
           (obra && obra.descripcionIconografica) ||
@@ -153,7 +193,9 @@
         render(root, {
           id: id,
           texto: texto,
-          media: defaultMedia(id),
+          media: mergeMedia(id, obra),
+          subtitle: subtitle,
+          metaRows: metaRows,
           note: note,
         });
       })

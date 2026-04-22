@@ -5,18 +5,6 @@
 (function () {
   "use strict";
 
-  function el(tag, cls, attrs) {
-    var node = document.createElement(tag);
-    if (cls) node.className = cls;
-    if (attrs) {
-      Object.keys(attrs).forEach(function (k) {
-        if (k === "text") node.textContent = attrs[k];
-        else node.setAttribute(k, attrs[k]);
-      });
-    }
-    return node;
-  }
-
   function getQueryId() {
     var params = new URLSearchParams(window.location.search);
     return (params.get("id") || "").trim();
@@ -35,6 +23,22 @@
     };
   }
 
+  function mergeMedia(id, obra) {
+    var m = media(id);
+    if (!obra) return m;
+
+    // Catálogo "nuevo" (galeria/data/obras.json)
+    if (obra.urls) {
+      if (obra.urls.baja) m.low = obra.urls.baja;
+      if (obra.urls.alta) m.high = obra.urls.alta;
+    }
+
+    // Catálogo grande (colecciondegrabado/data/gallery/obras.json)
+    if (obra.imagenBaja) m.low = obra.imagenBaja;
+    if (obra.imagenAlta) m.high = obra.imagenAlta;
+    return m;
+  }
+
   function fetchJson(url) {
     return fetch(url, { credentials: "same-origin" }).then(function (r) {
       if (!r.ok) throw new Error("HTTP " + r.status);
@@ -49,54 +53,103 @@
     return null;
   }
 
-  function render(root, ctx) {
-    root.innerHTML = "";
-    var shell = el("div", "amp-shell");
+  function esc(s) {
+    return String(s == null ? "" : s)
+      .replace(/&/g, "&amp;")
+      .replace(/</g, "&lt;")
+      .replace(/>/g, "&gt;")
+      .replace(/"/g, "&quot;");
+  }
 
+  function render(root, ctx) {
     if (ctx.error) {
-      shell.appendChild(el("div", "amp-error", { text: ctx.error }));
-      root.appendChild(shell);
+      root.innerHTML =
+        '<div style="width:800px;margin:20px auto;color:#fff;font-family:Verdana, Arial, Helvetica, sans-serif;font-size:12px;">' +
+        esc(ctx.error) +
+        "</div>";
       return;
     }
 
-    var card = el("div", "amp-card");
+    root.innerHTML =
+      '<table class="amp-outer" border="0" align="center" cellpadding="0" cellspacing="0" bgcolor="#F4F5FD">' +
+      '<tr>' +
+      '<td width="800" height="400" align="center" valign="middle" bgcolor="F4F5FD" class="Estilo3">' +
+      '<table class="amp-media" border="0" cellpadding="0" cellspacing="0" bordercolor="#CCCCCC" bgcolor="#F4F5FD">' +
+      "<tr>" +
+      '<td align="center" valign="middle" bgcolor="#F4F5FD">' +
+      '<img class="amp-img" src="' +
+      esc(ctx.media.low) +
+      '" name="imgA" border="0" id="imgA" />' +
+      "</td>" +
+      "</tr>" +
+      "</table>" +
+      "</td>" +
+      "</tr>" +
+      '<tr>' +
+      '<td height="100" align="center" valign="middle" bgcolor="#000033">' +
+      '<table width="95%" border="0" cellpadding="0" cellspacing="0">' +
+      '<tr align="left" valign="middle" class="Estilo2">' +
+      '<td height="15" colspan="2" class="Estilo2"><strong>' +
+      esc(ctx.title) +
+      "</strong></td>" +
+      "</tr>" +
+      '<tr><td height="15" colspan="2" align="right" valign="middle"><div align="left"><span class="Estilo2">' +
+      esc(ctx.tecnica) +
+      "</span></div></td></tr>" +
+      '<tr><td width="29%" height="15" align="right" valign="middle"><div align="left"><span class="Estilo2">' +
+      esc(ctx.medidas) +
+      '</span></div></td><td width="70%" height="15" align="right" valign="middle"><div align="left" class="Estilo2"><span class="Estilo6">Edici&oacute;n </span>' +
+      esc(ctx.edicion) +
+      "</div></td></tr>" +
+      '<tr><td height="7" colspan="2" align="right" valign="middle"><div align="left" class="Estilo2"><span class="Estilo6">A&ntilde;o</span> ' +
+      esc(ctx.anio) +
+      "</div></td></tr>" +
+      '<tr><td height="7" colspan="2" align="right" valign="middle"><div align="left" class="Estilo2"><span class="Estilo6">Tem&aacute;tica</span> ' +
+      esc(ctx.tematica) +
+      "</div></td></tr>" +
+      '<tr><td height="8" colspan="2" align="right" valign="middle"><hr /></td></tr>' +
+      "</table>" +
+      '<table width="95%" border="0" cellspacing="0" cellpadding="0">' +
+      "<tr>" +
+      '<td width="68%" height="15">&nbsp;</td>' +
+      '<td width="8%" align="center" valign="middle"><span class="Estilo3"><a href="' +
+      esc(ctx.media.high) +
+      '" target="_blank"><img src="images/obra_amp.gif" alt="Ampliar imagen" width="22" height="16" border="0" /></a></span></td>' +
+      '<td width="8%" height="15" align="center" valign="middle"><span class="Estilo2">' +
+      '<a href="' +
+      esc(ctx.media.herm) +
+      '" target="_self"><img src="images/analisis.gif" alt="An&aacute;lisis previo" width="22" height="16" border="0" /></a>' +
+      "</span></td>" +
+      "</tr>" +
+      "</table>" +
+      "</td>" +
+      "</tr>" +
+      "</table>";
 
-    var m = el("div", "amp-media");
-    var aHigh = el("a", null, {
-      href: ctx.media.high,
-      target: "_blank",
-      title: "Abrir imagen en alta",
-    });
-    aHigh.appendChild(
-      el("img", null, {
-        src: ctx.media.low,
-        alt: "Imagen de la obra (baja)",
-      })
-    );
-    m.appendChild(aHigh);
-    card.appendChild(m);
+    // Evita que imágenes pequeñas se "estiren" demasiado: no upscale, solo downscale si no caben.
+    var img = document.getElementById("imgA");
+    if (img) {
+      var fitOnce = function () {
+        var box = img.parentNode;
+        if (!box || !img.naturalWidth || !img.naturalHeight) return;
+        var bw = box.clientWidth || 0;
+        var bh = box.clientHeight || 0;
+        if (!bw || !bh) return;
 
-    var meta = el("div", "amp-meta");
-    meta.appendChild(el("div", "amp-meta__title", { text: ctx.title }));
-    if (ctx.rows && ctx.rows.length) {
-      for (var i = 0; i < ctx.rows.length; i++) {
-        meta.appendChild(el("div", "amp-meta__row", { text: ctx.rows[i] }));
-      }
+        var scale = Math.min(bw / img.naturalWidth, bh / img.naturalHeight, 1);
+        img.style.width = Math.round(img.naturalWidth * scale) + "px";
+        img.style.height = Math.round(img.naturalHeight * scale) + "px";
+      };
+
+      img.addEventListener("load", function () {
+        // espera un frame por si el layout aún no midió bien
+        window.requestAnimationFrame(fitOnce);
+      });
+      window.addEventListener("resize", function () {
+        window.requestAnimationFrame(fitOnce);
+      });
+      if (img.complete) window.requestAnimationFrame(fitOnce);
     }
-    card.appendChild(meta);
-
-    var actions = el("div", "amp-actions");
-    actions.appendChild(
-      el("a", null, { href: ctx.media.high, target: "_blank", text: "Alta" })
-    );
-    actions.appendChild(el("a", null, { href: ctx.media.herm, text: "HERM" }));
-    actions.appendChild(
-      el("a", null, { href: ctx.media.ficha, text: "Ficha" })
-    );
-    card.appendChild(actions);
-
-    shell.appendChild(card);
-    root.appendChild(shell);
   }
 
   function main() {
@@ -117,41 +170,50 @@
       return;
     }
 
-    root.innerHTML = "";
-    root.appendChild(el("div", "amp-loading", { text: "Cargando…" }));
+    root.innerHTML =
+      '<div style="width:800px;margin:20px auto;color:#fff;font-family:Verdana, Arial, Helvetica, sans-serif;font-size:12px;">Cargando...</div>';
 
     fetchJson(obrasUrl)
       .then(function (data) {
-        var obra = findById((data && data.obras) || [], id);
-        var title;
-        var rows = [];
+        var list = Array.isArray(data)
+          ? data
+          : (data && data.obras) || [];
+        var obra = findById(list, id);
 
+        var titulo = obra && obra.titulo ? obra.titulo : "Sin t\u00edtulo";
+        var autor = obra && obra.autor ? obra.autor : "";
+        var tecnica = obra && obra.tecnica ? obra.tecnica : "";
+        var medidas = "";
         if (obra) {
-          title = (obra.titulo || "Sin título") + (obra.autor ? " · " + obra.autor : "");
-          if (obra.tecnica) rows.push(obra.tecnica);
-          if (obra.medidas) {
-            rows.push(
-              obra.medidas + (obra.unidadMedida ? " " + obra.unidadMedida : "")
-            );
-          }
-          if (obra.edicion) rows.push("Edición: " + obra.edicion);
-          if (obra.anioObra) rows.push("Año: " + obra.anioObra);
-          if (obra.tematica) rows.push("Temática: " + obra.tematica);
-        } else {
-          title = id;
-          rows.push("Información no disponible en el catálogo.");
+          medidas = obra.medidas || obra.dimensiones || "";
         }
+        var edicion = obra && obra.edicion ? obra.edicion : "";
+        var anio =
+          (obra && (obra.anioObra || obra.ano)) ? (obra.anioObra || obra.ano) : "";
+        var tematica = obra && obra.tematica ? obra.tematica : "No disponible";
 
-        document.title = id + " · Ampliación";
-        render(root, { media: media(id), title: title, rows: rows });
+        document.title = "Galer\u00eda - Colecci\u00f3n de Grabado";
+        render(root, {
+          media: mergeMedia(id, obra),
+          title: (titulo || "Sin t\u00edtulo") + (autor ? ", " + autor : ""),
+          tecnica: tecnica,
+          medidas: medidas,
+          edicion: edicion,
+          anio: anio,
+          tematica: tematica,
+        });
       })
       .catch(function () {
         // Si el catálogo aún no está listo, igual mostramos la ampliación por convención de rutas.
-        document.title = id + " · Ampliación";
+        document.title = "Galer\u00eda - Colecci\u00f3n de Grabado";
         render(root, {
           media: media(id),
           title: id,
-          rows: ["Catálogo no disponible; mostrando imagen por convención de rutas."],
+          tecnica: "",
+          medidas: "",
+          edicion: "",
+          anio: "",
+          tematica: "No disponible",
         });
       });
   }
