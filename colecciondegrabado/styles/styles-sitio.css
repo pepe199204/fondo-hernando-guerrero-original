@@ -1,0 +1,443 @@
+/* ============================================================
+   styles-sitio.css
+   Colección de Grabado – Facultad de Artes, Universidad de Antioquia
+   Distribución moderna 3 columnas Full Width
+   ============================================================ */
+ 
+   *, *::before, *::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  html, body {
+    height: 100%;
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+    font-size: 13px;
+    background-color: #c8cfd8;
+    color: #333;
+    overflow: hidden;
+  }
+  
+  /* ============================================================
+     WRAPPER GLOBAL – 3 columnas Flexbox, 100vw × 100vh
+     ============================================================ */
+  #wrapper {
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+  }
+  
+  /* ============================================================
+     COLUMNA 1 – SIDEBAR IZQUIERDO (150px fijo)
+     ============================================================ */
+  #sidebar {
+    width: 150px;
+    min-width: 150px;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    flex-shrink: 0;
+  }
+  
+  /* --- Logo --- */
+  #sidebar-logo {
+    background-color: #0d2d52;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 14px 10px;
+    height: 110px;
+    min-height: 110px;
+    flex-shrink: 0;
+  }
+  
+  #sidebar-logo img {
+    width: 100%;
+    height: 82px;
+    object-fit: contain;
+    display: block;
+  }
+  
+  #sidebar-logo .logo-fallback {
+    width: 100%;
+    height: 82px;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    color: #7ab8e0;
+    font-size: 10px;
+    text-align: center;
+    letter-spacing: 0.5px;
+    line-height: 1.5;
+  }
+  
+  /* --- Menú vertical --- */
+  #sidebar-nav {
+    flex: 1;
+    background: linear-gradient(180deg, #1e3c5e 0%, #2a5080 60%, #1e3c5e 100%);
+    overflow-y: auto;
+  }
+  
+  #sidebar-nav::-webkit-scrollbar { width: 4px; }
+  #sidebar-nav::-webkit-scrollbar-track { background: #1e3c5e; }
+  #sidebar-nav::-webkit-scrollbar-thumb { background: #3a6090; }
+  
+  #sidebar-nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  #sidebar-nav ul li {
+    border-bottom: 1px solid #3a6090;
+    position: relative;
+  }
+  
+  #sidebar-nav ul li > a {
+    display: block;
+    color: #c8dff2;
+    text-decoration: none;
+    font-size: 11.5px;
+    padding: 10px 12px;
+    transition: background 0.15s ease, color 0.15s ease;
+  }
+  
+  #sidebar-nav ul li > a:hover,
+  #sidebar-nav ul li > a.active {
+    background-color: #2a6090;
+    color: #ffffff;
+  }
+  
+  /* Caret indicador de submenú */
+  #sidebar-nav .caret {
+    float: right;
+    font-size: 9px;
+    opacity: 0.65;
+    margin-top: 1px;
+  }
+  
+  /* --- Submenú desplegable (CSS puro) --- */
+  #sidebar-nav .submenu {
+    background-color: #0f2a45;
+    display: none;
+  }
+  
+  #sidebar-nav .has-submenu:hover .submenu,
+  #sidebar-nav .has-submenu:focus-within .submenu {
+    display: block;
+  }
+  
+  #sidebar-nav .submenu ul li {
+    border-bottom: 1px solid #1a3a58;
+  }
+  
+  #sidebar-nav .submenu ul li a {
+    font-size: 10.5px;
+    padding: 6px 20px;
+    color: #a8c8e8;
+  }
+  
+  #sidebar-nav .submenu ul li a:hover {
+    background-color: #1a4068;
+    color: #ffffff;
+  }
+  
+  #sidebar-footer {
+    background-color: #0d2d52;
+    color: #506880;
+    
+  }
+  
+  /* ============================================================
+     COLUMNA 2 – CONTENIDO CENTRAL (flexible)
+     ============================================================ */
+  #main-col {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    overflow: hidden;
+    min-width: 0;
+  }
+  
+  /* --- Header / Barra de navegación horizontal --- */
+  #top-nav {
+    background: linear-gradient(180deg, #1a4a7c 0%, #2563a8 40%, #3a7bbf 100%);
+    padding: 0 22px;
+    display: flex;
+    align-items: center;
+    height: 110px;
+    min-height: 110px;
+    position: relative;
+    flex-shrink: 0;
+  }
+  
+  
+  #top-nav nav {
+    display: flex;
+    align-items: center;
+    gap: 2px;
+    flex-wrap: wrap;
+  }
+  
+  #top-nav nav a {
+    color: #e8f2fa;
+    text-decoration: none;
+    font-size: 12px;
+    padding: 4px 10px;
+    border: 1px solid transparent;
+    transition: all 0.15s ease;
+  }
+  
+  #top-nav nav a:hover,
+  #top-nav nav a.active {
+    border-color: #7ab8e0;
+    background-color: rgba(122, 184, 224, 0.15);
+    color: #ffffff;
+  }
+  
+  #top-nav nav .sep {
+    color: #7ab8e0;
+    font-size: 12px;
+    padding: 0 2px;
+  }
+  
+
+  
+  /* --- Zona de contenido (texto + eventual panel interno) --- */
+  #content-wrapper {
+    flex: 1;
+    display: flex;
+    overflow: hidden;
+    background-color: #f0f2f5;
+  }
+  
+  /* Panel de texto principal */
+  #main-content {
+    flex: 1;
+    padding: 18px 22px;
+    background-color: #f8f9fb;
+    overflow-y: auto;
+    min-width: 0;
+  }
+  
+  #main-content::-webkit-scrollbar { width: 8px; }
+  #main-content::-webkit-scrollbar-track { background: #dce0e8; }
+  #main-content::-webkit-scrollbar-thumb { background: #8aabcc; border-radius: 2px; }
+  
+  /* Cabecera de sección (título + enlace de ruta) */
+  #content-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    margin-bottom: 14px;
+    padding-bottom: 7px;
+    border-bottom: 1px solid #c0c8d8;
+  }
+  
+  #content-header h3 {
+    font-size: 15px;
+    color: #d4782a;
+    font-weight: bold;
+    font-family: Georgia, 'Times New Roman', serif;
+  }
+  
+  #content-header .section-link {
+    font-size: 12px;
+    font-weight: bold;
+    color: #2563a8;
+    text-decoration: none;
+    white-space: nowrap;
+  }
+  
+  #content-header .section-link:hover {
+    text-decoration: underline;
+  }
+  
+  /* Párrafos del contenido */
+  #main-content p {
+    font-size: 12.5px;
+    line-height: 1.7;
+    color: #333;
+    margin-bottom: 11px;
+  }
+  
+  #main-footer {
+    background: linear-gradient(180deg, #0d2d52 0%, #1a4a7c 100%);
+    color: #c0d8f0;
+  }
+  
+  /* ============================================================
+     COLUMNA 3 – PANEL DERECHO (220px fijo)
+     ============================================================ */
+  #right-col {
+    width: 220px;
+    min-width: 220px;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    flex-shrink: 0;
+  }
+  
+  /* --- Título colección (misma altura que el logo: 110px) --- */
+  #right-title {
+    background-color: #0d2d52;
+    padding: 12px 16px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: center;
+    height: 110px;
+    min-height: 110px;
+    flex-shrink: 0;
+  }
+  
+  /* Franja decorativa superior de la col. derecha */
+  #right-title::before {
+    content: '';
+    position: absolute;
+    /* hereda posición relativa del padre si se necesita; usamos padding arriba */
+  }
+  
+  #right-title h1 {
+    font-size: 14px;
+    font-weight: bold;
+    color: #ffffff;
+    font-family: Georgia, 'Times New Roman', serif;
+    letter-spacing: 0.4px;
+    line-height: 1.25;
+    text-align: right;
+  }
+  
+  #right-title h2 {
+    font-size: 11px;
+    font-weight: normal;
+    color: #c0d8f0;
+    margin-top: 5px;
+    text-align: right;
+    font-style: italic;
+  }
+  
+  /* --- Panel de imagen / info --- */
+  #right-panel {
+    flex: 1;
+    background-color: #eaecf0;
+    padding: 12px 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+    overflow-y: auto;
+  }
+  
+  #right-panel::-webkit-scrollbar { width: 4px; }
+  #right-panel::-webkit-scrollbar-track { background: #dce0e8; }
+  #right-panel::-webkit-scrollbar-thumb { background: #8aabcc; }
+  
+  #right-panel img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border: 1px solid #b0b8c8;
+  }
+  
+  /* Placeholder cuando no hay imagen */
+  #right-panel .img-placeholder {
+    width: 100%;
+    aspect-ratio: 3 / 4;
+    background-color: #c8d4e0;
+    border: 1px solid #a8b8c8;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #6080a0;
+    font-size: 10px;
+    text-align: center;
+    padding: 8px;
+    line-height: 1.5;
+  }
+  
+  /* Texto informativo del panel derecho */
+  #right-panel .info-text {
+    font-size: 10.5px;
+    color: #607090;
+    text-align: center;
+    line-height: 1.55;
+    padding: 0 4px;
+  }
+  
+  #right-footer {
+    background: linear-gradient(180deg, #0d2d52 0%, #1a4a7c 100%);
+  }
+  
+  /* ============================================================
+     ESTILOS ESPECÍFICOS PARA creditos.html
+     (se aplican dentro de #main-content cuando la página los usa)
+     ============================================================ */
+  #main-content h4 {
+    font-size: 12.5px;
+    color: #2563a8;
+    font-weight: bold;
+    margin: 16px 0 4px 0;
+  }
+  
+  #main-content .credito-nombre {
+    font-weight: bold;
+    color: #222;
+    margin-bottom: 0;
+    font-size: 12.5px;
+  }
+  
+  #main-content .credito-email {
+    color: #2563a8;
+    font-size: 12px;
+    margin-bottom: 0;
+  }
+  
+  #main-content .credito-rol {
+    color: #555;
+    font-style: italic;
+    font-size: 12px;
+    margin-bottom: 0;
+  }
+  
+  #main-content .section-title {
+    font-size: 13px;
+    font-weight: bold;
+    color: #0d2d52;
+    border-bottom: 1px solid #c0c8d8;
+    padding-bottom: 5px;
+    margin: 20px 0 8px 0;
+    line-height: 1.6;
+  }
+  
+  /* ============================================================
+     UTILIDADES GLOBALES
+     ============================================================ */
+  .highlight-link {
+    color: #2563a8;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  .highlight-link:hover {
+    text-decoration: underline;
+  }
+
+#sidebar-footer,
+#main-footer,
+#right-footer {
+  height: 34px;
+  min-height: 34px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.creditos p,
+.creditos h4,
+.creditos .section-title {
+  text-align: center;
+}
