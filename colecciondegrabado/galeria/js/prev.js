@@ -5,6 +5,39 @@
 (function () {
   "use strict";
 
+  function asArrayObras(data) {
+    if (!data) return [];
+    // soporta:
+    // - { obras: [...] } (prev-10.json)
+    // - [ ... ] (colecciondegrabado/data/gallery/obras.json)
+    if (Array.isArray(data)) return data;
+    if (Array.isArray(data.obras)) return data.obras;
+    return [];
+  }
+
+  function pickMedidas(obra) {
+    if (!obra) return "";
+    return obra.medidas || obra.dimensiones || "";
+  }
+
+  function normStr(s) {
+    return (s == null ? "" : String(s)).trim();
+  }
+
+  function cmpAlpha(a, b) {
+    var aa = normStr(a && a.autor);
+    var ba = normStr(b && b.autor);
+    var t1 = aa.localeCompare(ba, "es", { sensitivity: "base" });
+    if (t1) return t1;
+    var at = normStr(a && a.titulo);
+    var bt = normStr(b && b.titulo);
+    var t2 = at.localeCompare(bt, "es", { sensitivity: "base" });
+    if (t2) return t2;
+    return normStr(a && a.id).localeCompare(normStr(b && b.id), "es", {
+      sensitivity: "base",
+    });
+  }
+
   function el(tag, cls, attrs) {
     var node = document.createElement(tag);
     if (cls) node.className = cls;
@@ -24,6 +57,14 @@
     });
   }
 
+  function esc(s) {
+    return String(s == null ? "" : s)
+      .replace(/&/g, "&amp;")
+      .replace(/</g, "&lt;")
+      .replace(/>/g, "&gt;")
+      .replace(/"/g, "&quot;");
+  }
+
   function render(root, state) {
     root.innerHTML = "";
     var shell = el("div", "prev-shell");
@@ -34,7 +75,8 @@
       return;
     }
 
-    var galeria = el("div", "prev-galeria", { id: "divGaleria" });
+    // No repetir id="divGaleria" dentro del propio contenedor
+    var galeria = el("div", "prev-galeria");
     for (var i = 0; i < state.obras.length; i++) {
       var obra = state.obras[i] || {};
       var id = obra.id;
@@ -57,14 +99,25 @@
         href: "amp.html?id=" + encodeURIComponent(id),
         target: "_blank",
       });
-      aAmp.appendChild(
-        el("img", null, {
-          src: "../imagenes/previa/" + id + "prev.jpg",
-          alt: "Ver ampliación de imagen",
-          name: "imagen",
-          id: "imagen",
-        })
-      );
+      // Thumbnail legacy: preferimos `previa/{id}prev.jpg` (se ve como el original).
+      // Si no existe, hacemos fallback a `imagenBaja` del catálogo grande.
+      var imgPrev = el("img", null, {
+        src: "../imagenes/previa/" + id + "prev.jpg",
+        alt: "Ver ampliación de imagen",
+        name: "imagen",
+        id: "imagen",
+      });
+      // Mantener el look: la imagen no debe “romper” la tarjeta 160x130.
+      imgPrev.style.maxWidth = "150px";
+      imgPrev.style.maxHeight = "120px";
+      imgPrev.style.height = "auto";
+      imgPrev.style.width = "auto";
+      imgPrev.onerror = function () {
+        if (obra && obra.imagenBaja && imgPrev.src.indexOf("imagenes/baja/") === -1) {
+          imgPrev.src = obra.imagenBaja;
+        }
+      };
+      aAmp.appendChild(imgPrev);
       tdImg.appendChild(aAmp);
       trImg.appendChild(tdImg);
       tImg.appendChild(trImg);
@@ -88,13 +141,13 @@
         return tr;
       }
 
-      tMeta.appendChild(row(2, "<strong>" + id + "</strong>"));
-      if (obra.titulo) tMeta.appendChild(row(2, "<strong>" + obra.titulo + "</strong>"));
-      if (obra.autor) tMeta.appendChild(row(2, obra.autor));
+      tMeta.appendChild(row(2, "<strong>" + esc(id) + "</strong>"));
+      if (obra.titulo) tMeta.appendChild(row(2, "<strong>" + esc(obra.titulo) + "</strong>"));
+      if (obra.autor) tMeta.appendChild(row(2, esc(obra.autor)));
 
       var trLast = el("tr");
       var tdMed = el("td", "estiloTabla", { width: "133", height: "20" });
-      tdMed.innerHTML = (obra.medidas || "") + "<p>&nbsp;</p>";
+      tdMed.innerHTML = esc(pickMedidas(obra)) + "<p>&nbsp;</p>";
       var tdBtn = el("td", "estiloTabla", { width: "27", align: "right", valign: "top" });
       var aFicha = el("a", null, {
         href: "ficha.html?id=" + encodeURIComponent(id),
@@ -122,27 +175,37 @@
   }
 
   function main() {
-    var root = document.getElementById("divGaleria") || document.getElementById("prev-root");
+    var root =
+      document.getElementById("divGaleria") || document.getElementById("prev-root");
     if (!root) return;
 
-    var jsonUrl = root.getAttribute("data-prev-json") || "data/prev-10.json";
-    root.innerHTML = "";
-    root.appendChild(el("div", "prev-loading", { text: "Cargando…"}));
+    try {
+      var jsonUrl = root.getAttribute("data-prev-json") || "data/prev-10.json";
+      root.innerHTML = "";
+      root.appendChild(el("div", "prev-loading", { text: "Cargando…" }));
 
-    fetchJson(jsonUrl)
-      .then(function (data) {
-        var obras = (data && data.obras) || [];
-        render(root, { obras: obras });
-      })
-      .catch(function (e) {
-        render(root, {
-          error:
-            "No se pudo cargar " +
-            jsonUrl +
-            ": " +
-            (e && e.message ? e.message : String(e)),
+      fetchJson(jsonUrl)
+        .then(function (data) {
+          var obras = asArrayObras(data);
+          obras.sort(cmpAlpha);
+          render(root, { obras: obras });
+        })
+        .catch(function (e) {
+          render(root, {
+            error:
+              "No se pudo cargar " +
+              jsonUrl +
+              ": " +
+              (e && e.message ? e.message : String(e)),
+          });
         });
+    } catch (e2) {
+      render(root, {
+        error:
+          "Error inesperado al inicializar la galería: " +
+          (e2 && e2.message ? e2.message : String(e2)),
       });
+    }
   }
 
   if (document.readyState === "loading") {

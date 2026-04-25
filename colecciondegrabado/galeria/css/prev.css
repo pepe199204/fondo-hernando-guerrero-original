@@ -27,8 +27,29 @@ body.prev-body {
 /* Cada “tarjeta” se comporta como en el HTML original */
 .prev-item {
   display: inline-table;
-  width: 32%;
+  width: 16.66%;
   vertical-align: top;
+}
+
+.prev-item .estiloTabla,
+.prev-item table {
+  max-width: 160px;
+}
+
+@media (max-width: 1200px) {
+  .prev-item { width: 20%; } /* 5 columnas */
+}
+
+@media (max-width: 980px) {
+  .prev-item { width: 25%; } /* 4 columnas */
+}
+
+@media (max-width: 760px) {
+  .prev-item { width: 33.33%; } /* 3 columnas */
+}
+
+@media (max-width: 520px) {
+  .prev-item { width: 50%; } /* 2 columnas */
 }
 
 .prev-item table {

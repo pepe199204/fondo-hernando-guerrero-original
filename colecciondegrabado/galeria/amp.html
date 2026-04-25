@@ -1,18 +1,64 @@
-<!DOCTYPE html>
-<html lang="es">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Ampliación · Colección de Grabado</title>
-    <link rel="stylesheet" href="css/amp.css" />
-    <!--
-      Componente reusable (solo AMP).
-      URL: amp.html?id=AA-NNNN
-      Datos: data/obras.json (opcional) para título/autor/técnica/medidas/año/temática.
-    -->
-  </head>
-  <body class="amp-body">
-    <div id="amp-root" data-obras-json="data/obras.json"></div>
-    <script src="js/amp.js"></script>
-  </body>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<title>Galer&iacute;a - Colecci&oacute;n de Grabado</title>
+<style type="text/css">
+<!--
+body {
+	background-color: #003366;
+	margin-left: 0px;
+	margin-top: 0px;
+	margin-right: 0px;
+	margin-bottom: 0px;
+}
+.Estilo2 {
+	font-size: 16px;
+	line-height: 1.45;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	color: #FFFFFF;
+}
+.Estilo3 {color: #006699}
+.Estilo4 {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 14px;
+	color: #CCCCCC;
+}
+.Estilo6 {color: #CCCCCC}
+
+/* AMP responsive (sin cambiar look legacy) */
+#amp-root {
+	width: 100%;
+}
+table.amp-outer {
+	width: 96vw;
+	max-width: 1200px;
+	height: 92vh;
+	max-height: 900px;
+}
+table.amp-media {
+	width: 100%;
+	height: 100%;
+	background: #F4F5FD;
+}
+.amp-img {
+	max-width: 100%;
+	max-height: 100%;
+	width: auto;
+	height: auto;
+	display: block;
+}
+-->
+</style>
+<!--
+  AMP (tarjeta legacy) — componente reutilizable.
+  URL: amp.html?id=AA-NNNN
+  Datos: por defecto usa el catálogo grande: ../data/gallery/obras.json
+-->
+</head>
+
+<body>
+  <div id="amp-root" data-obras-json="../data/gallery/obras.json"></div>
+  <script src="js/amp.js?v=legacy5"></script>
+</body>
 </html>
