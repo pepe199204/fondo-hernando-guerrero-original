@@ -1,19 +1,7209 @@
 {
   "meta": {
     "schema": "prev-v1",
-    "descripcion": "Demo de previews (primeras 10). Completar con el catálogo completo después."
+    "descripcion": "Índice de obras para la cuadrícula de previsualización. Consumido por prev.js. Cada registro: { id, titulo, autor, medidas }.",
+    "total": 1200
   },
   "obras": [
-    { "id": "02-1018", "titulo": "Sin título", "autor": "(Josabad) Robert López", "medidas": "39x61/50x70" },
-    { "id": "95-0342", "titulo": "Sin título", "autor": "Adriana del Pilar Torres", "medidas": "30x44/50x70" },
-    { "id": "92-0030", "titulo": "Sin título", "autor": "Adriana María Roldán", "medidas": "24x26/25x35" },
-    { "id": "93-0109", "titulo": "Sin título", "autor": "Adriana María Roldán", "medidas": "18x30/50x70" },
-    { "id": "93-0065", "titulo": "Sin título", "autor": "Adriana María Roldán", "medidas": "22x30/35x50" },
-    { "id": "92-0046", "titulo": "Sin título", "autor": "Adriana María Roldán", "medidas": "30x46/50x70" },
-    { "id": "98-0616", "titulo": "\"Rotonda\" Portafolio de Gráfica \"Seis Serigrafías, Seis artistas\"", "autor": "Adriana María Roldán", "medidas": "24x32/35x50" },
-    { "id": "02-1015", "titulo": "Sin título", "autor": "Adriana Mesa", "medidas": "36x38/50x70" },
-    { "id": "01-0998", "titulo": "Sin título", "autor": "Adriana Montes", "medidas": "43x63/50x70" },
-    { "id": "02-1012", "titulo": "Sin título", "autor": "Adriana Ortiz", "medidas": "23x45/50x70" }
+    {
+      "id": "02-1018",
+      "titulo": "Sin título",
+      "autor": "(Josabad) Robert López",
+      "medidas": "39x61/50x70"
+    },
+    {
+      "id": "95-0342",
+      "titulo": "Sin título",
+      "autor": "Adriana del Pilar Torres",
+      "medidas": "30x44/50x70"
+    },
+    {
+      "id": "92-0030",
+      "titulo": "Sin título",
+      "autor": "Adriana María Roldán",
+      "medidas": "24x26/25x35"
+    },
+    {
+      "id": "93-0109",
+      "titulo": "Sin título",
+      "autor": "Adriana María Roldán",
+      "medidas": "18x30/50x70"
+    },
+    {
+      "id": "93-0065",
+      "titulo": "Sin título",
+      "autor": "Adriana María Roldán",
+      "medidas": "22x30/35x50"
+    },
+    {
+      "id": "92-0046",
+      "titulo": "Sin título",
+      "autor": "Adriana María Roldán",
+      "medidas": "30x46/50x70"
+    },
+    {
+      "id": "98-0616",
+      "titulo": "\"Rotonda\" Poratfolio de Gráfica \"Seis Serigrafías, Seis artistas\"",
+      "autor": "Adriana María Roldán",
+      "medidas": "24x32/35x50"
+    },
+    {
+      "id": "02-1015",
+      "titulo": "Sin título",
+      "autor": "Adriana Mesa",
+      "medidas": "36x38/50x70"
+    },
+    {
+      "id": "01-0998",
+      "titulo": "Sin título",
+      "autor": "Adriana Montes",
+      "medidas": "43x63/50x70"
+    },
+    {
+      "id": "02-1012",
+      "titulo": "Sin título",
+      "autor": "Adriana Ortiz",
+      "medidas": "23x45/50x70"
+    },
+    {
+      "id": "95-0338",
+      "titulo": "Sin título",
+      "autor": "Adriana Villegas",
+      "medidas": "15x52/50x70"
+    },
+    {
+      "id": "05-1164",
+      "titulo": "\"La infancia perdida\"",
+      "autor": "Aicardy Meneses",
+      "medidas": "22.5x22.5/35x50"
+    },
+    {
+      "id": "92-0032",
+      "titulo": "Sin título",
+      "autor": "Alavaro Ruíz",
+      "medidas": "22x22/35x50"
+    },
+    {
+      "id": "95-0301",
+      "titulo": "\"Quien me recordará\"",
+      "autor": "Albermis Taborda",
+      "medidas": "16x18/35x50"
+    },
+    {
+      "id": "03-1110",
+      "titulo": "\"Quien estuvo aqui?\"",
+      "autor": "Albermis Taborda",
+      "medidas": "11,8x26/35x50"
+    },
+    {
+      "id": "96-0424",
+      "titulo": "sin título",
+      "autor": "Albermis Taborda",
+      "medidas": "10x23/35x50"
+    },
+    {
+      "id": "95-0300",
+      "titulo": "\"Caminando, ¿quien me alcanzará?\"",
+      "autor": "Albermis Taborda",
+      "medidas": "25x28/35x50"
+    },
+    {
+      "id": "94-0142",
+      "titulo": "\"Espacio\"",
+      "autor": "Albermis Taborda",
+      "medidas": "23x28/35x50"
+    },
+    {
+      "id": "96-0448",
+      "titulo": "\"Vía\"",
+      "autor": "Albermis Taborda",
+      "medidas": "22x30/35x50"
+    },
+    {
+      "id": "96-0417",
+      "titulo": "\"Luz\"",
+      "autor": "Albermis Taborda",
+      "medidas": "27x38/35sx50"
+    },
+    {
+      "id": "01-0954",
+      "titulo": "Sin título",
+      "autor": "Alejandra Montoya",
+      "medidas": "20x35/35x50"
+    },
+    {
+      "id": "01-0979",
+      "titulo": "Sin título",
+      "autor": "Alejandra Montoya",
+      "medidas": "31x45/50x70"
+    },
+    {
+      "id": "99-0641",
+      "titulo": "Sin título",
+      "autor": "Alejandra Restrepo",
+      "medidas": "19x28/31x40"
+    },
+    {
+      "id": "99-0638",
+      "titulo": "Sin título",
+      "autor": "Alejandra Restrepo",
+      "medidas": "17x26/25x35"
+    },
+    {
+      "id": "99-0639",
+      "titulo": "Sin título",
+      "autor": "Alejandra Restrepo",
+      "medidas": "22X29/25X35"
+    },
+    {
+      "id": "99-0625",
+      "titulo": "Sin título",
+      "autor": "Alejandra Restrepo",
+      "medidas": "14x24/25x35"
+    },
+    {
+      "id": "05-1165",
+      "titulo": "Sin título (Intervención obra de Francisco Toledo)",
+      "autor": "Alejandro Descans",
+      "medidas": "22.5x26/50X70"
+    },
+    {
+      "id": "01-0993",
+      "titulo": "Sin título",
+      "autor": "Alejandro García",
+      "medidas": "19x29/50x70"
+    },
+    {
+      "id": "96-0374",
+      "titulo": "Sin título",
+      "autor": "Alejandro Henao",
+      "medidas": "38x40/50x70"
+    },
+    {
+      "id": "00-0906",
+      "titulo": "Sin título",
+      "autor": "Alejandro Jaramillo",
+      "medidas": "27x39/50x70"
+    },
+    {
+      "id": "01-0929",
+      "titulo": "Sin título",
+      "autor": "Alejandro Jaramillo",
+      "medidas": "50x70/50x70"
+    },
+    {
+      "id": "99-0723",
+      "titulo": "\"Alternativa Colombia\" Obra seleccionada convocatoria \"La Joven Estampa\" La Habana 1999",
+      "autor": "Alejandro Jaramillo",
+      "medidas": "26x43/50x70"
+    },
+    {
+      "id": "00-0905",
+      "titulo": "Sin título",
+      "autor": "Alejandro Jaramillo",
+      "medidas": "30x40/50x70"
+    },
+    {
+      "id": "99-0712",
+      "titulo": "D.I.H.",
+      "autor": "Alejandro Jaramillo",
+      "medidas": "28x44/50x70"
+    },
+    {
+      "id": "99-0730",
+      "titulo": "Sin título",
+      "autor": "Alejandro Lobo",
+      "medidas": "45x60/50x70"
+    },
+    {
+      "id": "99-0721",
+      "titulo": "\"Dómala\"",
+      "autor": "Alejandro Lobo",
+      "medidas": "22x30/35x50"
+    },
+    {
+      "id": "99-0649",
+      "titulo": "Sin título",
+      "autor": "Alejandro Montoya",
+      "medidas": "18x27/31x49"
+    },
+    {
+      "id": "97-0474",
+      "titulo": "Sin título",
+      "autor": "Alejandro Montoya",
+      "medidas": "17x20/25x35"
+    },
+    {
+      "id": "97-0481",
+      "titulo": "Sin título",
+      "autor": "Alejandro Montoya",
+      "medidas": "22x27/25x35"
+    },
+    {
+      "id": "99-0729",
+      "titulo": "Sin título",
+      "autor": "Alejandro Montoya",
+      "medidas": "20X23/35X50"
+    },
+    {
+      "id": "99-0648",
+      "titulo": "Sin título",
+      "autor": "Alejandro Montoya",
+      "medidas": "26x19/50x35"
+    },
+    {
+      "id": "99-0651",
+      "titulo": "Sin título",
+      "autor": "Alejandro Montoya",
+      "medidas": "30x21/50x30"
+    },
+    {
+      "id": "97-0514",
+      "titulo": "Sin título",
+      "autor": "Alex Preciado",
+      "medidas": "45x65/50x70"
+    },
+    {
+      "id": "03-1086",
+      "titulo": "Sin título",
+      "autor": "Alexander Hernández",
+      "medidas": "23x40/50x70"
+    },
+    {
+      "id": "00-0788",
+      "titulo": "Sin título",
+      "autor": "Alexandra Henao",
+      "medidas": "38x41/50x70"
+    },
+    {
+      "id": "04-1154",
+      "titulo": "Sin título. Portafolio \"Primera Feria de las Artes\" 2004 Unicentro - Medellín",
+      "autor": "Alexandra Tabares",
+      "medidas": "35.5x50.5/50x70"
+    },
+    {
+      "id": "91-0014",
+      "titulo": "\"Alucinación\"",
+      "autor": "Alexia Vinasco",
+      "medidas": "30x40/35x50"
+    },
+    {
+      "id": "97-0489",
+      "titulo": "Sin título",
+      "autor": "Alfonso Vieira",
+      "medidas": "25x35/35x50"
+    },
+    {
+      "id": "97-0490",
+      "titulo": "Sin título",
+      "autor": "Alfonso Vieira",
+      "medidas": "30x36/35x50"
+    },
+    {
+      "id": "97-0507",
+      "titulo": "Sin título",
+      "autor": "Alfonso Vieira",
+      "medidas": "11x30/35x50"
+    },
+    {
+      "id": "99-0709",
+      "titulo": "Sin título",
+      "autor": "Alfredo Vásquez",
+      "medidas": "22x28/50x70"
+    },
+    {
+      "id": "00-0847",
+      "titulo": "Sin título",
+      "autor": "Alonso (sin registro de apellido)",
+      "medidas": "11x13/25x35"
+    },
+    {
+      "id": "97-0477",
+      "titulo": "Sin título",
+      "autor": "Alonso José Zuluaga",
+      "medidas": "10x15/25x33"
+    },
+    {
+      "id": "02-1011",
+      "titulo": "Sin título",
+      "autor": "Alvaro Acuña",
+      "medidas": "22x44/50x70"
+    },
+    {
+      "id": "93-0075",
+      "titulo": "Sin título",
+      "autor": "Alvaro Agudelo",
+      "medidas": "32x41/35x50"
+    },
+    {
+      "id": "93-0101",
+      "titulo": "Sin título",
+      "autor": "Alvaro Agudelo",
+      "medidas": "35x54/50x71"
+    },
+    {
+      "id": "93-0072",
+      "titulo": "Sin título",
+      "autor": "Alvaro Agudelo",
+      "medidas": "15x32/35x50"
+    },
+    {
+      "id": "93-0071",
+      "titulo": "Sin título",
+      "autor": "Alvaro Agudelo",
+      "medidas": "20x26/35x50"
+    },
+    {
+      "id": "94-0132",
+      "titulo": "Sin título",
+      "autor": "Alvaro Chica",
+      "medidas": "10x31/35x51"
+    },
+    {
+      "id": "94-0227",
+      "titulo": "Sin título",
+      "autor": "Alvaro Chica",
+      "medidas": "40x44/50x69"
+    },
+    {
+      "id": "94-0114",
+      "titulo": "Sin título",
+      "autor": "Alvaro Chica",
+      "medidas": "13x30/34x50"
+    },
+    {
+      "id": "01-0999",
+      "titulo": "\"Catalina\"",
+      "autor": "Alvaro Osorio",
+      "medidas": "27x33/35x70"
+    },
+    {
+      "id": "01-1000",
+      "titulo": "\"Catalina II\"",
+      "autor": "Alvaro Osorio",
+      "medidas": "27x33/35x50"
+    },
+    {
+      "id": "02-1009",
+      "titulo": "\"Licuadora\"",
+      "autor": "Alvaro Osorio",
+      "medidas": "23x32/35x50"
+    },
+    {
+      "id": "93-0097",
+      "titulo": "Sin título",
+      "autor": "Alvaro Ruíz",
+      "medidas": "38x54/50x70"
+    },
+    {
+      "id": "93-0103",
+      "titulo": "Sin título",
+      "autor": "Alvaro Ruíz",
+      "medidas": "30x47/50x70"
+    },
+    {
+      "id": "92-0024",
+      "titulo": "Sin título (dos obras)",
+      "autor": "Alvaro Ruíz",
+      "medidas": "22x22/35x50"
+    },
+    {
+      "id": "00-0824",
+      "titulo": "Sin título (Serie de cuatro obras) Segundo premio IV Bienal de Gráfica Artística Año 2000 \"Facultad de Artes 20 años\" (convocatoria de nivel naciona",
+      "autor": "Ana Cristina Zuleta",
+      "medidas": "8x19/70x70 cm. c/u."
+    },
+    {
+      "id": "93-0077",
+      "titulo": "Sin título",
+      "autor": "Ana Londoño",
+      "medidas": "27x31/35x50"
+    },
+    {
+      "id": "00-0745",
+      "titulo": "Sin título",
+      "autor": "Ana Lucía Álvarez",
+      "medidas": "22x27/35x50"
+    },
+    {
+      "id": "00-0761",
+      "titulo": "Sin título",
+      "autor": "Ana Lucía Alvarez",
+      "medidas": "37x46/50x70"
+    },
+    {
+      "id": "00-0758",
+      "titulo": "Sin título",
+      "autor": "Ana Lucía Álvarez",
+      "medidas": "34x40/50x70"
+    },
+    {
+      "id": "00-0756",
+      "titulo": "Sin título",
+      "autor": "Ana Lucía Alvarez",
+      "medidas": "24X39/50X70"
+    },
+    {
+      "id": "95-0307",
+      "titulo": "Sin título",
+      "autor": "Ana María Betancourt",
+      "medidas": "31x32/35x50"
+    },
+    {
+      "id": "02-1049",
+      "titulo": "Sin título",
+      "autor": "Ana María Cardona",
+      "medidas": "22x28/35x50"
+    },
+    {
+      "id": "00-0740",
+      "titulo": "Sin título",
+      "autor": "Ana María Castrillón",
+      "medidas": "18x27/35x50"
+    },
+    {
+      "id": "00-0748",
+      "titulo": "Sin título",
+      "autor": "Ana María Castrillón",
+      "medidas": "29x32/50x70"
+    },
+    {
+      "id": "03-1101",
+      "titulo": "Sin título",
+      "autor": "Ana María Corrales",
+      "medidas": "21x22/35x50"
+    },
+    {
+      "id": "98-0568",
+      "titulo": "Sin título",
+      "autor": "Ana María Corrales",
+      "medidas": "20X25/35X50"
+    },
+    {
+      "id": "98-0591",
+      "titulo": "Sin título",
+      "autor": "Ana María Corrales.",
+      "medidas": "29x39/50x70"
+    },
+    {
+      "id": "99-0678",
+      "titulo": "Sin título",
+      "autor": "Andrea Ortíz",
+      "medidas": "24x27/50x70"
+    },
+    {
+      "id": "00-0896",
+      "titulo": "\"La mujer ha caído\"",
+      "autor": "Andrea Ortíz",
+      "medidas": "21x32/35x50"
+    },
+    {
+      "id": "99-0697",
+      "titulo": "\"Espíritu de los Manglares\"",
+      "autor": "Andrea Ortíz",
+      "medidas": "25x28/50x70"
+    },
+    {
+      "id": "99-0698",
+      "titulo": "Sin título",
+      "autor": "Andrea Ortíz",
+      "medidas": "25x44/50x70"
+    },
+    {
+      "id": "99-0732",
+      "titulo": "Sin título (Retrato intervenido de Jaime Garzón)",
+      "autor": "Andrés Adolfo González",
+      "medidas": "22x28/50x70"
+    },
+    {
+      "id": "99-0733",
+      "titulo": "Sin título",
+      "autor": "Andrés Adolfo González",
+      "medidas": "45x55/50x70"
+    },
+    {
+      "id": "99-0734",
+      "titulo": "Sin título",
+      "autor": "Andrés Adolfo González",
+      "medidas": "40x50/50x70"
+    },
+    {
+      "id": "95-0317",
+      "titulo": "Sin título",
+      "autor": "Andrés Castaño",
+      "medidas": "23x30/35x50"
+    },
+    {
+      "id": "95-0340",
+      "titulo": "Sin título",
+      "autor": "Andrés Castaño",
+      "medidas": "23x46/50x70"
+    },
+    {
+      "id": "97-0534",
+      "titulo": "Sin título",
+      "autor": "Andrés Escarpeta",
+      "medidas": "40x60/50x70"
+    },
+    {
+      "id": "97-0535",
+      "titulo": "\"El viaje rojo\"",
+      "autor": "Andrés Escarpeta",
+      "medidas": "30x30/50x70"
+    },
+    {
+      "id": "97-0496",
+      "titulo": "\"Agustina el fin del tiempo\"",
+      "autor": "Andrés Escarpeta",
+      "medidas": "30x70/60x100"
+    },
+    {
+      "id": "97-0494",
+      "titulo": "Sin título",
+      "autor": "Andrés Escarpeta",
+      "medidas": "15x29/35x50"
+    },
+    {
+      "id": "05-1180",
+      "titulo": "\"Anónimo\"",
+      "autor": "Andrés Felipe Martínez",
+      "medidas": "40.5x50/50x70"
+    },
+    {
+      "id": "97-0526",
+      "titulo": "Sin título",
+      "autor": "Andrés Felipe Molina",
+      "medidas": "35x40/50x70"
+    },
+    {
+      "id": "97-0537",
+      "titulo": "Sin título",
+      "autor": "Andrés Felipe Molina",
+      "medidas": "36x50/50x70"
+    },
+    {
+      "id": "00-0770",
+      "titulo": "Sin título",
+      "autor": "Andres Felipe Tobón",
+      "medidas": "21x28/35x50"
+    },
+    {
+      "id": "00-0913",
+      "titulo": "Sin título",
+      "autor": "Andrés Felipe Tobón",
+      "medidas": "9X16/17X25"
+    },
+    {
+      "id": "00-0810",
+      "titulo": "\"Autorretratos\"",
+      "autor": "Andrés Felipe Tobón",
+      "medidas": "25x28/50x70"
+    },
+    {
+      "id": "00-0769",
+      "titulo": "\"Caras vemos\"",
+      "autor": "Andrés Felipe Tobón",
+      "medidas": "22x25/35x50"
+    },
+    {
+      "id": "95-0334",
+      "titulo": "\"Bajando a coger carro\"",
+      "autor": "Andrés González",
+      "medidas": "32x33/50x70"
+    },
+    {
+      "id": "97-0498",
+      "titulo": "Sin título",
+      "autor": "Andrés Malagón",
+      "medidas": "51x71/70x100"
+    },
+    {
+      "id": "02-1034",
+      "titulo": "\"Tarot\"",
+      "autor": "Angel María Ortíz",
+      "medidas": "10x15"
+    },
+    {
+      "id": "94-0247",
+      "titulo": "Sin título",
+      "autor": "Angela Hernández",
+      "medidas": "35x55/50x70"
+    },
+    {
+      "id": "02-1030",
+      "titulo": "Sin título",
+      "autor": "Angela María Rojo",
+      "medidas": "16.5x17,5/23x31.5"
+    },
+    {
+      "id": "02-1031",
+      "titulo": "Sin título",
+      "autor": "Angela María Rojo",
+      "medidas": "16.5x17.5/23x31.5"
+    },
+    {
+      "id": "03-1060",
+      "titulo": "Sin título",
+      "autor": "Angela Matthei",
+      "medidas": "30x40/35x50"
+    },
+    {
+      "id": "03-1120",
+      "titulo": "Sin título",
+      "autor": "Angela Rodriguez",
+      "medidas": "12.5x31/35x50"
+    },
+    {
+      "id": "03-1136",
+      "titulo": "\"Puente\"",
+      "autor": "Angela Rodríguez",
+      "medidas": "13x36/50x70"
+    },
+    {
+      "id": "93-0092",
+      "titulo": "Sin título",
+      "autor": "Aníbal Alexis Duque",
+      "medidas": "29x53/50x70"
+    },
+    {
+      "id": "93-0068",
+      "titulo": "Sin título",
+      "autor": "Aníbal Alexis Duque",
+      "medidas": "32x36/35x50"
+    },
+    {
+      "id": "93-0069",
+      "titulo": "Sin título (dos obras)",
+      "autor": "Aníbal Alexis Duque",
+      "medidas": "23x51/35x50"
+    },
+    {
+      "id": "94-0137",
+      "titulo": "\"Bolivar punk\"",
+      "autor": "Aníbal Alexis Duque",
+      "medidas": "24x35/35x50"
+    },
+    {
+      "id": "03-1078",
+      "titulo": "Sin título",
+      "autor": "Anita (apellido sin registrar)",
+      "medidas": "31x52.5/50x70"
+    },
+    {
+      "id": "95-0332",
+      "titulo": "\"Nocturno\" Obra realizada en el Taller Experimental de Gráfica. La Habana, 1995. Intercambio",
+      "autor": "Antonio Ibarra",
+      "medidas": "38x50/50x70"
+    },
+    {
+      "id": "94-0134",
+      "titulo": "Sin título",
+      "autor": "Antonio Ibarra",
+      "medidas": "22x30/35x50"
+    },
+    {
+      "id": "94-0169",
+      "titulo": "Sin título",
+      "autor": "Antonio José Restrepo",
+      "medidas": "15x19/35x50"
+    },
+    {
+      "id": "93-0074",
+      "titulo": "Sin título",
+      "autor": "Antonio José Restrepo",
+      "medidas": "24x29/35x50"
+    },
+    {
+      "id": "96-0400",
+      "titulo": "\"La corbata de Nerval\"",
+      "autor": "Arles Angel Castaño",
+      "medidas": "25x43/50x70"
+    },
+    {
+      "id": "94-0120",
+      "titulo": "Sin título (dos obras)",
+      "autor": "Arles Angel Castro",
+      "medidas": "23x33/35x50"
+    },
+    {
+      "id": "94-0124",
+      "titulo": "Sin título",
+      "autor": "Arles Angel Castro",
+      "medidas": "26x27/35x50"
+    },
+    {
+      "id": "94-0230",
+      "titulo": "Sin título",
+      "autor": "Arles Angel Castro",
+      "medidas": "41x49/49x70"
+    },
+    {
+      "id": "03-1087",
+      "titulo": "Sin título",
+      "autor": "Arles Cano",
+      "medidas": "34x49/50x70"
+    },
+    {
+      "id": "03-1085",
+      "titulo": "Sin título",
+      "autor": "Arles Cano",
+      "medidas": "32x42/50x70"
+    },
+    {
+      "id": "96-0449",
+      "titulo": "Sin título",
+      "autor": "Ayda Yanet Restrepo",
+      "medidas": "48x68/70x100"
+    },
+    {
+      "id": "98-0617",
+      "titulo": "\"En-cubiertos VI\" Portafolio de Gráfica \"Seis Serigrafías, Seis artistas\"",
+      "autor": "Bairo Martínez",
+      "medidas": "24X32/35X50"
+    },
+    {
+      "id": "00-0808",
+      "titulo": "\"Juego de niños\"",
+      "autor": "Beatríz Montoya",
+      "medidas": "45x55/50x70"
+    },
+    {
+      "id": "00-0804",
+      "titulo": "Sin título",
+      "autor": "Beatriz Elena Osorno",
+      "medidas": "45x60/50x70"
+    },
+    {
+      "id": "00-0800",
+      "titulo": "\"Espejo\"",
+      "autor": "Beatriz Eugenia Montoya",
+      "medidas": "24x39/50x70"
+    },
+    {
+      "id": "95-0280",
+      "titulo": "Sin título",
+      "autor": "Beatriz Eugenia Pérez",
+      "medidas": "21x26/35x50"
+    },
+    {
+      "id": "01-0940",
+      "titulo": "\"Matisse\"",
+      "autor": "Beatriz Montoya",
+      "medidas": "7.5x10/25x35"
+    },
+    {
+      "id": "95-0292",
+      "titulo": "Sin título",
+      "autor": "Beatriz Pérez",
+      "medidas": "30x33/35x50"
+    },
+    {
+      "id": "94-0159",
+      "titulo": "Sin título",
+      "autor": "Beatríz Suaza",
+      "medidas": "23x31/47x33"
+    },
+    {
+      "id": "00-0832",
+      "titulo": "Sin título",
+      "autor": "Beatríz Suaza",
+      "medidas": "50x70/70x100"
+    },
+    {
+      "id": "96-0404",
+      "titulo": "sin título",
+      "autor": "Bertha Lucía Madrid",
+      "medidas": "10x25/35x50"
+    },
+    {
+      "id": "96-0360",
+      "titulo": "Sin título (Díptico)",
+      "autor": "Bertha Lucía Madrid",
+      "medidas": "30x40/35x50 c/u"
+    },
+    {
+      "id": "05-1196",
+      "titulo": "Sin título",
+      "autor": "Betty Castro",
+      "medidas": "40x60/50x70"
+    },
+    {
+      "id": "05-1162",
+      "titulo": "Sin título",
+      "autor": "Betty Castro",
+      "medidas": "22x30/35x50"
+    },
+    {
+      "id": "92-0037",
+      "titulo": "Sin título",
+      "autor": "Betty Ibarra",
+      "medidas": "20x23/35x50"
+    },
+    {
+      "id": "93-0066",
+      "titulo": "Sin título",
+      "autor": "Betty Ibarra",
+      "medidas": "21x25/35x50"
+    },
+    {
+      "id": "96-0390",
+      "titulo": "Sin título",
+      "autor": "Bibiana Cossio",
+      "medidas": "26x32/50x70"
+    },
+    {
+      "id": "96-0459",
+      "titulo": "Sin título",
+      "autor": "Bibiana Cossio",
+      "medidas": "28x40/50x70"
+    },
+    {
+      "id": "96-0460",
+      "titulo": "Sin título",
+      "autor": "Bibiana Cossio",
+      "medidas": "30x44/50x70"
+    },
+    {
+      "id": "96-0455",
+      "titulo": "Sin título",
+      "autor": "Bibiana Cossio",
+      "medidas": "23x29/35x50"
+    },
+    {
+      "id": "96-0471",
+      "titulo": "Sin título",
+      "autor": "Bibiana Cossio",
+      "medidas": "28x40/50x70"
+    },
+    {
+      "id": "03-1122",
+      "titulo": "Sin título",
+      "autor": "Blanca Iris Correa",
+      "medidas": "13x32/35x50"
+    },
+    {
+      "id": "96-0463",
+      "titulo": "\"Doméstico\"",
+      "autor": "Boris Salim Giraldo",
+      "medidas": "35x46/50x70"
+    },
+    {
+      "id": "01-0966",
+      "titulo": "\"Idiosincracia\"",
+      "autor": "Brenda Otero",
+      "medidas": "30x35/50x70"
+    },
+    {
+      "id": "00-0803",
+      "titulo": "Sin título",
+      "autor": "Camilo (sin registro de apellido)",
+      "medidas": "40x60/50x70"
+    },
+    {
+      "id": "00-0890",
+      "titulo": "Sin título",
+      "autor": "Camilo Castaño",
+      "medidas": "48x65/50x70"
+    },
+    {
+      "id": "00-0868",
+      "titulo": "Sin título (Tríptico)",
+      "autor": "Camilo Castaño",
+      "medidas": "40x60/50x70"
+    },
+    {
+      "id": "00-0888",
+      "titulo": "Sin título",
+      "autor": "Camilo Castaño",
+      "medidas": "45x60/50x70"
+    },
+    {
+      "id": "03-1067",
+      "titulo": "Sin título",
+      "autor": "Camilo Castaño",
+      "medidas": "20.5x29/35x50"
+    },
+    {
+      "id": "00-0889",
+      "titulo": "Sin título",
+      "autor": "Camilo Castaño",
+      "medidas": "45x60/50x70"
+    },
+    {
+      "id": "00-0779",
+      "titulo": "Sin título",
+      "autor": "Camilo Castaño",
+      "medidas": "35x50/50x70"
+    },
+    {
+      "id": "00-0777",
+      "titulo": "Sin título",
+      "autor": "Camilo Castaño",
+      "medidas": "27x49/50x70"
+    },
+    {
+      "id": "00-0778",
+      "titulo": "Sin título",
+      "autor": "Camilo Castaño",
+      "medidas": "35x54/50x70"
+    },
+    {
+      "id": "00-0794",
+      "titulo": "\"Pefadi\"",
+      "autor": "Camilo Cataño",
+      "medidas": "29x43/50x70"
+    },
+    {
+      "id": "05-1173",
+      "titulo": "\"Paisaje\" (Díptico)",
+      "autor": "Camilo Velásquez",
+      "medidas": "70x100/70x100 cm. c/u"
+    },
+    {
+      "id": "05-1199",
+      "titulo": "Sin título",
+      "autor": "Carla Andrea Velásquez",
+      "medidas": "40x60/50x70"
+    },
+    {
+      "id": "96-0401",
+      "titulo": "Sin título",
+      "autor": "Carlos Alberto Aguilar",
+      "medidas": "10x43/17x70"
+    },
+    {
+      "id": "95-0265",
+      "titulo": "\"Amanita\"",
+      "autor": "Carlos Alberto Aguilar",
+      "medidas": "48x65/50x70"
+    },
+    {
+      "id": "96-0377",
+      "titulo": "\"Enredadera\"",
+      "autor": "Carlos Alberto Aguilar",
+      "medidas": "25x50/50x70"
+    },
+    {
+      "id": "95-0291",
+      "titulo": "Sin título",
+      "autor": "Carlos Alberto Aguilar",
+      "medidas": "30x40/35x50"
+    },
+    {
+      "id": "96-0426",
+      "titulo": "Sin título",
+      "autor": "Carlos Alberto Aguilar",
+      "medidas": "19x29/35x50"
+    },
+    {
+      "id": "93-0079",
+      "titulo": "Sin título",
+      "autor": "Carlos Alberto Corrales",
+      "medidas": "23x46/33x70"
+    },
+    {
+      "id": "93-0110",
+      "titulo": "Serie \"Angeles y querubines\"",
+      "autor": "Carlos Alberto Corrales",
+      "medidas": "25x68/35x100"
+    },
+    {
+      "id": "93-0111",
+      "titulo": "Serie \"Angeles y querubines\"",
+      "autor": "Carlos Alberto Corrales",
+      "medidas": "25x68/35x100"
+    },
+    {
+      "id": "96-0362",
+      "titulo": "Sin título",
+      "autor": "Carlos Alberto Puerta",
+      "medidas": "41x44/50x70"
+    },
+    {
+      "id": "94-0186",
+      "titulo": "Sin título",
+      "autor": "Carlos Alberto Puerta",
+      "medidas": "31x40/35x50"
+    },
+    {
+      "id": "92-0035",
+      "titulo": "Sin título",
+      "autor": "Carlos Alberto Rua",
+      "medidas": "20x28/35x50"
+    },
+    {
+      "id": "94-0203",
+      "titulo": "Sin título",
+      "autor": "Carlos Alberto Rua",
+      "medidas": "23x28/28x42"
+    },
+    {
+      "id": "92-0025",
+      "titulo": "Sin título (dos obras)",
+      "autor": "Carlos Alberto Rua",
+      "medidas": "20x29/35x50"
+    },
+    {
+      "id": "00-0792",
+      "titulo": "Sin título",
+      "autor": "Carlos Andrés Fernández",
+      "medidas": "37X44/50X70"
+    },
+    {
+      "id": "03-1063",
+      "titulo": "Sin título",
+      "autor": "Carlos Andrés Londoño",
+      "medidas": "26x35/35x50"
+    },
+    {
+      "id": "03-1134",
+      "titulo": "Sin título",
+      "autor": "Carlos Andrés Londoño",
+      "medidas": "24x45/50x70"
+    },
+    {
+      "id": "03-1064",
+      "titulo": "Sin título",
+      "autor": "Carlos Andrés Londoño",
+      "medidas": "25.5x35/35x50"
+    },
+    {
+      "id": "05-1198",
+      "titulo": "Sin título",
+      "autor": "Carlos Andrés Montoya",
+      "medidas": "40x60/50x70"
+    },
+    {
+      "id": "00-0885",
+      "titulo": "Sin título",
+      "autor": "Carlos Andrés Paniagua",
+      "medidas": "28x45/35x50"
+    },
+    {
+      "id": "00-0877",
+      "titulo": "Sin título",
+      "autor": "Carlos Andres Paniagua",
+      "medidas": "45x60/50x70"
+    },
+    {
+      "id": "00-0875",
+      "titulo": "Sin título",
+      "autor": "Carlos Andres Paniagua",
+      "medidas": "45x65/50x70"
+    },
+    {
+      "id": "00-0876",
+      "titulo": "Sin título",
+      "autor": "Carlos Andres Paniagua",
+      "medidas": "45x70/50x70"
+    },
+    {
+      "id": "05-1179",
+      "titulo": "Sin título",
+      "autor": "Carlos Andrés Rodríguez",
+      "medidas": "22x30/50x70"
+    },
+    {
+      "id": "97-0513",
+      "titulo": "Sin título",
+      "autor": "Carlos Ariel Sánchez",
+      "medidas": "40x60/50x70"
+    },
+    {
+      "id": "95-0347",
+      "titulo": "Sin título",
+      "autor": "Carlos Arturo Jaramillo",
+      "medidas": "58x50/50x70"
+    },
+    {
+      "id": "00-0899",
+      "titulo": "Sin título",
+      "autor": "Carlos Edwin Rendón",
+      "medidas": "20x27/35x50"
+    },
+    {
+      "id": "93-0090",
+      "titulo": "Sin título",
+      "autor": "Carlos Herney Arbelaez",
+      "medidas": "31x46/50x70"
+    },
+    {
+      "id": "04-1149",
+      "titulo": "Sin título. (Intervención obra de Leticia Tarragó) Portafolio \"Primera Feria de las Artes\" 2004 Unicentro - Medellín",
+      "autor": "Carlos Javier Barrios",
+      "medidas": "30x37/50x70"
+    },
+    {
+      "id": "95-0282",
+      "titulo": "\"Fufurufa con pestañas largas\"",
+      "autor": "Carlos Manuel Mejía",
+      "medidas": "27x37/35x50"
+    },
+    {
+      "id": "95-0283",
+      "titulo": "\"Fufurufa con gafas oscuras tirando picos\"",
+      "autor": "Carlos Manuel Mejía",
+      "medidas": "26x31/35x50"
+    },
+    {
+      "id": "00-0887",
+      "titulo": "Sin título",
+      "autor": "Carlos Mario Espinoza",
+      "medidas": "40x50/50x70"
+    },
+    {
+      "id": "96-0394",
+      "titulo": "Sin título",
+      "autor": "Carlos Mario Foronda",
+      "medidas": "23x28/50x70"
+    },
+    {
+      "id": "96-0392",
+      "titulo": "Sin título",
+      "autor": "Carlos Mario Foronda",
+      "medidas": "16x27/50x70"
+    },
+    {
+      "id": "99-0670",
+      "titulo": "\"Wish\"",
+      "autor": "Carlos Mario Henao",
+      "medidas": "33x36/50x70"
+    },
+    {
+      "id": "99-0686",
+      "titulo": "\"Wish\"",
+      "autor": "Carlos Mario Henao",
+      "medidas": "40x60/50x70"
+    },
+    {
+      "id": "99-0677",
+      "titulo": "Sin título",
+      "autor": "Carlos Mario Henao",
+      "medidas": "25x32/50x70"
+    },
+    {
+      "id": "99-0736",
+      "titulo": "Sin título",
+      "autor": "Carlos Mario Henao",
+      "medidas": "25x34/50x70"
+    },
+    {
+      "id": "99-0691",
+      "titulo": "\"Hot\"",
+      "autor": "Carlos Mario Henao",
+      "medidas": "27x40/50x70"
+    },
+    {
+      "id": "01-0985",
+      "titulo": "Sin título",
+      "autor": "Carolina Bedoya",
+      "medidas": "27x45/50x70"
+    },
+    {
+      "id": "01-0997",
+      "titulo": "Sin título",
+      "autor": "Carolina Bedoya",
+      "medidas": "20x27.5/50x70"
+    },
+    {
+      "id": "02-1004",
+      "titulo": "Sin título",
+      "autor": "Carolina Bedoya",
+      "medidas": "20.5x21/35x50"
+    },
+    {
+      "id": "99-0687",
+      "titulo": "Sin título",
+      "autor": "Carolina Berrío",
+      "medidas": "22x28/50x70"
+    },
+    {
+      "id": "99-0683",
+      "titulo": "Sin título",
+      "autor": "Carolina Berrío",
+      "medidas": "30x30/50x70"
+    },
+    {
+      "id": "00-0786",
+      "titulo": "Sin título",
+      "autor": "Carolina Berrío",
+      "medidas": "15X29/24X50"
+    },
+    {
+      "id": "99-0693",
+      "titulo": "Sin título",
+      "autor": "Carolina Berrío",
+      "medidas": "24x30/50x70"
+    },
+    {
+      "id": "99-0673",
+      "titulo": "Sin título",
+      "autor": "Carolina Berrío",
+      "medidas": "27x43/50x70"
+    },
+    {
+      "id": "00-0886",
+      "titulo": "\"Virginia\"",
+      "autor": "Catalina Rojas",
+      "medidas": "30x45/50x70"
+    },
+    {
+      "id": "04-1145",
+      "titulo": "Sin título. Portafolio \"Primera Feria de las Artes\" 2004 Unicentro - Medellín",
+      "autor": "Catalina Ruíz",
+      "medidas": "23x32/50x70"
+    },
+    {
+      "id": "04-1161",
+      "titulo": "Sin título. Portafolio \"Primera Feria de las Artes\" 2004 Unicentro - Medellín",
+      "autor": "Catalina Salazar",
+      "medidas": "30x33/50x70"
+    },
+    {
+      "id": "99-0627",
+      "titulo": "\"Banity\"",
+      "autor": "Cecilia Upegui",
+      "medidas": "9x25/16x35"
+    },
+    {
+      "id": "03-1090",
+      "titulo": "Sin título",
+      "autor": "Cecilia Upegui",
+      "medidas": "22x25.5/50x70"
+    },
+    {
+      "id": "99-0661",
+      "titulo": "Sin título",
+      "autor": "Cecilia Upegui",
+      "medidas": "16x16/35x50"
+    },
+    {
+      "id": "99-0635",
+      "titulo": "Sin título",
+      "autor": "Cecilia Upegui",
+      "medidas": "16x10/35x25"
+    },
+    {
+      "id": "02-1038",
+      "titulo": "\"Tarjeta up\"",
+      "autor": "Cecilia Upegui",
+      "medidas": "10x15"
+    },
+    {
+      "id": "99-0640",
+      "titulo": "Sin título",
+      "autor": "Cecilia Upegui.",
+      "medidas": "21X24/25X35"
+    },
+    {
+      "id": "04-1141",
+      "titulo": "Sin título. Portafolio \"Primera Feria de las Artes\" 2004 Unicentro - Medellín",
+      "autor": "Celeste Valencia",
+      "medidas": "31x40/50x70"
+    },
+    {
+      "id": "00-0858",
+      "titulo": "Sin título",
+      "autor": "Celina Pimienta",
+      "medidas": "40x55/50x70"
+    },
+    {
+      "id": "94-0192",
+      "titulo": "Sin título",
+      "autor": "Celina Pimienta",
+      "medidas": "25x37/35x50"
+    },
+    {
+      "id": "96-0370",
+      "titulo": "Sin título Obra realizada en el Taller Experimental de Gráfica. La Habana. 1996 Intercambio",
+      "autor": "Celina Pimienta",
+      "medidas": "37x48/50x70"
+    },
+    {
+      "id": "94-0243",
+      "titulo": "Sin título",
+      "autor": "Celina Pimienta",
+      "medidas": "40x40/50x70"
+    },
+    {
+      "id": "96-0371",
+      "titulo": "Sin título Obra realizada en el Taller Experimental de Gráfica. La Habana. 1996 Intercambio",
+      "autor": "Celina Pimienta",
+      "medidas": "38x48/52x60"
+    },
+    {
+      "id": "94-0188",
+      "titulo": "Sin título",
+      "autor": "Celina Pimienta",
+      "medidas": "21x30/35x50"
+    },
+    {
+      "id": "00-0910",
+      "titulo": "Sin título",
+      "autor": "César A. Montoya",
+      "medidas": "30x40/48x70"
+    },
+    {
+      "id": "97-0515",
+      "titulo": "\"Carroza\"",
+      "autor": "César A. Montoya",
+      "medidas": "45x60/50x70"
+    },
+    {
+      "id": "99-0656",
+      "titulo": "Sin título",
+      "autor": "César A. Montoya",
+      "medidas": "20x26/35x50"
+    },
+    {
+      "id": "00-0762",
+      "titulo": "Sin título",
+      "autor": "César A. Montoya",
+      "medidas": "16x23/25x70"
+    },
+    {
+      "id": "99-0630",
+      "titulo": "Sin título",
+      "autor": "César A. Montoya",
+      "medidas": "15x20/25x35"
+    },
+    {
+      "id": "95-0269",
+      "titulo": "Sin título",
+      "autor": "César Augusto Gaviria",
+      "medidas": "32x40/50x71"
+    },
+    {
+      "id": "95-0268",
+      "titulo": "\"Signos primigenios\"",
+      "autor": "César Augusto Gaviria",
+      "medidas": "25x32/53x65"
+    },
+    {
+      "id": "95-0274",
+      "titulo": "Sin título",
+      "autor": "César Augusto Gaviria",
+      "medidas": "30x38/56x72"
+    },
+    {
+      "id": "94-0173",
+      "titulo": "Sin título",
+      "autor": "César Augusto Gaviria",
+      "medidas": "24x31/35x50"
+    },
+    {
+      "id": "94-0238",
+      "titulo": "Sin título",
+      "autor": "César Augusto Gaviria",
+      "medidas": "35x45/50x70"
+    },
+    {
+      "id": "94-0257",
+      "titulo": "Sin título",
+      "autor": "César Augusto Gaviria",
+      "medidas": "23x33/50x70"
+    },
+    {
+      "id": "98-0576",
+      "titulo": "Sin título",
+      "autor": "César Augusto Giraldo",
+      "medidas": "19X23/35X50"
+    },
+    {
+      "id": "98-0612",
+      "titulo": "Sin título",
+      "autor": "César Augusto Giraldo",
+      "medidas": "26x52/50x70"
+    },
+    {
+      "id": "00-0871",
+      "titulo": "Sin título",
+      "autor": "César Augusto Padilla",
+      "medidas": "70x100/70x100"
+    },
+    {
+      "id": "00-0870",
+      "titulo": "Sin título (dos obras)",
+      "autor": "César Del valle",
+      "medidas": "5x12/17x25;5x10/13x28"
+    },
+    {
+      "id": "00-0763",
+      "titulo": "\"Concierto para gato negro\"",
+      "autor": "César Echeverry",
+      "medidas": "22x22/35x50"
+    },
+    {
+      "id": "00-0757",
+      "titulo": "Serie \"El árbol de la vida\"",
+      "autor": "Christine Meert",
+      "medidas": "48x45/50x70"
+    },
+    {
+      "id": "94-0213",
+      "titulo": "Sin título",
+      "autor": "Claudia Arbelaez",
+      "medidas": "13x22/35x50"
+    },
+    {
+      "id": "94-0183",
+      "titulo": "Sin título",
+      "autor": "Claudia Arbelaez",
+      "medidas": "16x29/35x50"
+    },
+    {
+      "id": "94-0121",
+      "titulo": "Sin título",
+      "autor": "Claudia Betancur",
+      "medidas": "22x29/31x42"
+    },
+    {
+      "id": "01-0991",
+      "titulo": "Sin título",
+      "autor": "Claudia Bran",
+      "medidas": "22x22/50x70"
+    },
+    {
+      "id": "02-1006",
+      "titulo": "Sin título",
+      "autor": "Claudia Bran",
+      "medidas": "27.5x50/50x70"
+    },
+    {
+      "id": "93-0095",
+      "titulo": "Sin título",
+      "autor": "Claudia E. Cárdenas",
+      "medidas": "30x43/50x70"
+    },
+    {
+      "id": "92-0039",
+      "titulo": "Sin título",
+      "autor": "Claudia Higuita",
+      "medidas": "41x46/50x70"
+    },
+    {
+      "id": "01-0989",
+      "titulo": "Sin título",
+      "autor": "Claudia Macías",
+      "medidas": "33x36/50x70"
+    },
+    {
+      "id": "96-0367",
+      "titulo": "Sin título",
+      "autor": "Claudia Patricia Rincón",
+      "medidas": "31x46/50x70"
+    },
+    {
+      "id": "96-0354",
+      "titulo": "Sin título",
+      "autor": "Claudia Patricia Rincón",
+      "medidas": "10x26/35x49"
+    },
+    {
+      "id": "03-1111",
+      "titulo": "Sin título",
+      "autor": "Claudia Patricia Rincón",
+      "medidas": "22.5x27/35x50"
+    },
+    {
+      "id": "96-0364",
+      "titulo": "Sin título",
+      "autor": "Claudia Patricia Rincón",
+      "medidas": "30x30/50x70"
+    },
+    {
+      "id": "92-0028",
+      "titulo": "Sin título",
+      "autor": "Claudia Quintero",
+      "medidas": "17x24/35x50 c/u."
+    },
+    {
+      "id": "91-0003",
+      "titulo": "\"Movimiento serpenteado\"",
+      "autor": "Claudia Quintero",
+      "medidas": "30x40/50x70"
+    },
+    {
+      "id": "97-0522",
+      "titulo": "\"Escena de playa\"",
+      "autor": "Claudia Tuirán",
+      "medidas": "34x44/50x70"
+    },
+    {
+      "id": "00-0787",
+      "titulo": "Sin título",
+      "autor": "Clemencia Uribe",
+      "medidas": "24x29/38x56"
+    },
+    {
+      "id": "98-0594",
+      "titulo": "Sin título",
+      "autor": "Clemencia Uribe",
+      "medidas": "35x49/50x70"
+    },
+    {
+      "id": "03-1100",
+      "titulo": "Sin título",
+      "autor": "Clemencia Uribe",
+      "medidas": "22x22.3/35x50"
+    },
+    {
+      "id": "00-0813",
+      "titulo": "Sin título",
+      "autor": "Conrado Alberto Uribe",
+      "medidas": "37x46/50x70"
+    },
+    {
+      "id": "02-1032",
+      "titulo": "Sin título",
+      "autor": "Conrado Alberto Uribe",
+      "medidas": "10x15"
+    },
+    {
+      "id": "98-0606",
+      "titulo": "\"Tránsito II\"",
+      "autor": "Conrado Alberto Uribe",
+      "medidas": "35X51/50X70"
+    },
+    {
+      "id": "98-0613",
+      "titulo": "Sin título",
+      "autor": "Conrado Alberto Uribe",
+      "medidas": "34x43/50x70"
+    },
+    {
+      "id": "98-0607",
+      "titulo": "\"Tránsito I\"",
+      "autor": "Conrado Alberto Uribe.",
+      "medidas": "48x65/50X70"
+    },
+    {
+      "id": "02-1055",
+      "titulo": "Sin título",
+      "autor": "Cristina Cardona",
+      "medidas": "22x35/35x70"
+    },
+    {
+      "id": "02-1048",
+      "titulo": "Sin título",
+      "autor": "Cristina Cardona",
+      "medidas": "13x21/24x35"
+    },
+    {
+      "id": "05-1197",
+      "titulo": "Sin título",
+      "autor": "Cristina Cardona",
+      "medidas": "40x60/50x70"
+    },
+    {
+      "id": "98-0611",
+      "titulo": "Sin título",
+      "autor": "Cristina Vanegas",
+      "medidas": "26X29/50X70"
+    },
+    {
+      "id": "00-0783",
+      "titulo": "\"Cabeza\"",
+      "autor": "Cristina Vanegas",
+      "medidas": "13x8/19x36"
+    },
+    {
+      "id": "00-0830",
+      "titulo": "\"A Matisse\"",
+      "autor": "Cristina Vanegas",
+      "medidas": "70x70/70x100"
+    },
+    {
+      "id": "04-1144",
+      "titulo": "Sin título. Portafolio \"Primera Feria de las Artes\" 2004 Unicentro - Medellín",
+      "autor": "Cristobal Isaza",
+      "medidas": "22x33/50x70"
+    },
+    {
+      "id": "94-0200",
+      "titulo": "\"Caricia\"",
+      "autor": "Dacia Solano",
+      "medidas": "25x30/35x50"
+    },
+    {
+      "id": "93-0086",
+      "titulo": "Sin título",
+      "autor": "Dacia Solano",
+      "medidas": "38x51/50x70"
+    },
+    {
+      "id": "93-0113",
+      "titulo": "Sin título",
+      "autor": "Dacia Solano",
+      "medidas": "48x61/70x100"
+    },
+    {
+      "id": "93-0062",
+      "titulo": "Sin título",
+      "autor": "Dacia Solano",
+      "medidas": "20x25/35x50"
+    },
+    {
+      "id": "04-1157",
+      "titulo": "Sin título. Portafolio \"Primera Feria de las Artes\" 2004 Unicentro - Medellín",
+      "autor": "Daisy Yulieth Duque",
+      "medidas": "23.5x33.5/50x70"
+    },
+    {
+      "id": "04-1146",
+      "titulo": "Sin título. Portafolio \"Primera Feria de las Artes\" 2004 Unicentro - Medellín",
+      "autor": "Daniel Echeverri",
+      "medidas": "20x26/50x70"
+    },
+    {
+      "id": "00-0846",
+      "titulo": "Serie \"Billares\"",
+      "autor": "David (sin registro de apellido)",
+      "medidas": "15x26/26x35"
+    },
+    {
+      "id": "03-1130",
+      "titulo": "Sin título",
+      "autor": "David Fernando Gómez",
+      "medidas": "22x22/50x70"
+    },
+    {
+      "id": "02-1020",
+      "titulo": "Sin título",
+      "autor": "David Ramírez",
+      "medidas": "35x50/50x70"
+    },
+    {
+      "id": "02-1022",
+      "titulo": "\"Creciendo con una mente en bruma\"",
+      "autor": "David Ramírez",
+      "medidas": "34x48/50x70"
+    },
+    {
+      "id": "05-1166",
+      "titulo": "Sin título",
+      "autor": "Diader Tejada",
+      "medidas": "28x34/50x70"
+    },
+    {
+      "id": "97-0531",
+      "titulo": "Sin título",
+      "autor": "Diana López",
+      "medidas": "35x50/50x70"
+    },
+    {
+      "id": "94-0214",
+      "titulo": "Sin título",
+      "autor": "Diana Carmona",
+      "medidas": "22x31/35x50"
+    },
+    {
+      "id": "94-0234",
+      "titulo": "Sin título",
+      "autor": "Diana Carmona",
+      "medidas": "25x40/50x69"
+    },
+    {
+      "id": "00-0856",
+      "titulo": "Sin título",
+      "autor": "Diana Carmona",
+      "medidas": "50x60/50x70"
+    },
+    {
+      "id": "02-1028",
+      "titulo": "Sin título",
+      "autor": "Diana Carolina Quintero",
+      "medidas": "21x23/35x50"
+    },
+    {
+      "id": "02-1045",
+      "titulo": "\"Femme fatale\"",
+      "autor": "Diana Gómez",
+      "medidas": "30x45/50x70"
+    },
+    {
+      "id": "97-0510",
+      "titulo": "Sin título",
+      "autor": "Diana López",
+      "medidas": "32x37/50x70"
+    },
+    {
+      "id": "94-0115",
+      "titulo": "\"Recreación\"",
+      "autor": "Diana López",
+      "medidas": "15x25/25x35"
+    },
+    {
+      "id": "98-0574",
+      "titulo": "Sin título",
+      "autor": "Diana López",
+      "medidas": "20X26/35X50"
+    },
+    {
+      "id": "96-0423",
+      "titulo": "Sin título",
+      "autor": "Diana López",
+      "medidas": "26x37/35x50"
+    },
+    {
+      "id": "00-0898",
+      "titulo": "Sin título",
+      "autor": "Diana Lucía Restrepo",
+      "medidas": "22x25/35x50"
+    },
+    {
+      "id": "98-0593",
+      "titulo": "Sin título",
+      "autor": "Diana Lucía Restrepo",
+      "medidas": "16x28/50x70"
+    },
+    {
+      "id": "03-1071",
+      "titulo": "Sin título",
+      "autor": "Diana Lucía Restrepo",
+      "medidas": "11.5x16.5/17.5x50"
+    },
+    {
+      "id": "03-1073",
+      "titulo": "\"Cosiendo\"",
+      "autor": "Diana Lucía Restrepo",
+      "medidas": "13.5x19/25x32"
+    },
+    {
+      "id": "03-1077",
+      "titulo": "Sin título",
+      "autor": "Diana Lucía Restrepo",
+      "medidas": "9.5x37.5/17.5x49"
+    },
+    {
+      "id": "01-0944",
+      "titulo": "\"Tomando jarabe con un tenedor\"",
+      "autor": "Diana Lucía Restrepo",
+      "medidas": "14.5x20/25x35"
+    },
+    {
+      "id": "97-0529",
+      "titulo": "Sin título",
+      "autor": "Diana Lucía Restrepo",
+      "medidas": "42x59/50x70"
+    },
+    {
+      "id": "00-0867",
+      "titulo": "Sin título",
+      "autor": "Diana Maria Alvarez",
+      "medidas": "40x60/50x70"
+    },
+    {
+      "id": "00-0840",
+      "titulo": "\"Nacimiento a un amanecer\"",
+      "autor": "Diana María Alvarez",
+      "medidas": "38x55/50x70"
+    },
+    {
+      "id": "95-0294",
+      "titulo": "\"Lúdica infantil\"",
+      "autor": "Diana María García",
+      "medidas": "30x31/35x50"
+    },
+    {
+      "id": "96-0435",
+      "titulo": "\"Valores\"",
+      "autor": "Diana María García",
+      "medidas": "18x27/35x50"
+    },
+    {
+      "id": "95-0348",
+      "titulo": "Sin título",
+      "autor": "Diana María Hurtado",
+      "medidas": "30x33/50x70"
+    },
+    {
+      "id": "95-0262",
+      "titulo": "Sin título",
+      "autor": "Diana María Hurtado",
+      "medidas": "29x46/50x70"
+    },
+    {
+      "id": "95-0322",
+      "titulo": "Sin título",
+      "autor": "Diana María Hurtado",
+      "medidas": "19X22/35X50"
+    },
+    {
+      "id": "95-0321",
+      "titulo": "Sin título",
+      "autor": "Diana María Hurtado",
+      "medidas": "30x32/35x50"
+    },
+    {
+      "id": "98-0563",
+      "titulo": "Sin título",
+      "autor": "Diana María Moreno",
+      "medidas": "23X38/35X50"
+    },
+    {
+      "id": "98-0546",
+      "titulo": "Sin título",
+      "autor": "Diana María Moreno",
+      "medidas": "10x14/17x25"
+    },
+    {
+      "id": "98-0590",
+      "titulo": "Sin título",
+      "autor": "Diana María Moreno",
+      "medidas": "25X35/50X70"
+    },
+    {
+      "id": "98-0556",
+      "titulo": "Sin título",
+      "autor": "Diana María Moreno",
+      "medidas": "33X50/50X70"
+    },
+    {
+      "id": "99-0720",
+      "titulo": "Sin título",
+      "autor": "Diana María Pérez",
+      "medidas": "22x28/50x70"
+    },
+    {
+      "id": "99-0717",
+      "titulo": "\"Secreto\"",
+      "autor": "Diana María Pérez",
+      "medidas": "22x30/50x70"
+    },
+    {
+      "id": "99-0708",
+      "titulo": "Sin título",
+      "autor": "Diana María Pérez",
+      "medidas": "23X37/50X70"
+    },
+    {
+      "id": "99-0666",
+      "titulo": "Sin título",
+      "autor": "Diana María Pérez",
+      "medidas": "24x33/35x50"
+    },
+    {
+      "id": "00-0925",
+      "titulo": "\"Galgo y luna\"",
+      "autor": "Diana María Trespalacios",
+      "medidas": "23x34/35x50"
+    },
+    {
+      "id": "01-0961",
+      "titulo": "\"Adobe\"",
+      "autor": "Diana Milena Arenas",
+      "medidas": "6.5x10/25x35"
+    },
+    {
+      "id": "01-0964",
+      "titulo": "Sin título",
+      "autor": "Diana Milena Arenas",
+      "medidas": "24X24/35X50"
+    },
+    {
+      "id": "93-0082",
+      "titulo": "Sin título",
+      "autor": "Diana Patricia Palacio",
+      "medidas": "23x31/50x70"
+    },
+    {
+      "id": "94-0176",
+      "titulo": "Sin título",
+      "autor": "Diana Patricia Palacio",
+      "medidas": "24x26/35x49"
+    },
+    {
+      "id": "95-0271",
+      "titulo": "Sin título",
+      "autor": "Diana Patricia Palacio",
+      "medidas": "30x42/50x70"
+    },
+    {
+      "id": "92-0059",
+      "titulo": "Sin título",
+      "autor": "Diana Stella Henao",
+      "medidas": "46x46/70x100"
+    },
+    {
+      "id": "01-0971",
+      "titulo": "Sin título",
+      "autor": "Diego Alejandro Castaño",
+      "medidas": "19.5x30/35x70"
+    },
+    {
+      "id": "01-0969",
+      "titulo": "Sin título",
+      "autor": "Diego Alejandro Castaño",
+      "medidas": "22x45/50x70"
+    },
+    {
+      "id": "92-0033",
+      "titulo": "Sin título",
+      "autor": "Diego Alfredo Vélez",
+      "medidas": "16x20/35x42"
+    },
+    {
+      "id": "93-0096",
+      "titulo": "Sin título",
+      "autor": "Diego Alfredo Vélez",
+      "medidas": "37x61/50x70"
+    },
+    {
+      "id": "93-0102",
+      "titulo": "\"Recuerdos del 75\"",
+      "autor": "Diego Alfredo Vélez",
+      "medidas": "29x70/50x70"
+    },
+    {
+      "id": "96-0396",
+      "titulo": "Sin título",
+      "autor": "Diego Botero",
+      "medidas": "18x43/50x70"
+    },
+    {
+      "id": "95-0277",
+      "titulo": "\"Candy O y sus amigas)",
+      "autor": "Diego Domínguez",
+      "medidas": "63x91/70x100"
+    },
+    {
+      "id": "95-0279",
+      "titulo": "\"Tomates verdes\"",
+      "autor": "Diego Domínguez",
+      "medidas": "40x61/63x89"
+    },
+    {
+      "id": "94-0236",
+      "titulo": "Sin título",
+      "autor": "Diotima Ayala",
+      "medidas": "29x50/50x70"
+    },
+    {
+      "id": "94-0210",
+      "titulo": "Sin título",
+      "autor": "Diotima Ayala",
+      "medidas": "22x30/35x50"
+    },
+    {
+      "id": "01-0984",
+      "titulo": "Sin título",
+      "autor": "Doris Estela Múnera",
+      "medidas": "35x50/50x70"
+    },
+    {
+      "id": "96-0438",
+      "titulo": "\"Dos peces comidos\"",
+      "autor": "Douglas Gaviria",
+      "medidas": "25x32/32x41"
+    },
+    {
+      "id": "99-0718",
+      "titulo": "Sin título",
+      "autor": "Duberney Tabares",
+      "medidas": "22x24/50x70"
+    },
+    {
+      "id": "99-0710",
+      "titulo": "Sin título",
+      "autor": "Duberney Tabares",
+      "medidas": "22x28/50x70"
+    },
+    {
+      "id": "94-0171",
+      "titulo": "Sin título",
+      "autor": "Durviely Vizcaino",
+      "medidas": "22x31/35x49"
+    },
+    {
+      "id": "94-0172",
+      "titulo": "Sin título",
+      "autor": "Durviely Vizcaino",
+      "medidas": "23x32/32x44"
+    },
+    {
+      "id": "01-0951",
+      "titulo": "Sin título (Intervención obra de Manet. 1887)",
+      "autor": "Edgar Jacanamijoy",
+      "medidas": "17.5x23/35x50"
+    },
+    {
+      "id": "01-0972",
+      "titulo": "Sin título",
+      "autor": "Edgar Jacanamijoy",
+      "medidas": "40x60/50x70"
+    },
+    {
+      "id": "01-0930",
+      "titulo": "Sin título",
+      "autor": "Edgar Jacanamijoy",
+      "medidas": "22x31/35x50"
+    },
+    {
+      "id": "96-0369",
+      "titulo": "\"Abrazo\"",
+      "autor": "Edgar José Angel",
+      "medidas": "28x39/50x70"
+    },
+    {
+      "id": "96-0379",
+      "titulo": "\"Bodegón\"",
+      "autor": "Edgar José Angel",
+      "medidas": "45x60/50x70"
+    },
+    {
+      "id": "00-0775",
+      "titulo": "Sin título",
+      "autor": "Edier Tálaga",
+      "medidas": "22x26/50x70"
+    },
+    {
+      "id": "00-0776",
+      "titulo": "Sin título",
+      "autor": "Edier Tálaga",
+      "medidas": "35X42/50X70"
+    },
+    {
+      "id": "93-0070",
+      "titulo": "Sin título",
+      "autor": "Edilza Correa",
+      "medidas": "22x30/35x50"
+    },
+    {
+      "id": "00-0860",
+      "titulo": "Sin título",
+      "autor": "Edilza Correa",
+      "medidas": "20x24/35x50"
+    },
+    {
+      "id": "94-0199",
+      "titulo": "Sin título",
+      "autor": "Edilza Correa",
+      "medidas": "19x23/34x49"
+    },
+    {
+      "id": "95-0346",
+      "titulo": "\"Ondina\"",
+      "autor": "Eduard Martínez",
+      "medidas": "30x31/50x70"
+    },
+    {
+      "id": "95-0353",
+      "titulo": "\"El juego con el aro\"",
+      "autor": "Eduard Martínez",
+      "medidas": "38x48/50x70"
+    },
+    {
+      "id": "95-0314",
+      "titulo": "\"Tamazul\"",
+      "autor": "Eduard Martínez",
+      "medidas": "14x27/35x50"
+    },
+    {
+      "id": "05-1188",
+      "titulo": "Sin título",
+      "autor": "Edwin Monsalve",
+      "medidas": "40x60/50x70"
+    },
+    {
+      "id": "04-1148",
+      "titulo": "Sin título. Portafolio \"Primera Feria de las Artes\" 2004 Unicentro - Medellín",
+      "autor": "Edwin Monsalve",
+      "medidas": "30x30/50x70"
+    },
+    {
+      "id": "98-0595",
+      "titulo": "Sin título (retrato de José Martí)",
+      "autor": "Efraín Bonilla",
+      "medidas": "19x28/50x70"
+    },
+    {
+      "id": "00-0926",
+      "titulo": "\"Palenquera\"",
+      "autor": "Elaine Zabala",
+      "medidas": "25x26/35x50"
+    },
+    {
+      "id": "95-0276",
+      "titulo": "\"Paisaje con lluvia)",
+      "autor": "Elbert Valderrama",
+      "medidas": "18x96/70x100"
+    },
+    {
+      "id": "94-0145",
+      "titulo": "Sin título",
+      "autor": "Elizabeth Agudelo",
+      "medidas": "24x25/35x50"
+    },
+    {
+      "id": "94-0220",
+      "titulo": "Sin título",
+      "autor": "Elizabeth Agudelo",
+      "medidas": "18x23/35x50"
+    },
+    {
+      "id": "05-1192",
+      "titulo": "Sin título",
+      "autor": "Elizabeth Betancur",
+      "medidas": "40x60/50x70"
+    },
+    {
+      "id": "95-0341",
+      "titulo": "Sin título",
+      "autor": "Elizabeth Noreña",
+      "medidas": "47x68/50x70"
+    },
+    {
+      "id": "95-0336",
+      "titulo": "Sin título",
+      "autor": "Elizabeth Noreña",
+      "medidas": "50x70/50x70"
+    },
+    {
+      "id": "05-1176",
+      "titulo": "Sin título",
+      "autor": "Elkin Idárraga",
+      "medidas": "9x50/50x70"
+    },
+    {
+      "id": "93-0088",
+      "titulo": "Sin título",
+      "autor": "Elkin Usuga",
+      "medidas": "26x34/50x70"
+    },
+    {
+      "id": "95-0285",
+      "titulo": "\"Negociantes\"",
+      "autor": "Elkin Usuga",
+      "medidas": "20x34/35x50"
+    },
+    {
+      "id": "93-0108",
+      "titulo": "\"Noctámbula\"",
+      "autor": "Elkin Usuga",
+      "medidas": "33x42/50x70"
+    },
+    {
+      "id": "95-0327",
+      "titulo": "\"Tere espíritu\"",
+      "autor": "Elkin Usuga",
+      "medidas": "35x44/50x70"
+    },
+    {
+      "id": "98-0619",
+      "titulo": "Serie: \"Negociantes\" Portafolio de Gráfica \"Seis Serigrafías, Seis artistas",
+      "autor": "Elkin Usuga",
+      "medidas": "24x37/35x50"
+    },
+    {
+      "id": "05-1184",
+      "titulo": "\"Fichas negras\"",
+      "autor": "Elkin Usuga",
+      "medidas": "39x39/50x56"
+    },
+    {
+      "id": "93-0078",
+      "titulo": "Serie \"Apuntes de la U\"",
+      "autor": "Elkin Usuga",
+      "medidas": "33x61/50x70"
+    },
+    {
+      "id": "00-0855",
+      "titulo": "Sin título",
+      "autor": "Elkin Usuga",
+      "medidas": "40x60/50x70"
+    },
+    {
+      "id": "92-0044",
+      "titulo": "Sin título",
+      "autor": "Elkin Usuga",
+      "medidas": "35x45/50x70"
+    },
+    {
+      "id": "97-0508",
+      "titulo": "Sin título",
+      "autor": "Eloiban Hernandes",
+      "medidas": "26x28/35x50"
+    },
+    {
+      "id": "97-0503",
+      "titulo": "Sin título",
+      "autor": "Eloiban Hernández",
+      "medidas": "23x37/35x50"
+    },
+    {
+      "id": "97-0492",
+      "titulo": "Sin título",
+      "autor": "Eloiban Hernández",
+      "medidas": "29x44/35x50"
+    },
+    {
+      "id": "97-0504",
+      "titulo": "Sin título",
+      "autor": "Eloiban Hernández",
+      "medidas": "23x25/35x50"
+    },
+    {
+      "id": "97-0493",
+      "titulo": "Sin título",
+      "autor": "Eloiban Hernández",
+      "medidas": "29x44/35x50"
+    },
+    {
+      "id": "00-0862",
+      "titulo": "Sin título",
+      "autor": "Eric López",
+      "medidas": "14x20/35x50"
+    },
+    {
+      "id": "94-0180",
+      "titulo": "\"Evocación\"",
+      "autor": "Eric López",
+      "medidas": "21x30/35x50"
+    },
+    {
+      "id": "93-0100",
+      "titulo": "Sin título",
+      "autor": "Eric López",
+      "medidas": "28x29/35x50"
+    },
+    {
+      "id": "94-0255",
+      "titulo": "\"Máscara\"",
+      "autor": "Eric López",
+      "medidas": "24x24/35x50"
+    },
+    {
+      "id": "94-0147",
+      "titulo": "\"Evocación\"",
+      "autor": "Erik López",
+      "medidas": "21x28/35x50"
+    },
+    {
+      "id": "02-1013",
+      "titulo": "Sin título",
+      "autor": "Erika Martínez",
+      "medidas": "33x25/50x70"
+    },
+    {
+      "id": "02-1023",
+      "titulo": "Sin título",
+      "autor": "Erika Martínez",
+      "medidas": "35x50/50x70"
+    },
+    {
+      "id": "94-0249",
+      "titulo": "Sin título",
+      "autor": "Ernestina Mazo",
+      "medidas": "50x70/50x70"
+    },
+    {
+      "id": "94-0253",
+      "titulo": "\"La poetica del espacio\"",
+      "autor": "Ernestina Mazo",
+      "medidas": "50x68/70x100"
+    },
+    {
+      "id": "94-0252",
+      "titulo": "\"La poetica del espacio\"",
+      "autor": "Ernestina Mazo",
+      "medidas": "50x68/70x100"
+    },
+    {
+      "id": "00-0759",
+      "titulo": "Sin título",
+      "autor": "Esteban Cadavid",
+      "medidas": "25x35/50x70"
+    },
+    {
+      "id": "00-0746",
+      "titulo": "Sin título",
+      "autor": "Esteban Cadavid",
+      "medidas": "17x24/33x46"
+    },
+    {
+      "id": "00-0741",
+      "titulo": "Sin título",
+      "autor": "Esteban Cadavid",
+      "medidas": "15x26/35x50"
+    },
+    {
+      "id": "00-0744",
+      "titulo": "Sin título",
+      "autor": "Esteban Cadavid",
+      "medidas": "14x23/33x45"
+    },
+    {
+      "id": "00-0749",
+      "titulo": "Sin título",
+      "autor": "Esteban Cadavid",
+      "medidas": "24X38/50X70"
+    },
+    {
+      "id": "92-0057",
+      "titulo": "Sin título",
+      "autor": "Eugenia (sin registro de apellido)",
+      "medidas": "45x46/70x100"
+    },
+    {
+      "id": "92-0056",
+      "titulo": "Sin título",
+      "autor": "Eugenia (sin registro de apellido)",
+      "medidas": "45x46/70x100"
+    },
+    {
+      "id": "00-0881",
+      "titulo": "Sin título",
+      "autor": "Felipe Cardona",
+      "medidas": "45x60/50x70"
+    },
+    {
+      "id": "00-0895",
+      "titulo": "Sin título",
+      "autor": "Felipe Oswaldo Acevedo",
+      "medidas": "15x37/35x50"
+    },
+    {
+      "id": "99-0679",
+      "titulo": "Sin título",
+      "autor": "Felipe Oswaldo Acevedo",
+      "medidas": "23X34/50x70"
+    },
+    {
+      "id": "00-0897",
+      "titulo": "Sin título",
+      "autor": "Felipe Oswaldo Acevedo",
+      "medidas": "19x24/35x50"
+    },
+    {
+      "id": "94-0211",
+      "titulo": "Sin título",
+      "autor": "Fernando Henao",
+      "medidas": "27x41/35x50"
+    },
+    {
+      "id": "94-0155",
+      "titulo": "Sin título (dos obras)",
+      "autor": "Fernando Henao",
+      "medidas": "16x24/35x49 c/u."
+    },
+    {
+      "id": "00-0865",
+      "titulo": "Sin título",
+      "autor": "Fernando Restrepo",
+      "medidas": "35x50/50x70"
+    },
+    {
+      "id": "94-0163",
+      "titulo": "\"Tectónicas\"",
+      "autor": "Fernando Restrepo",
+      "medidas": "16x20/35x50"
+    },
+    {
+      "id": "00-0891",
+      "titulo": "\"Identificación\"",
+      "autor": "Firma sin identificar",
+      "medidas": "19x23/25x35"
+    },
+    {
+      "id": "03-1075",
+      "titulo": "\"Descomponentes\"",
+      "autor": "Firma sin identificar",
+      "medidas": "6x18.5/17.5x31"
+    },
+    {
+      "id": "03-1068",
+      "titulo": "\"A donde vas?\"",
+      "autor": "Firma sin identificar",
+      "medidas": "26.5x28/35x50"
+    },
+    {
+      "id": "94-0207",
+      "titulo": "Sin título",
+      "autor": "Francisco Javier López",
+      "medidas": "23x32/35x50"
+    },
+    {
+      "id": "94-0151",
+      "titulo": "Sin título",
+      "autor": "Francisco Javier López",
+      "medidas": "22x30/35x50"
+    },
+    {
+      "id": "94-0154",
+      "titulo": "Sin título",
+      "autor": "Francisco Javier López",
+      "medidas": "21x25/34x50"
+    },
+    {
+      "id": "98-0592",
+      "titulo": "Sin título",
+      "autor": "Francisco José Restrepo",
+      "medidas": "24X33/50X70"
+    },
+    {
+      "id": "02-1014",
+      "titulo": "Sin título",
+      "autor": "Francy Hernández",
+      "medidas": "22x66/50x70"
+    },
+    {
+      "id": "03-1092",
+      "titulo": "Sin título",
+      "autor": "Frank Hayder",
+      "medidas": "37x42/50x70"
+    },
+    {
+      "id": "05-1171",
+      "titulo": "Sin título",
+      "autor": "Frank Vélez",
+      "medidas": "30x30/50x70"
+    },
+    {
+      "id": "94-0240",
+      "titulo": "\"Entre el cielo y la tierra\"",
+      "autor": "Fredy Agudelo",
+      "medidas": "36x45/50x71"
+    },
+    {
+      "id": "96-0378",
+      "titulo": "Sin título",
+      "autor": "Gabriel Castrillón",
+      "medidas": "35x50/50x70"
+    },
+    {
+      "id": "04-1142",
+      "titulo": "Sin título. Portafolio \"Primera Feria de las Artes\" 2004 Unicentro - Medellín",
+      "autor": "Gabriel Escobar",
+      "medidas": "22x33/50x70"
+    },
+    {
+      "id": "92-0060",
+      "titulo": "\"Acoplamiento\"",
+      "autor": "Gabriel Mario Vélez",
+      "medidas": "45x46/50x70"
+    },
+    {
+      "id": "93-0094",
+      "titulo": "Sin título",
+      "autor": "Germán Alberto Benjumea",
+      "medidas": "31x35/50x70"
+    },
+    {
+      "id": "93-0067",
+      "titulo": "Sin título",
+      "autor": "Germán Alberto Benjumea",
+      "medidas": "25x30/35x50"
+    },
+    {
+      "id": "93-0091",
+      "titulo": "Sin título",
+      "autor": "Germán Alberto Benjumea",
+      "medidas": "31x35/50x70"
+    },
+    {
+      "id": "93-0093",
+      "titulo": "\"de la serie \"Gossip\"",
+      "autor": "Germán Alberto Benjumea",
+      "medidas": "23x32/50x70"
+    },
+    {
+      "id": "02-1025",
+      "titulo": "Sin título",
+      "autor": "Germán Darío Vallejo",
+      "medidas": "22x23/35x50"
+    },
+    {
+      "id": "03-1061",
+      "titulo": "Sin título",
+      "autor": "Giovanni Ramírez",
+      "medidas": "30x45/35x50"
+    },
+    {
+      "id": "00-0908",
+      "titulo": "\"Soy laberinto\"",
+      "autor": "Giovanni Ramírez",
+      "medidas": "25x31/50x70"
+    },
+    {
+      "id": "00-0909",
+      "titulo": "\"La noche del sábado y las risas\"",
+      "autor": "Giovanni Ramírez",
+      "medidas": "24x33/50x70"
+    },
+    {
+      "id": "98-0601",
+      "titulo": "Sin título",
+      "autor": "Giovanny Zapata",
+      "medidas": "28X38/50X70"
+    },
+    {
+      "id": "94-0138",
+      "titulo": "Sin título",
+      "autor": "Giuseppe Restrepo",
+      "medidas": "23x25/35x50"
+    },
+    {
+      "id": "93-0112",
+      "titulo": "Sin título",
+      "autor": "Gladys Elena Beltrán",
+      "medidas": "34x46/70x100"
+    },
+    {
+      "id": "93-0089",
+      "titulo": "Sin título",
+      "autor": "Gladys Elena Beltrán",
+      "medidas": "35x50/50x70"
+    },
+    {
+      "id": "95-0278",
+      "titulo": "Sin título",
+      "autor": "Gloria Alina Cardozo",
+      "medidas": "12x87/35x100"
+    },
+    {
+      "id": "95-0351",
+      "titulo": "Sin título",
+      "autor": "Gloria Alina Cardozo",
+      "medidas": "30x49/50x70"
+    },
+    {
+      "id": "96-0446",
+      "titulo": "\"Mujeres aladas II\"",
+      "autor": "Gloria Alina Cardozo",
+      "medidas": "20x25/25x40"
+    },
+    {
+      "id": "96-0447",
+      "titulo": "Sin título",
+      "autor": "Gloria Alina Cardozo",
+      "medidas": "15x22/25x35"
+    },
+    {
+      "id": "96-0441",
+      "titulo": "Sin título",
+      "autor": "Gloria Alina Cardozo",
+      "medidas": "13x20/25x35"
+    },
+    {
+      "id": "03-1132",
+      "titulo": "Sin título",
+      "autor": "Gloria Cano",
+      "medidas": "23.5x27/50x70"
+    },
+    {
+      "id": "03-1123",
+      "titulo": "Sin título",
+      "autor": "Gloria Cano",
+      "medidas": "22x22/35x50"
+    },
+    {
+      "id": "96-0442",
+      "titulo": "Sin título",
+      "autor": "Gloria Castaño",
+      "medidas": "14x17/25x35"
+    },
+    {
+      "id": "96-0443",
+      "titulo": "Sin título",
+      "autor": "Gloria Castaño",
+      "medidas": "15x19/25x35"
+    },
+    {
+      "id": "96-0444",
+      "titulo": "Sin título",
+      "autor": "Gloria Castaño",
+      "medidas": "15x15/25x35"
+    },
+    {
+      "id": "96-0445",
+      "titulo": "Sin título",
+      "autor": "Gloria Castaño",
+      "medidas": "15x15/25x35"
+    },
+    {
+      "id": "03-1079",
+      "titulo": "Sin título",
+      "autor": "Gloria Escobar",
+      "medidas": "40x50/56x76"
+    },
+    {
+      "id": "03-1080",
+      "titulo": "Sin título",
+      "autor": "Gloria Escobar",
+      "medidas": "40x50/56x76"
+    },
+    {
+      "id": "93-0073",
+      "titulo": "\"Ensayando vuelo\"",
+      "autor": "Gloria Irma Restrepo",
+      "medidas": "23x30/35x50"
+    },
+    {
+      "id": "00-0821",
+      "titulo": "\"Perros de ciudad\"",
+      "autor": "Gloria Isabel Velásquez",
+      "medidas": "35x50/50x70"
+    },
+    {
+      "id": "94-0170",
+      "titulo": "Sin título",
+      "autor": "Gloria María Castaño",
+      "medidas": "25X30/35X50"
+    },
+    {
+      "id": "94-0135",
+      "titulo": "Sin título",
+      "autor": "Gloria María Castaño",
+      "medidas": "23x29/34x49"
+    },
+    {
+      "id": "03-1131",
+      "titulo": "Sin título",
+      "autor": "Gloria Ocampo",
+      "medidas": "23.5x26.5/50x70"
+    },
+    {
+      "id": "96-0427",
+      "titulo": "\"No mires que duele\"",
+      "autor": "Gloria Patricia Gaviria",
+      "medidas": "23x33/35x50"
+    },
+    {
+      "id": "94-0198",
+      "titulo": "Sin título",
+      "autor": "Gloria Patricia Gaviria",
+      "medidas": "14x38/35x50"
+    },
+    {
+      "id": "94-0141",
+      "titulo": "Sin título",
+      "autor": "Gloria Patricia Gaviria",
+      "medidas": "11x30/35x50"
+    },
+    {
+      "id": "94-0244",
+      "titulo": "Sin título",
+      "autor": "Gloria Patricia Gaviria",
+      "medidas": "25x31/50x70"
+    },
+    {
+      "id": "96-0385",
+      "titulo": "Sin título",
+      "autor": "Gloria Patricia Naranjo",
+      "medidas": "35x50/50x70"
+    },
+    {
+      "id": "91-0011",
+      "titulo": "Sin título",
+      "autor": "Gloria Patricia Orrego",
+      "medidas": "20x61/50x70"
+    },
+    {
+      "id": "91-0008",
+      "titulo": "Sin título",
+      "autor": "Gloria Patricia Orrego",
+      "medidas": "20x48/50x70"
+    },
+    {
+      "id": "96-0410",
+      "titulo": "\"Umbral\"",
+      "autor": "Gloria Rivera",
+      "medidas": "17x28/35x50"
+    },
+    {
+      "id": "96-0457",
+      "titulo": "\"a sol-as\"",
+      "autor": "Gloria Rivera",
+      "medidas": "22X31/35X50"
+    },
+    {
+      "id": "96-0409",
+      "titulo": "Sin título",
+      "autor": "Gloria Rivera",
+      "medidas": "23x25/35x50"
+    },
+    {
+      "id": "95-0304",
+      "titulo": "\"Umbral I\"",
+      "autor": "Gloria Rivera",
+      "medidas": "19x24/35x50"
+    },
+    {
+      "id": "02-1059",
+      "titulo": "Sin título. Obra seleccionada 11 Bienal Internacional de Dibujo y Grabado. Taiwán, Korea 2003",
+      "autor": "Gloria Solórzano",
+      "medidas": "21x22/50x70"
+    },
+    {
+      "id": "02-1050",
+      "titulo": "Sin título",
+      "autor": "Gloria Solórzano",
+      "medidas": "11x27/35x50"
+    },
+    {
+      "id": "00-0864",
+      "titulo": "Sin título",
+      "autor": "Gonzalo Carmona",
+      "medidas": "25x30/35x50"
+    },
+    {
+      "id": "00-0863",
+      "titulo": "Sin título",
+      "autor": "Gonzalo Carmona",
+      "medidas": "25x30/35x50"
+    },
+    {
+      "id": "00-0823",
+      "titulo": "\"Estrategas\" Primer premio. IV Bienal de Gráfica Artística Año 2000 \"Facultad de Artes 20 Años\" (convocatoria de nivel nacional)",
+      "autor": "Guillermo Leon Taborda",
+      "medidas": "160x215 cm. (total)"
+    },
+    {
+      "id": "92-0029",
+      "titulo": "Sin título",
+      "autor": "Gustavo Alonso Gómez",
+      "medidas": "20x25/25x35"
+    },
+    {
+      "id": "91-0002",
+      "titulo": "\"Maternidad I\"",
+      "autor": "Gustavo Alonso Gómez",
+      "medidas": "7x12/11x16"
+    },
+    {
+      "id": "91-0001",
+      "titulo": "\"Maternidad II\"",
+      "autor": "Gustavo Alonso Gómez",
+      "medidas": "7x10/11x17"
+    },
+    {
+      "id": "94-0133",
+      "titulo": "\"La gente de las escalinatas\"",
+      "autor": "Gustavo Carvajal",
+      "medidas": "25x31/35x50"
+    },
+    {
+      "id": "94-0254",
+      "titulo": "\"Durmiente Nº1\"",
+      "autor": "Gustavo Carvajal",
+      "medidas": "22x38/35x50"
+    },
+    {
+      "id": "94-0146",
+      "titulo": "Sin título",
+      "autor": "Gustavo Martínez",
+      "medidas": "23x30/35x50"
+    },
+    {
+      "id": "94-0117",
+      "titulo": "Sin título",
+      "autor": "Gustavo Martínez",
+      "medidas": "24x32/35x50"
+    },
+    {
+      "id": "00-0866",
+      "titulo": "Sin título",
+      "autor": "Gustavo Martínez",
+      "medidas": "40x55/50x70"
+    },
+    {
+      "id": "94-0118",
+      "titulo": "Sin título",
+      "autor": "Gustavo Martínez",
+      "medidas": "12x33/35x50"
+    },
+    {
+      "id": "00-0854",
+      "titulo": "Sin título. Mención Segunda Muestra de Gráfica Artística 1995 \"Facultad de Artes 15 años\"",
+      "autor": "Gustavo Martínez",
+      "medidas": "26x37/50x70"
+    },
+    {
+      "id": "94-0177",
+      "titulo": "Sin título",
+      "autor": "Gustavo Martínez",
+      "medidas": "17x20/35x50"
+    },
+    {
+      "id": "94-0166",
+      "titulo": "Sin título",
+      "autor": "Gustavo Martínez",
+      "medidas": "22x32/35x50"
+    },
+    {
+      "id": "95-0337",
+      "titulo": "Sin título",
+      "autor": "Hamlet Román",
+      "medidas": "27x33/50x70"
+    },
+    {
+      "id": "93-0063",
+      "titulo": "Serie \"Del barrio\"",
+      "autor": "Harold Miranda",
+      "medidas": "20x31/34x49"
+    },
+    {
+      "id": "93-0084",
+      "titulo": "Sin título",
+      "autor": "Harold Miranda",
+      "medidas": "30x46/50x70"
+    },
+    {
+      "id": "00-0825",
+      "titulo": "Serie: \"Jóvenes Casdtilla\" Mención IV Bienal de Gráfica Artística Año 2000 \"Facultad de Artes 20 años\" (convocatoria de nivel nacional)",
+      "autor": "Harold Miranda",
+      "medidas": "80x180"
+    },
+    {
+      "id": "93-0085",
+      "titulo": "\"...Del barrio\"",
+      "autor": "Harold Miranda",
+      "medidas": "25x26/50x70"
+    },
+    {
+      "id": "96-0473",
+      "titulo": "\"Libatio viene de libare\"",
+      "autor": "Haydeé Peláez",
+      "medidas": "37x56/56x76"
+    },
+    {
+      "id": "00-0848",
+      "titulo": "Homenaje a Silva \"Nocturno\"",
+      "autor": "Héctor Fabio Castaño",
+      "medidas": "46x60/50x70"
+    },
+    {
+      "id": "95-0284",
+      "titulo": "\"El espejo\"",
+      "autor": "Héctor Fabio Castaño",
+      "medidas": "17x20/35x50"
+    },
+    {
+      "id": "96-0384",
+      "titulo": "Sin título",
+      "autor": "Héctor Marino Montoya",
+      "medidas": "29x30/50x70"
+    },
+    {
+      "id": "99-0707",
+      "titulo": "\"Segunda muerte\"",
+      "autor": "Héctor Mario Zapata",
+      "medidas": "29x35/50x70"
+    },
+    {
+      "id": "95-0323",
+      "titulo": "\"Improvisación\"",
+      "autor": "Helen Maya",
+      "medidas": "38x57/50x70"
+    },
+    {
+      "id": "92-0031",
+      "titulo": "\"Nuevo 500\"",
+      "autor": "Hernán Darío Bermúdez",
+      "medidas": "19x24/35x50"
+    },
+    {
+      "id": "02-1010",
+      "titulo": "Sin título",
+      "autor": "Hernando Guerrero",
+      "medidas": "50x70/50x70"
+    },
+    {
+      "id": "91-0017",
+      "titulo": "Sin título",
+      "autor": "Hernando Guerrero",
+      "medidas": "55x76/50x70"
+    },
+    {
+      "id": "05-1181",
+      "titulo": "\"Figuras antropomorfas\"",
+      "autor": "Hernando Guerrero",
+      "medidas": "25x25/35x50"
+    },
+    {
+      "id": "94-0237",
+      "titulo": "Sin título",
+      "autor": "Hernando Guerrero",
+      "medidas": "35x49/47x65"
+    },
+    {
+      "id": "05-1182",
+      "titulo": "Sin título",
+      "autor": "Hernando Guerrero",
+      "medidas": "40x90/70x100"
+    },
+    {
+      "id": "03-1115",
+      "titulo": "Serie \"La conquista\"",
+      "autor": "Hernando Guerrero",
+      "medidas": "47x49/50x70"
+    },
+    {
+      "id": "91-0015",
+      "titulo": "Sin título",
+      "autor": "Hernando Guerrero",
+      "medidas": "35x50/50x70"
+    },
+    {
+      "id": "04-1160",
+      "titulo": "\"el últomo paseo\"",
+      "autor": "Herrera Rugeles",
+      "medidas": "31x46/50x70"
+    },
+    {
+      "id": "02-1058",
+      "titulo": "Sin título",
+      "autor": "Hugo Andrés Jaramillo",
+      "medidas": "19x43/50x70"
+    },
+    {
+      "id": "00-0842",
+      "titulo": "Sin título",
+      "autor": "Hugo Santamaria",
+      "medidas": "20x25/35X50"
+    },
+    {
+      "id": "00-0843",
+      "titulo": "Sin título",
+      "autor": "Hugo Santamaria",
+      "medidas": "22x26/35x50"
+    },
+    {
+      "id": "94-0231",
+      "titulo": "\"Paz universal\"",
+      "autor": "Humberto Restrepo",
+      "medidas": "24x46/50x70"
+    },
+    {
+      "id": "94-0181",
+      "titulo": "Sin título",
+      "autor": "Humberto Restrepo",
+      "medidas": "17x34/33x45"
+    },
+    {
+      "id": "94-0189",
+      "titulo": "Sin título",
+      "autor": "Humberto Restrepo",
+      "medidas": "26x28/35x50"
+    },
+    {
+      "id": "00-0784",
+      "titulo": "\"Juegos\"",
+      "autor": "Ingridmar Garcia",
+      "medidas": "5x12/25x35"
+    },
+    {
+      "id": "00-0782",
+      "titulo": "\"Nacimiento del ser\"",
+      "autor": "Ingridmar Garcia",
+      "medidas": "5x16/19x27"
+    },
+    {
+      "id": "00-0760",
+      "titulo": "Sin título",
+      "autor": "Ingridmar Garcia",
+      "medidas": "38x51/50x70"
+    },
+    {
+      "id": "91-0012",
+      "titulo": "Sin título (dos obras)",
+      "autor": "Isabel Cristina Angel",
+      "medidas": "25x40/50x70"
+    },
+    {
+      "id": "00-0900",
+      "titulo": "\"Descanso\"",
+      "autor": "Isabel Cristina Seguro",
+      "medidas": "28x40/35x50"
+    },
+    {
+      "id": "97-0491",
+      "titulo": "\"tarot III\"",
+      "autor": "Isabel Cristina Seguro",
+      "medidas": "30X30/35X50"
+    },
+    {
+      "id": "00-0836",
+      "titulo": "Sin título",
+      "autor": "Isabel Garcia",
+      "medidas": "21x26/35x50"
+    },
+    {
+      "id": "01-0970",
+      "titulo": "Sin título",
+      "autor": "Isabel Mejía",
+      "medidas": "24x37/50x70"
+    },
+    {
+      "id": "94-0209",
+      "titulo": "Sin título",
+      "autor": "Isabel Villegas",
+      "medidas": "23x31/35x50"
+    },
+    {
+      "id": "00-0869",
+      "titulo": "Sin título (Intervención \"Guernica\" de Picasso)",
+      "autor": "Jaime Alberto Correa",
+      "medidas": "36x54/50x70"
+    },
+    {
+      "id": "94-0139",
+      "titulo": "\"Chatarra Nº1\"",
+      "autor": "Jaime Alonso Silva",
+      "medidas": "23x30/35x50"
+    },
+    {
+      "id": "95-0324",
+      "titulo": "\"Paisaje\"",
+      "autor": "Jaime Alonso Silva",
+      "medidas": "27x44/38x56"
+    },
+    {
+      "id": "03-1094",
+      "titulo": "\"Chatarra Nº 4\"",
+      "autor": "Jaime Alonso Silva",
+      "medidas": "26x31/35x50"
+    },
+    {
+      "id": "95-0303",
+      "titulo": "\"Paisaje\"",
+      "autor": "Jaime Alonso Silva",
+      "medidas": "26x43/35x50"
+    },
+    {
+      "id": "94-0226",
+      "titulo": "Sin título",
+      "autor": "Jaime Arango",
+      "medidas": "23x43/49x70"
+    },
+    {
+      "id": "95-0350",
+      "titulo": "Sin título",
+      "autor": "Jaime Arango",
+      "medidas": "20x32/50x70"
+    },
+    {
+      "id": "00-0785",
+      "titulo": "\"Otra vez mi hada\"",
+      "autor": "Jaime Flórez",
+      "medidas": "23X29/35X50"
+    },
+    {
+      "id": "94-0190",
+      "titulo": "Sin título",
+      "autor": "Jaime Jaramillo",
+      "medidas": "22x22/35x50"
+    },
+    {
+      "id": "94-0196",
+      "titulo": "Sin título",
+      "autor": "Jaime Jaramillo",
+      "medidas": "14x20/35x50"
+    },
+    {
+      "id": "94-0204",
+      "titulo": "Sin título",
+      "autor": "Jaime Jaramillo",
+      "medidas": "26x37/35x46"
+    },
+    {
+      "id": "94-0168",
+      "titulo": "Sin título",
+      "autor": "Jaime Jaramillo",
+      "medidas": "26x40/35x50"
+    },
+    {
+      "id": "03-1089",
+      "titulo": "Sin título",
+      "autor": "Janeth Calderón",
+      "medidas": "14.5x44.5/50x70"
+    },
+    {
+      "id": "97-0540",
+      "titulo": "Sin título",
+      "autor": "Janeth Calderón",
+      "medidas": "30x30/50x70"
+    },
+    {
+      "id": "91-0020",
+      "titulo": "Sin título",
+      "autor": "Janeth Ríos",
+      "medidas": "24x61/50x70"
+    },
+    {
+      "id": "91-0019",
+      "titulo": "Sin título",
+      "autor": "Janeth Ríos",
+      "medidas": "22x50/50x70"
+    },
+    {
+      "id": "97-0518",
+      "titulo": "Sin título",
+      "autor": "Javier Arango Cíceros",
+      "medidas": "30x50/50x70"
+    },
+    {
+      "id": "02-1005",
+      "titulo": "Sin título",
+      "autor": "Jeffer Rodríguez",
+      "medidas": "20x30/35x50"
+    },
+    {
+      "id": "01-0995",
+      "titulo": "\"Híbrido\"",
+      "autor": "Jeffer Rodríguez",
+      "medidas": "25x26/50x70"
+    },
+    {
+      "id": "03-1074",
+      "titulo": "\"Spiderman\"",
+      "autor": "Jessica Correa",
+      "medidas": "10x15/25x35"
+    },
+    {
+      "id": "03-1072",
+      "titulo": "\"Milo´s party\"",
+      "autor": "Jessica Correa",
+      "medidas": "12x17/17.5x50"
+    },
+    {
+      "id": "94-0165",
+      "titulo": "Sin título",
+      "autor": "Jhon Fredy Sanchez",
+      "medidas": "30x34/35x50"
+    },
+    {
+      "id": "92-0042",
+      "titulo": "Sin título",
+      "autor": "Jhon Jairo Muriel",
+      "medidas": "25x41/50x70"
+    },
+    {
+      "id": "92-0055",
+      "titulo": "Sin título",
+      "autor": "Jhon Jairo Muriel",
+      "medidas": "46x49/70x100"
+    },
+    {
+      "id": "98-0620",
+      "titulo": "Sin título Portafolio de Gráfica \"Seis Serigrafías, seis artistas\"",
+      "autor": "Jhon Jairo Muriel",
+      "medidas": "28x18/35x50"
+    },
+    {
+      "id": "92-0052",
+      "titulo": "Sin título",
+      "autor": "Jhon Jairo Muriel",
+      "medidas": "50x70/70x100 c/u."
+    },
+    {
+      "id": "95-0272",
+      "titulo": "Sin título",
+      "autor": "Jhon Jairo Muriel",
+      "medidas": "36x50/50x71"
+    },
+    {
+      "id": "91-0021",
+      "titulo": "Sin título",
+      "autor": "Jhon Jairo Muriel",
+      "medidas": "32x49/50x70"
+    },
+    {
+      "id": "92-0040",
+      "titulo": "Sin título",
+      "autor": "Jhon Jairo Muriel",
+      "medidas": "34x50/50x70"
+    },
+    {
+      "id": "93-0105",
+      "titulo": "Sin título",
+      "autor": "Jhon Julio Muñeton",
+      "medidas": "31x46/50x70"
+    },
+    {
+      "id": "94-0140",
+      "titulo": "Sin título",
+      "autor": "Jhon William Alzate",
+      "medidas": "18x28/35x50"
+    },
+    {
+      "id": "96-0456",
+      "titulo": "Sin título",
+      "autor": "Jhonny Antonio Giraldo",
+      "medidas": "20X23/35X50"
+    },
+    {
+      "id": "05-1175",
+      "titulo": "Sin título",
+      "autor": "Jhonny Alejandro Aguirre",
+      "medidas": "50x61/50x70"
+    },
+    {
+      "id": "01-0953",
+      "titulo": "Sin título",
+      "autor": "Jhonny Carmona",
+      "medidas": "22.5x22.5/35x50"
+    },
+    {
+      "id": "01-0983",
+      "titulo": "Sin título",
+      "autor": "Jhonny Carmona",
+      "medidas": "32x42/50x70"
+    },
+    {
+      "id": "01-0955",
+      "titulo": "Sin título",
+      "autor": "Jhonny Carmona",
+      "medidas": "22x22/35x50"
+    },
+    {
+      "id": "01-0932",
+      "titulo": "Sin título",
+      "autor": "Jhonny Carmona",
+      "medidas": "23x23/35x50"
+    },
+    {
+      "id": "03-1070",
+      "titulo": "\"Ruina\"",
+      "autor": "Jhony Pérez",
+      "medidas": "20x22/25x35"
+    },
+    {
+      "id": "03-1069",
+      "titulo": "\"Leon de Greiff\"",
+      "autor": "Jhony Pérez",
+      "medidas": "18x24.5/25x35"
+    },
+    {
+      "id": "01-0967",
+      "titulo": "\"La vaca pastando\"",
+      "autor": "Jhony Albeiro Pérez",
+      "medidas": "21.5x27.5/50x70"
+    },
+    {
+      "id": "96-0357",
+      "titulo": "Sin título",
+      "autor": "Jhony Antonio Giraldo",
+      "medidas": "20x22/34x49"
+    },
+    {
+      "id": "96-0358",
+      "titulo": "Sin título",
+      "autor": "Jhony Antonio Giraldo",
+      "medidas": "20x22/35x50"
+    },
+    {
+      "id": "00-0853",
+      "titulo": "\"Moonartijuanatrip\"",
+      "autor": "Jim Fannkugen",
+      "medidas": "40x50/50x70"
+    },
+    {
+      "id": "96-0363",
+      "titulo": "\"Lagartijuanastrip\"",
+      "autor": "Jim Fannkugen",
+      "medidas": "30x31/50x70"
+    },
+    {
+      "id": "02-1057",
+      "titulo": "Sin título",
+      "autor": "John Fernando Gutiérrez",
+      "medidas": "35x36/50x70"
+    },
+    {
+      "id": "02-1054",
+      "titulo": "Sin título",
+      "autor": "John Fernando Gutiérrez",
+      "medidas": "31x60/50x70"
+    },
+    {
+      "id": "96-0453",
+      "titulo": "Sin título",
+      "autor": "John Fredy Alzate",
+      "medidas": "22x33/35x50"
+    },
+    {
+      "id": "96-0393",
+      "titulo": "Sin título",
+      "autor": "John Fredy Cardona",
+      "medidas": "31x45/50x70"
+    },
+    {
+      "id": "00-0850",
+      "titulo": "\"El bosque misterioso\"",
+      "autor": "John Fredy Cardona",
+      "medidas": "45x60/50x70"
+    },
+    {
+      "id": "97-0541",
+      "titulo": "Sin título",
+      "autor": "John Fredy Cardona",
+      "medidas": "25x25/50x70"
+    },
+    {
+      "id": "96-0381",
+      "titulo": "Sin título",
+      "autor": "John Fredy Cardona",
+      "medidas": "30x45/50x70"
+    },
+    {
+      "id": "97-0499",
+      "titulo": "Sin título",
+      "autor": "John Fredy Cardona",
+      "medidas": "21x27/30x40"
+    },
+    {
+      "id": "00-0901",
+      "titulo": "Sin título",
+      "autor": "John Fredy Colorado",
+      "medidas": "20x35/35x50"
+    },
+    {
+      "id": "00-0791",
+      "titulo": "\"Sigue soñando\"",
+      "autor": "John Fredy Colorado",
+      "medidas": "28x41/50x70"
+    },
+    {
+      "id": "95-0316",
+      "titulo": "\"Votos de castidad\"",
+      "autor": "John Fredy Gómez",
+      "medidas": "22x22/35x50"
+    },
+    {
+      "id": "95-0289",
+      "titulo": "\"Confesión con la superiora\"",
+      "autor": "John Fredy Gómez",
+      "medidas": "22x23/35x50"
+    },
+    {
+      "id": "01-0990",
+      "titulo": "Sin título",
+      "autor": "John Jader Bedoya",
+      "medidas": "35x50/50x70"
+    },
+    {
+      "id": "01-0957",
+      "titulo": "\"Perisferia II\"",
+      "autor": "John Jairo Carvajal",
+      "medidas": "15x25/26x36"
+    },
+    {
+      "id": "01-0945",
+      "titulo": "\"Poco tiempo para recordar\"",
+      "autor": "John Jairo Carvajal",
+      "medidas": "16x25/25x35"
+    },
+    {
+      "id": "00-0781",
+      "titulo": "Sin título",
+      "autor": "John Jairo Carvajal",
+      "medidas": "30x59/50x70"
+    },
+    {
+      "id": "97-0521",
+      "titulo": "Sin título",
+      "autor": "John Jairo Duque.",
+      "medidas": "31x32/50x70"
+    },
+    {
+      "id": "94-0144",
+      "titulo": "Sin título",
+      "autor": "John Jairo Gutiérrez",
+      "medidas": "22x31/35x50"
+    },
+    {
+      "id": "00-0880",
+      "titulo": "Sin título",
+      "autor": "John Jairo Isaza",
+      "medidas": "45x65/50x70"
+    },
+    {
+      "id": "00-0873",
+      "titulo": "Sin título",
+      "autor": "John Jairo Isaza",
+      "medidas": "45x60/50x70"
+    },
+    {
+      "id": "97-0516",
+      "titulo": "Sin título",
+      "autor": "John Jairo Osorio",
+      "medidas": "32x48/50x70"
+    },
+    {
+      "id": "97-0528",
+      "titulo": "Sin título",
+      "autor": "John Jairo Osorio",
+      "medidas": "37X49/50X70"
+    },
+    {
+      "id": "98-0544",
+      "titulo": "\"Alienígena de perfil\"",
+      "autor": "John Jairo Osorio",
+      "medidas": "9x9/14x14"
+    },
+    {
+      "id": "94-0248",
+      "titulo": "Sin título",
+      "autor": "John Jairo Valencia",
+      "medidas": "38x63/50x70"
+    },
+    {
+      "id": "00-0839",
+      "titulo": "Sin título",
+      "autor": "John Jairo Valencia",
+      "medidas": "40x60/50x70"
+    },
+    {
+      "id": "00-0828",
+      "titulo": "Sin título",
+      "autor": "John Jairo Valencia",
+      "medidas": "60x100/70x100"
+    },
+    {
+      "id": "94-0250",
+      "titulo": "Sin título",
+      "autor": "John Jairo Valencia",
+      "medidas": "27x42/50x70"
+    },
+    {
+      "id": "03-1084",
+      "titulo": "Sin título",
+      "autor": "John Jairo Valencia",
+      "medidas": "26x31/44x65"
+    },
+    {
+      "id": "00-0829",
+      "titulo": "Sin título",
+      "autor": "John Jairo Valencia",
+      "medidas": "60x80/70x100"
+    },
+    {
+      "id": "04-1153",
+      "titulo": "Sin título. Portafolio \"Primera Feria de las Artes\" 2004 Unicentro - Medellín",
+      "autor": "John Mario Restrepo",
+      "medidas": "40x50/50x70"
+    },
+    {
+      "id": "94-0150",
+      "titulo": "Sin título",
+      "autor": "John William Alzate",
+      "medidas": "25x30/35x50"
+    },
+    {
+      "id": "94-0212",
+      "titulo": "Sin título",
+      "autor": "John William Alzate",
+      "medidas": "20x27/35x50"
+    },
+    {
+      "id": "94-0161",
+      "titulo": "Sin título",
+      "autor": "Jorge Alberto Longas",
+      "medidas": "42x42/50x70"
+    },
+    {
+      "id": "00-0921",
+      "titulo": "\"Acto final\"",
+      "autor": "Jorge Alberto Rodriguez",
+      "medidas": "23x44/35x50"
+    },
+    {
+      "id": "01-0960",
+      "titulo": "\"Hilos\"",
+      "autor": "Jorge Alberto Rodríguez",
+      "medidas": "7.5x19/25x35"
+    },
+    {
+      "id": "01-0942",
+      "titulo": "\"Tensión\"",
+      "autor": "Jorge Alberto Rodriguez",
+      "medidas": "12x14/14x19"
+    },
+    {
+      "id": "01-0943",
+      "titulo": "\"Aislamiento\"",
+      "autor": "Jorge Alberto Rodríguez",
+      "medidas": "8x19/19x28"
+    },
+    {
+      "id": "94-0131",
+      "titulo": "Sin título",
+      "autor": "Jorge Eduardo González",
+      "medidas": "30x45/35x50"
+    },
+    {
+      "id": "94-0127",
+      "titulo": "Sin título",
+      "autor": "Jorge Eduardo González",
+      "medidas": "25x30/35x50"
+    },
+    {
+      "id": "94-0201",
+      "titulo": "\"Existencia\"",
+      "autor": "Jorge Eduardo Gonzalez",
+      "medidas": "15x42/35x50"
+    },
+    {
+      "id": "05-1178",
+      "titulo": "Sin título",
+      "autor": "Jorge Eliécer Rodríguez",
+      "medidas": "38x45.5/50x70"
+    },
+    {
+      "id": "03-1112",
+      "titulo": "\"Dimensiones del dolor\" (dos obras)",
+      "autor": "Jorge Herrera",
+      "medidas": "15x28/35x50 c/u."
+    },
+    {
+      "id": "98-0571",
+      "titulo": "Sin título",
+      "autor": "Jorge Iván Romero",
+      "medidas": "24X27/35X50"
+    },
+    {
+      "id": "98-0586",
+      "titulo": "Sin título",
+      "autor": "Jorge Iván Romero",
+      "medidas": "30x41/50x70"
+    },
+    {
+      "id": "94-0228",
+      "titulo": "Sin título",
+      "autor": "Jorge Lenis",
+      "medidas": "40x50/50x69"
+    },
+    {
+      "id": "94-0232",
+      "titulo": "Sin título Mención - Segunda Muestra de Gráfica Artística 1995 \"Facultad de Artes 15 años\"",
+      "autor": "Jorge Lenis",
+      "medidas": "25x35/50x69"
+    },
+    {
+      "id": "04-1159",
+      "titulo": "Sin título. Portafolio \"Primera Feria de las Artes\" 2004 Unicentro - Medellín",
+      "autor": "Jorge Luis Múnera",
+      "medidas": "50x70/50x70"
+    },
+    {
+      "id": "04-1150",
+      "titulo": "Sin título. (Intervención obra de Otto Mueller \"Pareja de enamorados\" 1919) Portafolio \"Primera Feria de las Artes\" 2004 Unicentro - Medellín",
+      "autor": "Jorge Luis Múnera",
+      "medidas": "22x28/50x70"
+    },
+    {
+      "id": "05-1186",
+      "titulo": "Sin título",
+      "autor": "Jorge Mario Villada",
+      "medidas": "35x49/50x70"
+    },
+    {
+      "id": "05-1185",
+      "titulo": "\"En la cocina\" Obra seleccionada Cuarta Trienal Internacional de Grabado. Kochi, Japón 1999",
+      "autor": "Jorge Mario Villada",
+      "medidas": "50x50/70x70"
+    },
+    {
+      "id": "03-1126",
+      "titulo": "\"Pradera\"",
+      "autor": "Jorge Valderrama",
+      "medidas": "10x30/35x50"
+    },
+    {
+      "id": "03-1088",
+      "titulo": "Sin título",
+      "autor": "José Alberto Rodríguez",
+      "medidas": "45x66/50x70"
+    },
+    {
+      "id": "01-0952",
+      "titulo": "Sin título",
+      "autor": "José Alejandro Ramírez",
+      "medidas": "22.5x29/35x50"
+    },
+    {
+      "id": "01-0935",
+      "titulo": "Sin título",
+      "autor": "José Alejandro Ramírez",
+      "medidas": "50x70/50x70"
+    },
+    {
+      "id": "01-1002",
+      "titulo": "Sin título",
+      "autor": "José Alejandro Ramírez",
+      "medidas": "35x50/50x70"
+    },
+    {
+      "id": "01-0973",
+      "titulo": "Sin título",
+      "autor": "José Andrés Gutiérrez",
+      "medidas": "46x58/50x70"
+    },
+    {
+      "id": "01-0931",
+      "titulo": "Sin título",
+      "autor": "José Andrés Gutiérrez",
+      "medidas": "28x35/35x50"
+    },
+    {
+      "id": "95-0345",
+      "titulo": "Serie \"Bachue\"",
+      "autor": "José Antonio Cardona",
+      "medidas": "30x32/50x70"
+    },
+    {
+      "id": "95-0305",
+      "titulo": "Sin título",
+      "autor": "José Antonio Cardona",
+      "medidas": "27x37/35x50"
+    },
+    {
+      "id": "95-0263",
+      "titulo": "\"El jardin\"",
+      "autor": "José Antonio Cardona",
+      "medidas": "35x57/50x70"
+    },
+    {
+      "id": "00-0837",
+      "titulo": "\"Telaraña personal\"",
+      "autor": "José Antonio Cardona",
+      "medidas": "23x31/34x47"
+    },
+    {
+      "id": "00-0834",
+      "titulo": "\"Matilde\"",
+      "autor": "José Antonio Cardona",
+      "medidas": "20x27/29x40"
+    },
+    {
+      "id": "95-0344",
+      "titulo": "Serie \"Bachué\"",
+      "autor": "José Antonio Cardona",
+      "medidas": "30x32/50x70"
+    },
+    {
+      "id": "02-1052",
+      "titulo": "\"El cirujano\"",
+      "autor": "José Camilo Duque",
+      "medidas": "14x22/35x50"
+    },
+    {
+      "id": "02-1042",
+      "titulo": "Sin título",
+      "autor": "José Camilo Duque",
+      "medidas": "18x32/50x70"
+    },
+    {
+      "id": "00-0915",
+      "titulo": "Sin título",
+      "autor": "José Fernando Muñoz",
+      "medidas": "8x11/18x19"
+    },
+    {
+      "id": "01-0937",
+      "titulo": "Sin título",
+      "autor": "José Fernando Muñoz",
+      "medidas": "25x50/35x50"
+    },
+    {
+      "id": "99-0696",
+      "titulo": "Sin título",
+      "autor": "José Fernando Muñoz",
+      "medidas": "25x43/50x70"
+    },
+    {
+      "id": "00-0916",
+      "titulo": "Sin título",
+      "autor": "José Fernando Muñoz",
+      "medidas": "8x11/18x25"
+    },
+    {
+      "id": "00-0914",
+      "titulo": "Sin título",
+      "autor": "José Fernando Muñoz",
+      "medidas": "8x10/18x19"
+    },
+    {
+      "id": "95-0335",
+      "titulo": "\"La familia\"",
+      "autor": "José Ignacio Giraldo",
+      "medidas": "24x46/50x70"
+    },
+    {
+      "id": "97-0523",
+      "titulo": "Sin título",
+      "autor": "José Ignacio Ospina",
+      "medidas": "42x42/50x70"
+    },
+    {
+      "id": "93-0064",
+      "titulo": "Sin título",
+      "autor": "José Roberto Jaramillo",
+      "medidas": "20x31/34x49"
+    },
+    {
+      "id": "94-0164",
+      "titulo": "Sin título",
+      "autor": "José Roberto Jaramillo",
+      "medidas": "13x18/24x35"
+    },
+    {
+      "id": "92-0023",
+      "titulo": "Sin título",
+      "autor": "Jovani Franco",
+      "medidas": "15x15/35x50"
+    },
+    {
+      "id": "05-1189",
+      "titulo": "Sin título",
+      "autor": "Juan Andrés Alvarez",
+      "medidas": "40x60/50x70"
+    },
+    {
+      "id": "96-0439",
+      "titulo": "\"El perro\"",
+      "autor": "Juan Arturo Piedrahita",
+      "medidas": "14x15/25x35"
+    },
+    {
+      "id": "96-0440",
+      "titulo": "\"La guitarra no dispara\"",
+      "autor": "Juan Arturo Piedrahita",
+      "medidas": "25x35/33x48"
+    },
+    {
+      "id": "96-0469",
+      "titulo": "Sin título",
+      "autor": "Juan Arturo Piedrahita",
+      "medidas": "30x42/50x70"
+    },
+    {
+      "id": "96-0397",
+      "titulo": "Sin título",
+      "autor": "Juan Arturo Piedrahita",
+      "medidas": "21x45/50x70"
+    },
+    {
+      "id": "96-0407",
+      "titulo": "Sin título",
+      "autor": "Juan Arturo Piedrahita",
+      "medidas": "22x30/35x50"
+    },
+    {
+      "id": "96-0373",
+      "titulo": "Sin título",
+      "autor": "Juan Carlos Aguirre",
+      "medidas": "29x33/50x70"
+    },
+    {
+      "id": "95-0352",
+      "titulo": "Sin título",
+      "autor": "Juan Carlos Aguirre",
+      "medidas": "30x31/50x70"
+    },
+    {
+      "id": "97-0511",
+      "titulo": "Sin título",
+      "autor": "Juan Carlos Correa",
+      "medidas": "47x65/50x70"
+    },
+    {
+      "id": "97-0527",
+      "titulo": "Sin título",
+      "autor": "Juan Carlos Correa",
+      "medidas": "32x52/50x70"
+    },
+    {
+      "id": "98-0596",
+      "titulo": "Sin título",
+      "autor": "Juan Carlos Correa",
+      "medidas": "24x44/49x70"
+    },
+    {
+      "id": "00-0907",
+      "titulo": "Sin título",
+      "autor": "Juan Carlos Correa",
+      "medidas": "32x35/47x67"
+    },
+    {
+      "id": "94-0241",
+      "titulo": "Sin título",
+      "autor": "Juan Carlos Florez",
+      "medidas": "32x42/50x70"
+    },
+    {
+      "id": "94-0259",
+      "titulo": "Sin título",
+      "autor": "Juan Carlos Florez",
+      "medidas": "34x56/50x70"
+    },
+    {
+      "id": "01-0934",
+      "titulo": "Sin título",
+      "autor": "Juan Carlos Jaramillo",
+      "medidas": "50x70/50x70"
+    },
+    {
+      "id": "01-0981",
+      "titulo": "Sin título",
+      "autor": "Juan Carlos Jaramillo",
+      "medidas": "23.5x59/50x70"
+    },
+    {
+      "id": "01-0982",
+      "titulo": "Sin título",
+      "autor": "Juan Carlos Jaramillo",
+      "medidas": "38.5x56/50x70"
+    },
+    {
+      "id": "01-0950",
+      "titulo": "Sin título",
+      "autor": "Juan Carlos Jaramillo",
+      "medidas": "5.5x23.5/17.5x50"
+    },
+    {
+      "id": "98-0561",
+      "titulo": "Sin título",
+      "autor": "Juan Carlos Ortíz",
+      "medidas": "24x33/35x50"
+    },
+    {
+      "id": "03-1091",
+      "titulo": "Sin título",
+      "autor": "Juan Carlos Ortíz",
+      "medidas": "23x37/50x70"
+    },
+    {
+      "id": "98-0562",
+      "titulo": "Sin título",
+      "autor": "Juan Carlos Ortíz",
+      "medidas": "21X35/35X50"
+    },
+    {
+      "id": "00-0845",
+      "titulo": "Sin título. Intervención obra de Francois Millet \"Las espigadoras\" 1857",
+      "autor": "Juan D. (apellido sin registrar)",
+      "medidas": "20x30/35x50"
+    },
+    {
+      "id": "00-0874",
+      "titulo": "Sin título",
+      "autor": "Juan Darío Arias",
+      "medidas": "40x60/50x70"
+    },
+    {
+      "id": "00-0883",
+      "titulo": "Sin título",
+      "autor": "Juan Darío Arias",
+      "medidas": "50x70/50x70"
+    },
+    {
+      "id": "00-0882",
+      "titulo": "Sin título",
+      "autor": "Juan Darío Arias",
+      "medidas": "50x55/50x70"
+    },
+    {
+      "id": "00-0884",
+      "titulo": "Sin título",
+      "autor": "Juan Darío Arias",
+      "medidas": "30x40/50x70"
+    },
+    {
+      "id": "01-0962",
+      "titulo": "Sin título",
+      "autor": "Juan Darío Arias",
+      "medidas": "10.5x15/25x35"
+    },
+    {
+      "id": "01-0948",
+      "titulo": "Sin título",
+      "autor": "Juan Darío Arias",
+      "medidas": "7x19/22.5x35"
+    },
+    {
+      "id": "00-0772",
+      "titulo": "Sin título",
+      "autor": "Juan David Agudelo",
+      "medidas": "35X50/50X70"
+    },
+    {
+      "id": "00-0774",
+      "titulo": "\"Transeuntes\"",
+      "autor": "Juan David Agudelo",
+      "medidas": "22x45/50x70"
+    },
+    {
+      "id": "00-0773",
+      "titulo": "Sin título",
+      "autor": "Juan David Agudelo",
+      "medidas": "35x50/50x70"
+    },
+    {
+      "id": "92-0038",
+      "titulo": "Sin título",
+      "autor": "Juan David Higuita",
+      "medidas": "34x50/36x50"
+    },
+    {
+      "id": "94-0217",
+      "titulo": "\"Adios mi amor\"",
+      "autor": "Juan David Higuita",
+      "medidas": "24x29/33x34"
+    },
+    {
+      "id": "03-1116",
+      "titulo": "\"Enseñándole a un perro\"",
+      "autor": "Juan David Higuita",
+      "medidas": "50x70/70x100"
+    },
+    {
+      "id": "94-0206",
+      "titulo": "\"Homenaje a Frida Kahlo\" Premio Primera Bienal de Gráfica Artística 1993 \"Concurso 190 Años\" Universidad de Antioquia.",
+      "autor": "Juan David Higuita",
+      "medidas": "34x49/50x69"
+    },
+    {
+      "id": "03-1117",
+      "titulo": "\"Culto a la fertilidad\"",
+      "autor": "Juan David Higuita",
+      "medidas": "46x46/70x100"
+    },
+    {
+      "id": "92-0036",
+      "titulo": "Sin título",
+      "autor": "Juan David Higuita",
+      "medidas": "34x44/35x50"
+    },
+    {
+      "id": "92-0027",
+      "titulo": "\"Vida de perro\"",
+      "autor": "Juan David Higuita",
+      "medidas": "19x28/35x50"
+    },
+    {
+      "id": "99-0674",
+      "titulo": "\"Negativo\"",
+      "autor": "Juan Diego Castañeda",
+      "medidas": "37x43/50x70"
+    },
+    {
+      "id": "99-0700",
+      "titulo": "\"Orgía\"",
+      "autor": "Juan Diego Castañeda",
+      "medidas": "22x41/50x70"
+    },
+    {
+      "id": "99-0689",
+      "titulo": "\"Tres virtudes\"",
+      "autor": "Juan Diego Castañeda",
+      "medidas": "50x60/50x70"
+    },
+    {
+      "id": "05-1170",
+      "titulo": "Sin título. Intervención grabado de Goya - Serie \"Caprichos\"",
+      "autor": "Juan Diego Díaz",
+      "medidas": "37x52.5/50x70"
+    },
+    {
+      "id": "03-1137",
+      "titulo": "Sin título",
+      "autor": "Juan Esteban Bustamante",
+      "medidas": "27.5x54/50x70"
+    },
+    {
+      "id": "94-0224",
+      "titulo": "\"En que piensas cuando caminas\"",
+      "autor": "Juan Fernando Vélez",
+      "medidas": "15x15/34x49"
+    },
+    {
+      "id": "95-0260",
+      "titulo": "\"La espera\"",
+      "autor": "Juan Fernando Vélez",
+      "medidas": "19x24/35x50"
+    },
+    {
+      "id": "95-0273",
+      "titulo": "\"Mujer\"",
+      "autor": "Juan Fernando Vélez",
+      "medidas": "38x53/50x70"
+    },
+    {
+      "id": "96-0412",
+      "titulo": "\"Cabeza\"",
+      "autor": "Juan Fernando Vélez",
+      "medidas": "17x18/55x50"
+    },
+    {
+      "id": "95-0261",
+      "titulo": "\"Mujer con camisa suelta\"",
+      "autor": "Juan Fernando Vélez",
+      "medidas": "25x35/35x50"
+    },
+    {
+      "id": "94-0215",
+      "titulo": "\"Noche de luna\"",
+      "autor": "Juan Fernando Vélez",
+      "medidas": "20x23/35x50"
+    },
+    {
+      "id": "96-0434",
+      "titulo": "\"Cabeza\"",
+      "autor": "Juan Fernando Vélez",
+      "medidas": "18x24/35x49"
+    },
+    {
+      "id": "94-0162",
+      "titulo": "\"Vestido de baño azul\"",
+      "autor": "Juan Fernando Vélez",
+      "medidas": "15x24/35x49"
+    },
+    {
+      "id": "94-0156",
+      "titulo": "\"Músicos\"",
+      "autor": "Juan Fernando Vélez",
+      "medidas": "22x24/35x50"
+    },
+    {
+      "id": "94-0223",
+      "titulo": "\"Acelerado Proceso\"",
+      "autor": "Juan Fernando Vélez",
+      "medidas": "23x32/34x49"
+    },
+    {
+      "id": "96-0466",
+      "titulo": "\"Mujer\"",
+      "autor": "Juan Fernando Vélez",
+      "medidas": "30x40/50x70"
+    },
+    {
+      "id": "95-0275",
+      "titulo": "\"Cálido\"",
+      "autor": "Juan Humberto Isaza",
+      "medidas": "33x49/70x50"
+    },
+    {
+      "id": "92-0047",
+      "titulo": "Sin título",
+      "autor": "Juan José Rendón",
+      "medidas": "35x42/50x70"
+    },
+    {
+      "id": "93-0106",
+      "titulo": "Sin título",
+      "autor": "Juan José Rendón",
+      "medidas": "33x48/50x70"
+    },
+    {
+      "id": "99-0711",
+      "titulo": "\"Behind you\"",
+      "autor": "Juan José Saldarriaga",
+      "medidas": "22x25/50x70"
+    },
+    {
+      "id": "01-0974",
+      "titulo": "Sin título",
+      "autor": "Juan Manuel Gómez",
+      "medidas": "48x60/50x70"
+    },
+    {
+      "id": "01-0963",
+      "titulo": "Sin título",
+      "autor": "Juan Manuel Gómez",
+      "medidas": "22x28/35x50"
+    },
+    {
+      "id": "01-0968",
+      "titulo": "Sin título",
+      "autor": "Juan Manuel Gómez",
+      "medidas": "50x70/50x70"
+    },
+    {
+      "id": "02-1039",
+      "titulo": "\"Madre - Hija\"",
+      "autor": "Juan Manuel Gómez",
+      "medidas": "10x15"
+    },
+    {
+      "id": "00-0799",
+      "titulo": "Sin título",
+      "autor": "Juan Manuel Perdomo",
+      "medidas": "31X44/50X70"
+    },
+    {
+      "id": "00-0796",
+      "titulo": "\"Instinto\"",
+      "autor": "Juan Manuel Perdomo",
+      "medidas": "30x44/50x70"
+    },
+    {
+      "id": "00-0912",
+      "titulo": "\"La Muerte en reposo\"",
+      "autor": "Juan Manuel Restrepo",
+      "medidas": "9x16/18x25"
+    },
+    {
+      "id": "05-1168",
+      "titulo": "\"Extraños objetos sexuales\"",
+      "autor": "Juan Pablo Rogers",
+      "medidas": "35x53/50x70"
+    },
+    {
+      "id": "96-0368",
+      "titulo": "\"A la hora del té\"",
+      "autor": "Juan Rafael Calle",
+      "medidas": "36x51/50x70"
+    },
+    {
+      "id": "96-0356",
+      "titulo": "\"El pecado original\"",
+      "autor": "Juan Rafael Calle",
+      "medidas": "16x20/25x35"
+    },
+    {
+      "id": "96-0395",
+      "titulo": "\"Cristo en verano\"",
+      "autor": "Juan Rafael Calle",
+      "medidas": "33x45/50x70"
+    },
+    {
+      "id": "96-0355",
+      "titulo": "\"El árbol de la luna\"",
+      "autor": "Juan Rafael Calle",
+      "medidas": "15x18/35x50"
+    },
+    {
+      "id": "96-0458",
+      "titulo": "\"Dieta metálica\" (2 copias)",
+      "autor": "Juan Rafael Calle",
+      "medidas": "16x23/25x35 c/u."
+    },
+    {
+      "id": "96-0365",
+      "titulo": "\"Las tentaciones de San Antonio\"",
+      "autor": "Juan Rafael Calle",
+      "medidas": "30x31/50x70"
+    },
+    {
+      "id": "91-0018",
+      "titulo": "Sin título",
+      "autor": "Juan Sebastián Bravo",
+      "medidas": "30x40/50x70"
+    },
+    {
+      "id": "01-0980",
+      "titulo": "Sin título",
+      "autor": "Julián Ortíz",
+      "medidas": "24x34/50x70"
+    },
+    {
+      "id": "96-0436",
+      "titulo": "Sin título",
+      "autor": "Julián Cañas",
+      "medidas": "30x38/35x49"
+    },
+    {
+      "id": "96-0428",
+      "titulo": "\"El flautista\"",
+      "autor": "Julián Cañas",
+      "medidas": "21x30/34x50"
+    },
+    {
+      "id": "01-0976",
+      "titulo": "\"Visiones naturales\"",
+      "autor": "Julián Ortiz",
+      "medidas": "32x42/50x70"
+    },
+    {
+      "id": "01-0933",
+      "titulo": "Sin título",
+      "autor": "Julián R. Ortíz",
+      "medidas": "50x70/50x70"
+    },
+    {
+      "id": "01-0994",
+      "titulo": "Sin título",
+      "autor": "Julie Pauline Zapata",
+      "medidas": "35x50/50x70"
+    },
+    {
+      "id": "99-0675",
+      "titulo": "Sin título",
+      "autor": "Julieth Patricia Mejía",
+      "medidas": "50x70/50x70"
+    },
+    {
+      "id": "99-0706",
+      "titulo": "Sin título",
+      "autor": "Julieth Patricia Mejía",
+      "medidas": "25x27/50x70"
+    },
+    {
+      "id": "01-0958",
+      "titulo": "Sin título",
+      "autor": "Julieth Patricia Mejía",
+      "medidas": "13x19/25x35"
+    },
+    {
+      "id": "00-0815",
+      "titulo": "Homenaje a Le Corbusier. \"El mundo de la curvidad\"",
+      "autor": "Julio Abel Sánchez",
+      "medidas": "9x13/18x25"
+    },
+    {
+      "id": "00-0816",
+      "titulo": "Homenaje a Le Corbusier \"El mundo de la ortogonalidad\"",
+      "autor": "Julio Abel Sánchez",
+      "medidas": "9x13/18x25"
+    },
+    {
+      "id": "03-1095",
+      "titulo": "Sin título",
+      "autor": "Julio César (apellido sin identificar)",
+      "medidas": "21x29/35x50"
+    },
+    {
+      "id": "94-0128",
+      "titulo": "Sin título",
+      "autor": "Julio César Arroyave",
+      "medidas": "15x25/35x50"
+    },
+    {
+      "id": "99-0636",
+      "titulo": "Sin título",
+      "autor": "Julio César Jiménez",
+      "medidas": "25x34/50x70"
+    },
+    {
+      "id": "98-0604",
+      "titulo": "Sin título",
+      "autor": "Julio César Jiménez",
+      "medidas": "45X65/50X71"
+    },
+    {
+      "id": "98-0603",
+      "titulo": "Sin título",
+      "autor": "Julio César Jiménez",
+      "medidas": "30X70/50X70"
+    },
+    {
+      "id": "98-0602",
+      "titulo": "Sin título",
+      "autor": "Julio César Jiménez",
+      "medidas": "23x45/50x70"
+    },
+    {
+      "id": "00-0806",
+      "titulo": "\"Amada patria II\"",
+      "autor": "Julio César Salazar",
+      "medidas": "39x48/50x70"
+    },
+    {
+      "id": "00-0919",
+      "titulo": "Sin título",
+      "autor": "Julio César Salazar",
+      "medidas": "32x40/50x70"
+    },
+    {
+      "id": "00-0802",
+      "titulo": "Sin título",
+      "autor": "Julio César Salazar",
+      "medidas": "25x44/50x70"
+    },
+    {
+      "id": "00-0805",
+      "titulo": "\"Amada patria I\"",
+      "autor": "Julio César Salazar",
+      "medidas": "50x70/50x70"
+    },
+    {
+      "id": "00-0795",
+      "titulo": "\"Lo negro, lo blanco y lo rojo\"",
+      "autor": "Julio César Salazar",
+      "medidas": "36x44/50x70"
+    },
+    {
+      "id": "00-0838",
+      "titulo": "Sin título",
+      "autor": "Kamel Ilian Carrillo",
+      "medidas": "28x34/35x50"
+    },
+    {
+      "id": "95-0297",
+      "titulo": "Sin título",
+      "autor": "Kamel Ilian Carrillo",
+      "medidas": "23x23/35x50"
+    },
+    {
+      "id": "02-1024",
+      "titulo": "\"Amor\"",
+      "autor": "Laura Andrade",
+      "medidas": "19x20/35x50"
+    },
+    {
+      "id": "02-1019",
+      "titulo": "Sin título",
+      "autor": "Laura Andrade",
+      "medidas": "33.5x49/50x70"
+    },
+    {
+      "id": "02-1027",
+      "titulo": "Sin título",
+      "autor": "Laura Andrade",
+      "medidas": "24x25/35x50"
+    },
+    {
+      "id": "99-0735",
+      "titulo": "\"Saro\"",
+      "autor": "Laura Catalina Gómez",
+      "medidas": "28x23/50x70"
+    },
+    {
+      "id": "99-0731",
+      "titulo": "Sin título",
+      "autor": "Laura Catalina Gómez",
+      "medidas": "31X50/50X70"
+    },
+    {
+      "id": "99-0722",
+      "titulo": "Sin título",
+      "autor": "Laura Catalina Gómez",
+      "medidas": "22x28/35x50"
+    },
+    {
+      "id": "02-1046",
+      "titulo": "Sin título",
+      "autor": "Leiman Torres",
+      "medidas": "25x36/50x70"
+    },
+    {
+      "id": "96-0375",
+      "titulo": "Sin título",
+      "autor": "Leon Fernando Carvajal",
+      "medidas": "35x55/50x70"
+    },
+    {
+      "id": "00-0764",
+      "titulo": "Sin título",
+      "autor": "Lidheen Soraya Mena",
+      "medidas": "22X26/35X50"
+    },
+    {
+      "id": "98-0608",
+      "titulo": "Sin título",
+      "autor": "Ligia Piedrahita",
+      "medidas": "13x30/50x70"
+    },
+    {
+      "id": "01-0987",
+      "titulo": "Sin título",
+      "autor": "Liliana Correa",
+      "medidas": "35x50/50x70"
+    },
+    {
+      "id": "96-0382",
+      "titulo": "\"Proceso doloroso\" Obra realizada en el Taller Experimental de Gráfica. La Habana. 1996 Intercambio",
+      "autor": "Liliana Hernández",
+      "medidas": "35x51/50x70"
+    },
+    {
+      "id": "00-0849",
+      "titulo": "\"Sentido sin complejo\"",
+      "autor": "Liliana Hernandez",
+      "medidas": "48x65/50x70"
+    },
+    {
+      "id": "94-0148",
+      "titulo": "Sin título",
+      "autor": "Liliana Hernandez",
+      "medidas": "30x41/35x49"
+    },
+    {
+      "id": "94-0122",
+      "titulo": "Sin título",
+      "autor": "Liliana María Castrillón",
+      "medidas": "35x50/35x50"
+    },
+    {
+      "id": "97-0543",
+      "titulo": "Sin título",
+      "autor": "Liliana María Flórez",
+      "medidas": "70x70/70x100"
+    },
+    {
+      "id": "95-0339",
+      "titulo": "Sin título",
+      "autor": "Liliana María Flórez",
+      "medidas": "24x29/50x70"
+    },
+    {
+      "id": "95-0264",
+      "titulo": "\"Viaja\"",
+      "autor": "Liliana María Flórez",
+      "medidas": "25x38/47x65"
+    },
+    {
+      "id": "94-0205",
+      "titulo": "Sin título",
+      "autor": "Liliana María Hoyos",
+      "medidas": "23x30/35x50"
+    },
+    {
+      "id": "95-0270",
+      "titulo": "\"Sombra\"",
+      "autor": "Liliana María Hoyos",
+      "medidas": "35x49/50x70"
+    },
+    {
+      "id": "95-0302",
+      "titulo": "Sin título",
+      "autor": "Liliana María Hoyos",
+      "medidas": "21x30/35x50"
+    },
+    {
+      "id": "02-1043",
+      "titulo": "Sin título",
+      "autor": "Liliana Pérez",
+      "medidas": "35x50/50x70"
+    },
+    {
+      "id": "99-0690",
+      "titulo": "Sin título",
+      "autor": "Lina Maldonado",
+      "medidas": "39x40/50x70"
+    },
+    {
+      "id": "99-0738",
+      "titulo": "\"Señal de cuervo\"",
+      "autor": "Lina Maldonado",
+      "medidas": "40x60/50x70"
+    },
+    {
+      "id": "99-0739",
+      "titulo": "\"Diálogos de sueño en un bosque mojado\"",
+      "autor": "Lina Maldonado",
+      "medidas": "31x39/50x70"
+    },
+    {
+      "id": "99-0702",
+      "titulo": "\"De mi ser\"",
+      "autor": "Lina Maldonado",
+      "medidas": "40x40/50x70"
+    },
+    {
+      "id": "99-0704",
+      "titulo": "Sin título",
+      "autor": "Lina Maldonado",
+      "medidas": "38x39/50x70"
+    },
+    {
+      "id": "00-0751",
+      "titulo": "\"Querida Denise - Kolty\"",
+      "autor": "Lina Maldonado",
+      "medidas": "31x38/50x70"
+    },
+    {
+      "id": "95-0288",
+      "titulo": "Serie \"Lugares invisibles\"",
+      "autor": "Lina María Bedoya",
+      "medidas": "16x22/35x50"
+    },
+    {
+      "id": "99-0671",
+      "titulo": "\"La Crónica Roja\"",
+      "autor": "Lina María Duque",
+      "medidas": "11x43/50x70"
+    },
+    {
+      "id": "95-0313",
+      "titulo": "\"Huellas\"",
+      "autor": "Lina María Patiño",
+      "medidas": "23x28/35x50"
+    },
+    {
+      "id": "99-0705",
+      "titulo": "\"Botero\"",
+      "autor": "Lina Marulanda",
+      "medidas": "16x25/50x70"
+    },
+    {
+      "id": "99-0713",
+      "titulo": "Sin título",
+      "autor": "Lina Marulanda",
+      "medidas": "22x35/50x70"
+    },
+    {
+      "id": "92-0051",
+      "titulo": "Sin título",
+      "autor": "Lucero Velásquez",
+      "medidas": "46x54/70x100"
+    },
+    {
+      "id": "92-0049",
+      "titulo": "Sin título",
+      "autor": "Lucero Velásquez",
+      "medidas": "51x70/70x100"
+    },
+    {
+      "id": "94-0116",
+      "titulo": "Sin título",
+      "autor": "Lucy Bustamante",
+      "medidas": "18x23/35x50"
+    },
+    {
+      "id": "94-0136",
+      "titulo": "Sin título",
+      "autor": "Lucy Bustamante",
+      "medidas": "18x23/35x50"
+    },
+    {
+      "id": "95-0298",
+      "titulo": "Cabeza Nº1\"",
+      "autor": "Luis Andrés Castaño",
+      "medidas": "24x32/35x50"
+    },
+    {
+      "id": "96-0386",
+      "titulo": "\"Muriendo con tu veneno\"",
+      "autor": "Luis Angel Castro",
+      "medidas": "30x46/50x70"
+    },
+    {
+      "id": "97-0538",
+      "titulo": "Sin título",
+      "autor": "Luis Eduardo Loaiza",
+      "medidas": "26x28/50x68"
+    },
+    {
+      "id": "97-0495",
+      "titulo": "Sin título",
+      "autor": "Luis Eduardo Loaiza",
+      "medidas": "26x60/34x70"
+    },
+    {
+      "id": "95-0293",
+      "titulo": "Sin título",
+      "autor": "Luis Enrique Gaviria",
+      "medidas": "25x31/35x50"
+    },
+    {
+      "id": "98-0581",
+      "titulo": "Sin título",
+      "autor": "Luis Ernesto Pelaez",
+      "medidas": "17x22/35x50"
+    },
+    {
+      "id": "97-0530",
+      "titulo": "\"Soledades\"",
+      "autor": "Luis Ernesto Pelaez",
+      "medidas": "35x50/50x70"
+    },
+    {
+      "id": "00-0857",
+      "titulo": "Sin título",
+      "autor": "Luis Ernesto Pelaez",
+      "medidas": "40x65/50x70"
+    },
+    {
+      "id": "94-0158",
+      "titulo": "Sin título",
+      "autor": "Luis Fernando Arango",
+      "medidas": "20x24/35x50"
+    },
+    {
+      "id": "94-0256",
+      "titulo": "Sin título",
+      "autor": "Luis Fernando Arango",
+      "medidas": "22x30/35x50"
+    },
+    {
+      "id": "02-1026",
+      "titulo": "Sin título",
+      "autor": "Luis Fernando López",
+      "medidas": "24x28/35x50"
+    },
+    {
+      "id": "94-0143",
+      "titulo": "\"Tectonicas\"",
+      "autor": "Luis Fernando Restrepo",
+      "medidas": "35x47/35x50"
+    },
+    {
+      "id": "95-0311",
+      "titulo": "\"Perro enrazado con cerdo\"",
+      "autor": "Luis Fernando Salgado",
+      "medidas": "23x42/35x50"
+    },
+    {
+      "id": "96-0380",
+      "titulo": "\"Donde están mis chicas\"",
+      "autor": "Luis Fernando Salgado",
+      "medidas": "34x40/50x70"
+    },
+    {
+      "id": "98-0557",
+      "titulo": "Sin título",
+      "autor": "Luis Guillermo Palacios",
+      "medidas": "23x25/35x49"
+    },
+    {
+      "id": "00-0893",
+      "titulo": "Sin título",
+      "autor": "Luis Guillermo Palacios",
+      "medidas": "14x21/20x31"
+    },
+    {
+      "id": "98-0558",
+      "titulo": "Sin título",
+      "autor": "Luis Guillermo Palacios",
+      "medidas": "23x25/35x49"
+    },
+    {
+      "id": "98-0559",
+      "titulo": "Sin título",
+      "autor": "Luis Guillermo Palacios",
+      "medidas": "23x25/35x49"
+    },
+    {
+      "id": "99-0643",
+      "titulo": "Sin título",
+      "autor": "Luis Guillermo Palacios",
+      "medidas": "15X26/25X37"
+    },
+    {
+      "id": "98-0560",
+      "titulo": "\"El concierto\"",
+      "autor": "Luís Guillermo Palacios",
+      "medidas": "12x23/35x50"
+    },
+    {
+      "id": "98-0597",
+      "titulo": "Sin título",
+      "autor": "Luis Humberto Viana",
+      "medidas": "22x33/50x70"
+    },
+    {
+      "id": "00-0920",
+      "titulo": "\"Sospechosas\"",
+      "autor": "Luis Miguel Mesa",
+      "medidas": "23x35/35x50"
+    },
+    {
+      "id": "04-1143",
+      "titulo": "\"Hombre\" Porafolio \"Primera Feria de las Artes\" 2004 Unicentro - Medellín.",
+      "autor": "Luis Miguel Reyes",
+      "medidas": "21x30/35x50"
+    },
+    {
+      "id": "98-0582",
+      "titulo": "Sin título",
+      "autor": "Luis Octavio López",
+      "medidas": "22x29/50x70"
+    },
+    {
+      "id": "99-0664",
+      "titulo": "Sin título",
+      "autor": "Luis Octavio López",
+      "medidas": "27x20/52x35"
+    },
+    {
+      "id": "99-0665",
+      "titulo": "Sin título",
+      "autor": "Luis Octavio López",
+      "medidas": "28x20/52x36"
+    },
+    {
+      "id": "98-0609",
+      "titulo": "Sin título",
+      "autor": "Luis Octavio López",
+      "medidas": "40X50/50X70"
+    },
+    {
+      "id": "99-0624",
+      "titulo": "Sin título",
+      "autor": "Luis Octavio López",
+      "medidas": "16x21/19x24"
+    },
+    {
+      "id": "99-0663",
+      "titulo": "Sin título",
+      "autor": "Luis Octavio López",
+      "medidas": "15x24/36x50"
+    },
+    {
+      "id": "98-0583",
+      "titulo": "Sin título",
+      "autor": "Luis Octavio López.",
+      "medidas": "21x29/50x70"
+    },
+    {
+      "id": "95-0328",
+      "titulo": "Sin título",
+      "autor": "Luz Amparo Rojas",
+      "medidas": "25x35/50x70"
+    },
+    {
+      "id": "96-0406",
+      "titulo": "Sin título",
+      "autor": "Luz Análida Aguirre",
+      "medidas": "16x24/35x49"
+    },
+    {
+      "id": "96-0470",
+      "titulo": "Sin título",
+      "autor": "Luz Análida Aguirre",
+      "medidas": "27x39/50x70"
+    },
+    {
+      "id": "99-0647",
+      "titulo": "Sin título",
+      "autor": "Luz Análida Aguirre",
+      "medidas": "22x28/35x50"
+    },
+    {
+      "id": "00-0812",
+      "titulo": "Sin título",
+      "autor": "Luz Astrid Isaza",
+      "medidas": "27x42/50x70"
+    },
+    {
+      "id": "03-1099",
+      "titulo": "\"Sellos y pintaderas\"",
+      "autor": "Luz Astrid Isaza",
+      "medidas": "22x29.5/35x50"
+    },
+    {
+      "id": "96-0433",
+      "titulo": "Sin título",
+      "autor": "Luz Astrid Isaza",
+      "medidas": "23x30/35x50"
+    },
+    {
+      "id": "96-0429",
+      "titulo": "Sin título",
+      "autor": "Luz Astrid Isaza",
+      "medidas": "23x30/35x50"
+    },
+    {
+      "id": "00-0841",
+      "titulo": "\"Luna y muerte\"",
+      "autor": "Luz Astrid Isaza",
+      "medidas": "29x51/50x70"
+    },
+    {
+      "id": "95-0333",
+      "titulo": "\"Del pasado\"",
+      "autor": "Luz Astrid Isaza",
+      "medidas": "24x37/50x70"
+    },
+    {
+      "id": "91-0022",
+      "titulo": "Sin título",
+      "autor": "Luz Fany Mejía",
+      "medidas": "43x64/54x74"
+    },
+    {
+      "id": "95-0330",
+      "titulo": "Sin título",
+      "autor": "Luz Marina Calderón",
+      "medidas": "40x55/50x70"
+    },
+    {
+      "id": "95-0331",
+      "titulo": "Sin título",
+      "autor": "Luz Marina Calderón",
+      "medidas": "46x50/50x70"
+    },
+    {
+      "id": "04-1158",
+      "titulo": "Sin título. Portafolio \"Primera Feria de las Artes\" 2004 Unicentro - Medellín",
+      "autor": "Luz Mary Zuleta",
+      "medidas": "42x56/50x70"
+    },
+    {
+      "id": "98-0614",
+      "titulo": "Sin título",
+      "autor": "Luz Stella Restrepo",
+      "medidas": "35x52/47x65"
+    },
+    {
+      "id": "96-0383",
+      "titulo": "\"Sies y noes\"",
+      "autor": "Lyda Agudelo",
+      "medidas": "26x46/50x70"
+    },
+    {
+      "id": "91-0009",
+      "titulo": "Sin título",
+      "autor": "Mabel Herrera",
+      "medidas": "25x30/50x70"
+    },
+    {
+      "id": "97-0475",
+      "titulo": "Sin título",
+      "autor": "Magda Esperanza Serna",
+      "medidas": "15x16x23x25"
+    },
+    {
+      "id": "05-1174",
+      "titulo": "Sin título",
+      "autor": "Manuel Alejandro Quiñones",
+      "medidas": "50x61/70x100"
+    },
+    {
+      "id": "03-1118",
+      "titulo": "Sin título",
+      "autor": "Marcela Zuluaga",
+      "medidas": "35x50/70x100"
+    },
+    {
+      "id": "94-0235",
+      "titulo": "Sin título",
+      "autor": "Mardelly González",
+      "medidas": "30x34/50x70"
+    },
+    {
+      "id": "96-0403",
+      "titulo": "\"Luces que nacen después del cansancio\"",
+      "autor": "Margarita María Mario",
+      "medidas": "19x25/37x40"
+    },
+    {
+      "id": "96-0402",
+      "titulo": "\"Entre en monte y las montañas\"",
+      "autor": "Margarita María Mario",
+      "medidas": "25x25/38x46"
+    },
+    {
+      "id": "95-0299",
+      "titulo": "\"Sr. Pineda\"",
+      "autor": "Margarita María Pineda",
+      "medidas": "31x32/35x50"
+    },
+    {
+      "id": "94-0221",
+      "titulo": "Sin título",
+      "autor": "Margarita Muñoz",
+      "medidas": "11x24/25x35"
+    },
+    {
+      "id": "94-0245",
+      "titulo": "Sin título",
+      "autor": "María Beatríz Morales",
+      "medidas": "28x56/49x69"
+    },
+    {
+      "id": "96-0454",
+      "titulo": "\"Personaje N.1\"",
+      "autor": "Maria Cristina Marulanda",
+      "medidas": "21x27/35x50"
+    },
+    {
+      "id": "94-0174",
+      "titulo": "Sin título",
+      "autor": "María Cristina Marulanda",
+      "medidas": "22x30/35x50"
+    },
+    {
+      "id": "96-0472",
+      "titulo": "\"Intimidad caótica\"",
+      "autor": "María Cristina Marulanda",
+      "medidas": "28x43/50x70"
+    },
+    {
+      "id": "94-0193",
+      "titulo": "Sin título",
+      "autor": "María Cristina Marulanda",
+      "medidas": "20x22/35x50"
+    },
+    {
+      "id": "94-0208",
+      "titulo": "Sin título",
+      "autor": "María Cristina Marulanda",
+      "medidas": "22x30/35x50"
+    },
+    {
+      "id": "98-0599",
+      "titulo": "Sin título (intervención obra de Vincent Van Gohg)",
+      "autor": "María Cristina Ortíz",
+      "medidas": "24x26/50x70"
+    },
+    {
+      "id": "99-0728",
+      "titulo": "Sin título",
+      "autor": "María Cristina Ortíz",
+      "medidas": "11x16/25x35"
+    },
+    {
+      "id": "98-0578",
+      "titulo": "Sin título",
+      "autor": "María Cristina Ortíz",
+      "medidas": "14x32/35x51"
+    },
+    {
+      "id": "05-1177",
+      "titulo": "Sin título",
+      "autor": "María Cristina Serna",
+      "medidas": "38x46/50x70"
+    },
+    {
+      "id": "95-0295",
+      "titulo": "\"Huellas sin olvido\"",
+      "autor": "María del Pilar Duque",
+      "medidas": "23x31/35x50"
+    },
+    {
+      "id": "95-0343",
+      "titulo": "Sin título",
+      "autor": "María Duque",
+      "medidas": "34x46/50x70"
+    },
+    {
+      "id": "97-0482",
+      "titulo": "Sin título",
+      "autor": "Maria Elena Velásquez",
+      "medidas": "25x30/35x50"
+    },
+    {
+      "id": "97-0476",
+      "titulo": "Sin título",
+      "autor": "María Elena Velásquez",
+      "medidas": "13x21/25x35"
+    },
+    {
+      "id": "01-0996",
+      "titulo": "Sin título",
+      "autor": "María Eugenia Gerena",
+      "medidas": "23x27/50x70"
+    },
+    {
+      "id": "02-1007",
+      "titulo": "Sin título",
+      "autor": "María Eugenia Gerena",
+      "medidas": "28x35/50x70"
+    },
+    {
+      "id": "94-0202",
+      "titulo": "Sin título",
+      "autor": "María Isabel Giraldo",
+      "medidas": "25x30/35x49"
+    },
+    {
+      "id": "02-1008",
+      "titulo": "Sin título",
+      "autor": "María José Valencia",
+      "medidas": "32x45/70x100"
+    },
+    {
+      "id": "01-0986",
+      "titulo": "\"Texturas\"",
+      "autor": "María José Valencia",
+      "medidas": "25x30/50x70"
+    },
+    {
+      "id": "01-0992",
+      "titulo": "Sin título",
+      "autor": "María José Valencia",
+      "medidas": "22x34/50x70"
+    },
+    {
+      "id": "91-0006",
+      "titulo": "Sin título",
+      "autor": "María Lucía González",
+      "medidas": "30x40/50x70"
+    },
+    {
+      "id": "92-0034",
+      "titulo": "Sin título",
+      "autor": "María Maryi Tobón",
+      "medidas": "17x21/35x50"
+    },
+    {
+      "id": "93-0104",
+      "titulo": "Sin título",
+      "autor": "María Maryi Tobón",
+      "medidas": "40x46/50x70"
+    },
+    {
+      "id": "94-0157",
+      "titulo": "Sin título",
+      "autor": "María Melguizo",
+      "medidas": "15x20/25x35"
+    },
+    {
+      "id": "94-0218",
+      "titulo": "Sin título",
+      "autor": "María Melquizo",
+      "medidas": "14x19/24x34"
+    },
+    {
+      "id": "93-0076",
+      "titulo": "Sin título",
+      "autor": "María Nelly Hernández",
+      "medidas": "24x30/35x50"
+    },
+    {
+      "id": "95-0349",
+      "titulo": "Textura",
+      "autor": "María Nelly Hernández",
+      "medidas": "32x35/50x70"
+    },
+    {
+      "id": "00-0859",
+      "titulo": "Sin título",
+      "autor": "María Nelly Hernández",
+      "medidas": "10x25/35x50"
+    },
+    {
+      "id": "95-0281",
+      "titulo": "Sin título",
+      "autor": "Maria Nelly Restrepo",
+      "medidas": "25x30/35x50"
+    },
+    {
+      "id": "96-0467",
+      "titulo": "Sin título",
+      "autor": "María Nelly Restrepo",
+      "medidas": "34x56/50x70"
+    },
+    {
+      "id": "91-0007",
+      "titulo": "Sin título",
+      "autor": "María Patricia Gaviria",
+      "medidas": "30x40/50x70"
+    },
+    {
+      "id": "97-0520",
+      "titulo": "Sin título",
+      "autor": "María Patricia Yépes",
+      "medidas": "36x46/50x70"
+    },
+    {
+      "id": "97-0500",
+      "titulo": "Serie \"Huellas del recuerdo\"",
+      "autor": "María Patricia Yépes",
+      "medidas": "35x50/35x50"
+    },
+    {
+      "id": "97-0501",
+      "titulo": "Serie \"Huellas del recuerdo\"",
+      "autor": "María Patricia Yépes",
+      "medidas": "35x50/35x50"
+    },
+    {
+      "id": "97-0502",
+      "titulo": "Serie \"Huellas del recuerdo\"",
+      "autor": "María Patricia Yépes",
+      "medidas": "35x50/35x50"
+    },
+    {
+      "id": "97-0483",
+      "titulo": "Sin título",
+      "autor": "María Patricia Yépes",
+      "medidas": "46x33/35x50"
+    },
+    {
+      "id": "05-1167",
+      "titulo": "Sin título",
+      "autor": "María Paula Salinas",
+      "medidas": "30x41.5/50x70"
+    },
+    {
+      "id": "93-0098",
+      "titulo": "\"Bus espacio cero\"",
+      "autor": "María Reina Abad",
+      "medidas": "27x32/35x50"
+    },
+    {
+      "id": "93-0099",
+      "titulo": "\"Bus espacio cero\"",
+      "autor": "María Reina Abad",
+      "medidas": "23x34/35x50"
+    },
+    {
+      "id": "93-0107",
+      "titulo": "\"Los seres del bus\"",
+      "autor": "María Reina Abad",
+      "medidas": "26x32/35x50"
+    },
+    {
+      "id": "94-0258",
+      "titulo": "\"El bus\"",
+      "autor": "María Reina Abad",
+      "medidas": "27x40/50x70"
+    },
+    {
+      "id": "94-0225",
+      "titulo": "Sin título",
+      "autor": "María Stella Zuluaga",
+      "medidas": "25x36/44x50"
+    },
+    {
+      "id": "94-0229",
+      "titulo": "Sin título",
+      "autor": "María Stella Zuluaga",
+      "medidas": "35x44/50x70"
+    },
+    {
+      "id": "91-0005",
+      "titulo": "Sin título",
+      "autor": "María Virginia Barón",
+      "medidas": "30x44/50x70"
+    },
+    {
+      "id": "01-1003",
+      "titulo": "\"Gotas de lluvia\"",
+      "autor": "Maribel (sin registro de apellido)",
+      "medidas": "17x25/50x70"
+    },
+    {
+      "id": "02-1029",
+      "titulo": "Sin título",
+      "autor": "Maribel Gordillo",
+      "medidas": "18x24/35x50"
+    },
+    {
+      "id": "02-1017",
+      "titulo": "\"Sueños en verde\"",
+      "autor": "Maribel Gordillo",
+      "medidas": "23x45/50x70"
+    },
+    {
+      "id": "02-1016",
+      "titulo": "Sin título",
+      "autor": "Maribel Gordillo",
+      "medidas": "36x43/50x70"
+    },
+    {
+      "id": "03-1114",
+      "titulo": "\"Noche\"",
+      "autor": "Maribel Uribe",
+      "medidas": "7x12/13.5x25"
+    },
+    {
+      "id": "03-1113",
+      "titulo": "\"A María Victoria Vélez\"",
+      "autor": "Maribel Uribe",
+      "medidas": "13x21.5/25x35"
+    },
+    {
+      "id": "01-0939",
+      "titulo": "\"Solo por hoy\"",
+      "autor": "Maribel Uribe",
+      "medidas": "30x45/35x50"
+    },
+    {
+      "id": "00-0765",
+      "titulo": "Sin título",
+      "autor": "Mario Cárdenas",
+      "medidas": "15x18/35x50"
+    },
+    {
+      "id": "00-0851",
+      "titulo": "Sin título",
+      "autor": "Mario Ernesto Giraldo",
+      "medidas": "40x50/50x70"
+    },
+    {
+      "id": "00-0872",
+      "titulo": "Sin título",
+      "autor": "Mario Espinoza",
+      "medidas": "45x65/50X70"
+    },
+    {
+      "id": "02-1021",
+      "titulo": "Sin título",
+      "autor": "Mario Javier Gutiérrez",
+      "medidas": "46x56/50x70"
+    },
+    {
+      "id": "01-1001",
+      "titulo": "\"Isleño\"",
+      "autor": "Mario Osorio",
+      "medidas": "23x28/35x50"
+    },
+    {
+      "id": "01-0988",
+      "titulo": "\"Fijeza\"",
+      "autor": "Mario Osorio",
+      "medidas": "35x50/50x70"
+    },
+    {
+      "id": "96-0462",
+      "titulo": "\"Sin salida\" Obra realizada en el Taller Experimental de Gráfica. La Habana 1996 (Intercambio)",
+      "autor": "Marlene Muñoz",
+      "medidas": "38x50/50x70"
+    },
+    {
+      "id": "96-0366",
+      "titulo": "\"Rostro\" Obra realizada en el Taller Experimental de Gráfica. La Habana. 1966 Intercambio",
+      "autor": "Marlene Muñoz",
+      "medidas": "38x58/50x70"
+    },
+    {
+      "id": "94-0197",
+      "titulo": "\"Mutabilidad\"",
+      "autor": "Marlene Muñoz",
+      "medidas": "20x28/35x50"
+    },
+    {
+      "id": "98-0605",
+      "titulo": "Sin título",
+      "autor": "Marta Elena Builes",
+      "medidas": "18x30/50x70"
+    },
+    {
+      "id": "99-0632",
+      "titulo": "Sin título",
+      "autor": "Marta Isabel Arroyave",
+      "medidas": "14X20/25X36"
+    },
+    {
+      "id": "99-0623",
+      "titulo": "Sin título",
+      "autor": "Marta Isabel Arroyave",
+      "medidas": "10x15/14X16"
+    },
+    {
+      "id": "99-0621",
+      "titulo": "Sin título",
+      "autor": "Marta Isabel Arroyave",
+      "medidas": "4x7/8x10"
+    },
+    {
+      "id": "99-0634",
+      "titulo": "Sin título",
+      "autor": "Marta Isabel Arroyave",
+      "medidas": "20x17/33x23"
+    },
+    {
+      "id": "99-0628",
+      "titulo": "Sin título",
+      "autor": "Marta Isabel Arroyave",
+      "medidas": "13x13/20x35"
+    },
+    {
+      "id": "97-0512",
+      "titulo": "Sin título",
+      "autor": "Martha Elena Builes",
+      "medidas": "36x50/50x70"
+    },
+    {
+      "id": "97-0517",
+      "titulo": "Sin título",
+      "autor": "Martha Elsy Molano",
+      "medidas": "23x48/50x70"
+    },
+    {
+      "id": "98-0547",
+      "titulo": "Sin título",
+      "autor": "Martha Elsy Molano",
+      "medidas": "13x22/23x30"
+    },
+    {
+      "id": "97-0539",
+      "titulo": "\"La danza\" Intervención obra de Henry Matisse",
+      "autor": "Martha Isabel Bedoya",
+      "medidas": "30x36/50x70"
+    },
+    {
+      "id": "93-0080",
+      "titulo": "Sin título",
+      "autor": "Martha Isabel García",
+      "medidas": "30x46/50x70"
+    },
+    {
+      "id": "93-0081",
+      "titulo": "Sin título",
+      "autor": "Martha Isabel García",
+      "medidas": "31x23/50x70"
+    },
+    {
+      "id": "92-0026",
+      "titulo": "Sin título",
+      "autor": "Martha Ivonne López",
+      "medidas": "19X30/35X50"
+    },
+    {
+      "id": "92-0041",
+      "titulo": "\"Farallones\"",
+      "autor": "Martha Lucía Osorio",
+      "medidas": "23x50/38x70"
+    },
+    {
+      "id": "91-0004",
+      "titulo": "Sin título",
+      "autor": "Martha Lucía Osorio",
+      "medidas": "20x26/33x39"
+    },
+    {
+      "id": "91-0016",
+      "titulo": "Sin título",
+      "autor": "Martha Lucía Osorio",
+      "medidas": "20x26/34x42"
+    },
+    {
+      "id": "94-0125",
+      "titulo": "Sin título",
+      "autor": "Martha Stella Zuluaga",
+      "medidas": "20x24/35x51"
+    },
+    {
+      "id": "99-0724",
+      "titulo": "\"Surgir\"",
+      "autor": "Mary Luz Pabón",
+      "medidas": "18x30/15x62"
+    },
+    {
+      "id": "99-0725",
+      "titulo": "\"Señal de vida\"",
+      "autor": "Mary Luz Pabón",
+      "medidas": "34x38/50x71"
+    },
+    {
+      "id": "99-0726",
+      "titulo": "Sin título",
+      "autor": "Mary Luz Pabón",
+      "medidas": "00x00/50x71"
+    },
+    {
+      "id": "99-0727",
+      "titulo": "Sin título",
+      "autor": "Mary Luz Pabón",
+      "medidas": "34X35/50X71"
+    },
+    {
+      "id": "03-1093",
+      "titulo": "Sin título",
+      "autor": "Mauricio Aristizabal",
+      "medidas": "31x34/50x70"
+    },
+    {
+      "id": "97-0488",
+      "titulo": "Sin título",
+      "autor": "Mauricio Aristizabal",
+      "medidas": "22x23/35x50"
+    },
+    {
+      "id": "97-0486",
+      "titulo": "\"Inmigrantes\"",
+      "autor": "Mauricio Aristizabal",
+      "medidas": "22x33/35x50"
+    },
+    {
+      "id": "05-1195",
+      "titulo": "Sin título",
+      "autor": "Mauricio Arroyave",
+      "medidas": "40x60/50x70"
+    },
+    {
+      "id": "03-1062",
+      "titulo": "Sin título",
+      "autor": "Mauricio Arroyave",
+      "medidas": "12x25/35x50"
+    },
+    {
+      "id": "03-1133",
+      "titulo": "Sin título",
+      "autor": "Mauricio Rodríguez",
+      "medidas": "13x26/50x70"
+    },
+    {
+      "id": "03-1119",
+      "titulo": "Sin título",
+      "autor": "Mauricio Rodríguez",
+      "medidas": "13x22/35x50"
+    },
+    {
+      "id": "94-0160",
+      "titulo": "Sin título",
+      "autor": "Miguel Angel Usuga",
+      "medidas": "50x70/50x70"
+    },
+    {
+      "id": "94-0233",
+      "titulo": "\"Danza al amanecer\"",
+      "autor": "Miguel Polling",
+      "medidas": "40x60/50x70"
+    },
+    {
+      "id": "96-0452",
+      "titulo": "Sin título",
+      "autor": "Mónica Cecilia López",
+      "medidas": "17x20/24x35"
+    },
+    {
+      "id": "95-0318",
+      "titulo": "Sin título",
+      "autor": "Mónica Chavarría",
+      "medidas": "25x30/35x50"
+    },
+    {
+      "id": "95-0286",
+      "titulo": "Sin título",
+      "autor": "Mónica Chavarría",
+      "medidas": "20x26/35x50"
+    },
+    {
+      "id": "94-0187",
+      "titulo": "Sin título",
+      "autor": "Mónica Chavarría",
+      "medidas": "23x30/35x48"
+    },
+    {
+      "id": "95-0329",
+      "titulo": "\"Fragmentación de un reflejo\"",
+      "autor": "Mónica Chavarría",
+      "medidas": "25x44/50x70"
+    },
+    {
+      "id": "97-0505",
+      "titulo": "Sin título",
+      "autor": "Mónica Fernández",
+      "medidas": "25x31/32x48"
+    },
+    {
+      "id": "96-0413",
+      "titulo": "Sin título",
+      "autor": "Mónica Fernández",
+      "medidas": "17x27/35x50"
+    },
+    {
+      "id": "96-0415",
+      "titulo": "Sin título",
+      "autor": "Mónica Fernández",
+      "medidas": "21x27/35x50"
+    },
+    {
+      "id": "96-0389",
+      "titulo": "Sin título (versión obra de Matisse \"Desnudo rosa\" 1935)",
+      "autor": "Mónica Fernández",
+      "medidas": "19x29/50x70"
+    },
+    {
+      "id": "96-0414",
+      "titulo": "Sin título",
+      "autor": "Mónica Fernández",
+      "medidas": "19x19/35x50"
+    },
+    {
+      "id": "99-0668",
+      "titulo": "Sin título",
+      "autor": "Mónica María Betancourt",
+      "medidas": "30x35/50x70"
+    },
+    {
+      "id": "02-1041",
+      "titulo": "\"No cuerpo\"",
+      "autor": "Mónica María Betancur",
+      "medidas": "10x15"
+    },
+    {
+      "id": "99-0684",
+      "titulo": "Sin título",
+      "autor": "Mónica María Betancur",
+      "medidas": "45x70/50x70"
+    },
+    {
+      "id": "05-1191",
+      "titulo": "Sin título",
+      "autor": "Mónica María Betancur",
+      "medidas": "40x60/50x70"
+    },
+    {
+      "id": "02-1037",
+      "titulo": "Sin título",
+      "autor": "Mónica María Betancur",
+      "medidas": "10x15"
+    },
+    {
+      "id": "01-0941",
+      "titulo": "Sin título",
+      "autor": "Mónica Molina",
+      "medidas": "10x24/25x35"
+    },
+    {
+      "id": "03-1121",
+      "titulo": "Sin título",
+      "autor": "Mónica Vélez",
+      "medidas": "18x22.5/35x50"
+    },
+    {
+      "id": "05-1194",
+      "titulo": "Sin título",
+      "autor": "Nadia Ianina Viloria",
+      "medidas": "40x60/50x70"
+    },
+    {
+      "id": "97-0509",
+      "titulo": "Sin título",
+      "autor": "Natalia Cadavid",
+      "medidas": "30x40/35x50"
+    },
+    {
+      "id": "97-0536",
+      "titulo": "Sin título",
+      "autor": "Natalia Cadavid",
+      "medidas": "28x36/50x70"
+    },
+    {
+      "id": "97-0485",
+      "titulo": "Sin título",
+      "autor": "Natalia Cadavid",
+      "medidas": "22x23/35x50"
+    },
+    {
+      "id": "99-0622",
+      "titulo": "\"Besitos pu´acá\"",
+      "autor": "Natalia Elorza",
+      "medidas": "7x10/11X22"
+    },
+    {
+      "id": "99-0637",
+      "titulo": "\"Mi soledad\"",
+      "autor": "Natalia Elorza",
+      "medidas": "15x23/27x35"
+    },
+    {
+      "id": "99-0657",
+      "titulo": "Sin título",
+      "autor": "Natalia Elorza",
+      "medidas": "27x17/49x24"
+    },
+    {
+      "id": "99-0642",
+      "titulo": "Sin título",
+      "autor": "Natalia Elorza",
+      "medidas": "16X24/25X35"
+    },
+    {
+      "id": "00-0747",
+      "titulo": "\"Josefina\"",
+      "autor": "Natalia Elorza",
+      "medidas": "22x24/35x50"
+    },
+    {
+      "id": "02-1035",
+      "titulo": "\"Empaquetado\"",
+      "autor": "Natalia Elorza",
+      "medidas": "10x15"
+    },
+    {
+      "id": "99-0629",
+      "titulo": "\"Besitos pu´ alla\"",
+      "autor": "Natalia Elorza",
+      "medidas": "25x18/26x38"
+    },
+    {
+      "id": "98-0572",
+      "titulo": "Sin título",
+      "autor": "Natalia Giraldo",
+      "medidas": "22x28/35x50"
+    },
+    {
+      "id": "98-0573",
+      "titulo": "Sin título",
+      "autor": "Natalia Giraldo",
+      "medidas": "21X28/35X50"
+    },
+    {
+      "id": "05-1200",
+      "titulo": "Sin título",
+      "autor": "Natalia Herrera",
+      "medidas": "40x60/50x70"
+    },
+    {
+      "id": "04-1151",
+      "titulo": "\"She likes the sun\" Portafolio \"Primera Feria de las Artes\" 2004 Unicentro - Medellín",
+      "autor": "Natalia Hoyos",
+      "medidas": "30x30/50x70"
+    },
+    {
+      "id": "95-0312",
+      "titulo": "\"Crecer\"",
+      "autor": "Natalia Molina",
+      "medidas": "26x30/35x50"
+    },
+    {
+      "id": "95-0306",
+      "titulo": "Sin título",
+      "autor": "Natalia Molina",
+      "medidas": "35x50/50x70"
+    },
+    {
+      "id": "98-0580",
+      "titulo": "Sin título",
+      "autor": "Nelson Franco",
+      "medidas": "31x27/35x50"
+    },
+    {
+      "id": "00-0844",
+      "titulo": "Sin título",
+      "autor": "Néstor Carlos Martínez",
+      "medidas": "10x11/25x35"
+    },
+    {
+      "id": "03-1103",
+      "titulo": "\"Silla dos\"",
+      "autor": "Néstor Raul Perez",
+      "medidas": "17x29/35x50"
+    },
+    {
+      "id": "99-0646",
+      "titulo": "\"Señal uno\"",
+      "autor": "Néstor Raul Pérez",
+      "medidas": "22x33/35x49"
+    },
+    {
+      "id": "03-1104",
+      "titulo": "\"Silla uno\"",
+      "autor": "Nestor Raul Pérez",
+      "medidas": "15x23.5/35x50"
+    },
+    {
+      "id": "94-0242",
+      "titulo": "Sin título",
+      "autor": "Nohemi Vélez",
+      "medidas": "31x47/50x70"
+    },
+    {
+      "id": "02-1051",
+      "titulo": "Sin título",
+      "autor": "Nora Pérez",
+      "medidas": "22x30/35x50"
+    },
+    {
+      "id": "96-0411",
+      "titulo": "Sin título",
+      "autor": "Norman Bejarano",
+      "medidas": "19x21/35x50"
+    },
+    {
+      "id": "94-0239",
+      "titulo": "Sin título",
+      "autor": "Norman Bejarano",
+      "medidas": "23x31/50x70"
+    },
+    {
+      "id": "00-0835",
+      "titulo": "Sin título",
+      "autor": "Norman Cardona",
+      "medidas": "21x24x35x50"
+    },
+    {
+      "id": "94-0179",
+      "titulo": "Sin título",
+      "autor": "Norman Cardona",
+      "medidas": "14x22/35x50"
+    },
+    {
+      "id": "03-1127",
+      "titulo": "\"Made in El Aro (Ant.)\"",
+      "autor": "Nury Enciso",
+      "medidas": "17.5x27/50x70"
+    },
+    {
+      "id": "97-0519",
+      "titulo": "Sin título",
+      "autor": "Olber Alzate",
+      "medidas": "44x52/50x70"
+    },
+    {
+      "id": "00-0822",
+      "titulo": "\"Rojos de otoño\"",
+      "autor": "Olga de Botero",
+      "medidas": "34x54/50x70"
+    },
+    {
+      "id": "99-0680",
+      "titulo": "Sin título",
+      "autor": "Olga Elena Schafer",
+      "medidas": "32x50/50x70"
+    },
+    {
+      "id": "00-0924",
+      "titulo": "\"Autorretrato\"",
+      "autor": "Olga Lucía Hincapié",
+      "medidas": "23x30/35x50"
+    },
+    {
+      "id": "01-0936",
+      "titulo": "\"En mis sueños\"",
+      "autor": "Olga Lucia Trujillo",
+      "medidas": "14x19/35x50"
+    },
+    {
+      "id": "96-0408",
+      "titulo": "Sin título",
+      "autor": "Olga María Acosta",
+      "medidas": "24x29/34x50"
+    },
+    {
+      "id": "94-0251",
+      "titulo": "Sin título (Díptico)",
+      "autor": "Oliva Cano",
+      "medidas": "52x162/70x172"
+    },
+    {
+      "id": "94-0195",
+      "titulo": "Sin título",
+      "autor": "Omar Bedoya",
+      "medidas": "24x22/35x50"
+    },
+    {
+      "id": "98-0549",
+      "titulo": "\"Flor venial\"",
+      "autor": "Omar Fernando Ruiz",
+      "medidas": "13x13/26x35"
+    },
+    {
+      "id": "98-0610",
+      "titulo": "Sin título",
+      "autor": "Omar Fernando Ruiz",
+      "medidas": "27X34/50X70"
+    },
+    {
+      "id": "98-0551",
+      "titulo": "\"Pluma\"",
+      "autor": "Omar Fernando Ruiz",
+      "medidas": "13x26/25x35"
+    },
+    {
+      "id": "98-0550",
+      "titulo": "\"Sementerio\"",
+      "autor": "Omar Fernando Ruiz",
+      "medidas": "13x13/25x35"
+    },
+    {
+      "id": "98-0552",
+      "titulo": "\"Grabado\"",
+      "autor": "Omar Fernando Ruiz",
+      "medidas": "12x15/25x35"
+    },
+    {
+      "id": "98-0548",
+      "titulo": "\"Es pera\"",
+      "autor": "Omar Fernando Ruiz",
+      "medidas": "13x13/25x35"
+    },
+    {
+      "id": "98-0553",
+      "titulo": "\"Desnudo repetido en posible levitación\"",
+      "autor": "Omar Fernando Ruiz",
+      "medidas": "13x13/25x35"
+    },
+    {
+      "id": "03-1066",
+      "titulo": "\"Uno\"",
+      "autor": "Omar Fernando Ruíz",
+      "medidas": "12.5x19/35x50"
+    },
+    {
+      "id": "03-1065",
+      "titulo": "\"Verónica\"",
+      "autor": "Omar Fernando Ruíz",
+      "medidas": "5x10.5/35x50"
+    },
+    {
+      "id": "03-1102",
+      "titulo": "Sin título",
+      "autor": "Omar Fernando Ruiz",
+      "medidas": "9.5x19.5/35x50"
+    },
+    {
+      "id": "96-0399",
+      "titulo": "Sin título",
+      "autor": "Omar Gómez",
+      "medidas": "25x35/50x70"
+    },
+    {
+      "id": "96-0451",
+      "titulo": "Serie \"Pajaros libertarios\"",
+      "autor": "Omar Gómez",
+      "medidas": "36x50/70x100"
+    },
+    {
+      "id": "96-0465",
+      "titulo": "Sin título",
+      "autor": "Omar Gómez",
+      "medidas": "25x38/50x70"
+    },
+    {
+      "id": "96-0450",
+      "titulo": "Serie \"La divina tragedia\"",
+      "autor": "Omar Gómez",
+      "medidas": "37x52/70x100"
+    },
+    {
+      "id": "03-1124",
+      "titulo": "Sin título",
+      "autor": "Oneidis Méndez",
+      "medidas": "13x13.5/35x50"
+    },
+    {
+      "id": "00-0918",
+      "titulo": "\"Un matachín\"",
+      "autor": "Oriana María Zapata",
+      "medidas": "23x26/38x56"
+    },
+    {
+      "id": "00-0798",
+      "titulo": "Sin título",
+      "autor": "Oriana María Zapata",
+      "medidas": "26X43/50X70"
+    },
+    {
+      "id": "99-0715",
+      "titulo": "\"La siesta\" (Reproducción de obra de Félix Vallotton (1865-1925)",
+      "autor": "Orlando Martínez",
+      "medidas": "25x35/50x70"
+    },
+    {
+      "id": "05-1190",
+      "titulo": "Sin título",
+      "autor": "Oscar González",
+      "medidas": "40x60/50x70"
+    },
+    {
+      "id": "05-1193",
+      "titulo": "Sin título",
+      "autor": "Oscar González",
+      "medidas": "40x60/50x70"
+    },
+    {
+      "id": "94-0129",
+      "titulo": "\"Rasgos\"",
+      "autor": "Oscar Iván Valencia",
+      "medidas": "20x25/35x51"
+    },
+    {
+      "id": "92-0053",
+      "titulo": "\"Sofía II\"",
+      "autor": "Oscar Rodríguez",
+      "medidas": "45x46/70x100"
+    },
+    {
+      "id": "92-0054",
+      "titulo": "\"Fragmentos Sofia\"",
+      "autor": "Oscar Rodríguez",
+      "medidas": "46x60/70x100"
+    },
+    {
+      "id": "98-0589",
+      "titulo": "\"De las vírgenes\"",
+      "autor": "Oscar Roldán",
+      "medidas": "30x60/50x70"
+    },
+    {
+      "id": "94-0126",
+      "titulo": "Sin título",
+      "autor": "Oscar Roldán",
+      "medidas": "27x37/35x50"
+    },
+    {
+      "id": "94-0184",
+      "titulo": "Sin título",
+      "autor": "Paola Andrea Gallego",
+      "medidas": "26x35/35x50"
+    },
+    {
+      "id": "98-0569",
+      "titulo": "Sin título",
+      "autor": "Paola Andrea Pérez",
+      "medidas": "16X20/35X50"
+    },
+    {
+      "id": "98-0587",
+      "titulo": "Sin título",
+      "autor": "Paola Andrea Pérez.",
+      "medidas": "50X70/50X70"
+    },
+    {
+      "id": "99-0682",
+      "titulo": "Sin título",
+      "autor": "Paola Andrea Piedrahita",
+      "medidas": "22x32/50x70"
+    },
+    {
+      "id": "04-1155",
+      "titulo": "\"Dea amoris\" Portafolio \"Primera Feria de las Artes\" 2004 Unicentro - Medellin",
+      "autor": "Paola Gamboa",
+      "medidas": "28.5x36/50x70"
+    },
+    {
+      "id": "04-1156",
+      "titulo": "Sin título (intervención obra de Liliana Porter) Portafolio \"Primera Feria de las Artes\" 2004 Unicentro - Medellín",
+      "autor": "Paola Gamboa",
+      "medidas": "24.5x30/50x70"
+    },
+    {
+      "id": "92-0048",
+      "titulo": "Sin título",
+      "autor": "Patrica Castaño",
+      "medidas": "46x49/70x100"
+    },
+    {
+      "id": "92-0058",
+      "titulo": "Sin título",
+      "autor": "Patricia Castaño",
+      "medidas": "46x48/70x100"
+    },
+    {
+      "id": "92-0050",
+      "titulo": "Sin título",
+      "autor": "Patricia Castaño",
+      "medidas": "35x52/70x100"
+    },
+    {
+      "id": "03-1129",
+      "titulo": "Sin título",
+      "autor": "Patricia Montes",
+      "medidas": "16x30/50x70"
+    },
+    {
+      "id": "02-1053",
+      "titulo": "Sin título",
+      "autor": "Patricia Torres",
+      "medidas": "16x25/35x50"
+    },
+    {
+      "id": "96-0387",
+      "titulo": "Si es y no es",
+      "autor": "Paula Andrea Echeverri",
+      "medidas": "30x42/50x70"
+    },
+    {
+      "id": "95-0287",
+      "titulo": "Sin título",
+      "autor": "Paula Andrea Gallego",
+      "medidas": "18x24/35x50"
+    },
+    {
+      "id": "95-0320",
+      "titulo": "Sin título",
+      "autor": "Paula Andrea Gallego",
+      "medidas": "13x35/35x50"
+    },
+    {
+      "id": "95-0290",
+      "titulo": "Sin título",
+      "autor": "Paula Andrea Gallego",
+      "medidas": "21x15/35x50"
+    },
+    {
+      "id": "94-0185",
+      "titulo": "Sin título",
+      "autor": "Paula Andrea Gallego",
+      "medidas": "22x25/35x50"
+    },
+    {
+      "id": "04-1147",
+      "titulo": "Sin título Portafolio \"Primera Feria de las Artes\" 2004 Unicentro - Medellín",
+      "autor": "Paula Andrea Hernández",
+      "medidas": "30x30/50x70"
+    },
+    {
+      "id": "03-1125",
+      "titulo": "Sin título",
+      "autor": "Paula Andrea Medina",
+      "medidas": "14x22.5/35x50"
+    },
+    {
+      "id": "03-1128",
+      "titulo": "Sin título",
+      "autor": "Paula Andrea Medina",
+      "medidas": "18x23.5/50x70"
+    },
+    {
+      "id": "01-0965",
+      "titulo": "Sin título",
+      "autor": "Paula Andrea Piedrahita",
+      "medidas": "12.5x18/50x70"
+    },
+    {
+      "id": "99-0667",
+      "titulo": "Sin título",
+      "autor": "Paula Andrea Piedrahita",
+      "medidas": "24X34/50X70"
+    },
+    {
+      "id": "01-0949",
+      "titulo": "Sin título",
+      "autor": "Paula Andrea Suarez",
+      "medidas": "12x16/25x35"
+    },
+    {
+      "id": "03-1135",
+      "titulo": "Sin título",
+      "autor": "Paula Cristina González",
+      "medidas": "26,5x28/50x70"
+    },
+    {
+      "id": "02-1036",
+      "titulo": "\"Fondoy\"",
+      "autor": "Paula Marcela Cano",
+      "medidas": "10x15"
+    },
+    {
+      "id": "99-0714",
+      "titulo": "Sin título",
+      "autor": "Paulo César David",
+      "medidas": "23x29/50x70"
+    },
+    {
+      "id": "99-0719",
+      "titulo": "Sin título",
+      "autor": "Paulo César David",
+      "medidas": "20x22/50x70"
+    },
+    {
+      "id": "92-0045",
+      "titulo": "Sin título",
+      "autor": "Pilar Hernández",
+      "medidas": "28x39/50x70"
+    },
+    {
+      "id": "00-0820",
+      "titulo": "Sin título",
+      "autor": "Ramiro Correa",
+      "medidas": "19x24/25x35"
+    },
+    {
+      "id": "98-0618",
+      "titulo": "\"Bloques\" Poratfolio de Gráfica \"Seis Serigrafías, Seis artistas\"",
+      "autor": "Ramiro Correa",
+      "medidas": "22x29/35x50"
+    },
+    {
+      "id": "00-0819",
+      "titulo": "Sin título",
+      "autor": "Ramiro Correa",
+      "medidas": "16x27/25x35"
+    },
+    {
+      "id": "94-0219",
+      "titulo": "\"Toros\"",
+      "autor": "Ramiro Londoño",
+      "medidas": "23x30/35x50"
+    },
+    {
+      "id": "94-0194",
+      "titulo": "Sin título",
+      "autor": "Ramiro Londoño",
+      "medidas": "27x29/35x50"
+    },
+    {
+      "id": "99-0658",
+      "titulo": "Sin título",
+      "autor": "Raul Edison Trujillo",
+      "medidas": "15x16/35x50"
+    },
+    {
+      "id": "99-0653",
+      "titulo": "Sin título",
+      "autor": "Raul Edison Trujillo",
+      "medidas": "21x26/33x46"
+    },
+    {
+      "id": "99-0662",
+      "titulo": "Sin título",
+      "autor": "Raul Edison Trujillo",
+      "medidas": "18x23/35x50"
+    },
+    {
+      "id": "01-0975",
+      "titulo": "Sin título",
+      "autor": "Raul Eduardo Hoyos",
+      "medidas": "48x62/50x70"
+    },
+    {
+      "id": "93-0061",
+      "titulo": "Sin título",
+      "autor": "Raul Eduardo Montoya",
+      "medidas": "22x30/35x42"
+    },
+    {
+      "id": "00-0878",
+      "titulo": "Sin título",
+      "autor": "René Alejandro Castrillón",
+      "medidas": "45x65/50x70"
+    },
+    {
+      "id": "01-0946",
+      "titulo": "Sin título",
+      "autor": "René Alejandro Castrillón",
+      "medidas": "11x16/25x35"
+    },
+    {
+      "id": "00-0879",
+      "titulo": "Sin título",
+      "autor": "René Alejandro Castrillón",
+      "medidas": "40x60/50x70"
+    },
+    {
+      "id": "01-0947",
+      "titulo": "Sin título",
+      "autor": "René Alejandro Castrillón",
+      "medidas": "10x24/20x35"
+    },
+    {
+      "id": "97-0497",
+      "titulo": "Sin título",
+      "autor": "René Urquijo",
+      "medidas": "26x93/35x100"
+    },
+    {
+      "id": "00-0923",
+      "titulo": "\"El vocho\"",
+      "autor": "Richard González",
+      "medidas": "21x28/35x50"
+    },
+    {
+      "id": "00-0927",
+      "titulo": "Sin título",
+      "autor": "Richard González",
+      "medidas": "33x35/50x70"
+    },
+    {
+      "id": "03-1108",
+      "titulo": "Sin título",
+      "autor": "Robert Carlos Rodríguez",
+      "medidas": "22x38/35x50"
+    },
+    {
+      "id": "00-0831",
+      "titulo": "Sin título",
+      "autor": "Rocío Espinal",
+      "medidas": "45x46/70x100"
+    },
+    {
+      "id": "96-0464",
+      "titulo": "Sin título",
+      "autor": "Rocío Restrepo",
+      "medidas": "35x44/50x70"
+    },
+    {
+      "id": "96-0419",
+      "titulo": "Sin título",
+      "autor": "Rocío Restrepo",
+      "medidas": "20x24/35x50"
+    },
+    {
+      "id": "96-0420",
+      "titulo": "Sin título",
+      "autor": "Rocío Restrepo",
+      "medidas": "20x25/35x50"
+    },
+    {
+      "id": "94-0119",
+      "titulo": "Sin título",
+      "autor": "Rocío Restrepo",
+      "medidas": "25x35/35x50"
+    },
+    {
+      "id": "96-0422",
+      "titulo": "Sin título",
+      "autor": "Rocío Restrepo",
+      "medidas": "17x24/35x50"
+    },
+    {
+      "id": "94-0152",
+      "titulo": "Sin título",
+      "autor": "Rocío Restrepo",
+      "medidas": "24x34/33x48"
+    },
+    {
+      "id": "95-0267",
+      "titulo": "\"Inspiración\"",
+      "autor": "Rocio Restrepo",
+      "medidas": "35x51/50x70"
+    },
+    {
+      "id": "96-0461",
+      "titulo": "\"Fuerzas\"",
+      "autor": "Rodrigo Agudelo",
+      "medidas": "35x38/50x70"
+    },
+    {
+      "id": "02-1033",
+      "titulo": "\"Lolita\"",
+      "autor": "Rodrigo Carmona",
+      "medidas": "10x15"
+    },
+    {
+      "id": "03-1096",
+      "titulo": "Sin título",
+      "autor": "Rodrigo Carmona",
+      "medidas": "24.5x34/35x50"
+    },
+    {
+      "id": "97-0484",
+      "titulo": "\"Esperando al fulano\"",
+      "autor": "Rodrigo Díaz",
+      "medidas": "18x32/35x50"
+    },
+    {
+      "id": "97-0524",
+      "titulo": "\"Sentidos Opuestos\"",
+      "autor": "Rodrigo Díaz",
+      "medidas": "30x30/50x70"
+    },
+    {
+      "id": "03-1098",
+      "titulo": "\"Tres elementos\"",
+      "autor": "Rodrigo Díaz",
+      "medidas": "16x31/35x50"
+    },
+    {
+      "id": "97-0525",
+      "titulo": "\"Bodegón de cabezas silenciosas\"",
+      "autor": "Rodrigo Díaz",
+      "medidas": "28x42/50x70"
+    },
+    {
+      "id": "03-1097",
+      "titulo": "Sin título",
+      "autor": "Rodrigo Díaz",
+      "medidas": "11x17.5/35x50"
+    },
+    {
+      "id": "03-1105",
+      "titulo": "\"Hombre-mujer danzando\"",
+      "autor": "Rodrigo Díaz",
+      "medidas": "30x40/35x50"
+    },
+    {
+      "id": "00-0902",
+      "titulo": "Sin título",
+      "autor": "Rodrigo Díaz",
+      "medidas": "10x36/35x50"
+    },
+    {
+      "id": "00-0904",
+      "titulo": "\"Bicicleta con ruedas auxiliares\"",
+      "autor": "Rodrigo Díaz",
+      "medidas": "21x26/35x50"
+    },
+    {
+      "id": "00-0903",
+      "titulo": "\"1977\"",
+      "autor": "Rodrigo Díaz",
+      "medidas": "16x22/35x50"
+    },
+    {
+      "id": "00-0852",
+      "titulo": "\"Bad girl\"",
+      "autor": "Rodrigo Díaz",
+      "medidas": "45x60/50x70"
+    },
+    {
+      "id": "94-0178",
+      "titulo": "Sin título",
+      "autor": "Rosa Ramírez",
+      "medidas": "28x35/35x50"
+    },
+    {
+      "id": "94-0175",
+      "titulo": "Sin título",
+      "autor": "Rosa Ramírez",
+      "medidas": "24x31/35x50"
+    },
+    {
+      "id": "95-0308",
+      "titulo": "Sin título",
+      "autor": "Roy Espinoza",
+      "medidas": "18x24/35x50"
+    },
+    {
+      "id": "95-0309",
+      "titulo": "Sin título",
+      "autor": "Roy Espinoza",
+      "medidas": "18x24/35x50"
+    },
+    {
+      "id": "95-0310",
+      "titulo": "Sin título",
+      "autor": "Roy Espinoza",
+      "medidas": "18x24/35x50"
+    },
+    {
+      "id": "94-0167",
+      "titulo": "Sin título",
+      "autor": "Roy Espinoza",
+      "medidas": "23x30/35x50"
+    },
+    {
+      "id": "95-0319",
+      "titulo": "Sin título",
+      "autor": "Roy Espinoza",
+      "medidas": "12x17/35x50"
+    },
+    {
+      "id": "97-0478",
+      "titulo": "Sin título",
+      "autor": "Rubén Darío Mejía",
+      "medidas": "11x22/25x35"
+    },
+    {
+      "id": "98-0570",
+      "titulo": "Sin título",
+      "autor": "Rubén Darío Mejía",
+      "medidas": "18X27/35X50"
+    },
+    {
+      "id": "03-1109",
+      "titulo": "Sin título",
+      "autor": "Rubén Darío Mejía",
+      "medidas": "13x38/17.5x45"
+    },
+    {
+      "id": "99-0672",
+      "titulo": "Sin título",
+      "autor": "Rubén Torres",
+      "medidas": "45X50/50X70"
+    },
+    {
+      "id": "99-0695",
+      "titulo": "\"La sala\"",
+      "autor": "Rubén Torres",
+      "medidas": "31x46/50x70"
+    },
+    {
+      "id": "99-0737",
+      "titulo": "\"Las cuatro fábulas\"",
+      "autor": "Rubén Yépes",
+      "medidas": "22x92/70x100"
+    },
+    {
+      "id": "99-0701",
+      "titulo": "\"Cosmogonía\" Mención Cuarta Bienal de Gráfica Artística. Año 2000 (convocatoria de nivel nacional)",
+      "autor": "Rubén Yépes",
+      "medidas": "44x45/50x70"
+    },
+    {
+      "id": "99-0685",
+      "titulo": "Sin título",
+      "autor": "Rubén Yépes",
+      "medidas": "30x41/50x70"
+    },
+    {
+      "id": "00-0827",
+      "titulo": "\"Las huellas de lo vivido\"",
+      "autor": "Rubén Yépes",
+      "medidas": "56x59/70x100"
+    },
+    {
+      "id": "99-0703",
+      "titulo": "Sin título",
+      "autor": "Rubén Yépes",
+      "medidas": "50x50/50x70"
+    },
+    {
+      "id": "00-0826",
+      "titulo": "\"Superficie de inscripción\" Mención IV Bienal de Gráfica Artística Año 2000 \"Facultad de Artes 20 años\" (convocatoria de nivel nacional)",
+      "autor": "Rubén Yépes",
+      "medidas": "55x58/70x100"
+    },
+    {
+      "id": "97-0532",
+      "titulo": "Sin título",
+      "autor": "Ruby María Restrepo",
+      "medidas": "12x47/50x70"
+    },
+    {
+      "id": "03-1107",
+      "titulo": "Sin título",
+      "autor": "Ruby María Restrepo",
+      "medidas": "21x24.3/35x50"
+    },
+    {
+      "id": "97-0533",
+      "titulo": "Sin título",
+      "autor": "Ruby María Restrepo",
+      "medidas": "37x50/50x70"
+    },
+    {
+      "id": "98-0615",
+      "titulo": "Portafolio de gráfica \"Seis serigrafías seis artistas\"",
+      "autor": "Ruderico Salazar",
+      "medidas": "26x36/35x50"
+    },
+    {
+      "id": "98-0588",
+      "titulo": "Sin título",
+      "autor": "Rusbel Alvarez",
+      "medidas": "21x36/37x70"
+    },
+    {
+      "id": "98-0564",
+      "titulo": "Sin título",
+      "autor": "Rusbel Alvarez",
+      "medidas": "20X28/32X46"
+    },
+    {
+      "id": "98-0585",
+      "titulo": "Sin título",
+      "autor": "Rusbel Alvarez",
+      "medidas": "42X59/50X70"
+    },
+    {
+      "id": "94-0191",
+      "titulo": "Sin título",
+      "autor": "Ruth Marina Galeano",
+      "medidas": "21x26/35x50"
+    },
+    {
+      "id": "94-0153",
+      "titulo": "Sin título",
+      "autor": "Samandra García",
+      "medidas": "23x32/35x50"
+    },
+    {
+      "id": "99-0688",
+      "titulo": "Sin título",
+      "autor": "Samara Yuliet Suescún",
+      "medidas": "22x25/50x70"
+    },
+    {
+      "id": "99-0692",
+      "titulo": "Sin título",
+      "autor": "Samara Yuliet Suescún",
+      "medidas": "22X35/50X70"
+    },
+    {
+      "id": "99-0681",
+      "titulo": "Sin título",
+      "autor": "Samara Yuliet Suescún Moreno",
+      "medidas": "25X40/50X70"
+    },
+    {
+      "id": "00-0911",
+      "titulo": "Sin título",
+      "autor": "Sandra María Cardona",
+      "medidas": "6x15/18x25"
+    },
+    {
+      "id": "00-0793",
+      "titulo": "\"En el circo de Tarragona hay una mujer sentada\"",
+      "autor": "Sandra María Carmona",
+      "medidas": "30x44/50x70"
+    },
+    {
+      "id": "94-0182",
+      "titulo": "Sin título",
+      "autor": "Sandra Soto",
+      "medidas": "22x31/35x50"
+    },
+    {
+      "id": "94-0246",
+      "titulo": "Sin título",
+      "autor": "Sandra Valencia",
+      "medidas": "41x44/50x70"
+    },
+    {
+      "id": "96-0430",
+      "titulo": "Sin título",
+      "autor": "Sandra Valencia",
+      "medidas": "25x35/35x50"
+    },
+    {
+      "id": "96-0431",
+      "titulo": "Sin título",
+      "autor": "Sandra Valencia",
+      "medidas": "24x34/35x50"
+    },
+    {
+      "id": "96-0432",
+      "titulo": "Sin título",
+      "autor": "Sandra Valencia",
+      "medidas": "20x35/35x50"
+    },
+    {
+      "id": "01-0978",
+      "titulo": "Sin título",
+      "autor": "Sandy Arboleda",
+      "medidas": "33x49/50x70"
+    },
+    {
+      "id": "01-0977",
+      "titulo": "Sin título",
+      "autor": "Sandy Arboleda",
+      "medidas": "34.5x50/50x70"
+    },
+    {
+      "id": "00-0818",
+      "titulo": "Sin título",
+      "autor": "Santa (Luis Alfonso Giraldo)",
+      "medidas": "8x12/25x35"
+    },
+    {
+      "id": "00-0789",
+      "titulo": "Sin título",
+      "autor": "Santiago Mesa",
+      "medidas": "26x37/50x70"
+    },
+    {
+      "id": "00-0917",
+      "titulo": "Sin título",
+      "autor": "Santiago Mesa",
+      "medidas": "9x15/17x25"
+    },
+    {
+      "id": "99-0655",
+      "titulo": "Sin título",
+      "autor": "Sara Herrera",
+      "medidas": "23x34/35x50"
+    },
+    {
+      "id": "99-0652",
+      "titulo": "Sin título",
+      "autor": "Sara Herrera",
+      "medidas": "13x18/35x50"
+    },
+    {
+      "id": "00-0743",
+      "titulo": "Sin título",
+      "autor": "Sara Herrera",
+      "medidas": "20x25/35x50"
+    },
+    {
+      "id": "03-1138",
+      "titulo": "\"Desfase metálico\"",
+      "autor": "Sebastián Tabares",
+      "medidas": "31x32/50x70"
+    },
+    {
+      "id": "96-0391",
+      "titulo": "Sin título",
+      "autor": "Sergio Andrés Restrepo",
+      "medidas": "29x30/50x70"
+    },
+    {
+      "id": "99-0633",
+      "titulo": "\"Sublime\"",
+      "autor": "Sergio Bueno",
+      "medidas": "20x16/35x24"
+    },
+    {
+      "id": "99-0650",
+      "titulo": "\"A solas\"",
+      "autor": "Sergio Bueno",
+      "medidas": "22x28/35x50"
+    },
+    {
+      "id": "99-0644",
+      "titulo": "Sin título",
+      "autor": "Sergio Bueno",
+      "medidas": "16x20/24x27"
+    },
+    {
+      "id": "98-0598",
+      "titulo": "Sin título",
+      "autor": "Sergio Bueno",
+      "medidas": "25x34/50x70"
+    },
+    {
+      "id": "99-0654",
+      "titulo": "\"Carma\"",
+      "autor": "Sergio Bueno",
+      "medidas": "22x27/33x49"
+    },
+    {
+      "id": "99-0626",
+      "titulo": "\"Ella\"",
+      "autor": "Sergio Bueno",
+      "medidas": "14x17/26x35"
+    },
+    {
+      "id": "98-0600",
+      "titulo": "Sin título",
+      "autor": "Sergio Bueno",
+      "medidas": "28X41/50X70"
+    },
+    {
+      "id": "00-0754",
+      "titulo": "Sin título",
+      "autor": "Sergio Gómez",
+      "medidas": "48X60/50X70"
+    },
+    {
+      "id": "00-0753",
+      "titulo": "Sin título",
+      "autor": "Sergio Gómez",
+      "medidas": "48x60/50x70"
+    },
+    {
+      "id": "00-0752",
+      "titulo": "Sin título",
+      "autor": "Sergio Gómez",
+      "medidas": "48x50/50x70"
+    },
+    {
+      "id": "00-0755",
+      "titulo": "Sin título",
+      "autor": "Sergio Gómez",
+      "medidas": "35x51/50x70"
+    },
+    {
+      "id": "00-0750",
+      "titulo": "Sin título",
+      "autor": "Sergio Gómez",
+      "medidas": "48X60/50X70"
+    },
+    {
+      "id": "00-0790",
+      "titulo": "Sin título",
+      "autor": "Silvana Mejía",
+      "medidas": "22x45/50x70"
+    },
+    {
+      "id": "94-0222",
+      "titulo": "Sin título",
+      "autor": "Silvia Estela Gutiérrez",
+      "medidas": "17x21/35x50"
+    },
+    {
+      "id": "02-1040",
+      "titulo": "\"Esqueletos\"",
+      "autor": "Sin identificar",
+      "medidas": "10x15"
+    },
+    {
+      "id": "92-0043",
+      "titulo": "Sin título",
+      "autor": "Sofía Arango",
+      "medidas": "46x46/50x71"
+    },
+    {
+      "id": "00-0861",
+      "titulo": "Sin título",
+      "autor": "Sofía Inés Giraldo",
+      "medidas": "24x26/35x50"
+    },
+    {
+      "id": "99-0669",
+      "titulo": "Sin título",
+      "autor": "Sol Mildred Cuartas",
+      "medidas": "23x37/50x70"
+    },
+    {
+      "id": "99-0694",
+      "titulo": "Intervención obra de Van Gogh \"La habitación de Vincent Van Gogh en Arles\"",
+      "autor": "Sol Mildred Cuartas",
+      "medidas": "26x35/50x70"
+    },
+    {
+      "id": "05-1172",
+      "titulo": "Sin título. (Intervención grabado de Juan Antonio Roda)",
+      "autor": "Stefany Cruz",
+      "medidas": "26.5x26.5/50x70"
+    },
+    {
+      "id": "05-1163",
+      "titulo": "Sin título",
+      "autor": "Tatiana Bejarano",
+      "medidas": "23x30.5/35x50"
+    },
+    {
+      "id": "00-0771",
+      "titulo": "Sin título",
+      "autor": "Tatiana Silva",
+      "medidas": "16X26/35X50"
+    },
+    {
+      "id": "00-0811",
+      "titulo": "Sin título",
+      "autor": "Tatiana Silva",
+      "medidas": "40x50/50x70"
+    },
+    {
+      "id": "94-0149",
+      "titulo": "\"Homenaje a Obregón\"",
+      "autor": "Tilman Cano",
+      "medidas": "20x25/35x50"
+    },
+    {
+      "id": "04-1140",
+      "titulo": "Sin título. Portafolio \"Primera Feria de las Artes\" 2004 Unicentro - Medellín",
+      "autor": "Trinidad Caballero",
+      "medidas": "30x30/50x70"
+    },
+    {
+      "id": "00-0817",
+      "titulo": "Serie: a) \"Desaparecido\" b) \"Atentado contra tiburones en Gorgona\" c) \"No a las corridas de toros\" d) \"Pinochet extraditable\"",
+      "autor": "Tulio Restrepo",
+      "medidas": "13x17/13x17 cm. c/u."
+    },
+    {
+      "id": "04-1152",
+      "titulo": "Sin título. Portafolio \"Primera Feria de las Artes\" 2004 Unicentro - Medellín",
+      "autor": "Uriel Mauricio Ríos",
+      "medidas": "21x44/50x70"
+    },
+    {
+      "id": "99-0699",
+      "titulo": "\"Niña vomitando fantasmas rosados que parecen fresitas\"",
+      "autor": "Valentina Hoyos",
+      "medidas": "27x34/50x70"
+    },
+    {
+      "id": "99-0676",
+      "titulo": "Sin título",
+      "autor": "Valentina Hoyos",
+      "medidas": "40x68/50x70"
+    },
+    {
+      "id": "03-1076",
+      "titulo": "Sin título",
+      "autor": "Verónica Moreno",
+      "medidas": "16x20.5/25x35"
+    },
+    {
+      "id": "99-0716",
+      "titulo": "Sin título",
+      "autor": "Verónica Moreno",
+      "medidas": "23x29/50x70"
+    },
+    {
+      "id": "01-0959",
+      "titulo": "Sin título",
+      "autor": "Verónica Moreno",
+      "medidas": "11x13,5/25x35"
+    },
+    {
+      "id": "00-0780",
+      "titulo": "Sin título",
+      "autor": "Víctor Andrés Muñoz",
+      "medidas": "29X44/50X70"
+    },
+    {
+      "id": "00-0768",
+      "titulo": "Sin título",
+      "autor": "Víctor Andrés Muñoz",
+      "medidas": "35X50/50x70"
+    },
+    {
+      "id": "00-0766",
+      "titulo": "Sin título",
+      "autor": "Víctor Andrés Muñoz",
+      "medidas": "17X24/35X50"
+    },
+    {
+      "id": "00-0767",
+      "titulo": "Sin título",
+      "autor": "Víctor Andrés Muñoz",
+      "medidas": "22X45/55X50"
+    },
+    {
+      "id": "01-0938",
+      "titulo": "Sin título",
+      "autor": "Víctor Andrés Muñoz",
+      "medidas": "10x15/35x50"
+    },
+    {
+      "id": "97-0479",
+      "titulo": "Sin título",
+      "autor": "Víctor Manuel Hoyos",
+      "medidas": "15x23/25x35"
+    },
+    {
+      "id": "00-0892",
+      "titulo": "Sin título",
+      "autor": "Víctor Manuel Hoyos",
+      "medidas": "13x19/25x35"
+    },
+    {
+      "id": "97-0480",
+      "titulo": "Sin título",
+      "autor": "Víctor Manuel Hoyos",
+      "medidas": "20x23/25x35"
+    },
+    {
+      "id": "98-0545",
+      "titulo": "Sin título",
+      "autor": "Víctor Manuel Hoyos",
+      "medidas": "9x11/12x17"
+    },
+    {
+      "id": "97-0506",
+      "titulo": "Sin título",
+      "autor": "Víctor Manuel Hoyos",
+      "medidas": "35x50/35x50"
+    },
+    {
+      "id": "05-1183",
+      "titulo": "Sin título",
+      "autor": "Viviana Pesce",
+      "medidas": "40x60/50x70"
+    },
+    {
+      "id": "95-0315",
+      "titulo": "Sin título",
+      "autor": "Viviana Rodríguez",
+      "medidas": "20x25/35x50"
+    },
+    {
+      "id": "95-0266",
+      "titulo": "Sin título",
+      "autor": "Viviana Rodríguez",
+      "medidas": "29x35/50x70"
+    },
+    {
+      "id": "96-0437",
+      "titulo": "Sin título",
+      "autor": "Walter Betancur",
+      "medidas": "20x20/35x50"
+    },
+    {
+      "id": "96-0398",
+      "titulo": "Sin título",
+      "autor": "Walter Betancur",
+      "medidas": "45x65/50x70"
+    },
+    {
+      "id": "96-0405",
+      "titulo": "Sin título",
+      "autor": "Walter Betancur",
+      "medidas": "23x26/35x50"
+    },
+    {
+      "id": "96-0416",
+      "titulo": "Sin título",
+      "autor": "Walter Betancur",
+      "medidas": "22x32/35x50"
+    },
+    {
+      "id": "94-0123",
+      "titulo": "Sin título",
+      "autor": "Walter Murillo",
+      "medidas": "17x20/35x51"
+    },
+    {
+      "id": "94-0130",
+      "titulo": "Sin título",
+      "autor": "Walter Murillo",
+      "medidas": "22x25/35x51"
+    },
+    {
+      "id": "94-0216",
+      "titulo": "Sin título",
+      "autor": "Walter Murillo",
+      "medidas": "23x30/35x50"
+    },
+    {
+      "id": "95-0296",
+      "titulo": "\"Niña sentada\"",
+      "autor": "Werner Naranjo",
+      "medidas": "26x28/35x50"
+    },
+    {
+      "id": "96-0468",
+      "titulo": "\"Pajarito\"",
+      "autor": "Werner Naranjo",
+      "medidas": "31x39/50x70"
+    },
+    {
+      "id": "95-0325",
+      "titulo": "Sin título",
+      "autor": "Werner Naranjo",
+      "medidas": "34x48/39x55"
+    },
+    {
+      "id": "96-0361",
+      "titulo": "\"Cráneo de buey\"",
+      "autor": "Werner Naranjo",
+      "medidas": "22x30/40x54"
+    },
+    {
+      "id": "96-0425",
+      "titulo": "\"Torero embestido con base en Picasso\"",
+      "autor": "Werner Naranjo",
+      "medidas": "26x30/35x50"
+    },
+    {
+      "id": "95-0326",
+      "titulo": "\"Futbol-ista\"",
+      "autor": "Werner Naranjo",
+      "medidas": "22x27/35x50"
+    },
+    {
+      "id": "97-0542",
+      "titulo": "Sin título",
+      "autor": "Werner Naranjo",
+      "medidas": "41x63/10x100"
+    },
+    {
+      "id": "96-0388",
+      "titulo": "Sin título",
+      "autor": "William Salazar",
+      "medidas": "30x38/50x69"
+    },
+    {
+      "id": "02-1056",
+      "titulo": "\"71273\"",
+      "autor": "Wilmar Estrada",
+      "medidas": "24x35.5/50x70"
+    },
+    {
+      "id": "00-0922",
+      "titulo": "\"Prófugos\"",
+      "autor": "Wilmar Zuleta",
+      "medidas": "21x26/35x50"
+    },
+    {
+      "id": "00-0809",
+      "titulo": "Sin título",
+      "autor": "Wilmar Zuleta",
+      "medidas": "35x40/50x70"
+    },
+    {
+      "id": "00-0928",
+      "titulo": "Sin título",
+      "autor": "Wilmar Zuleta",
+      "medidas": "26x40/50x70"
+    },
+    {
+      "id": "01-0956",
+      "titulo": "\"Pulgarcito de el ogro\"",
+      "autor": "Wilmar Zuleta Cardona",
+      "medidas": "12x16/25x35"
+    },
+    {
+      "id": "02-1047",
+      "titulo": "Sin título",
+      "autor": "Wilson Arango",
+      "medidas": "28x36/50x70"
+    },
+    {
+      "id": "02-1044",
+      "titulo": "Sin título",
+      "autor": "Wilson Arango",
+      "medidas": "30x36/50x70"
+    },
+    {
+      "id": "97-0487",
+      "titulo": "\"Solo de piano\"",
+      "autor": "Wilson Montoya",
+      "medidas": "27x30/35x51"
+    },
+    {
+      "id": "00-0833",
+      "titulo": "\"Calidez de mi soledad\"",
+      "autor": "Yadira Robledo",
+      "medidas": "50x70/70x100"
+    },
+    {
+      "id": "99-0631",
+      "titulo": "Sin título",
+      "autor": "Yohana Cadavid",
+      "medidas": "11x11/25x35"
+    },
+    {
+      "id": "99-0660",
+      "titulo": "Sin título",
+      "autor": "Yohana Cadavid",
+      "medidas": "19x18/50x35"
+    },
+    {
+      "id": "00-0742",
+      "titulo": "Sin título",
+      "autor": "Yohana Cadavid",
+      "medidas": "24X31/35X50"
+    },
+    {
+      "id": "99-0659",
+      "titulo": "Sin título",
+      "autor": "Yohana Cadavid",
+      "medidas": "20x32/35x50"
+    },
+    {
+      "id": "91-0013",
+      "titulo": "Sin título",
+      "autor": "Yolanda Arango",
+      "medidas": "37x53/50x70"
+    },
+    {
+      "id": "91-0010",
+      "titulo": "Sin título",
+      "autor": "Yolanda Arango",
+      "medidas": "30x40/50x70"
+    },
+    {
+      "id": "98-0575",
+      "titulo": "Sin título",
+      "autor": "Yolanda Zapata",
+      "medidas": "27x38/35x50"
+    },
+    {
+      "id": "98-0579",
+      "titulo": "Sin título",
+      "autor": "Yolanda Zapata",
+      "medidas": "31x50/35x50"
+    },
+    {
+      "id": "98-0554",
+      "titulo": "Sin título",
+      "autor": "Yolanda Zapata",
+      "medidas": "23x28/26x35"
+    },
+    {
+      "id": "98-0577",
+      "titulo": "Sin título",
+      "autor": "Yolanda Zapata",
+      "medidas": "25X35/48x32"
+    },
+    {
+      "id": "98-0555",
+      "titulo": "Sin título",
+      "autor": "Yolanda Zapata",
+      "medidas": "35x45/35x50"
+    },
+    {
+      "id": "00-0814",
+      "titulo": "Sin título",
+      "autor": "Yolanda Zapata",
+      "medidas": "34x45/50x70"
+    },
+    {
+      "id": "03-1081",
+      "titulo": "Sin título",
+      "autor": "Yovanni Franco",
+      "medidas": "23x29/35x50"
+    },
+    {
+      "id": "93-0087",
+      "titulo": "Sin título",
+      "autor": "Yovanni Franco",
+      "medidas": "35x51/50x70"
+    },
+    {
+      "id": "03-1082",
+      "titulo": "Sin título",
+      "autor": "Yovanni Franco",
+      "medidas": "34x50/50x70"
+    },
+    {
+      "id": "03-1083",
+      "titulo": "Sin título",
+      "autor": "Yovanni Franco",
+      "medidas": "35x52/50x70"
+    },
+    {
+      "id": "00-0801",
+      "titulo": "Sin título",
+      "autor": "Yovanny Monsalve",
+      "medidas": "21x37/50x70"
+    },
+    {
+      "id": "93-0083",
+      "titulo": "Sin título",
+      "autor": "Yovanny Franco",
+      "medidas": "26x43/50x71"
+    },
+    {
+      "id": "00-0807",
+      "titulo": "Sin título",
+      "autor": "Yovanny Monsalve",
+      "medidas": "60x50/50x70"
+    },
+    {
+      "id": "00-0797",
+      "titulo": "\"Autorretrato\"",
+      "autor": "Yovanny Monsalve",
+      "medidas": "35x40/50x70"
+    },
+    {
+      "id": "99-0645",
+      "titulo": "Sin título",
+      "autor": "Yovanny Zapata",
+      "medidas": "12x12/23x24"
+    },
+    {
+      "id": "00-0894",
+      "titulo": "Sin título",
+      "autor": "Yovanny Zapata",
+      "medidas": "15x21/24x35"
+    },
+    {
+      "id": "98-0584",
+      "titulo": "Sin título",
+      "autor": "Yuleidy Atehortúa",
+      "medidas": "28X43/50X70"
+    },
+    {
+      "id": "98-0566",
+      "titulo": "Sin título",
+      "autor": "Yuleidy Atehortúa",
+      "medidas": "23x25/35x50"
+    },
+    {
+      "id": "98-0567",
+      "titulo": "Sin título",
+      "autor": "Yuleidy Atehortúa",
+      "medidas": "23X25/35X50"
+    },
+    {
+      "id": "98-0565",
+      "titulo": "Sin título",
+      "autor": "Yuleidy Atehortúa",
+      "medidas": "23X25/35X50"
+    },
+    {
+      "id": "03-1106",
+      "titulo": "\"El delirio del toro\"",
+      "autor": "Yuleidy Aterhortúa",
+      "medidas": "23x34/35x50"
+    },
+    {
+      "id": "04-1139",
+      "titulo": "Sin título. Potafolio de Gráfica \"Primera Feria de las Artes\" 2004 Unicentro - Medellín",
+      "autor": "Yuli Andrea Cadavid",
+      "medidas": "45x65/50x70"
+    },
+    {
+      "id": "05-1187",
+      "titulo": "Sin título",
+      "autor": "Yuli Andrea Cadavid",
+      "medidas": "32x60/56x76"
+    },
+    {
+      "id": "05-1169",
+      "titulo": "Sin título. (Intervención de la obra \"Guernica\" de Picasso)",
+      "autor": "Yuliana Quiceno",
+      "medidas": "24x26/50x70"
+    },
+    {
+      "id": "96-0418",
+      "titulo": "\"Paisaje habituado\"",
+      "autor": "Zulma Isabel Suárez",
+      "medidas": "19x30/35x50"
+    },
+    {
+      "id": "96-0421",
+      "titulo": "\"Cadáver exquisito\"",
+      "autor": "Zulma Isabel Suárez",
+      "medidas": "Diametro 25"
+    },
+    {
+      "id": "96-0372",
+      "titulo": "Sin título",
+      "autor": "Zulma Isabel Suárez",
+      "medidas": "31x31/50x70"
+    },
+    {
+      "id": "96-0376",
+      "titulo": "Sin título",
+      "autor": "Zulma Isabel Suárez",
+      "medidas": "26x34/50x70"
+    },
+    {
+      "id": "96-0359",
+      "titulo": "\"Atmósferas\"",
+      "autor": "Zulma Isabel Suárez",
+      "medidas": "25x25/35x50"
+    }
   ]
 }
-
