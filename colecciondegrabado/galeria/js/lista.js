@@ -53,8 +53,11 @@
 
   function cmpAlpha(a, b) {
     // Orden: autor ASC, luego título ASC, luego id ASC (estable/consistente).
+    // Las obras sin autor se mandan al final (no al principio).
     var aa = normStr(a && a.autor);
     var ba = normStr(b && b.autor);
+    if (!aa && ba) return 1;
+    if (aa && !ba) return -1;
     var t1 = aa.localeCompare(ba, "es", { sensitivity: "base" });
     if (t1) return t1;
 
@@ -84,8 +87,11 @@
     var tr = document.createElement("tr");
     tr.className = "Estilo5";
 
+    var autor = obra.autor && obra.autor.trim()
+      ? obra.autor
+      : '<em style="opacity:0.7">An\u00f3nimo</em>';
     tr.appendChild(
-      td('<font color="#FFFFFF">' + (obra.autor || "") + "</font>", {
+      td('<font color="#FFFFFF">' + autor + "</font>", {
         width: "28%",
         align: "left",
         valign: "middle",
@@ -96,10 +102,11 @@
 
     tr.appendChild(
       td(
-        '<a href="amp.html?id=' +
+        '<a class="btn-icono" href="amp.html?id=' +
           encodeURIComponent(id) +
-          '" target="_blank">' +
-          '<img src="images/obra.gif" alt="Ver ampliaci&oacute;n" width="22" height="16" border="0" longdesc="Ver obra" />' +
+          '" target="_blank" title="Ver obra">' +
+          '<img src="images/obra.gif" alt="" width="22" height="16" border="0" />' +
+          '<span class="btn-icono__label">Ver obra</span>' +
           "</a>",
         {
           width: "7%",
@@ -113,10 +120,11 @@
 
     tr.appendChild(
       td(
-        '<a href="ficha.html?id=' +
+        '<a class="btn-icono" href="ficha.html?id=' +
           encodeURIComponent(id) +
-          '" target="_blank">' +
-          '<img src="images/obra_amp.gif" alt="Ver detalles" width="22" height="16" border="0" />' +
+          '" target="_blank" title="Ver ficha">' +
+          '<img src="images/obra_amp.gif" alt="" width="22" height="16" border="0" />' +
+          '<span class="btn-icono__label">Ver ficha</span>' +
           "</a>",
         {
           width: "7%",

@@ -19,6 +19,7 @@
       low: "../imagenes/baja/" + id + "lo.jpg",
       high: "../imagenes/alta/" + id + "hi.jpg",
       backToAmp: "amp.html?id=" + encodeURIComponent(id),
+      externo: "",
     };
   }
 
@@ -35,6 +36,11 @@
     // catálogo grande (colecciondegrabado/data/gallery/obras.json)
     if (obra.imagenBaja) m.low = obra.imagenBaja;
     if (obra.imagenAlta) m.high = obra.imagenAlta;
+
+    // Enlace a análisis temático externo
+    if (obra.enlaceExterno && obra.enlaceExterno.trim()) {
+      m.externo = obra.enlaceExterno.trim();
+    }
     return m;
   }
 
@@ -94,15 +100,22 @@
       "</tr>" +
       '<tr><td height="8" colspan="5" align="center" valign="middle"><hr /></td></tr>' +
       "<tr>" +
-      '<td width="67%" height="15">&nbsp;</td>' +
-      '<td width="8%" align="center" valign="middle"><span class="Estilo3"><a href="' +
+      '<td width="' + (ctx.media.externo ? "44" : "58") + '%" height="15">&nbsp;</td>' +
+      '<td width="14%" align="center" valign="middle"><a class="btn-icono" href="' +
       esc(ctx.media.high) +
-      '" target="_blank"><img src="images/obra_amp.gif" alt="Ampliar imagen" width="22" height="16" border="0" /></a></span></td>' +
-      '<td width="8%" height="15" align="center" valign="middle"><span class="Estilo2">' +
-      '<a href="' +
+      '" target="_blank" title="Imagen original"><img src="images/obra_amp.gif" alt="" width="22" height="16" border="0" /><span class="btn-icono__label">Imagen original</span></a></td>' +
+      '<td width="14%" height="15" align="center" valign="middle">' +
+      '<a class="btn-icono" href="' +
       esc(ctx.media.backToAmp) +
-      '" target="_self"><img src="images/analisis.gif" alt="Regresar" width="22" height="16" border="0" /></a>' +
-      "</span></td>" +
+      '" target="_self" title="Volver a la obra"><img src="images/analisis.gif" alt="" width="22" height="16" border="0" /><span class="btn-icono__label">Volver a la obra</span></a>' +
+      "</td>" +
+      (ctx.media.externo
+        ? '<td width="14%" height="15" align="center" valign="middle">' +
+          '<a class="btn-icono" href="' + esc(ctx.media.externo) + '" target="_blank" title="An&aacute;lisis tem&aacute;tico">' +
+          '<img src="images/obra.gif" alt="" width="22" height="16" border="0" />' +
+          '<span class="btn-icono__label">An&aacute;lisis tem&aacute;tico</span>' +
+          "</a></td>"
+        : "") +
       "</tr>" +
       "</table>" +
       "</div></td>" +

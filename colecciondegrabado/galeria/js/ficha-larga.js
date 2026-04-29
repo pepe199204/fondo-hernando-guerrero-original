@@ -38,9 +38,12 @@
 
     // catálogo chico (galeria/data/obras.json)
     if (obra.urls) {
+      // Importante: ignoramos `obra.urls.ampliacion` aunque venga, porque suele
+      // apuntar a páginas legacy `amp_AA-NNNN.html` que ya no existen.
+      // Siempre usamos la URL canónica `amp.html?id=AA-NNNN`.
       return {
         previsualizacion: obra.urls.previsualizacion || base.previsualizacion,
-        ampliacion: obra.urls.ampliacion || base.ampliacion,
+        ampliacion: base.ampliacion,
       };
     }
 
@@ -241,7 +244,7 @@
 
     var foot = el("footer", "ficha-larga-shell__footer");
     foot.innerHTML =
-      "<strong>Facultad de Artes - Vicerrectoría de Docencia, Universidad de Antioquia</strong><br />2007. Todos los derechos reservados.";
+      "<strong>Facultad de Artes - Vicerrectoría de Docencia, Universidad de Antioquia</strong><br />2026. Todos los derechos reservados.";
     shell.appendChild(foot);
 
     mount.appendChild(shell);
