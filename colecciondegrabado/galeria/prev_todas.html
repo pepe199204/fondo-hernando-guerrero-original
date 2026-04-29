@@ -1,167 +1,221 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
+
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
-<title>Colecci&oacute;n de Grabado - Galer&iacute;a</title>
-<style type="text/css">
-<!--
-body {
-	background-color: #003366;
-	margin-left: 0px;
-	margin-top: 0px;
-	margin-right: 0px;
-	margin-bottom: 0px;
-}
-.Estilo1 {
-	font-size: 12px;
-	font-weight: normal;
-	font-family: Verdana, Arial, Helvetica, sans-serif;
-	color: #FFFFFF;
-}
-.Estilo2 {	font-family: Verdana, Arial, Helvetica, sans-serif;
-	font-size: 11px;
-	color: #003366;
-}
-.Estilo5 {font-family: Verdana, Arial, Helvetica, sans-serif; color: #FFFFFF; font-size: 10px;}
-.Estilo7 {font-family: Verdana, Arial, Helvetica, sans-serif; color: #003366; font-size: 10px; }
-.Estilo9 {
-	font-size: 12px;
-	font-family: Verdana, Arial, Helvetica, sans-serif;
-	color: #FFFFFF;
-}
-.Estilo10 {
-	font-size: 16px;
-	font-family: Verdana, Arial, Helvetica, sans-serif;
-	color: #CCCCCC;
-	font-weight: normal;
-}
-.Estilo22 {
-	font-weight: bold;
-	color: #FFFFFF;
-	font-family: Verdana, Arial, Helvetica, sans-serif;
-	font-size: 10pt;
-}
-.estiloTabla {
-	font-family: Verdana, Arial, Helvetica, sans-serif;
-	font-size: 10px;
-	font-weight: normal;
-	color: #FFFFFF;
-}
--->
-</style>
-<link href="../styles/paginacion2.css" rel="stylesheet" type="text/css" />
+  <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+  <title>Colecci&oacute;n de Grabado - Galer&iacute;a</title>
+  <style type="text/css">
+    <!--
+    body {
+      background-color: #003366;
+      margin-left: 0px;
+      margin-top: 0px;
+      margin-right: 0px;
+      margin-bottom: 0px;
+    }
 
-<!-- estilos del componente reusable (tarjetas prev_...) -->
-<link rel="stylesheet" href="css/prev.css?v=grid6" />
+    .Estilo1 {
+      font-size: 12px;
+      font-weight: normal;
+      font-family: Verdana, Arial, Helvetica, sans-serif;
+      color: #FFFFFF;
+    }
 
-<script language="JavaScript" type="text/javascript" src="js/indice.js" ></script>
-<script language="JavaScript" type="text/javascript" src="js/busquedas.js" ></script>
+    .Estilo2 {
+      font-family: Verdana, Arial, Helvetica, sans-serif;
+      font-size: 11px;
+      color: #003366;
+    }
+
+    .Estilo5 {
+      font-family: Verdana, Arial, Helvetica, sans-serif;
+      color: #FFFFFF;
+      font-size: 10px;
+    }
+
+    .Estilo7 {
+      font-family: Verdana, Arial, Helvetica, sans-serif;
+      color: #003366;
+      font-size: 10px;
+    }
+
+    .Estilo9 {
+      font-size: 12px;
+      font-family: Verdana, Arial, Helvetica, sans-serif;
+      color: #FFFFFF;
+    }
+
+    .Estilo10 {
+      font-size: 16px;
+      font-family: Verdana, Arial, Helvetica, sans-serif;
+      color: #CCCCCC;
+      font-weight: normal;
+    }
+
+    .Estilo22 {
+      font-weight: bold;
+      color: #FFFFFF;
+      font-family: Verdana, Arial, Helvetica, sans-serif;
+      font-size: 10pt;
+    }
+
+    .estiloTabla {
+      font-family: Verdana, Arial, Helvetica, sans-serif;
+      font-size: 10px;
+      font-weight: normal;
+      color: #FFFFFF;
+    }
+    -->
+  </style>
+  <link href="../styles/paginacion2.css" rel="stylesheet" type="text/css" />
+
+  <!-- estilos del componente reusable (tarjetas prev_...) -->
+  <link rel="stylesheet" href="css/prev.css?v=grid6" />
+  <link rel="stylesheet" href="css/btn-icono.css" />
+
+  <script language="JavaScript" type="text/javascript" src="js/indice.js"></script>
+  <script language="JavaScript" type="text/javascript" src="js/busquedas.js"></script>
 </head>
 
 <body onLoad="cargarPrevs()">
-<table width="100%" height="100%" border="0" cellpadding="0" cellspacing="0">
-  <tr>
-    <td width="220" align="center" valign="middle" background="images/bg.gif">
-		<a href="index.html">
-			<img src="images/log_2.gif" width="220" height="80" border="0" longdesc="Colecci&oacute;n de Grabado" />
-		</a></td>
-    <td height="100" valign="top" bgcolor="#000033"><table width="95%" border="0" align="center" cellpadding="0" cellspacing="0">
-      <tr>
-        <td height="30">&nbsp;</td>
-          <td width="90%" height="30" align="right"><span class="Estilo10"><span class="Estilo25"><span class="Estilo32"><font color="#FFFFFF" face="Verdana, Arial, Helvetica, sans-serif"><strong>Colecci&oacute;n 
-            de Grabado/Galer&iacute;a - <div id="divConsulta" style="display:inline">Todas</div></strong></font> </span></span></span>
-         </td>
-      </tr>
-      <tr class="Estilo10">
-        <td height="20" colspan="2" valign="middle">
-        <div id="divCargando" style="vertical-align: middle">
-        <font color="#FFFFFF" style="font-size: 10px" face="Verdana, Arial, Helvetica, sans-serif"><strong>
-        Por favor, no realice b&uacute;squedas mientras vea la siguiente imagen 
-        </strong></font>
-        <img src="images/cargando.gif" alt="cargando..." />
-        </div>
-        </td>
-        </tr>
-      <tr>
-          <td height="20" colspan="2" background="images/bg_line.gif">&nbsp;</td>
-      </tr>
+  <table width="100%" height="100%" border="0" cellpadding="0" cellspacing="0">
+    <tr>
+      <td width="220" align="center" valign="middle" background="images/bg.gif">
+        <a href="index.html">
+          <img src="images/log_2.gif" width="220" height="80" border="0" longdesc="Colecci&oacute;n de Grabado" />
+        </a>
+      </td>
+      <td height="100" valign="top" bgcolor="#000033">
+        <table width="95%" border="0" align="center" cellpadding="0" cellspacing="0">
+          <tr>
+            <td height="30">&nbsp;</td>
+            <td width="90%" height="30" align="right"><span class="Estilo10"><span class="Estilo25"><span
+                    class="Estilo32">
+                    <font color="#FFFFFF" face="Verdana, Arial, Helvetica, sans-serif"><strong>Colecci&oacute;n
+                        de Grabado/Galer&iacute;a - <div id="divConsulta" style="display:inline">Todas</div></strong>
+                    </font>
+                  </span></span></span>
+            </td>
+          </tr>
+          <tr class="Estilo10">
+            <td height="20" colspan="2" valign="middle">
+              <div id="divCargando" style="vertical-align: middle">
+                <font color="#FFFFFF" style="font-size: 10px" face="Verdana, Arial, Helvetica, sans-serif"><strong>
+                    Por favor, no realice b&uacute;squedas mientras vea la siguiente imagen
+                  </strong></font>
+                <img src="images/cargando.gif" alt="cargando..." />
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <td height="20" colspan="2" background="images/bg_line.gif">&nbsp;</td>
+          </tr>
 
-    </table></td>
-    <td background="images/bg_2.gif">&nbsp;</td>
-  </tr>
-  <tr>
-    <!-- COLUMNA IZQUIERDA: filtros legacy -->
-    <td width="220" height="100%" align="center" valign="top" background="images/bg_2.gif"><br />
-      <table width="200" height="80" border="2" cellpadding="0" cellspacing="0" bordercolor="#FFFFFF" bgcolor="#003366">
-      <tr>
-        <td align="center" valign="middle">
-			<form action="lista_todas.html" target="blank">
+        </table>
+      </td>
+      <td background="images/bg_2.gif">&nbsp;</td>
+    </tr>
+    <tr>
+      <!-- COLUMNA IZQUIERDA: filtros legacy -->
+      <td width="220" height="100%" align="center" valign="top" background="images/bg_2.gif"><br />
+        <table width="200" height="80" border="2" cellpadding="0" cellspacing="0" bordercolor="#FFFFFF"
+          bgcolor="#003366">
+          <tr>
+            <td align="center" valign="middle">
+              <form action="lista_todas.html" target="blank">
+                <table width="90%" border="0" align="center" cellpadding="0" cellspacing="0" class="Estilo5">
+                  <tr>
+                    <td height="30" valign="middle" class="Estilo1">Opciones de visualizaci&oacute;n</td>
+                  </tr>
+                  <tr>
+                    <td height="30" valign="middle">
+                      <table width="100%" border="0" cellpadding="0" cellspacing="0">
+                        <tr class="Estilo1">
+                          <td valign="middle" class="Estilo1"><label>
+                              <input id="rbTodasList" name="rbTodas" type="radio" value="nombre" />
+                              Listar alfab&eacute;ticamente</label></td>
+                        </tr>
+                        <tr class="Estilo1">
+                          <td valign="middle" class="Estilo1"><label>
+                              <input name="rbTodas" type="radio" value="previo" checked="checked" />
+                              Previo por imagen</label></td>
+                        </tr>
+                      </table>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td height="30" valign="middle" class="Estilo1">
+                      <input name="consulta1" type="button" onclick="concultarTodas()" id="consulta1"
+                        value="consultar" />
+                    </td>
+                  </tr>
+                </table>
+              </form>
+            </td>
+          </tr>
+        </table>
+        <br />
+
+        <table width="200" height="80" border="1" cellpadding="0" cellspacing="0" bordercolor="#FFFFFF"
+          bgcolor="#003366" class="Estilo5">
+          <tr>
+            <td align="center" valign="middle">
               <table width="90%" border="0" align="center" cellpadding="0" cellspacing="0" class="Estilo5">
-                <tr> 
-                  <td height="30" valign="middle" class="Estilo1">Opciones de visualizaci&oacute;n</td>
+                <tr>
+                  <td height="30" valign="middle" class="Estilo1">Autor:</td>
                 </tr>
-                <tr> 
-                  <td height="30" valign="middle"><table width="100%" border="0" cellpadding="0" cellspacing="0">
-                      <tr class="Estilo1"> 
-                        <td valign="middle" class="Estilo1"><label> 
-                          <input id="rbTodasList" name="rbTodas" type="radio" value="nombre" />
-                          Listar alfab&eacute;ticamente</label></td>
-                      </tr>
-                      <tr class="Estilo1"> 
-                        <td valign="middle" class="Estilo1"><label> 
-                          <input name="rbTodas" type="radio" value="previo" checked="checked" />
-                          Previo por imagen</label></td>
-                      </tr>
-                    </table></td>
+                <tr>
+                  <td height="30" valign="middle" class="Estilo1"><input name="tfAutor" type="text" class="Estilo7"
+                      id="tfAutor" size="25" /></td>
                 </tr>
-                <tr> 
+                <tr>
+                  <td height="30" valign="middle" class="Estilo1"><input name="consulta2" type="button"
+                      onclick="consultarAutor();" id="consulta2" value="consultar" /></td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+        </table>
+        <br />
+
+        <table width="200" height="80" border="1" cellpadding="0" cellspacing="0" bordercolor="#FFFFFF"
+          bgcolor="#003366" class="Estilo5">
+          <tr>
+            <td align="center" valign="middle">
+              <table width="90%" border="0" align="center" cellpadding="0" cellspacing="0" class="Estilo5">
+                <tr>
+                  <td height="30" valign="middle" class="Estilo1">T&eacute;cnica:</td>
+                </tr>
+                <tr>
+                  <td height="30" valign="middle" class="Estilo1"><input name="tfTecnica" type="text" class="Estilo2"
+                      id="tfTecnica" size="25" /></td>
+                </tr>
+                <tr>
                   <td height="30" valign="middle" class="Estilo1">
-				    <input name="consulta1" type="button" onclick="concultarTodas()" id="consulta1" value="consultar" />
+                    <input name="consulta33" type="button" onclick="verTecnicas()" id="consulta33"
+                      value="ver m&aacute;s" />
+                    <input name="consulta3" type="button" onclick="consultarTecnica()" id="consulta3"
+                      value="consultar" />
                   </td>
                 </tr>
               </table>
-			</form>
             </td>
-      </tr>
-    </table>
-      <br />
+          </tr>
+        </table>
+        <br />
 
-      <table width="200" height="80" border="1" cellpadding="0" cellspacing="0" bordercolor="#FFFFFF" bgcolor="#003366" class="Estilo5">
-        <tr>
-          <td align="center" valign="middle">
+        <table width="200" height="80" border="1" cellpadding="0" cellspacing="0" bordercolor="#FFFFFF"
+          bgcolor="#003366" class="Estilo5">
+          <tr>
+            <td align="center" valign="middle">
               <table width="90%" border="0" align="center" cellpadding="0" cellspacing="0" class="Estilo5">
-                <tr><td height="30" valign="middle" class="Estilo1">Autor:</td></tr>
-                <tr><td height="30" valign="middle" class="Estilo1"><input name="tfAutor" type="text" class="Estilo7" id="tfAutor" size="25" /></td></tr>
-                <tr><td height="30" valign="middle" class="Estilo1"><input name="consulta2" type="button" onclick="consultarAutor();" id="consulta2" value="consultar" /></td></tr>
-              </table>
-            </td>
-        </tr>
-      </table>
-      <br />
-
-      <table width="200" height="80" border="1" cellpadding="0" cellspacing="0" bordercolor="#FFFFFF" bgcolor="#003366" class="Estilo5">
-        <tr>
-          <td align="center" valign="middle">
-              <table width="90%" border="0" align="center" cellpadding="0" cellspacing="0" class="Estilo5">
-                <tr><td height="30" valign="middle" class="Estilo1">T&eacute;cnica:</td></tr>
-                <tr><td height="30" valign="middle" class="Estilo1"><input name="tfTecnica" type="text" class="Estilo2" id="tfTecnica" size="25" /></td></tr>
-                <tr><td height="30" valign="middle" class="Estilo1">
-                  <input name="consulta33" type="button" onclick="verTecnicas()" id="consulta33" value="ver m&aacute;s" />
-                  <input name="consulta3" type="button" onclick="consultarTecnica()" id="consulta3" value="consultar" />
-                </td></tr>
-              </table>
-            </td>
-        </tr>
-      </table>
-      <br />
-
-      <table width="200" height="80" border="1" cellpadding="0" cellspacing="0" bordercolor="#FFFFFF" bgcolor="#003366" class="Estilo5">
-        <tr>
-          <td align="center" valign="middle">
-              <table width="90%" border="0" align="center" cellpadding="0" cellspacing="0" class="Estilo5">
-                <tr><td height="30" valign="middle" class="Estilo1">Tem&aacute;tica</td></tr>
-                <tr><td height="30" valign="middle" class="Estilo1">
-				  <select name="sTematica" size="1" class="Estilo2" id="sTematica">
+                <tr>
+                  <td height="30" valign="middle" class="Estilo1">Tem&aacute;tica</td>
+                </tr>
+                <tr>
+                  <td height="30" valign="middle" class="Estilo1">
+                    <select name="sTematica" size="1" class="Estilo2" id="sTematica">
                       <option value=""></option>
                       <option value="Erotismo">Erotismo</option>
                       <option value="Existencial-Espiritual">Existencial-Espiritual</option>
@@ -172,51 +226,70 @@ body {
                       <option value="Urbano">Urbano</option>
                       <option value="Violencia">Violencia</option>
                     </select>
-                </td></tr>
-                <tr><td height="30" valign="middle" class="Estilo1"><input name="consulta4" type="button" onclick="consultarTematica();" id="consulta4" value="consultar" /></td></tr>
+                  </td>
+                </tr>
+                <tr>
+                  <td height="30" valign="middle" class="Estilo1"><input name="consulta4" type="button"
+                      onclick="consultarTematica();" id="consulta4" value="consultar" /></td>
+                </tr>
               </table>
             </td>
-        </tr>
-      </table>
-      <br />
+          </tr>
+        </table>
+        <br />
 
-      <table width="200" height="80" border="1" cellpadding="0" cellspacing="0" bordercolor="#FFFFFF" bgcolor="#003366" class="Estilo5">
-        <tr>
-          <td align="center" valign="middle">
+        <table width="200" height="80" border="1" cellpadding="0" cellspacing="0" bordercolor="#FFFFFF"
+          bgcolor="#003366" class="Estilo5">
+          <tr>
+            <td align="center" valign="middle">
               <table width="90%" border="0" align="center" cellpadding="0" cellspacing="0" class="Estilo5">
-                <tr><td height="30" valign="middle" class="Estilo1">A&ntilde;o de ingreso</td></tr>
-                <tr><td height="30" valign="middle" class="Estilo1">
-                  <input name="tfAnho" type="text" class="Estilo2" id="tfAnho" size="6" maxlength="4" />
-                  <span class="Estilo9">1991 o posterior.</span>
-                </td></tr>
-                <tr><td height="30" valign="middle" class="Estilo1"><input name="consulta5" type="button" onclick="consultarAnio();" id="consulta5" value="consultar" /></td></tr>
+                <tr>
+                  <td height="30" valign="middle" class="Estilo1">A&ntilde;o de ingreso</td>
+                </tr>
+                <tr>
+                  <td height="30" valign="middle" class="Estilo1">
+                    <input name="tfAnho" type="text" class="Estilo2" id="tfAnho" size="6" maxlength="4" />
+                    <span class="Estilo9">1991 o posterior.</span>
+                  </td>
+                </tr>
+                <tr>
+                  <td height="30" valign="middle" class="Estilo1"><input name="consulta5" type="button"
+                      onclick="consultarAnio();" id="consulta5" value="consultar" /></td>
+                </tr>
               </table>
             </td>
-        </tr>
-      </table>
-    <br /></td>
+          </tr>
+        </table>
+        <br />
+      </td>
 
-    <!-- COLUMNA CENTRAL: galer?a inyectada -->
-    <td height="100%" align="left" valign="top" bgcolor="#000033" class="Estilo10">
-	  <div id="divGaleria" style="width:100%;" data-prev-json="../data/gallery/obras.json"></div>
-	  <script src="js/prev.js?v=gallery1"></script>
-	</td>
-	<td height="100%" background="images/bg_2.gif">&nbsp;</td>
-  </tr>
+      <!-- COLUMNA CENTRAL: galer?a inyectada -->
+      <td height="100%" align="left" valign="top" bgcolor="#000033" class="Estilo10">
+        <div id="divGaleria" style="width:100%;" data-prev-json="../data/gallery/obras.json"></div>
+        <script src="js/prev.js?v=gallery1"></script>
+      </td>
+      <td height="100%" background="images/bg_2.gif">&nbsp;</td>
+    </tr>
 
-  <tr>
-    <td width="220" height="30" background="images/bg_2.gif">&nbsp;</td>
-    <td height="30" align="center" valign="middle" bgcolor="#000033"><table width="95%" border="0" align="center" cellpadding="0" cellspacing="0">
-      <tr>
-        <td align="center" valign="middle"><hr /></td>
-      </tr>
-      <tr>
-        <td align="center" valign="middle"><span class="Estilo5">Facultad de Artes - Vicerrectoria de Docencia, Universidad de Antioquia<br />
-          2007. Todos los derechos reservados.</span></td>
-      </tr>
-    </table></td>
-    <td height="30" background="images/bg_2.gif">&nbsp;</td>
-  </tr>
-</table>
+    <tr>
+      <td width="220" height="30" background="images/bg_2.gif">&nbsp;</td>
+      <td height="30" align="center" valign="middle" bgcolor="#000033">
+        <table width="95%" border="0" align="center" cellpadding="0" cellspacing="0">
+          <tr>
+            <td align="center" valign="middle">
+              <hr />
+            </td>
+          </tr>
+          <tr>
+            <td align="center" valign="middle"><span class="Estilo5">Facultad de Artes - Vicerrectoria de Docencia,
+                Universidad de Antioquia<br />
+                2026. Todos los derechos reservados.</span></td>
+          </tr>
+        </table>
+      </td>
+      <td height="30" background="images/bg_2.gif">&nbsp;</td>
+    </tr>
+  </table>
 </body>
+
 </html>

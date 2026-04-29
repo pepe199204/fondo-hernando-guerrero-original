@@ -1,0 +1,48 @@
+/**
+ * Botón con icono + etiqueta visible debajo.
+ * Uso compartido en prev / lista / amp / herm / ficha.
+ *
+ * Markup esperado:
+ *   <a href="..." class="btn-icono">
+ *     <img src="..." alt="" width="22" height="16" />
+ *     <span class="btn-icono__label">Texto</span>
+ *   </a>
+ *
+ * Variante --dark: para fondos claros (paneles de amp/herm con bg #F4F5FD).
+ */
+
+.btn-icono {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 2px;
+  text-decoration: none;
+  color: inherit;
+  line-height: 1.1;
+  vertical-align: middle;
+}
+
+.btn-icono img {
+  display: block;
+  border: 0;
+}
+
+.btn-icono__label {
+  font-family: Verdana, Arial, Helvetica, sans-serif;
+  font-size: 9px;
+  letter-spacing: 0.2px;
+  color: #FFFFFF;
+  text-align: center;
+  white-space: nowrap;
+}
+
+.btn-icono:hover .btn-icono__label,
+.btn-icono:focus .btn-icono__label {
+  text-decoration: underline;
+}
+
+/* Sobre fondos claros (paneles internos de amp / herm) */
+.btn-icono--dark .btn-icono__label {
+  color: #003366;
+}

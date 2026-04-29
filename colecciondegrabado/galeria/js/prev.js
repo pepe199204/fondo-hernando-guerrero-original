@@ -25,8 +25,11 @@
   }
 
   function cmpAlpha(a, b) {
+    // Las obras sin autor se mandan al final.
     var aa = normStr(a && a.autor);
     var ba = normStr(b && b.autor);
+    if (!aa && ba) return 1;
+    if (aa && !ba) return -1;
     var t1 = aa.localeCompare(ba, "es", { sensitivity: "base" });
     if (t1) return t1;
     var at = normStr(a && a.titulo);
@@ -143,25 +146,31 @@
 
       tMeta.appendChild(row(2, "<strong>" + esc(id) + "</strong>"));
       if (obra.titulo) tMeta.appendChild(row(2, "<strong>" + esc(obra.titulo) + "</strong>"));
-      if (obra.autor) tMeta.appendChild(row(2, esc(obra.autor)));
+      if (obra.autor && obra.autor.trim()) {
+        tMeta.appendChild(row(2, esc(obra.autor)));
+      } else {
+        tMeta.appendChild(row(2, '<em style="opacity:0.7">An\u00f3nimo</em>'));
+      }
 
       var trLast = el("tr");
-      var tdMed = el("td", "estiloTabla", { width: "133", height: "20" });
+      var tdMed = el("td", "estiloTabla", { width: "100", height: "20" });
       tdMed.innerHTML = esc(pickMedidas(obra)) + "<p>&nbsp;</p>";
-      var tdBtn = el("td", "estiloTabla", { width: "27", align: "right", valign: "top" });
-      var aFicha = el("a", null, {
+      var tdBtn = el("td", "estiloTabla", { width: "60", align: "right", valign: "top" });
+      var aFicha = el("a", "btn-icono", {
         href: "ficha.html?id=" + encodeURIComponent(id),
         target: "_blank",
+        title: "Ver ficha",
       });
       aFicha.appendChild(
         el("img", null, {
           src: "images/obra_amp.gif",
-          alt: "Ver detalles",
+          alt: "",
           width: "22",
           height: "16",
           border: "0",
         })
       );
+      aFicha.appendChild(el("span", "btn-icono__label", { text: "Ver ficha" }));
       tdBtn.appendChild(aFicha);
       trLast.appendChild(tdMed);
       trLast.appendChild(tdBtn);
