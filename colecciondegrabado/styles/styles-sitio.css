@@ -1,10 +1,123 @@
 /* ============================================================
    styles-sitio.css
    Colección de Grabado – Facultad de Artes, Universidad de Antioquia
-   Distribución moderna 3 columnas Full Width + RESPONSIVE
+   Refactorización 2026: CSS Custom Properties + Responsive + A11y
    ============================================================ */
 
-   *, *::before, *::after {
+/* ============================================================
+   CSS CUSTOM PROPERTIES – Variables globales
+   ============================================================ */
+   :root {
+    /* — Colores base — */
+    --color-navy-deep:     #0d2d52;
+    --color-navy-mid:      #1a4a7c;
+    --color-navy-light:    #2563a8;
+    --color-navy-bright:   #3a7bbf;
+    --color-accent-orange: #d4782a;
+  
+    /* — Sidebar — */
+    --sidebar-bg-top:      #1e3c5e;
+    --sidebar-bg-mid:      #2a5080;
+    --sidebar-link-color:  #c8dff2;
+    --sidebar-link-hover:  #2a6090;
+    --sidebar-sub-color:   #a8c8e8;
+    --sidebar-sub-hover:   #1a4068;
+    --sidebar-divider:     #3a6090;
+    --sidebar-sub-divider: #1a3a58;
+    --sidebar-footer-color:#506880;
+  
+    /* — Top nav — */
+    --topnav-bg-top:       #1a4a7c;
+    --topnav-bg-mid:       #2563a8;
+    --topnav-bg-btm:       #3a7bbf;
+    --topnav-link-color:   #e8f2fa;
+    --topnav-accent:       #7ab8e0;
+  
+    /* — Contenido — */
+    --content-bg:          #f8f9fb;
+    --content-wrapper-bg:  #f0f2f5;
+    --content-text:        #333333;
+    --content-border:      #c0c8d8;
+    --scrollbar-track:     #dce0e8;
+    --scrollbar-thumb:     #8aabcc;
+  
+    /* — Columna derecha — */
+    --right-bg:            #eaecf0;
+    --right-title-bg:      var(--color-navy-deep);
+    --right-img-border:    #b0b8c8;
+    --right-info-color:    #607090;
+    --right-placeholder-bg:#c8d4e0;
+    --right-placeholder-fg:#6080a0;
+  
+    /* — Footer — */
+    --footer-bg-top:       var(--color-navy-deep);
+    --footer-bg-btm:       var(--color-navy-mid);
+    --footer-text:         #c0d8f0;
+  
+    /* — Fondo global — */
+    --page-bg:             #c8cfd8;
+  
+    /* — Créditos — */
+    --card-bg:             #ffffff;
+    --card-border:         var(--color-navy-light);
+    --card-shadow:         rgba(0, 0, 0, 0.07);
+    --card-nombre:         #1a1a2e;
+    --card-email:          var(--color-navy-light);
+    --card-rol:            #555555;
+    --grupo-titulo-bg:     #dde6f0;
+    --grupo-titulo-color:  var(--color-navy-deep);
+    --seccion-inst-text:   #e0ecf8;
+    --separador-color:     var(--content-border);
+    --migracion-border:    var(--color-navy-light);
+  
+    /* — Procesos — */
+    --table-head-bg:       var(--color-navy-light);
+    --table-row-even:      #e2eaf4;
+    --table-row-odd:       #f0f4f8;
+    --table-foot-bg:       var(--color-navy-mid);
+    --table-border:        #c8d4e0;
+    --proceso-titulo-bg:   var(--color-navy-light);
+    --gran-total-bg:       var(--color-navy-deep);
+    --seccion-titulo-color:var(--color-navy-deep);
+    --intro-border:        var(--color-navy-light);
+    --intro-bg:            #eef2f8;
+  
+    /* — Tipografía — */
+    --font-ui:             Verdana, Arial, Helvetica, sans-serif;
+    --font-serif:          Georgia, 'Times New Roman', serif;
+    --font-size-base:      13px;
+    --font-size-sm:        12px;
+    --font-size-xs:        11px;
+    --font-size-nav:       12px;
+    --font-size-heading:   15px;
+    --font-size-h1:        14px;
+    --font-size-h2:        11px;
+  
+    /* — Espaciado — */
+    --space-xs:  4px;
+    --space-sm:  8px;
+    --space-md:  14px;
+    --space-lg:  18px;
+    --space-xl:  22px;
+  
+    /* — Layout — */
+    --sidebar-width:       150px;
+    --right-col-width:     220px;
+    --header-height:       110px;
+    --footer-height:       34px;
+    --border-radius-sm:    2px;
+    --border-radius-md:    4px;
+    --border-radius-lg:    5px;
+  
+    /* — Transiciones — */
+    --transition-fast:     0.15s ease;
+    --transition-med:      0.3s ease;
+  }
+  
+  /* ============================================================
+     RESET GLOBAL
+     ============================================================ */
+  *, *::before, *::after {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -12,10 +125,10 @@
   
   html, body {
     height: 100%;
-    font-family: Verdana, Arial, Helvetica, sans-serif;
-    font-size: 13px;
-    background-color: #c8cfd8;
-    color: #333;
+    font-family: var(--font-ui);
+    font-size: var(--font-size-base);
+    background-color: var(--page-bg);
+    color: var(--content-text);
   }
   
   /* ============================================================
@@ -33,25 +146,25 @@
      COLUMNA 1 – SIDEBAR IZQUIERDO (150px fijo)
      ============================================================ */
   #sidebar {
-    width: 150px;
-    min-width: 150px;
+    width: var(--sidebar-width);
+    min-width: var(--sidebar-width);
     display: flex;
     flex-direction: column;
     height: 100vh;
     flex-shrink: 0;
     position: relative;
     z-index: 100;
-    transition: transform 0.3s ease;
+    transition: transform var(--transition-med);
   }
   
-  /* --- Logo --- */
+  /* — Logo — */
   #sidebar-logo {
-    background-color: #0d2d52;
+    background-color: var(--color-navy-deep);
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 110px;
-    min-height: 110px;
+    height: var(--header-height);
+    min-height: var(--header-height);
     flex-shrink: 0;
   }
   
@@ -68,23 +181,23 @@
     display: none;
     align-items: center;
     justify-content: center;
-    color: #7ab8e0;
+    color: var(--topnav-accent);
     font-size: 10px;
     text-align: center;
     letter-spacing: 0.5px;
     line-height: 1.5;
   }
   
-  /* --- Menú vertical --- */
+  /* — Menú vertical — */
   #sidebar-nav {
     flex: 1;
-    background: linear-gradient(180deg, #1e3c5e 0%, #2a5080 60%, #1e3c5e 100%);
+    background: linear-gradient(180deg, var(--sidebar-bg-top) 0%, var(--sidebar-bg-mid) 60%, var(--sidebar-bg-top) 100%);
     overflow-y: auto;
   }
   
   #sidebar-nav::-webkit-scrollbar { width: 4px; }
-  #sidebar-nav::-webkit-scrollbar-track { background: #1e3c5e; }
-  #sidebar-nav::-webkit-scrollbar-thumb { background: #3a6090; }
+  #sidebar-nav::-webkit-scrollbar-track { background: var(--sidebar-bg-top); }
+  #sidebar-nav::-webkit-scrollbar-thumb { background: var(--sidebar-divider); }
   
   #sidebar-nav ul {
     list-style: none;
@@ -93,43 +206,44 @@
   }
   
   #sidebar-nav ul li {
-    border-bottom: 1px solid #3a6090;
+    border-bottom: 1px solid var(--sidebar-divider);
     position: relative;
   }
   
   #sidebar-nav ul li > a {
     display: block;
-    color: #c8dff2;
+    color: var(--sidebar-link-color);
     text-decoration: none;
     font-size: 11.5px;
     padding: 10px 12px;
-    transition: background 0.15s ease, color 0.15s ease;
+    transition: background var(--transition-fast), color var(--transition-fast);
   }
   
   #sidebar-nav ul li > a:hover,
   #sidebar-nav ul li > a.active {
-    background-color: #2a6090;
+    background-color: var(--sidebar-link-hover);
     color: #ffffff;
   }
   
   #sidebar-nav .submenu ul li {
-    border-bottom: 1px solid #1a3a58;
+    border-bottom: 1px solid var(--sidebar-sub-divider);
   }
   
   #sidebar-nav .submenu ul li a {
     font-size: 10.5px;
     padding: 6px 20px;
-    color: #a8c8e8;
+    color: var(--sidebar-sub-color);
   }
   
   #sidebar-nav .submenu ul li a:hover {
-    background-color: #1a4068;
+    background-color: var(--sidebar-sub-hover);
     color: #ffffff;
   }
   
+  /* — Pie del sidebar — */
   #sidebar-footer {
-    background-color: #0d2d52;
-    color: #506880;
+    background-color: var(--color-navy-deep);
+    color: var(--sidebar-footer-color);
   }
   
   /* ============================================================
@@ -144,34 +258,38 @@
     min-width: 0;
   }
   
-  /* --- Header / Barra de navegación horizontal --- */
+  /* — Header / Barra de navegación horizontal — */
   #top-nav {
-    background: linear-gradient(180deg, #1a4a7c 0%, #2563a8 40%, #3a7bbf 100%);
-    padding: 0 22px;
+    background: linear-gradient(180deg, var(--topnav-bg-top) 0%, var(--topnav-bg-mid) 40%, var(--topnav-bg-btm) 100%);
+    padding: 0 var(--space-xl);
     display: flex;
     align-items: center;
-    height: 110px;
-    min-height: 110px;
+    height: var(--header-height);
+    min-height: var(--header-height);
     position: relative;
     flex-shrink: 0;
   }
   
-  /* Botón hamburguesa — oculto en desktop */
+  /* — Botón hamburguesa (oculto en desktop) — */
   #menu-toggle {
     display: none;
     background: none;
-    border: 1px solid rgba(122,184,224,0.5);
-    border-radius: 4px;
+    border: 1px solid rgba(122, 184, 224, 0.5);
+    border-radius: var(--border-radius-md);
     color: #e8f2fa;
     cursor: pointer;
     padding: 6px 9px;
     font-size: 18px;
     line-height: 1;
-    margin-right: 14px;
+    margin-right: var(--space-md);
     flex-shrink: 0;
-    transition: background 0.15s;
+    transition: background var(--transition-fast);
   }
-  #menu-toggle:hover { background: rgba(122,184,224,0.18); }
+  #menu-toggle:hover { background: rgba(122, 184, 224, 0.18); }
+  #menu-toggle:focus-visible {
+    outline: 2px solid var(--topnav-accent);
+    outline-offset: 2px;
+  }
   
   #top-nav nav {
     display: flex;
@@ -181,93 +299,93 @@
   }
   
   #top-nav nav a {
-    color: #e8f2fa;
+    color: var(--topnav-link-color);
     text-decoration: none;
-    font-size: 12px;
-    padding: 4px 10px;
+    font-size: var(--font-size-nav);
+    padding: var(--space-xs) 10px;
     border: 1px solid transparent;
-    transition: all 0.15s ease;
+    transition: all var(--transition-fast);
     white-space: nowrap;
   }
   
   #top-nav nav a:hover,
-  #top-nav nav a.active {
-    border-color: #7ab8e0;
+  #top-nav nav a.active,
+  #top-nav nav a[aria-current="page"] {
+    border-color: var(--topnav-accent);
     background-color: rgba(122, 184, 224, 0.15);
     color: #ffffff;
   }
   
   #top-nav nav .sep {
-    color: #7ab8e0;
-    font-size: 12px;
+    color: var(--topnav-accent);
+    font-size: var(--font-size-nav);
     padding: 0 2px;
   }
   
-  /* --- Zona de contenido --- */
+  /* — Zona de contenido — */
   #content-wrapper {
     flex: 1;
     display: flex;
     overflow: hidden;
-    background-color: #f0f2f5;
+    background-color: var(--content-wrapper-bg);
   }
   
-  /* Panel de texto principal */
+  /* — Panel de texto principal — */
   #main-content {
     flex: 1;
-    padding: 18px 22px;
-    background-color: #f8f9fb;
+    padding: var(--space-lg) var(--space-xl);
+    background-color: var(--content-bg);
     overflow-y: auto;
     min-width: 0;
   }
   
   #main-content::-webkit-scrollbar { width: 8px; }
-  #main-content::-webkit-scrollbar-track { background: #dce0e8; }
-  #main-content::-webkit-scrollbar-thumb { background: #8aabcc; border-radius: 2px; }
+  #main-content::-webkit-scrollbar-track { background: var(--scrollbar-track); }
+  #main-content::-webkit-scrollbar-thumb { background: var(--scrollbar-thumb); border-radius: var(--border-radius-sm); }
   
-  /* Cabecera de sección */
+  /* — Cabecera de sección — */
   #content-header {
     display: flex;
     justify-content: space-between;
     align-items: baseline;
-    margin-bottom: 14px;
+    margin-bottom: var(--space-md);
     padding-bottom: 7px;
-    border-bottom: 1px solid #c0c8d8;
+    border-bottom: 1px solid var(--content-border);
     flex-wrap: wrap;
     gap: 6px;
   }
   
   #content-header h3 {
-    font-size: 15px;
-    color: #d4782a;
+    font-size: var(--font-size-heading);
+    color: var(--color-accent-orange);
     font-weight: bold;
-    font-family: Georgia, 'Times New Roman', serif;
+    font-family: var(--font-serif);
   }
   
   #content-header .section-link {
-    font-size: 12px;
+    font-size: var(--font-size-sm);
     font-weight: bold;
-    color: #2563a8;
+    color: var(--color-navy-light);
     text-decoration: none;
     white-space: nowrap;
   }
   
-  #content-header .section-link:hover {
-    text-decoration: underline;
-  }
+  #content-header .section-link:hover { text-decoration: underline; }
   
-  /* Párrafos del contenido */
+  /* — Párrafos del contenido — */
   #main-content p {
     font-size: 12.5px;
     line-height: 1.7;
-    color: #333;
+    color: var(--content-text);
     margin-bottom: 11px;
     text-align: justify;
   }
   
+  /* — Pie de página principal — */
   #main-footer {
-    background: linear-gradient(180deg, #0d2d52 0%, #1a4a7c 100%);
-    color: #c0d8f0;
-    font-size: 11px;
+    background: linear-gradient(180deg, var(--footer-bg-top) 0%, var(--footer-bg-btm) 100%);
+    color: var(--footer-text);
+    font-size: var(--font-size-xs);
     text-align: center;
     padding: 0 12px;
   }
@@ -276,50 +394,50 @@
      COLUMNA 3 – PANEL DERECHO (220px fijo)
      ============================================================ */
   #right-col {
-    width: 220px;
-    min-width: 220px;
+    width: var(--right-col-width);
+    min-width: var(--right-col-width);
     display: flex;
     flex-direction: column;
     height: 100vh;
     flex-shrink: 0;
   }
   
-  /* --- Título colección --- */
+  /* — Título colección — */
   #right-title {
-    background-color: #0d2d52;
+    background-color: var(--right-title-bg);
     padding: 12px 16px;
     display: flex;
     flex-direction: column;
     align-items: flex-end;
     justify-content: center;
-    height: 110px;
-    min-height: 110px;
+    height: var(--header-height);
+    min-height: var(--header-height);
     flex-shrink: 0;
   }
   
   #right-title h1 {
-    font-size: 14px;
+    font-size: var(--font-size-h1);
     font-weight: bold;
     color: #ffffff;
-    font-family: Georgia, 'Times New Roman', serif;
+    font-family: var(--font-serif);
     letter-spacing: 0.4px;
     line-height: 1.25;
     text-align: right;
   }
   
   #right-title h2 {
-    font-size: 11px;
+    font-size: var(--font-size-h2);
     font-weight: normal;
-    color: #c0d8f0;
+    color: var(--footer-text);
     margin-top: 5px;
     text-align: right;
     font-style: italic;
   }
   
-  /* --- Panel de imagen / info --- */
+  /* — Panel de imagen / info — */
   #right-panel {
     flex: 1;
-    background-color: #eaecf0;
+    background-color: var(--right-bg);
     padding: 12px 10px;
     display: flex;
     flex-direction: column;
@@ -329,51 +447,52 @@
   }
   
   #right-panel::-webkit-scrollbar { width: 4px; }
-  #right-panel::-webkit-scrollbar-track { background: #dce0e8; }
-  #right-panel::-webkit-scrollbar-thumb { background: #8aabcc; }
+  #right-panel::-webkit-scrollbar-track { background: var(--scrollbar-track); }
+  #right-panel::-webkit-scrollbar-thumb { background: var(--scrollbar-thumb); }
   
   #right-panel img {
     width: 100%;
     height: auto;
     display: block;
-    border: 1px solid #b0b8c8;
+    border: 1px solid var(--right-img-border);
   }
   
   #right-panel .img-placeholder {
     width: 100%;
     aspect-ratio: 3 / 4;
-    background-color: #c8d4e0;
-    border: 1px solid #a8b8c8;
+    background-color: var(--right-placeholder-bg);
+    border: 1px solid var(--right-img-border);
     display: flex;
     align-items: center;
     justify-content: center;
-    color: #6080a0;
+    color: var(--right-placeholder-fg);
     font-size: 10px;
     text-align: center;
-    padding: 8px;
+    padding: var(--space-sm);
     line-height: 1.5;
   }
   
   #right-panel .info-text {
     font-size: 10.5px;
-    color: #607090;
+    color: var(--right-info-color);
     text-align: center;
     line-height: 1.55;
     padding: 0 4px;
   }
   
+  /* — Pie de columna derecha — */
   #right-footer {
-    background: linear-gradient(180deg, #0d2d52 0%, #1a4a7c 100%);
+    background: linear-gradient(180deg, var(--footer-bg-top) 0%, var(--footer-bg-btm) 100%);
   }
   
   /* ============================================================
-     FOOTERS ALTURA UNIFORME
+     FOOTERS – ALTURA UNIFORME
      ============================================================ */
   #sidebar-footer,
   #main-footer,
   #right-footer {
-    height: 34px;
-    min-height: 34px;
+    height: var(--footer-height);
+    min-height: var(--footer-height);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -385,11 +504,60 @@
      ============================================================ */
   #main-content h4 {
     font-size: 12.5px;
-    color: #2563a8;
+    color: var(--color-navy-light);
     font-weight: bold;
     margin: 16px 0 4px 0;
   }
   
+  /* — Overrides de texto en modo .creditos (centrado) — */
+  .creditos p,
+  .creditos h4,
+  .creditos .section-title {
+    text-align: center;
+  }
+  
+  /* — Título de sección — */
+  #main-content .section-title {
+    font-size: var(--font-size-base);
+    font-weight: bold;
+    color: var(--color-navy-deep);
+    border-bottom: 1px solid var(--content-border);
+    padding-bottom: 5px;
+    margin: 20px 0 var(--space-sm) 0;
+    line-height: 1.6;
+  }
+  
+  /* — Cards de créditos — */
+  .credito-card {
+    background-color: var(--card-bg);
+    border-left: 3px solid var(--card-border);
+    border-radius: 0 var(--border-radius-md) var(--border-radius-md) 0;
+    padding: 9px var(--space-md);
+    margin-bottom: var(--space-sm);
+    box-shadow: 0 1px 3px var(--card-shadow);
+  }
+  
+  .credito-card .credito-nombre {
+    font-size: 12.5px;
+    font-weight: bold;
+    color: var(--card-nombre);
+    margin-bottom: 2px;
+  }
+  
+  .credito-card .credito-email {
+    font-size: 11.5px;
+    color: var(--card-email);
+    margin-bottom: 3px;
+  }
+  
+  .credito-card .credito-rol {
+    font-size: 11.5px;
+    color: var(--card-rol);
+    font-style: italic;
+    margin-bottom: 1px;
+  }
+  
+  /* — Aliases de credito-* fuera de cards (compatibilidad) — */
   #main-content .credito-nombre {
     font-weight: bold;
     color: #222;
@@ -398,112 +566,66 @@
   }
   
   #main-content .credito-email {
-    color: #2563a8;
-    font-size: 12px;
+    color: var(--color-navy-light);
+    font-size: var(--font-size-sm);
     margin-bottom: 0;
   }
   
   #main-content .credito-rol {
-    color: #555;
+    color: var(--card-rol);
     font-style: italic;
-    font-size: 12px;
+    font-size: var(--font-size-sm);
     margin-bottom: 0;
   }
   
-  #main-content .section-title {
-    font-size: 13px;
-    font-weight: bold;
-    color: #0d2d52;
-    border-bottom: 1px solid #c0c8d8;
-    padding-bottom: 5px;
-    margin: 20px 0 8px 0;
-    line-height: 1.6;
-  }
-  
-  .creditos p,
-  .creditos h4,
-  .creditos .section-title {
-    text-align: center;
-  }
-  
-  /* --- Cards de créditos --- */
-  .credito-card {
-    background-color: #ffffff;
-    border-left: 3px solid #2563a8;
-    border-radius: 0 4px 4px 0;
-    padding: 9px 14px;
-    margin-bottom: 8px;
-    box-shadow: 0 1px 3px rgba(0,0,0,0.07);
-  }
-  
-  .credito-card .credito-nombre {
-    font-size: 12.5px;
-    font-weight: bold;
-    color: #1a1a2e;
-    margin-bottom: 2px;
-  }
-  
-  .credito-card .credito-email {
-    font-size: 11.5px;
-    color: #2563a8;
-    margin-bottom: 3px;
-  }
-  
-  .credito-card .credito-rol {
-    font-size: 11.5px;
-    color: #555;
-    font-style: italic;
-    margin-bottom: 1px;
-  }
-  
-  /* Subtítulos de grupo */
+  /* — Subtítulos de grupo — */
   .grupo-titulo {
     font-size: 11.5px;
     font-weight: bold;
-    color: #0d2d52;
-    background-color: #dde6f0;
+    color: var(--grupo-titulo-color);
+    background-color: var(--grupo-titulo-bg);
     padding: 5px 10px;
-    margin: 14px 0 8px 0;
-    border-radius: 2px;
+    margin: var(--space-md) 0 var(--space-sm) 0;
+    border-radius: var(--border-radius-sm);
     letter-spacing: 0.2px;
   }
   
-  /* Bloques institucionales */
+  /* — Bloques institucionales — */
   .seccion-institucional {
-    background: linear-gradient(135deg, #0d2d52 0%, #1a4a7c 100%);
-    color: #e0ecf8;
-    border-radius: 4px;
+    background: linear-gradient(135deg, var(--color-navy-deep) 0%, var(--color-navy-mid) 100%);
+    color: var(--seccion-inst-text);
+    border-radius: var(--border-radius-md);
     padding: 12px 16px;
     margin: 16px 0 10px 0;
     text-align: center;
   }
   
   .seccion-institucional p {
-    color: #e0ecf8 !important;
-    font-size: 12px !important;
+    color: var(--seccion-inst-text) !important;
+    font-size: var(--font-size-sm) !important;
     line-height: 1.6 !important;
     margin-bottom: 0 !important;
     font-weight: bold;
   }
   
-  /* Bloque migración 2026 */
+  /* — Bloque migración 2026 — */
   .migracion-bloque {
-    border: 2px solid #2563a8;
-    border-radius: 5px;
+    border: 2px solid var(--migracion-border);
+    border-radius: var(--border-radius-lg);
     overflow: hidden;
-    margin: 10px 0 14px 0;
-    box-shadow: 0 2px 8px rgba(37,99,168,0.12);
+    margin: 10px 0 var(--space-md) 0;
+    box-shadow: 0 2px 8px rgba(37, 99, 168, 0.12);
   }
   
   .migracion-header {
-    background: linear-gradient(135deg, #1a4a7c 0%, #2563a8 100%);
+    background: linear-gradient(135deg, var(--color-navy-mid) 0%, var(--color-navy-light) 100%);
     padding: 10px 16px;
     text-align: center;
   }
   
   .migracion-header p {
     color: #ffffff !important;
-    font-size: 12px !important;
+    font-size: var(--font-size-sm) !important;
     font-weight: bold !important;
     margin-bottom: 2px !important;
     line-height: 1.4 !important;
@@ -511,46 +633,47 @@
   
   .migracion-header .migracion-sub {
     font-size: 10.5px !important;
-    color: #c0d8f0 !important;
+    color: var(--footer-text) !important;
     font-style: italic !important;
     font-weight: normal !important;
   }
   
   .migracion-body {
     background-color: #f4f7fb;
-    padding: 10px 14px;
+    padding: 10px var(--space-md);
   }
   
   .migracion-body .credito-card {
-    border-left-color: #d4782a;
+    border-left-color: var(--color-accent-orange);
     margin-bottom: 6px;
   }
   
   .migracion-docente .credito-card {
-    border-left-color: #0d2d52;
+    border-left-color: var(--color-navy-deep);
     background-color: #eef3f9;
   }
   
   .migracion-anio {
     text-align: center;
-    font-size: 11px;
+    font-size: var(--font-size-xs);
     color: #8090a8;
     font-style: italic;
     padding: 6px 0 2px 0;
   }
   
-  /* Separador decorativo */
+  /* — Separador decorativo — */
   .separador {
     border: none;
-    border-top: 1px dashed #c0c8d8;
-    margin: 14px 0;
+    border-top: 1px dashed var(--separador-color);
+    margin: var(--space-md) 0;
   }
   
+  /* — Cierre texto — */
   .cierre-texto {
     text-align: center;
-    background-color: #eef2f8;
-    border-radius: 3px;
-    padding: 10px 14px;
+    background-color: var(--intro-bg);
+    border-radius: var(--border-radius-sm);
+    padding: 10px var(--space-md);
     margin-top: 16px;
   }
   
@@ -564,16 +687,24 @@
      ESTILOS ESPECÍFICOS – procesos.html
      ============================================================ */
   
-  /* Tablas de estadísticas */
+  /* — Wrapper scroll horizontal tablas en móvil — */
+  .tabla-wrapper {
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    margin: var(--space-sm) 0 var(--space-md) 0;
+  }
+  .tabla-wrapper .tabla-proceso { margin: 0; min-width: 320px; }
+  
+  /* — Tablas de estadísticas — */
   .tabla-proceso {
     width: 100%;
     border-collapse: collapse;
-    margin: 8px 0 14px 0;
+    margin: var(--space-sm) 0 var(--space-md) 0;
     font-size: 11.5px;
   }
   
   .tabla-proceso thead tr {
-    background-color: #2563a8;
+    background-color: var(--table-head-bg);
     color: #ffffff;
   }
   
@@ -581,130 +712,111 @@
     padding: 6px 10px;
     text-align: left;
     font-weight: bold;
-    border: 1px solid #1a4a7c;
+    border: 1px solid var(--color-navy-mid);
   }
   
-  .tabla-proceso tbody tr {
-    background-color: #f0f4f8;
-  }
-  
-  .tabla-proceso tbody tr:nth-child(even) {
-    background-color: #e2eaf4;
-  }
+  .tabla-proceso tbody tr { background-color: var(--table-row-odd); }
+  .tabla-proceso tbody tr:nth-child(even) { background-color: var(--table-row-even); }
   
   .tabla-proceso tbody td {
     padding: 5px 10px;
-    border: 1px solid #c8d4e0;
-    color: #333;
+    border: 1px solid var(--table-border);
+    color: var(--content-text);
   }
   
   .tabla-proceso tfoot tr {
-    background-color: #1a4a7c;
+    background-color: var(--table-foot-bg);
     color: #ffffff;
     font-weight: bold;
   }
   
   .tabla-proceso tfoot td {
     padding: 5px 10px;
-    border: 1px solid #1a4a7c;
+    border: 1px solid var(--color-navy-mid);
   }
   
-  /* Wrapper para scroll horizontal de tablas en móvil */
-  .tabla-wrapper {
-    overflow-x: auto;
-    -webkit-overflow-scrolling: touch;
-    margin: 8px 0 14px 0;
-  }
-  .tabla-wrapper .tabla-proceso {
-    margin: 0;
-    min-width: 320px;
-  }
-  
-  /* Título de cada proceso */
+  /* — Título de cada proceso — */
   .proceso-titulo {
-    font-size: 13px;
+    font-size: var(--font-size-base);
     font-weight: bold;
     color: #ffffff;
-    background-color: #2563a8;
+    background-color: var(--proceso-titulo-bg);
     padding: 6px 12px;
-    margin: 18px 0 6px 0;
-    border-left: 4px solid #d4782a;
+    margin: var(--space-lg) 0 6px 0;
+    border-left: 4px solid var(--color-accent-orange);
   }
   
-  /* Total general */
+  /* — Total general — */
   .gran-total {
-    font-size: 13px;
+    font-size: var(--font-size-base);
     font-weight: bold;
     color: #ffffff;
-    background-color: #0d2d52;
-    padding: 8px 12px;
-    margin: 20px 0 14px 0;
+    background-color: var(--gran-total-bg);
+    padding: var(--space-sm) 12px;
+    margin: 20px 0 var(--space-md) 0;
     text-align: center;
-    border: 2px solid #3a7bbf;
+    border: 2px solid var(--color-navy-bright);
   }
   
-  /* Sección conclusiones */
+  /* — Sección conclusiones — */
   .seccion-titulo {
     font-size: 14px;
     font-weight: bold;
-    color: #0d2d52;
-    border-bottom: 2px solid #2563a8;
+    color: var(--seccion-titulo-color);
+    border-bottom: 2px solid var(--color-navy-light);
     padding-bottom: 5px;
     margin: 22px 0 10px 0;
   }
   
-  /* Intro */
+  /* — Bloque intro — */
   .intro-texto {
-    background-color: #eef2f8;
-    border-left: 3px solid #2563a8;
-    padding: 10px 14px;
+    background-color: var(--intro-bg);
+    border-left: 3px solid var(--intro-border);
+    padding: 10px var(--space-md);
     margin-bottom: 16px;
     font-size: 12.5px;
     line-height: 1.7;
-    color: #333;
+    color: var(--content-text);
   }
   
   /* ============================================================
      UTILIDADES GLOBALES
      ============================================================ */
   .highlight-link {
-    color: #2563a8;
+    color: var(--color-navy-light);
     text-decoration: none;
     font-weight: bold;
   }
-  
-  .highlight-link:hover {
-    text-decoration: underline;
-  }
+  .highlight-link:hover { text-decoration: underline; }
   
   /* ============================================================
-     OVERLAY – fondo oscuro cuando el menú está abierto (móvil)
+     OVERLAY – fondo oscuro cuando el drawer está abierto (móvil)
      ============================================================ */
   #sidebar-overlay {
     display: none;
     position: fixed;
     inset: 0;
-    background: rgba(0,0,0,0.45);
+    background: rgba(0, 0, 0, 0.45);
     z-index: 90;
   }
   #sidebar-overlay.active { display: block; }
   
   /* ============================================================
-     RESPONSIVE — TABLET  (≤ 900px)
+     RESPONSIVE – TABLET  (≤ 900px)
      ============================================================ */
   @media (max-width: 900px) {
   
     /* Ocultar columna derecha */
     #right-col { display: none; }
   
-    /* Sidebar ocupa toda la altura pero se superpone */
+    /* Sidebar como drawer overlay */
     #sidebar {
       position: fixed;
       left: 0;
       top: 0;
       height: 100vh;
       transform: translateX(-100%);
-      box-shadow: 3px 0 12px rgba(0,0,0,0.35);
+      box-shadow: 3px 0 12px rgba(0, 0, 0, 0.35);
     }
   
     #sidebar.open { transform: translateX(0); }
@@ -725,32 +837,32 @@
     #top-nav {
       height: auto;
       min-height: 64px;
-      padding: 10px 14px;
+      padding: 10px var(--space-md);
       flex-wrap: wrap;
       gap: 6px;
     }
   
     #top-nav nav {
       flex-wrap: wrap;
-      gap: 4px;
+      gap: var(--space-xs);
     }
   
     #top-nav nav .sep { display: none; }
   
     #top-nav nav a {
       font-size: 11.5px;
-      padding: 4px 8px;
-      border: 1px solid rgba(122,184,224,0.4);
-      border-radius: 3px;
+      padding: var(--space-xs) var(--space-sm);
+      border: 1px solid rgba(122, 184, 224, 0.4);
+      border-radius: var(--border-radius-sm);
     }
   }
   
   /* ============================================================
-     RESPONSIVE — MÓVIL  (≤ 600px)
+     RESPONSIVE – MÓVIL  (≤ 600px)
      ============================================================ */
   @media (max-width: 600px) {
   
-    html, body { font-size: 12px; }
+    html, body { font-size: var(--font-size-sm); }
   
     /* Stack vertical en lugar de row */
     #wrapper {
@@ -760,7 +872,7 @@
       overflow: auto;
     }
   
-    /* Sidebar fuera del flujo (overlay) */
+    /* Sidebar como drawer (fuera del flujo) */
     #sidebar {
       position: fixed;
       left: 0;
@@ -770,12 +882,12 @@
       min-width: 200px;
       transform: translateX(-100%);
       z-index: 200;
-      box-shadow: 4px 0 16px rgba(0,0,0,0.4);
+      box-shadow: 4px 0 16px rgba(0, 0, 0, 0.4);
     }
   
     #sidebar.open { transform: translateX(0); }
   
-    /* Columna central a ancho completo, scroll natural */
+    /* Columna central: ancho completo, scroll natural */
     #main-col {
       width: 100%;
       height: auto;
@@ -791,32 +903,32 @@
     #main-content {
       overflow: visible;
       height: auto;
-      padding: 14px 14px;
+      padding: var(--space-md);
     }
   
     /* Header compacto */
     #top-nav {
       height: auto;
       min-height: 56px;
-      padding: 8px 12px;
+      padding: var(--space-sm) 12px;
       align-items: flex-start;
       flex-wrap: wrap;
-      gap: 8px;
+      gap: var(--space-sm);
     }
   
     #top-nav nav {
       flex-wrap: wrap;
-      gap: 4px;
+      gap: var(--space-xs);
     }
   
     #top-nav nav .sep { display: none; }
   
     #top-nav nav a {
-      font-size: 11px;
-      padding: 5px 8px;
-      border: 1px solid rgba(122,184,224,0.4);
-      border-radius: 3px;
-      background: rgba(0,0,0,0.12);
+      font-size: var(--font-size-xs);
+      padding: 5px var(--space-sm);
+      border: 1px solid rgba(122, 184, 224, 0.4);
+      border-radius: var(--border-radius-sm);
+      background: rgba(0, 0, 0, 0.12);
     }
   
     /* Pie de página */
@@ -828,9 +940,9 @@
       text-align: center;
     }
   
-    /* Contenido de créditos */
-    .credito-card { padding: 8px 10px; }
-    .grupo-titulo { font-size: 11px; }
+    /* Créditos */
+    .credito-card { padding: var(--space-sm) 10px; }
+    .grupo-titulo { font-size: var(--font-size-xs); }
     .seccion-institucional { padding: 10px 12px; }
   
     /* Tablas — scroll horizontal */
@@ -840,10 +952,11 @@
     .tabla-proceso tfoot td { padding: 5px 6px; }
   
     .proceso-titulo { font-size: 11.5px; padding: 5px 10px; }
-    .gran-total { font-size: 11.5px; padding: 7px 10px; }
+    .gran-total     { font-size: 11.5px; padding: 7px 10px; }
     .seccion-titulo { font-size: 12.5px; }
   
     /* Tipografía general */
-    #main-content p { font-size: 12px; }
-    #content-header h3 { font-size: 14px; }
+    #main-content p       { font-size: var(--font-size-sm); }
+    #content-header h3    { font-size: 14px; }
   }
+  

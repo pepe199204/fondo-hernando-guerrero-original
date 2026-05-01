@@ -13,42 +13,15 @@
 
   <div id="wrapper">
 
-    <!-- ══════════════════════════════════════════════
-       COLUMNA 1 – SIDEBAR IZQUIERDO (150px)
-  ══════════════════════════════════════════════ -->
-    <aside id="sidebar">
+    <!-- COLUMNA 1 – SIDEBAR IZQUIERDO
+         El contenido es inyectado por js/layout.js -->
+    <aside id="sidebar" aria-label="Menú secundario"></aside>
 
-      <div id="sidebar-logo">
-        <img src="images/logoUdeA.png" alt="Logo Universidad de Antioquia"
-          onerror="this.style.display='none';this.nextElementSibling.style.display='flex';" />
-        <div class="logo-fallback">Universidad<br />de Antioquia</div>
-      </div>
-
-      <nav id="sidebar-nav">
-      </nav>
-
-      <div id="sidebar-footer">&copy; UdeA 2026</div>
-
-    </aside>
-
-    <!-- ══════════════════════════════════════════════
-       COLUMNA 2 – CONTENIDO CENTRAL (flexible)
-  ══════════════════════════════════════════════ -->
+    <!-- COLUMNA 2 – CONTENIDO CENTRAL -->
     <main id="main-col">
 
-      <header id="top-nav">
-        <nav>
-          <a href="principal.html" class="active">Principal</a>
-          <span class="sep">|</span>
-          <a href="procesos.html">Procesos</a>
-          <span class="sep">|</span>
-          <a href="galeria/index.html" target="_blank">Galeria</a>
-          <span class="sep">|</span>
-          <a href="coleccion.html" target="_blank">Blog</a>
-          <span class="sep">|</span>
-          <a href="creditos.html">Cr&eacute;ditos</a>
-        </nav>
-      </header>
+      <!-- Top-nav: inyectado por layout.js (incluye botón hamburguesa) -->
+      <header id="top-nav" role="navigation" aria-label="Navegación principal"></header>
 
       <div id="nav-stripe"></div>
 
@@ -103,30 +76,13 @@
 
     </main>
 
-    <!-- ══════════════════════════════════════════════
-       COLUMNA 3 – PANEL DERECHO (220px)
-  ══════════════════════════════════════════════ -->
-    <aside id="right-col">
-
-      <div id="right-title">
-        <h1>Colecci&oacute;n de Grabado</h1>
-        <h2>Facultad de Artes</h2>
-      </div>
-
-      <div id="right-panel">
-        <img src="images/01.JPG" alt="Obra de grabado"
-          onerror="this.style.display='none';this.nextElementSibling.style.display='flex';" />
-        <div class="img-placeholder" style="display:none;">Obra de grabado<br />Colecci&oacute;n UdeA</div>
-
-
-      </div>
-
-      <div id="right-footer"></div>
-
-    </aside>
+    <!-- COLUMNA 3 – PANEL DERECHO
+         El contenido es inyectado por js/layout.js -->
+    <aside id="right-col" aria-label="Panel de colección"></aside>
 
   </div>
 
-</body>
+  <script src="galeria/js/layout.js"></script>
 
+</body>
 </html>

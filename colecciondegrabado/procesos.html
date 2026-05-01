@@ -7,49 +7,21 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Procesos &ndash; Colecci&oacute;n de Grabado, Universidad de Antioquia</title>
   <link rel="stylesheet" href="styles/styles-sitio.css" />
-  
 </head>
 
 <body>
 
   <div id="wrapper">
 
-    <!-- ══════════════════════════════════════════════
-         COLUMNA 1 – SIDEBAR IZQUIERDO (150px)
-    ══════════════════════════════════════════════ -->
-    <aside id="sidebar">
+    <!-- COLUMNA 1 – SIDEBAR IZQUIERDO
+         El contenido es inyectado por js/layout.js -->
+    <aside id="sidebar" aria-label="Menú secundario"></aside>
 
-      <div id="sidebar-logo">
-        <img src="images/logoUdeA.png" alt="Logo Universidad de Antioquia"
-          onerror="this.style.display='none';this.nextElementSibling.style.display='flex';" />
-        <div class="logo-fallback">Universidad<br />de Antioquia</div>
-      </div>
-
-      <nav id="sidebar-nav">
-      </nav>
-
-      <div id="sidebar-footer">&copy; UdeA 2026</div>
-
-    </aside>
-
-    <!-- ══════════════════════════════════════════════
-         COLUMNA 2 – CONTENIDO CENTRAL (flexible)
-    ══════════════════════════════════════════════ -->
+    <!-- COLUMNA 2 – CONTENIDO CENTRAL -->
     <main id="main-col">
 
-      <header id="top-nav">
-        <nav>
-          <a href="principal.html">Principal</a>
-          <span class="sep">|</span>
-          <a href="procesos.html" class="active">Procesos</a>
-          <span class="sep">|</span>
-          <a href="galeria/index.html" target="_blank">Galeria</a>
-          <span class="sep">|</span>
-          <a href="coleccion.html" target="_blank">Blog</a>
-          <span class="sep">|</span>
-          <a href="creditos.html">Cr&eacute;ditos</a>
-        </nav>
-      </header>
+      <!-- Top-nav: inyectado por layout.js (incluye botón hamburguesa) -->
+      <header id="top-nav" role="navigation" aria-label="Navegación principal"></header>
 
       <div id="content-wrapper">
         <div id="main-content">
@@ -59,7 +31,7 @@
             <a class="section-link">Procesos</a>
           </div>
 
-          <!-- ── Introducción ── -->
+          <!-- Introducción -->
           <p class="intro-texto">Un an&aacute;lisis preliminar de las obras que se encuentran archivadas en la
             Colecci&oacute;n, permite afirmar que en el Taller de Grabado de la Facultad y &Aacute;reas afines,
             se experimenta con una gran variedad de procedimientos de impresi&oacute;n art&iacute;stica: en hueco,
@@ -72,435 +44,433 @@
             a los sistemas de impresi&oacute;n m&aacute;s conocidos, que se describen a continuaci&oacute;n, con
             su respectivo porcentaje de participaci&oacute;n:</p>
 
-          <!-- ════════════════════════════════════════
-               1 – CALCOGRAFÍA
-          ════════════════════════════════════════ -->
+          <!-- 1 – CALCOGRAFÍA -->
           <div class="proceso-titulo">1 &ndash; Calcograf&iacute;a (Grabado en metal y otras matrices)</div>
-          <table class="tabla-proceso">
-            <thead>
-              <tr>
-                <th>T&eacute;cnica</th>
-                <th>Cantidad</th>
-                <th>Porcentaje</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td>Aguafuerte, aguatinta, puntaseca y barniz blando (b/n &ndash; color)</td>
-                <td>076</td>
-                <td>&nbsp;</td>
-              </tr>
-              <tr>
-                <td>Policrom&iacute;a (Viscosidad &ndash; Hayter)</td>
-                <td>014</td>
-                <td>&nbsp;</td>
-              </tr>
-              <tr>
-                <td>Mixtas (b/n &ndash; color)</td>
-                <td>073</td>
-                <td>&nbsp;</td>
-              </tr>
-              <tr>
-                <td>Otros materiales</td>
-                <td>020</td>
-                <td>&nbsp;</td>
-              </tr>
-            </tbody>
-            <tfoot>
-              <tr>
-                <td>Sub total</td>
-                <td>183</td>
-                <td>15.250</td>
-              </tr>
-            </tfoot>
-          </table>
+          <div class="tabla-wrapper">
+            <table class="tabla-proceso">
+              <thead>
+                <tr>
+                  <th>T&eacute;cnica</th>
+                  <th>Cantidad</th>
+                  <th>Porcentaje</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Aguafuerte, aguatinta, puntaseca y barniz blando (b/n &ndash; color)</td>
+                  <td>076</td>
+                  <td>&nbsp;</td>
+                </tr>
+                <tr>
+                  <td>Policrom&iacute;a (Viscosidad &ndash; Hayter)</td>
+                  <td>014</td>
+                  <td>&nbsp;</td>
+                </tr>
+                <tr>
+                  <td>Mixtas (b/n &ndash; color)</td>
+                  <td>073</td>
+                  <td>&nbsp;</td>
+                </tr>
+                <tr>
+                  <td>Otros materiales</td>
+                  <td>020</td>
+                  <td>&nbsp;</td>
+                </tr>
+              </tbody>
+              <tfoot>
+                <tr>
+                  <td>Sub total</td>
+                  <td>183</td>
+                  <td>15.250</td>
+                </tr>
+              </tfoot>
+            </table>
+          </div>
 
-          <!-- ════════════════════════════════════════
-               2 – XILOGRAFÍA
-          ════════════════════════════════════════ -->
+          <!-- 2 – XILOGRAFÍA -->
           <div class="proceso-titulo">2 &ndash; Xilograf&iacute;a (Madera, lin&oacute;leo)</div>
-          <table class="tabla-proceso">
-            <thead>
-              <tr>
-                <th>T&eacute;cnica</th>
-                <th>Cantidad</th>
-                <th>Porcentaje</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td>Grabado en madera (b/n &ndash; color)</td>
-                <td>056</td>
-                <td>&nbsp;</td>
-              </tr>
-              <tr>
-                <td>Policrom&iacute;a en madera (taco perdido)</td>
-                <td>027</td>
-                <td>&nbsp;</td>
-              </tr>
-            </tbody>
-            <tfoot>
-              <tr>
-                <td>Sub total</td>
-                <td>083</td>
-                <td>6.916</td>
-              </tr>
-            </tfoot>
-          </table>
+          <div class="tabla-wrapper">
+            <table class="tabla-proceso">
+              <thead>
+                <tr>
+                  <th>T&eacute;cnica</th>
+                  <th>Cantidad</th>
+                  <th>Porcentaje</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Grabado en madera (b/n &ndash; color)</td>
+                  <td>056</td>
+                  <td>&nbsp;</td>
+                </tr>
+                <tr>
+                  <td>Policrom&iacute;a en madera (taco perdido)</td>
+                  <td>027</td>
+                  <td>&nbsp;</td>
+                </tr>
+              </tbody>
+              <tfoot>
+                <tr>
+                  <td>Sub total</td>
+                  <td>083</td>
+                  <td>6.916</td>
+                </tr>
+              </tfoot>
+            </table>
+          </div>
 
-          <!-- ════════════════════════════════════════
-               2.1 – GRABADO EN LINÓLEO
-          ════════════════════════════════════════ -->
+          <!-- 2.1 – GRABADO EN LINÓLEO -->
           <div class="proceso-titulo">2.1 &ndash; Grabado en lin&oacute;leo (b/n &ndash; color)</div>
-          <table class="tabla-proceso">
-            <thead>
-              <tr>
-                <th>T&eacute;cnica</th>
-                <th>Cantidad</th>
-                <th>Porcentaje</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td>Grabado en lin&oacute;leo (b/n - color)</td>
-                <td>207</td>
-                <td>&nbsp;</td>
-              </tr>
-              <tr>
-                <td>Policrom&iacute;a en lin&oacute;leo (taco perdido)</td>
-                <td>207</td>
-                <td>&nbsp;</td>
-              </tr>
-              <tr>
-                <td>Otros procesos y mixtas</td>
-                <td>039</td>
-                <td>&nbsp;</td>
-              </tr>
-            </tbody>
-            <tfoot>
-              <tr>
-                <td>Sub total</td>
-                <td>453</td>
-                <td>37.750</td>
-              </tr>
-            </tfoot>
-          </table>
+          <div class="tabla-wrapper">
+            <table class="tabla-proceso">
+              <thead>
+                <tr>
+                  <th>T&eacute;cnica</th>
+                  <th>Cantidad</th>
+                  <th>Porcentaje</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Grabado en lin&oacute;leo (b/n - color)</td>
+                  <td>207</td>
+                  <td>&nbsp;</td>
+                </tr>
+                <tr>
+                  <td>Policrom&iacute;a en lin&oacute;leo (taco perdido)</td>
+                  <td>207</td>
+                  <td>&nbsp;</td>
+                </tr>
+                <tr>
+                  <td>Otros procesos y mixtas</td>
+                  <td>039</td>
+                  <td>&nbsp;</td>
+                </tr>
+              </tbody>
+              <tfoot>
+                <tr>
+                  <td>Sub total</td>
+                  <td>453</td>
+                  <td>37.750</td>
+                </tr>
+              </tfoot>
+            </table>
+          </div>
 
-          <!-- ════════════════════════════════════════
-               3 – SERIGRAFÍA
-          ════════════════════════════════════════ -->
+          <!-- 3 – SERIGRAFÍA -->
           <div class="proceso-titulo">3 &ndash; Serigraf&iacute;a (Impresi&oacute;n por tamizado)</div>
-          <table class="tabla-proceso">
-            <thead>
-              <tr>
-                <th>T&eacute;cnica</th>
-                <th>Cantidad</th>
-                <th>Porcentaje</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td>Intervenci&oacute;n pict&oacute;rica</td>
-                <td>027</td>
-                <td>&nbsp;</td>
-              </tr>
-              <tr>
-                <td>Una tinta</td>
-                <td>006</td>
-                <td>&nbsp;</td>
-              </tr>
-              <tr>
-                <td>Color</td>
-                <td>030</td>
-                <td>&nbsp;</td>
-              </tr>
-              <tr>
-                <td>Proceso fotogr&aacute;fico</td>
-                <td>018</td>
-                <td>&nbsp;</td>
-              </tr>
-              <tr>
-                <td>Mixtas</td>
-                <td>006</td>
-                <td>&nbsp;</td>
-              </tr>
-            </tbody>
-            <tfoot>
-              <tr>
-                <td>Sub total</td>
-                <td>087</td>
-                <td>7.250</td>
-              </tr>
-            </tfoot>
-          </table>
+          <div class="tabla-wrapper">
+            <table class="tabla-proceso">
+              <thead>
+                <tr>
+                  <th>T&eacute;cnica</th>
+                  <th>Cantidad</th>
+                  <th>Porcentaje</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Intervenci&oacute;n pict&oacute;rica</td>
+                  <td>027</td>
+                  <td>&nbsp;</td>
+                </tr>
+                <tr>
+                  <td>Una tinta</td>
+                  <td>006</td>
+                  <td>&nbsp;</td>
+                </tr>
+                <tr>
+                  <td>Color</td>
+                  <td>030</td>
+                  <td>&nbsp;</td>
+                </tr>
+                <tr>
+                  <td>Proceso fotogr&aacute;fico</td>
+                  <td>018</td>
+                  <td>&nbsp;</td>
+                </tr>
+                <tr>
+                  <td>Mixtas</td>
+                  <td>006</td>
+                  <td>&nbsp;</td>
+                </tr>
+              </tbody>
+              <tfoot>
+                <tr>
+                  <td>Sub total</td>
+                  <td>087</td>
+                  <td>7.250</td>
+                </tr>
+              </tfoot>
+            </table>
+          </div>
 
-          <!-- ════════════════════════════════════════
-               4 – LITOGRAFÍA
-          ════════════════════════════════════════ -->
+          <!-- 4 – LITOGRAFÍA -->
           <div class="proceso-titulo">4 &ndash; Litograf&iacute;a (Impresi&oacute;n planogr&aacute;fica)</div>
-          <table class="tabla-proceso">
-            <thead>
-              <tr>
-                <th>T&eacute;cnica</th>
-                <th>Cantidad</th>
-                <th>Porcentaje</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td>Una tinta</td>
-                <td>071</td>
-                <td>&nbsp;</td>
-              </tr>
-              <tr>
-                <td>Color</td>
-                <td>027</td>
-                <td>&nbsp;</td>
-              </tr>
-              <tr>
-                <td>Intervenci&oacute;n pict&oacute;rica</td>
-                <td>001</td>
-                <td>&nbsp;</td>
-              </tr>
-              <tr>
-                <td>Proceso fotogr&aacute;fico</td>
-                <td>004</td>
-                <td>&nbsp;</td>
-              </tr>
-            </tbody>
-            <tfoot>
-              <tr>
-                <td>Sub total</td>
-                <td>103</td>
-                <td>8.583</td>
-              </tr>
-            </tfoot>
-          </table>
+          <div class="tabla-wrapper">
+            <table class="tabla-proceso">
+              <thead>
+                <tr>
+                  <th>T&eacute;cnica</th>
+                  <th>Cantidad</th>
+                  <th>Porcentaje</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Una tinta</td>
+                  <td>071</td>
+                  <td>&nbsp;</td>
+                </tr>
+                <tr>
+                  <td>Color</td>
+                  <td>027</td>
+                  <td>&nbsp;</td>
+                </tr>
+                <tr>
+                  <td>Intervenci&oacute;n pict&oacute;rica</td>
+                  <td>001</td>
+                  <td>&nbsp;</td>
+                </tr>
+                <tr>
+                  <td>Proceso fotogr&aacute;fico</td>
+                  <td>004</td>
+                  <td>&nbsp;</td>
+                </tr>
+              </tbody>
+              <tfoot>
+                <tr>
+                  <td>Sub total</td>
+                  <td>103</td>
+                  <td>8.583</td>
+                </tr>
+              </tfoot>
+            </table>
+          </div>
 
-          <!-- ════════════════════════════════════════
-               5 – COLOGRAFÍA
-          ════════════════════════════════════════ -->
+          <!-- 5 – COLOGRAFÍA -->
           <div class="proceso-titulo">5 &ndash; Colograf&iacute;a (Impresi&oacute;n en yeso)</div>
-          <table class="tabla-proceso">
-            <thead>
-              <tr>
-                <th>T&eacute;cnica</th>
-                <th>Cantidad</th>
-                <th>Porcentaje</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td>Policrom&iacute;as</td>
-                <td>&ndash;</td>
-                <td>&nbsp;</td>
-              </tr>
-            </tbody>
-            <tfoot>
-              <tr>
-                <td>Sub total</td>
-                <td>064</td>
-                <td>5.333</td>
-              </tr>
-            </tfoot>
-          </table>
+          <div class="tabla-wrapper">
+            <table class="tabla-proceso">
+              <thead>
+                <tr>
+                  <th>T&eacute;cnica</th>
+                  <th>Cantidad</th>
+                  <th>Porcentaje</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Policrom&iacute;as</td>
+                  <td>&ndash;</td>
+                  <td>&nbsp;</td>
+                </tr>
+              </tbody>
+              <tfoot>
+                <tr>
+                  <td>Sub total</td>
+                  <td>064</td>
+                  <td>5.333</td>
+                </tr>
+              </tfoot>
+            </table>
+          </div>
 
-          <!-- ════════════════════════════════════════
-               6 – GRABADO EN CARTÓN
-          ════════════════════════════════════════ -->
+          <!-- 6 – GRABADO EN CARTÓN -->
           <div class="proceso-titulo">6 &ndash; Grabado en cart&oacute;n</div>
-          <table class="tabla-proceso">
-            <thead>
-              <tr>
-                <th>T&eacute;cnica</th>
-                <th>Cantidad</th>
-                <th>Porcentaje</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td>Una tinta</td>
-                <td>012</td>
-                <td>&nbsp;</td>
-              </tr>
-              <tr>
-                <td>Color</td>
-                <td>025</td>
-                <td>&nbsp;</td>
-              </tr>
-              <tr>
-                <td>Mixtas</td>
-                <td>008</td>
-                <td>&nbsp;</td>
-              </tr>
-            </tbody>
-            <tfoot>
-              <tr>
-                <td>Sub total</td>
-                <td>045</td>
-                <td>3.750</td>
-              </tr>
-            </tfoot>
-          </table>
+          <div class="tabla-wrapper">
+            <table class="tabla-proceso">
+              <thead>
+                <tr>
+                  <th>T&eacute;cnica</th>
+                  <th>Cantidad</th>
+                  <th>Porcentaje</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Una tinta</td>
+                  <td>012</td>
+                  <td>&nbsp;</td>
+                </tr>
+                <tr>
+                  <td>Color</td>
+                  <td>025</td>
+                  <td>&nbsp;</td>
+                </tr>
+                <tr>
+                  <td>Mixtas</td>
+                  <td>008</td>
+                  <td>&nbsp;</td>
+                </tr>
+              </tbody>
+              <tfoot>
+                <tr>
+                  <td>Sub total</td>
+                  <td>045</td>
+                  <td>3.750</td>
+                </tr>
+              </tfoot>
+            </table>
+          </div>
 
-          <!-- ════════════════════════════════════════
-               7 – GRÁFICA COMPUTARIZADA
-          ════════════════════════════════════════ -->
+          <!-- 7 – GRÁFICA COMPUTARIZADA -->
           <div class="proceso-titulo">7 &ndash; Gr&aacute;fica computarizada</div>
-          <table class="tabla-proceso">
-            <thead>
-              <tr>
-                <th>T&eacute;cnica</th>
-                <th>Cantidad</th>
-                <th>Porcentaje</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td>Impresi&oacute;n digital (color)</td>
-                <td>&ndash;</td>
-                <td>&nbsp;</td>
-              </tr>
-            </tbody>
-            <tfoot>
-              <tr>
-                <td>Sub total</td>
-                <td>027</td>
-                <td>2.250</td>
-              </tr>
-            </tfoot>
-          </table>
+          <div class="tabla-wrapper">
+            <table class="tabla-proceso">
+              <thead>
+                <tr>
+                  <th>T&eacute;cnica</th>
+                  <th>Cantidad</th>
+                  <th>Porcentaje</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Impresi&oacute;n digital (color)</td>
+                  <td>&ndash;</td>
+                  <td>&nbsp;</td>
+                </tr>
+              </tbody>
+              <tfoot>
+                <tr>
+                  <td>Sub total</td>
+                  <td>027</td>
+                  <td>2.250</td>
+                </tr>
+              </tfoot>
+            </table>
+          </div>
 
-          <!-- ════════════════════════════════════════
-               8 – MONOTIPIA / MONOGRABADO
-          ════════════════════════════════════════ -->
+          <!-- 8 – MONOTIPIA / MONOGRABADO -->
           <div class="proceso-titulo">8 &ndash; Monotipia &ndash; Monograbado (ejemplares &uacute;nicos)</div>
-          <table class="tabla-proceso">
-            <thead>
-              <tr>
-                <th>T&eacute;cnica</th>
-                <th>Cantidad</th>
-                <th>Porcentaje</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td>Una tinta</td>
-                <td>014</td>
-                <td>&nbsp;</td>
-              </tr>
-              <tr>
-                <td>Intervenci&oacute;n pict&oacute;rica</td>
-                <td>021</td>
-                <td>&nbsp;</td>
-              </tr>
-              <tr>
-                <td>Color</td>
-                <td>009</td>
-                <td>&nbsp;</td>
-              </tr>
-              <tr>
-                <td>Mixtas</td>
-                <td>040</td>
-                <td>&nbsp;</td>
-              </tr>
-            </tbody>
-            <tfoot>
-              <tr>
-                <td>Sub total</td>
-                <td>084</td>
-                <td>7.000</td>
-              </tr>
-            </tfoot>
-          </table>
+          <div class="tabla-wrapper">
+            <table class="tabla-proceso">
+              <thead>
+                <tr>
+                  <th>T&eacute;cnica</th>
+                  <th>Cantidad</th>
+                  <th>Porcentaje</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Una tinta</td>
+                  <td>014</td>
+                  <td>&nbsp;</td>
+                </tr>
+                <tr>
+                  <td>Intervenci&oacute;n pict&oacute;rica</td>
+                  <td>021</td>
+                  <td>&nbsp;</td>
+                </tr>
+                <tr>
+                  <td>Color</td>
+                  <td>009</td>
+                  <td>&nbsp;</td>
+                </tr>
+                <tr>
+                  <td>Mixtas</td>
+                  <td>040</td>
+                  <td>&nbsp;</td>
+                </tr>
+              </tbody>
+              <tfoot>
+                <tr>
+                  <td>Sub total</td>
+                  <td>084</td>
+                  <td>7.000</td>
+                </tr>
+              </tfoot>
+            </table>
+          </div>
 
-          <!-- ════════════════════════════════════════
-               9 – INTAGLIO
-          ════════════════════════════════════════ -->
+          <!-- 9 – INTAGLIO -->
           <div class="proceso-titulo">9 &ndash; Intaglio (Impresi&oacute;n sin tinta)</div>
-          <table class="tabla-proceso">
-            <thead>
-              <tr>
-                <th>T&eacute;cnica</th>
-                <th>Cantidad</th>
-                <th>Porcentaje</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td>Intaglio</td>
-                <td>004</td>
-                <td>&nbsp;</td>
-              </tr>
-              <tr>
-                <td>Mixtas</td>
-                <td>003</td>
-                <td>&nbsp;</td>
-              </tr>
-            </tbody>
-            <tfoot>
-              <tr>
-                <td>Sub total</td>
-                <td>007</td>
-                <td>0.585</td>
-              </tr>
-            </tfoot>
-          </table>
+          <div class="tabla-wrapper">
+            <table class="tabla-proceso">
+              <thead>
+                <tr>
+                  <th>T&eacute;cnica</th>
+                  <th>Cantidad</th>
+                  <th>Porcentaje</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Intaglio</td>
+                  <td>004</td>
+                  <td>&nbsp;</td>
+                </tr>
+                <tr>
+                  <td>Mixtas</td>
+                  <td>003</td>
+                  <td>&nbsp;</td>
+                </tr>
+              </tbody>
+              <tfoot>
+                <tr>
+                  <td>Sub total</td>
+                  <td>007</td>
+                  <td>0.585</td>
+                </tr>
+              </tfoot>
+            </table>
+          </div>
 
-          <!-- ════════════════════════════════════════
-               10 – PROCESOS ALTERNATIVOS
-          ════════════════════════════════════════ -->
+          <!-- 10 – PROCESOS ALTERNATIVOS -->
           <div class="proceso-titulo">10 &ndash; Procesos alternativos (b/n &ndash; color)</div>
-          <table class="tabla-proceso">
-            <thead>
-              <tr>
-                <th>T&eacute;cnica</th>
-                <th>Cantidad</th>
-                <th>Porcentaje</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td>10.1 &ndash; Impresi&oacute;n indirecta (offset) mixtas</td>
-                <td>009</td>
-                <td>&nbsp;</td>
-              </tr>
-              <tr>
-                <td>10.2 &ndash; Impresi&oacute;n por transfer (mixtas)</td>
-                <td>026</td>
-                <td>&nbsp;</td>
-              </tr>
-              <tr>
-                <td>10.3 &ndash; Collage impreso (texturas &ndash; mixtas)</td>
-                <td>013</td>
-                <td>&nbsp;</td>
-              </tr>
-              <tr>
-                <td>10.4 &ndash; Impresi&oacute;n por &ldquo;frottage&rdquo; &ndash; mixtas</td>
-                <td>012</td>
-                <td>&nbsp;</td>
-              </tr>
-              <tr>
-                <td>10.5 &ndash; Otros procesos (Grabado en poli&eacute;ster, PBC, Mail Art)</td>
-                <td>005</td>
-                <td>&nbsp;</td>
-              </tr>
-            </tbody>
-            <tfoot>
-              <tr>
-                <td>Sub total</td>
-                <td>064</td>
-                <td>5.333</td>
-              </tr>
-            </tfoot>
-          </table>
+          <div class="tabla-wrapper">
+            <table class="tabla-proceso">
+              <thead>
+                <tr>
+                  <th>T&eacute;cnica</th>
+                  <th>Cantidad</th>
+                  <th>Porcentaje</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>10.1 &ndash; Impresi&oacute;n indirecta (offset) mixtas</td>
+                  <td>009</td>
+                  <td>&nbsp;</td>
+                </tr>
+                <tr>
+                  <td>10.2 &ndash; Impresi&oacute;n por transfer (mixtas)</td>
+                  <td>026</td>
+                  <td>&nbsp;</td>
+                </tr>
+                <tr>
+                  <td>10.3 &ndash; Collage impreso (texturas &ndash; mixtas)</td>
+                  <td>013</td>
+                  <td>&nbsp;</td>
+                </tr>
+                <tr>
+                  <td>10.4 &ndash; Impresi&oacute;n por &ldquo;frottage&rdquo; &ndash; mixtas</td>
+                  <td>012</td>
+                  <td>&nbsp;</td>
+                </tr>
+                <tr>
+                  <td>10.5 &ndash; Otros procesos (Grabado en poli&eacute;ster, PBC, Mail Art)</td>
+                  <td>005</td>
+                  <td>&nbsp;</td>
+                </tr>
+              </tbody>
+              <tfoot>
+                <tr>
+                  <td>Sub total</td>
+                  <td>064</td>
+                  <td>5.333</td>
+                </tr>
+              </tfoot>
+            </table>
+          </div>
 
-          <!-- ── Gran Total ── -->
+          <!-- Gran Total -->
           <div class="gran-total">GRAN TOTAL: 1.200 obras &nbsp;(100.000 %)</div>
 
-          <!-- ════════════════════════════════════════
-               CONCLUSIONES Y NOTAS FINALES
-          ════════════════════════════════════════ -->
+          <!-- CONCLUSIONES Y NOTAS FINALES -->
           <div class="seccion-titulo">Conclusiones y Notas Finales</div>
 
           <p>En este &uacute;ltimo grupo (procesos alternativos) se rese&ntilde;an sistemas poco convencionales,
@@ -535,7 +505,7 @@
             dar continuidad a los variados procesos que se realizan en la actualidad, pero apoyando acciones de
             modernizaci&oacute;n de algunas secciones como el Taller de Serigraf&iacute;a, que todav&iacute;a
             permanece con instalaciones muy precarias. Del mismo modo, impulsar la producci&oacute;n de obras con
-            sistemas digitalizados, de gran desarrollo en el arte contempor&aacute;neo y convocatorias
+            sistemas digitalizados, de gran desarrollo en el arte contempor&oacute;neo y convocatorias
             internacionales.</p>
 
           <p>Igualmente es prioritario revivir el proceso de ingreso de nuevas obras ya sea realizadas en el Taller
@@ -551,15 +521,15 @@
             de estos cert&aacute;menes, que incluso podr&iacute;an convertirse en corto tiempo en convocatorias
             internacionales.</p>
 
-          <p>Gracias a la existencia de la Colecci&oacute;n se realiz&oacute; el primer concurso en 1993, con 
-            grabados realizados en su mayor&iacute;a en el Taller de Grabado. Bajo esa modalidad y a trav&eacute;s 
-            de premios y menciones de adquisici&oacute;n, la Colecci&oacute;n se ha enriquecido con obras de indudable 
-            calidad. Como valor adicional la Facultad y la Universidad, adquieren mayor prestigio y presencia, no solo 
-            como formadoras de j&oacute;venes en las distintas &aacute;reas art&iacute;sticas, sino a trav&eacute;s de 
+          <p>Gracias a la existencia de la Colecci&oacute;n se realiz&oacute; el primer concurso en 1993, con
+            grabados realizados en su mayor&iacute;a en el Taller de Grabado. Bajo esa modalidad y a trav&eacute;s
+            de premios y menciones de adquisici&oacute;n, la Colecci&oacute;n se ha enriquecido con obras de indudable
+            calidad. Como valor adicional la Facultad y la Universidad, adquieren mayor prestigio y presencia, no solo
+            como formadoras de j&oacute;venes en las distintas &aacute;reas art&iacute;sticas, sino a trav&eacute;s de
             la difusi&oacute;n de estos eventos.</p>
 
         </div>
-      </div><!-- /content-wrapper -->
+      </div>
 
       <footer id="main-footer">
         Vicerrector&iacute;a de Docencia, Universidad de Antioquia. Todos los derechos reservados. 2026.
@@ -567,27 +537,13 @@
 
     </main>
 
-    <!-- ══════════════════════════════════════════════
-         COLUMNA 3 – PANEL DERECHO (220px)
-    ══════════════════════════════════════════════ -->
-    <aside id="right-col">
+    <!-- COLUMNA 3 – PANEL DERECHO
+         El contenido es inyectado por js/layout.js -->
+    <aside id="right-col" aria-label="Panel de colección"></aside>
 
-      <div id="right-title">
-        <h1>Colecci&oacute;n de Grabado</h1>
-        <h2>Facultad de Artes</h2>
-      </div>
+  </div>
 
-      <div id="right-panel">
-        <img src="images/01.JPG" alt="Obra de grabado"
-          onerror="this.style.display='none';this.nextElementSibling.style.display='flex';" />
-        <div class="img-placeholder" style="display:none;">Obra de grabado<br />Colecci&oacute;n UdeA</div>
-      </div>
-
-      <div id="right-footer"></div>
-
-    </aside>
-
-  </div><!-- /wrapper -->
+  <script src="galeria/js/layout.js"></script>
 
 </body>
 </html>
