@@ -189,7 +189,7 @@
     if (!root) return;
 
     try {
-      var jsonUrl = root.getAttribute("data-prev-json") || "data/prev-10.json";
+      var jsonUrl = root.getAttribute("data-prev-json") || "../../data/gallery/prev-10.json";
       root.innerHTML = "";
       root.appendChild(el("div", "prev-loading", { text: "Cargando…" }));
 

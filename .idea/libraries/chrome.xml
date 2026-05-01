@@ -1,0 +1,15 @@
+<component name="libraryTable">
+  <library name="chrome">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/App/firefox/chrome/classic.jar!/" />
+      <root url="jar://$PROJECT_DIR$/App/firefox/chrome/reporter.jar!/" />
+      <root url="jar://$PROJECT_DIR$/App/firefox/chrome/pippki.jar!/" />
+      <root url="jar://$PROJECT_DIR$/App/firefox/chrome/toolkit.jar!/" />
+      <root url="jar://$PROJECT_DIR$/App/firefox/chrome/browser.jar!/" />
+      <root url="jar://$PROJECT_DIR$/App/firefox/chrome/en-US.jar!/" />
+      <root url="jar://$PROJECT_DIR$/App/firefox/chrome/comm.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

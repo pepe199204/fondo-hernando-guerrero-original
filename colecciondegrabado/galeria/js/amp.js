@@ -172,7 +172,7 @@
     if (!root) return;
 
     var id = getQueryId();
-    var obrasUrl = root.getAttribute("data-obras-json") || "data/obras.json";
+    var obrasUrl = root.getAttribute("data-obras-json") || "../../data/gallery/obras.json";
 
     if (!id) {
       render(root, {

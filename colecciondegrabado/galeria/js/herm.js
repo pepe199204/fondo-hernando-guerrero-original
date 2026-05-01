@@ -157,8 +157,8 @@
     if (!root) return;
 
     var id = getQueryId();
-    var obrasUrl = root.getAttribute("data-obras-json") || "data/obras.json";
-    var hermUrl = root.getAttribute("data-herm-json") || "data/herm.json";
+    var obrasUrl = root.getAttribute("data-obras-json") || "../../data/gallery/obras.json";
+    var hermUrl = root.getAttribute("data-herm-json") || "../../data/gallery/herm.json";
 
     if (!id) {
       render(root, {

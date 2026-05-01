@@ -169,7 +169,7 @@
     if (!url && obrasUrl) url = obrasUrl;
 
     // Fallbacks legacy (demo)
-    if (!url) url = "data/prev-10.json";
+    if (!url) url = "../../data/gallery/prev-10.json";
     if (!obrasUrl) obrasUrl = url;
 
     Promise.all([fetchJson(url), fetchJson(obrasUrl)])
