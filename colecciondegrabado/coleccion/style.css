@@ -35,7 +35,7 @@ body {
 	}
 
 #header {
-	background: #73a0c5 url('images/kubrickheader.jpg') no-repeat bottom center;
+	background: #73a0c5 url('kubrickheader.jpg') no-repeat bottom center;
 	}
 
 #headerimg 	{ 
@@ -71,7 +71,7 @@ body {
 	}
 
 #footer {
-	background: #eee url('images/kubrickfooter.jpg') no-repeat top; 
+	background: #eee url('kubrickfooter.jpg') no-repeat top;
 	border: none;
 	}
 

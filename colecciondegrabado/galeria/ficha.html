@@ -6,13 +6,13 @@
   <title>Ficha · Colección de Grabado</title>
   <link rel="stylesheet" href="css/ficha-larga.css?v=gallery4" />
   <link rel="stylesheet" href="css/btn-icono.css" />
-  <!-- Datos: data/obras.json + ?id=AA-NNNN. Sin id, formato inválido, catálogo vacío o id ausente en obras → mensaje de error en pantalla (ver js/ficha-larga.js). -->
+  <!-- Datos: ../data/gallery/obras.json + ?id=AA-NNNN. Sin id, formato inválido, catálogo vacío o id ausente en obras → mensaje de error en pantalla (ver js/ficha-larga.js). -->
 </head>
 <body class="ficha-larga-body">
   <div
     id="ficha-larga-root"
     data-ficha-json="../data/gallery/obras.json"
-    data-ficha-extra-json="data/obras.json"
+    data-ficha-extra-json="../data/gallery/obras.json"
   ></div>
   <script src="js/ficha-larga.js?v=gallery4"></script>
 </body>

@@ -274,7 +274,7 @@
 
     var id = getQueryId();
     var jsonUrl =
-      mount.getAttribute("data-ficha-json") || "data/obras.json";
+      mount.getAttribute("data-ficha-json") || "../../data/gallery/obras.json";
     var extraUrl = mount.getAttribute("data-ficha-extra-json") || "";
 
     if (!id) {

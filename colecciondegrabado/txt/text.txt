@@ -1,8 +1,0 @@
-textField=Dynamic text
-	This text was loaded dynamically from a text file, namely "text.txt".
-Hopefully this should show some of the more powerful features of Flash5 (notice scrolling as well...ahem...) - never again will you have to open a .swf in order to edit something as mundane as text - you can just edit a text file and upload it!
-Far quicker, far smaller file, can do it from anywhere without needing the .fla source file and you could even hook it up to a dynamic back end and have the user decide what text will go in here (and it'll be stored for ever and ever!).
-All you have to do to use this is stick it in your flash file and change whatever's in the "text.txt" file. Easy peasy. Even my cat could do it. Well, probably not (no opposable thumbs, y'see) but I'm sure she could have a go...
-Anyway, that's all I have to say about it - it you want the source for this (3K) then click on the link below.
-As always, have fun and if you use it a mention where it's implemented would be nice!
-    --dann
