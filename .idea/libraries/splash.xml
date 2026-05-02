@@ -1,9 +1,0 @@
-<component name="libraryTable">
-  <library name="splash">
-    <CLASSES>
-      <root url="jar://$PROJECT_DIR$/Data/profile/extensions/splash@aldreneo.com/chrome/splash.jar!/" />
-    </CLASSES>
-    <JAVADOC />
-    <SOURCES />
-  </library>
-</component>
