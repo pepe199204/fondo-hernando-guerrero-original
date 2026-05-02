@@ -321,7 +321,8 @@
     font-size: var(--font-size-nav);
     padding: 0 2px;
   }
-  
+
+
   /* — Zona de contenido — */
   #content-wrapper {
     flex: 1;
