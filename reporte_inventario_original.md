@@ -130,7 +130,6 @@ index.exe, *.bat, autorun.inf — lanzador para CD/DVD Windows
 
 ### 3.9 Problemas técnicos detectados en el HTML legacy
 
-- **Codificación**: el `DOCTYPE XHTML 1.0 Transitional + charset iso-8859-1` declarado hace que las tildes y la "ñ" se muestren como caracteres especiales cuando el contenido pasa a un navegador moderno (UTF-8). Hay que arreglar la codificación.
 - **Scroll de la ficha**: la maquetación está hecha sobre una tabla de 800×600 con alto fijo; en viewports actuales el contenido inferior queda cortado o fuerza scroll interno. Hay que arreglar el scroll.
 - **Prev/Todas**: la galería de previas usa un layout de pocas columnas que deja mucho espacio lateral sin aprovechar. Hay que aumentar las columnas para usar mejor el espacio.
 - **Títulos como imágenes**: como los rótulos de sección están pintados dentro de sprites GIF, no se pueden traducir ni corregir ortográficamente sin reeditar imágenes. Hay que reemplazarlos por texto real.
