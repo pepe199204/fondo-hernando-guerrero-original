@@ -10,7 +10,7 @@ Este documento describe el sitio web actual de la **Colección de Grabado de Her
 4. Un **inventario final** del estado actual del repositorio.
 5. Lo que queda pendiente: hosting en la UdeA y migración del contenido Flash.
 
-> **Contexto previo.** Este documento parte del diagnóstico del repositorio original. Para entender el punto de partida (3.600 HTML estáticos generados desde Dreamweaver, 60 archivos `.swf` de navegación Flash, ausencia total de datos estructurados, plantilla con codificación `iso-8859-1`, etc.) ver [`reporte_inventario_original.md`](./reporte_inventario_original.md) y el inventario por archivo [`inventario_original_e361fdb.csv`](./inventario_original_e361fdb.csv).
+> **Contexto previo.** Este documento parte del diagnóstico del repositorio original. Para entender el punto de partida (3.600 HTML estáticos generados desde Dreamweaver, 60 archivos `.swf` de navegación Flash, ausencia total de datos estructurados, plantilla con codificación `iso-8859-1`, etc.) ver [`reporte_inventario_original.md`](./reporte_inventario_original.md) y el inventario por archivo [`inventario_original_e361fdb.csv`](./inventario_original_e361fdb.csv). Ese CSV lista **4.770** rutas del CD-ROM; el **primer commit de Git** (`36a7177`) contiene **8.346** archivos porque incluye además el árbol del sitio empaquetado y **Firefox Portable** — ver §4.5.
 
 ---
 
@@ -259,7 +259,7 @@ Estado a la fecha de este documento (sin contar `.git`).
 
 | Extensión | Cantidad | Comentario |
 |---|---:|---|
-| `.jpg` (+ `.JPG`, `.tif`) | **3.708** | Mayoría son imágenes del acervo (alta/baja/previa). |
+| `.jpg` (+ `.JPG`) + `.tif` | **3.709** | 3.708 JPG + 1 TIFF en acervo (`imagenes/alta/`). |
 | `.pdf` | 17 | 7 catálogos en `PDF/` + 6 análisis temáticos + 4 catálogos en `images/catalogos/`. |
 | `.html` | 12 | Páginas del sitio: 5 top-level + 7 plantillas en `galeria/`. |
 | `.gif` | 9 | Iconos y sprites compartidos (`galeria/images/`, `images/bg.gif`). |
@@ -267,10 +267,11 @@ Estado a la fecha de este documento (sin contar `.git`).
 | `.js` | 8 | Toda la lógica del sitio en `galeria/js/`. |
 | `.json` | **3** | Los tres JSON del catálogo en `data/gallery/`. |
 | `.png` | 1 | Logo UdeA. |
-| `.md` | 2 | `README.md` + `reporte_inventario_original.md`. |
+| `.md` | 3 | `README.md`, `DOCUMENTACION.md`, `reporte_inventario_original.md`. |
 | `.csv` | 1 | `inventario_original_e361fdb.csv`. |
 | `.xlsx` | 1 | `galeria_analisis_hermeneutico.xlsx`. |
-| **Total** | **3.772** | |
+| `.gitignore` | 1 | Reglas de exclusiones de Git en la raíz. |
+| **Total** | **3.773** | Coincide con `git ls-files` (sin contar `.git`). |
 
 ### 4.2 Conteos por carpeta top-level
 
@@ -280,11 +281,11 @@ Estado a la fecha de este documento (sin contar `.git`).
 | [`galeria/`](./galeria/) | 34 | 2,6 MB | Plantillas HTML + JS + CSS + 6 PDFs de análisis temático. |
 | [`coleccion/`](./coleccion/) | 30 | 206 KB | Blog WordPress legacy (tema *Kubrick*). |
 | [`images/`](./images/) | 13 | 5,3 MB | Assets globales del sitio (logo, fotos del aside). |
-| (raíz) | 10 | — | `index.html`, `principal.html`, `procesos.html`, `coleccion.html`, `creditos.html`, `README.md`, `reporte_inventario_original.md`, `inventario_original_e361fdb.csv`, `galeria_analisis_hermeneutico.xlsx`. |
+| (raíz) | 11 | — | `index.html`, `principal.html`, `procesos.html`, `coleccion.html`, `creditos.html`, `README.md`, `DOCUMENTACION.md`, `reporte_inventario_original.md`, `inventario_original_e361fdb.csv`, `galeria_analisis_hermeneutico.xlsx`, `.gitignore`. |
 | [`PDF/`](./PDF/) | 7 | 28 MB | Catálogos de bienales y muestras. |
 | [`data/`](./data/) | 3 | 2,4 MB | Los tres JSON del catálogo. |
 | [`styles/`](./styles/) | 2 | 30 KB | CSS global del sitio. |
-| **Total** | **3.772** | **~233 MB** | |
+| **Total** | **3.773** | **~233 MB** | |
 
 ### 4.3 Imágenes del acervo — detalle
 
@@ -308,18 +309,27 @@ Estado a la fecha de este documento (sin contar `.git`).
 | [`data/gallery/herm.json`](./data/gallery/herm.json) | 601 KB | 1.200 | `herm-v1` |
 | [`data/gallery/prev-10.json`](./data/gallery/prev-10.json) | 165 KB | 1.200 | `prev-v1` |
 
-### 4.5 Comparativo con el repositorio original
+### 4.5 Comparativo del repositorio Git (primer commit vs actual)
 
-| Métrica | Original (CD-ROM) | Actual | Cambio |
-|---|---:|---:|---|
-| Total archivos | 4.770 | 3.772 | −998 |
-| HTML | 3.645 | 12 | **−3.633** (3.600 fichas estáticas reemplazadas por 3 plantillas) |
-| `.swf` (Flash) | 60 | 0 | **−60** |
-| `.json` propios | 0 | 3 | **+3** |
-| Firefox Portable (`App/`) | ~600 archivos | 0 | Eliminado |
-| Imágenes del acervo | 3.673 | 3.673 | sin cambios |
+Las cifras de esta sección salen del propio historial de Git: **`git ls-tree -r --name-only <commit>`** para el pasado y **`git ls-files`** para el estado actual. El commit raíz es **`36a7177`** (mensaje *first commit*).
 
-El repositorio se simplificó dramáticamente: 3.600 HTML autogenerados + 60 SWF + ~600 archivos de Firefox Portable se reemplazaron por 12 HTML reusables, 8 JS, 8 CSS y los 3 JSON. Toda la información del acervo (las 1.200 obras) está hoy en datos estructurados navegables y editables.
+**Inventario CSV vs primer commit.** El archivo [`inventario_original_e361fdb.csv`](./inventario_original_e361fdb.csv) documenta **4.770** rutas del contenido del CD-ROM. El primer commit de este repositorio tiene **8.346** archivos porque versiona, además del árbol bajo `colecciondegrabado/`, **Firefox Portable** y lanzadores (`App/`, `Data/`, `Other/`, ejecutables, ayuda): **290** archivos en ese paquete, más **`.DS_Store`**, `README.md` en la raíz del snapshot, etc. La diferencia **8.346 − 4.770 = 3.576** corresponde a ese material extra respecto al inventario por archivo del medio.
+
+#### Tabla comparativa (conteos verificados en Git)
+
+| Métrica | Primer commit (`36a7177`) | Actual (`HEAD`) | Cambio |
+|---|---:|---:|---:|
+| **Total archivos versionados** | **8.346** | **3.773** | **−4.573** |
+| HTML (`.html` + `.htm`) | 3.659 (3.645 + 14) | 12 | −3.647 |
+| Flash (`.swf`) | 60 | 0 | −60 |
+| JSON del catálogo (`data/gallery/*.json`) | 0 | 3 | +3 |
+| Otros `.json` (p. ej. perfil/navegador en `Data/`) | 1 | 0 | −1 |
+| Archivos bajo `colecciondegrabado/imagenes/` → `imagenes/` | 3.674 | 3.673 | −1 |
+| Firefox Portable y lanzadores (`App/`, `Data/`, `Other/`, `FirefoxPortable*`, `help.html`, `inicio.bat`) | 290 | 0 | Eliminado en la limpieza del repo |
+
+En disco, fuera de `.git`, el árbol de trabajo suele coincidir con **3.773** archivos versionados; puede aparecer **una ruta extra** local (p. ej. metadatos del IDE en `.idea/` ignorados por Git).
+
+El sitio actual sustituye miles de HTML autogenerados, los SWF y el navegador empaquetado por **12** HTML reutilizables, **8** JS, **8** CSS y los **3** JSON del catálogo. Toda la información del acervo (las 1.200 obras) está hoy en datos estructurados navegables y editables.
 
 ---
 
@@ -372,7 +382,7 @@ El repositorio original tenía **60 archivos `.swf`** que contenían toda la nav
 
 - [`README.md`](./README.md) — entrada del repositorio.
 - [`reporte_inventario_original.md`](./reporte_inventario_original.md) — diagnóstico del CD-ROM original (estructura, problemas técnicos, decisiones de alcance). **Lectura recomendada para entender de dónde viene el proyecto.**
-- [`inventario_original_e361fdb.csv`](./inventario_original_e361fdb.csv) — inventario por archivo del estado original (4.770 archivos).
+- [`inventario_original_e361fdb.csv`](./inventario_original_e361fdb.csv) — inventario por archivo del CD-ROM (**4.770** rutas). El primer commit Git tiene **8.346** archivos (incluye Firefox Portable); ver §4.5.
 - [`galeria_analisis_hermeneutico.xlsx`](./galeria_analisis_hermeneutico.xlsx) — listado de las 157 obras con análisis temático asignado, agrupadas por categoría (erotismo, existencial-espiritual, lúdico, popular, urbano, violencia).
 
 ---
