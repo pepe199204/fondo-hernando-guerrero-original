@@ -387,4 +387,67 @@ El repositorio original tenía **60 archivos `.swf`** que contenían toda la nav
 
 ---
 
+## 7. Condiciones de despliegue
+
+El sitio es **completamente estático** (HTML + JavaScript + JSON + imágenes). No requiere base de datos, PHP, ni ningún runtime del lado del servidor. Cualquier servidor web básico es suficiente para publicarlo.
+
+---
+
+### Requisitos técnicos mínimos
+
+| Componente | Requisito |
+|---|---|
+| Servidor web | Apache 2.x o Nginx (configuración por defecto) |
+| Protocolo | HTTPS recomendado |
+| Almacenamiento | ~233 MB (casi todo en imágenes del acervo) |
+| Runtime del servidor | Ninguno (no requiere PHP, Node.js ni base de datos) |
+| Compatibilidad de cliente | Chrome 124+, Firefox 125+, Safari 17+, Edge 124+ |
+
+---
+
+### Opciones de despliegue
+
+#### Opción 1 — Infraestructura de la Universidad de Antioquia *(recomendada)*
+
+La URL histórica del sitio era `docencia.udea.edu.co/colecciondegrabado/`. El paso natural es restaurarla coordinando con **Sistemas de la Facultad de Artes** o la **Vicerrectoría de Docencia**.
+
+Pasos sugeridos:
+1. Contactar a Sistemas UdeA para solicitar un subdominio institucional (por ejemplo `docencia.udea.edu.co/colecciondegrabado/` o equivalente actual).
+2. Verificar la cuota de almacenamiento disponible — el sitio ocupa ~233 MB.
+3. Copiar el contenido del repositorio al directorio raíz del servidor web asignado.
+4. Configurar HTTPS desde los servicios de la universidad.
+5. Verificar que los archivos estáticos (`.json`, `.jpg`, `.pdf`) se sirvan con los tipos MIME correctos (en Apache esto es automático con la configuración por defecto).
+
+#### Opción 2 — GitHub Pages *(despliegue inmediato, sin costo)*
+
+Si la UdeA no tiene disponibilidad inmediata de servidor, el repositorio puede publicarse directamente desde GitHub:
+
+1. En el repositorio de GitHub, ir a **Settings → Pages**.
+2. En *Branch*, seleccionar `main` y carpeta `/` (raíz).
+3. GitHub asignará una URL del tipo `https://<usuario>.github.io/<repositorio>/`.
+4. El sitio estará disponible en minutos.
+
+> **Limitación:** GitHub Pages tiene un límite de 1 GB por repositorio. El repositorio actual ocupa ~233 MB, dentro del límite.
+
+#### Opción 3 — Servidor local para revisión
+
+Para revisar el sitio localmente antes de cualquier despliegue, basta con un servidor HTTP simple. Desde la raíz del repositorio:
+
+```bash
+# Con Python 3
+python -m http.server 8000
+# Luego abrir http://localhost:8000 en el navegador
+```
+
+> **Importante:** abrir `index.html` directamente como archivo (doble clic) **no funciona** porque los scripts cargan los JSON mediante `fetch()`, lo que requiere un servidor HTTP aunque sea local.
+
+---
+
+### Pendientes antes del despliegue en producción
+
+- [ ] Confirmar subdominio institucional con Sistemas UdeA.
+- [ ] Actualizar las referencias internas que aún apuntan a `http://docencia.udea.edu.co/colecciondegrabado/foro/...` en `coleccion.html`.
+- [ ] Decidir el destino del blog WordPress congelado (`coleccion/`): mantenerlo como archivo histórico o eliminarlo.
+- [ ] Verificar que el servidor asignado sirva archivos `.json` con `Content-Type: application/json` (relevante si se usa Apache sin configuración personalizada).
+
 *Facultad de Artes — Vicerrectoría de Docencia — Universidad de Antioquia. 2026.*
